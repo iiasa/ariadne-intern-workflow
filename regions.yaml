@@ -89,6 +89,7 @@ Europäische Regionen:
   EU27_GBR_NOR_CHE:
     definition: EU27 + UK + Norwegen + Schweiz
   Europa (EU + Nicht-EU) ohne Deutschland:
+    abbr: Europe_excl_DEU
     definition: Albanien, Andorra, Belgien, Bosnien und Herzegowina, Bulgarien,
       Dänemark, Estland, Finnland, Frankreich, Griechenland, Irland, Island,
       Italien, Kasachstan, Kosovo, Kroatien, Lettland, Liechtenstein, Litauen,
