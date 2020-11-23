@@ -841,7 +841,7 @@ Capital Cost|Electricity|Biomass|w/ CCS:
     (with N = number of represented technologies). It is modeller''s choice which
     CCS biomass power technologies to assign to type 1 (assigned to the variable without
     number suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Biomass|w/o CCS:
   definition: 'Capital cost of a new biomass power plant w/o CCS. If more than one
     biomass power technology is modelled, modellers should report capital costs for
@@ -850,7 +850,7 @@ Capital Cost|Electricity|Biomass|w/o CCS:
     technologies). It is modeller''s choice which biomass power technologies to assign
     to type 1 (assigned to the variable without number suffix),2,...,N. The assignment
     should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Coal|w/ CCS:
   definition: 'Capital cost of a new coal power plant with CCS. If more than one CCS
     coal power technology is modelled (e.g. subcritical PC with post-combustion capture,
@@ -861,7 +861,7 @@ Capital Cost|Electricity|Coal|w/ CCS:
     N = number of represented technologies). It is modeller''s choice which CCS coal
     power technologies to assign to type 1 (assigned to the variable without number
     suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Coal|w/o CCS:
   definition: 'Capital cost of a new coal power plant w/o CCS. If more than one coal
     power technology is modelled (e.g. subcritical PC, supercritical PC, IGCC), modellers
@@ -870,7 +870,7 @@ Capital Cost|Electricity|Coal|w/o CCS:
     CCS|N (with N = number of represented technologies). It is modeller''s choice
     which coal power technologies to assign to type 1 (assigned to the variable without
     number suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Gas|w/ CCS:
   definition: 'Capital cost of a new gas power plant with CCS. If more than one CCS
     gas power technology is modelled, modellers should report capital costs for each
@@ -879,7 +879,7 @@ Capital Cost|Electricity|Gas|w/ CCS:
     technologies). It is modeller''s choice which CCS gas power technologies to assign
     to type 1 (assigned to the variable without number suffix),2,...,N. The assignment
     should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Gas|w/o CCS:
   definition: 'Capital cost of a new gas power plant w/o CCS. If more than one gas
     power technology is modelled, modellers should report capital costs for each represented
@@ -888,7 +888,7 @@ Capital Cost|Electricity|Gas|w/o CCS:
     It is modeller''s choice which gas power technologies to assign to type 1 (assigned
     to the variable without number suffix),2,...,N. The assignment should be documented
     in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Geothermal:
   definition: 'Capital cost of a new geothermal power plant. If more than one geothermal
     power technology is modelled, modellers should report capital costs for each represented
@@ -897,7 +897,7 @@ Capital Cost|Electricity|Geothermal:
     It is modeller''s choice which hydropower technologies to assign to type 1 (assigned
     to the variable without number suffix),2,...,N. The assignment should be documented
     in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Hydro:
   definition: 'Capital cost of a new hydropower plant. If more than one hydropower
     technology is modelled, modellers should report capital costs for each represented
@@ -906,7 +906,7 @@ Capital Cost|Electricity|Hydro:
     It is modeller''s choice which hydropower technologies to assign to type 1 (assigned
     to the variable without number suffix),2,...,N. The assignment should be documented
     in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Nuclear:
   definition: 'Capital cost of a new nuclear power plants. If more than one nuclear
     power plant technology is modelled (e.g., Gen II, III, IV; LWR, thermal reactors
@@ -916,7 +916,7 @@ Capital Cost|Electricity|Nuclear:
     of represented nuclear power technologies). It is modeller''s choice which nuclear
     power technologies to assign to type 1 (assigned to the variable without number
     suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Solar|CSP:
   definition: 'Capital cost of a new concentrated solar power plant. If more than
     one CSP technology is modelled (e.g., parabolic trough, solar power tower), modellers
@@ -925,7 +925,7 @@ Capital Cost|Electricity|Solar|CSP:
     (with N = number of represented CSP technologies). It is modeller''s choice which
     CSP technologies to assign to type 1 (assigned to the variable without number
     suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Solar|PV:
   definition: 'Capital cost of a new solar PV units. If more than one PV technology
     is modelled (e.g., centralized PV plant, distributed (rooftop) PV, crystalline
@@ -934,7 +934,7 @@ Capital Cost|Electricity|Solar|PV:
     (with N = number of represented PV technologies). It is modeller''s choice which
     PV technologies to assign to type 1 (assigned to the variable without number suffix),2,...,N.
     The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Wind|Offshore:
   definition: 'Capital cost of a new offshore wind power plants. This variable should
     only be filled, if wind power is separated into onshore and offshore. If more
@@ -945,7 +945,7 @@ Capital Cost|Electricity|Wind|Offshore:
     wind power technologies). It is modeller''s choice which offshore wind power technologies
     to assign to type 1 (assigned to the variable without number suffix),2,...,N.
     The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Electricity|Wind|Onshore:
   definition: 'Capital cost of a new onshore wind power plants. This variable should
     only be filled, if wind power is separated into onshore and offshore. If more
@@ -956,7 +956,7 @@ Capital Cost|Electricity|Wind|Onshore:
     wind power technologies). It is modeller''s choice which onshore wind power technologies
     to assign to type 1 (assigned to the variable without number suffix),2,...,N.
     The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Gases|Biomass|w/ CCS:
   definition: 'Capital cost of a new biomass to gas plant with CCS. If more than one
     CCS biomass to gas technology is modelled, modellers should report capital costs
@@ -965,7 +965,7 @@ Capital Cost|Gases|Biomass|w/ CCS:
     number of represented technologies). It is modeller''s choice which CCS biomass
     to gas technologies to assign to type 1 (assigned to the variable without number
     suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Gases|Biomass|w/o CCS:
   definition: 'Capital cost of a new biomass to gas plant w/o CCS. If more than one
     biomass to gas technology is modelled, modellers should report capital costs for
@@ -974,7 +974,7 @@ Capital Cost|Gases|Biomass|w/o CCS:
     technologies). It is modeller''s choice which biomass to gas technologies to assign
     to type 1 (assigned to the variable without number suffix),2,...,N. The assignment
     should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Gases|Coal|w/ CCS:
   definition: 'Capital cost of a new coal to gas plant with CCS. If more than one
     CCS coal to gas technology is modelled, modellers should report capital costs
@@ -983,7 +983,7 @@ Capital Cost|Gases|Coal|w/ CCS:
     It is modeller''s choice which CCS coal to gas technologies to assign to type
     1 (assigned to the variable without number suffix),2,...,N. The assignment should
     be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Gases|Coal|w/o CCS:
   definition: 'Capital cost of a new coal to gas plant w/o CCS. If more than one coal
     to gas technology is modelled, modellers should report capital costs for each
@@ -992,7 +992,7 @@ Capital Cost|Gases|Coal|w/o CCS:
     It is modeller''s choice which coal to gas technologies to assign to type 1 (assigned
     to the variable without number suffix),2,...,N. The assignment should be documented
     in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Biomass|w/ CCS:
   definition: 'Capital cost of a new biomass to hydrogen plant with CCS. If more than
     one CCS biomass to hydrogen technology is modelled, modellers should report capital
@@ -1002,7 +1002,7 @@ Capital Cost|Hydrogen|Biomass|w/ CCS:
     CCS biomass to hydrogen technologies to assign to type 1 (assigned to the variable
     without number suffix),2,...,N. The assignment should be documented in the comments
     sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Biomass|w/o CCS:
   definition: 'Capital cost of a new biomass to hydrogen plant w/o CCS. If more than
     one biomass to hydrogen technology is modelled, modellers should report capital
@@ -1012,7 +1012,7 @@ Capital Cost|Hydrogen|Biomass|w/o CCS:
     which biomass to hydrogen technologies to assign to type 1 (assigned to the variable
     without number suffix),2,...,N. The assignment should be documented in the comments
     sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Coal|w/ CCS:
   definition: 'Capital cost of a new coal to hydrogen plant with CCS. If more than
     one CCS coal to hydrogen technology is modelled, modellers should report capital
@@ -1021,7 +1021,7 @@ Capital Cost|Hydrogen|Coal|w/ CCS:
     N = number of represented technologies). It is modeller''s choice which CCS coal
     to hydrogen technologies to assign to type 1 (assigned to the variable without
     number suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Coal|w/o CCS:
   definition: 'Capital cost of a new coal to hydrogen plant w/o CCS. If more than
     one coal to hydrogen technology is modelled, modellers should report capital costs
@@ -1030,7 +1030,7 @@ Capital Cost|Hydrogen|Coal|w/o CCS:
     technologies). It is modeller''s choice which coal to hydrogen technologies to
     assign to type 1 (assigned to the variable without number suffix),2,...,N. The
     assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Electricity:
   definition: 'Capital cost of a new hydrogen-by-electrolysis plant. If more than
     hydrogen-by-electrolysis technology is modelled, modellers should report capital
@@ -1039,7 +1039,7 @@ Capital Cost|Hydrogen|Electricity:
     N = number of represented technologies). It is modeller''s choice which hydrogen-by-electrolysis
     technologies to assign to type 1 (assigned to the variable without number suffix),2,...,N.
     The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Gas|w/ CCS:
   definition: 'Capital cost of a new gas to hydrogen plant with CCS. If more than
     one CCS gas to hydrogen technology is modelled, modellers should report capital
@@ -1048,7 +1048,7 @@ Capital Cost|Hydrogen|Gas|w/ CCS:
     N = number of represented technologies). It is modeller''s choice which CCS gas
     to hydrogen technologies to assign to type 1 (assigned to the variable without
     number suffix),2,...,N. The assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Hydrogen|Gas|w/o CCS:
   definition: 'Capital cost of a new gas to hydrogen plant w/o CCS. If more than one
     gas to hydrogen technology is modelled, modellers should report capital costs
@@ -1057,7 +1057,7 @@ Capital Cost|Hydrogen|Gas|w/o CCS:
     technologies). It is modeller''s choice which gas to hydrogen technologies to
     assign to type 1 (assigned to the variable without number suffix),2,...,N. The
     assignment should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Biomass|w/ CCS:
   definition: 'Capital cost of a new biomass to liquids plant with CCS. If more than
     one CCS BTL technology is modelled, modellers should report capital costs for
@@ -1066,7 +1066,7 @@ Capital Cost|Liquids|Biomass|w/ CCS:
     technologies). It is modeller''s choice which CCS BTL technologies to assign to
     type 1 (assigned to the variable without number suffix),2,...,N. The assignment
     should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Biomass|w/o CCS:
   definition: 'Capital cost of a new biomass to liquids plant w/o CCS. If more than
     one BTL technology is modelled, modellers should report capital costs for each
@@ -1075,7 +1075,7 @@ Capital Cost|Liquids|Biomass|w/o CCS:
     technologies). It is modeller''s choice which BTL technologies to assign to type
     1 (assigned to the variable without number suffix),2,...,N. The assignment should
     be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Coal|w/ CCS:
   definition: 'Capital cost of a new coal to liquids plant with CCS. If more than
     one CCS CTL technology is modelled, modellers should report capital costs for
@@ -1084,7 +1084,7 @@ Capital Cost|Liquids|Coal|w/ CCS:
     technologies). It is modeller''s choice which CCS CTL technologies to assign to
     type 1 (assigned to the variable without number suffix),2,...,N. The assignment
     should be documented in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Coal|w/o CCS:
   definition: 'Capital cost of a new coal to liquids plant w/o CCS. If more than one
     CTL technology is modelled, modellers should report capital costs for each represented
@@ -1093,7 +1093,7 @@ Capital Cost|Liquids|Coal|w/o CCS:
     is modeller''s choice which CTL technologies to assign to type 1 (assigned to
     the variable without number suffix),2,...,N. The assignment should be documented
     in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Gas|w/ CCS:
   definition: 'Capital cost of a new gas to liquids plant with CCS. If more than one
     CCS GTL technology is modelled, modellers should report capital costs for each
@@ -1102,7 +1102,7 @@ Capital Cost|Liquids|Gas|w/ CCS:
     It is modeller''s choice which CCS GTL technologies to assign to type 1 (assigned
     to the variable without number suffix),2,...,N. The assignment should be documented
     in the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Gas|w/o CCS:
   definition: 'Capital cost of a new gas to liquids plant w/o CCS. If more than one
     GTL technology is modelled, modellers should report capital costs for each represented
@@ -1111,7 +1111,7 @@ Capital Cost|Liquids|Gas|w/o CCS:
     modeller''s choice which GTL technologies to assign to type 1 (assigned to the
     variable without number suffix),2,...,N. The assignment should be documented in
     the comments sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Cost|Liquids|Oil:
   definition: 'Capital cost of a new oil refining plant. If more than one refinery
     technology is modelled, modellers should report capital costs for each represented
@@ -1120,39 +1120,39 @@ Capital Cost|Liquids|Oil:
     choice which refinery technologies to assign to type 1 (assigned to the variable
     without number suffix),2,...,N. The assignment should be documented in the comments
     sheet. '
-  unit: "\u20AC2020/kW"
+  unit: EUR2020/kW
 Capital Formation:
   definition: net additions to the physical capital stock
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock:
   definition: Macroeconomic capital stock
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial:
   definition: end use capital in the residential & commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Appliances and Lighting:
   definition: end use capital for appliances and lighting in the residential & commercial
     sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Insulation:
   definition: end use capital for insulation in the residential & commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Space Cooling:
   definition: end use capital for space cooling in the residential & commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Space Heating:
   definition: end use capital for space heating in the residential & commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Water Heating and Cooking:
   definition: end use capital for water heating and cooking in the residential & commercial
     sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Water Heating and Cooking|Cooking:
   definition: end use capital for water heating in the residential & commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Capital Stock|Residential and Commercial|Water Heating and Cooking|Water Heating:
   definition: end use capital for cooking in the residential & commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Carbon Management|Carbon Capture:
   definition: 'total carbon dioxide emissions captured '
   unit: Mt CO2/yr
@@ -1267,7 +1267,7 @@ Carbon Sequestration|Other:
   unit: Mt CO2/yr
 Consumption:
   definition: total consumption of all goods, by all consumers in a region
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Cumulative Capacity|Electricity|Biomass:
   definition: Cumulative installed capacity (since 2005) of biomass power plants.
   unit: GW
@@ -2468,57 +2468,57 @@ Energy Service|Transportation|Passenger|within Europe:
   unit: bn pkm/yr
 Expenditure|Energy|Fossil:
   definition: Fossil fuel expenditure
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|RnD:
   definition: expenditure on research and development
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|government:
   definition: total government expenditure
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|household:
   definition: Total household expenditure
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|household|Energy:
   definition: expenditure of households for energy.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|household|Food:
   definition: expenditure of households for food.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|household|Industry:
   definition: expenditure of households for industrial goods.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|household|Services:
   definition: expenditure of households for services.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Expenditure|household|Services|health:
   definition: expenditure of households for health services.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export:
   definition: total exports measured in monetary quantities.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export|Developing Country Share:
   definition: "Developing countries\u2019 and least developed countries\u2019 share\
     \ of global exports"
   unit: '%'
 Export|Energy:
   definition: export of energy commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export|Industry:
   definition: export of industrial (non-energy) commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export|Industry|Energy:
   definition: export of energy commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export|Industry|Energy Intensive:
   definition: export of energy intensive commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export|Industry|Manufacturing:
   definition: export of manufacturing goods measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Export|Other:
   definition: export of other commodities measured in monetary units (please provide
     a definition of the sources in this category in the 'comments' tab).
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Final Energy:
   definition: total final energy consumption by all end-use sectors and all fuels,
     excluding transmission/distribution losses
@@ -3471,32 +3471,32 @@ Final Energy|Transportation|Passenger|within Europe|Solids:
   unit: PJ/yr
 GDP|MER:
   definition: GDP at market exchange rate
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 GDP|PPP:
   definition: GDP converted to International $ using purchasing power parity (PPP)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import:
   definition: total imports measured in monetary quantities.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import|Energy:
   definition: import of energy commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import|Industry:
   definition: import of industrial (non-energy) commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import|Industry|Energy:
   definition: Import of energy commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import|Industry|Energy Intensive:
   definition: Import of energy intensive commodities measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import|Industry|Manufacturing:
   definition: Import of manufacturing goods measured in monetary units.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Import|Other:
   definition: import of other commodities measured in monetary units (please provide
     a definition of the sources in this category in the 'comments' tab).
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Interest Rate|Real:
   definition: Real interest rate or return on capital that is relevant for energy
     system investments
@@ -3504,300 +3504,300 @@ Interest Rate|Real:
 Investment:
   definition: 'Total economy wide investments (macroecomic capital stock, energy system,
     R&D, ...) '
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Freight|Road|HDT|EV:
   definition: 'investments into new vehicle technologies in the transport sector (heavy-duty
     freight trucks: electric vehicle technologies, including all-electrics and plug-in
     hybrids)'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Freight|Road|HDT|FCV:
   definition: 'investments into new vehicle technologies in the transport sector (heavy-duty
     freight trucks: fuel cell technologies running on hydrogen or another type of
     fuel)'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Freight|Road|HDT|ICE:
   definition: 'investments into new vehicle technologies in the transport sector (heavy-duty
     freight trucks: internal combustion engine technologies running on any type of
     liquid or gaseous fuel)'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Passenger|Road|LDV|EV:
   definition: 'investments into new vehicle technologies in the transport sector (light-duty
     cars and trucks: electric vehicle technologies, including all-electrics and plug-in
     hybrids)'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Passenger|Road|LDV|FCV:
   definition: 'investments into new vehicle technologies in the transport sector (light-duty
     cars and trucks: fuel cell technologies running on hydrogen or another type of
     fuel)'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Passenger|Road|LDV|ICE:
   definition: 'investments into new vehicle technologies in the transport sector (light-duty
     cars and trucks: internal combustion engine technologies running on any type of
     liquid or gaseous fuel)'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Efficiency:
   definition: investments into the efficiency-increasing components of energy demand
     technologies
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply:
   definition: Investments into the energy supply system
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|CO2 Transport and Storage:
   definition: investment in CO2 transport and storage (note that investment in the
     capturing equipment should be included along with the power plant technology)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity:
   definition: Investments into electricity generation and supply (including electricity
     storage and transmission & distribution)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Biomass:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Biomass|w/ CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Biomass|w/o CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Coal:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Coal|w/ CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Coal|w/o CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Electricity Storage:
   definition: investments in electricity storage technologies (e.g., batteries, compressed
     air storage reservoirs, etc.)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Fossil:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Gas:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Gas|w/ CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Gas|w/o CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Geothermal:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Hydro:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Non-Biomass Renewables:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Non-fossil:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Nuclear:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Ocean:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Oil:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Oil|w/ CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Oil|w/o CCS:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Other:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Solar:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Transmission and Distribution:
   definition: investments in transmission and distribution of power generation
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Electricity|Wind:
   definition: investments in new power generation for the specified power plant category.
     If the model features several sub-categories, the total investments should be
     reported. For plants equipped with CCS, the investment in the capturing equipment
     should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Extraction|Bioenergy:
   definition: investments for extraction and production of bioenergy
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Extraction|Coal:
   definition: investments for extraction and conversion of coal. These should include
     mining, shipping and ports
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Extraction|Fossil:
   definition: investments for all types of fossil extraction
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Extraction|Gas:
   definition: investments for extraction and conversion of natural gas. These should
     include upstream, LNG chain and transmission and distribution
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Extraction|Oil:
   definition: investments for extraction and conversion of oil. These should include
     upstream, transport and refining
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Extraction|Uranium:
   definition: investments for extraction and conversion of uranium. These should include
     mining, conversion and enrichment
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Heat:
   definition: investments in heat generation facilities
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen:
   definition: investments for the production of hydrogen from all energy sources (fossil,
     biomass, electrolysis). For plants equipped with CCS, the investment in the capturing
     equipment should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen|Fossil:
   definition: investments for the production of hydrogen from the specified source.
     For plants equipped with CCS, the investment in the capturing equipment should
     be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen|Other:
   definition: investments for the production of hydrogen from the specified source.
     For plants equipped with CCS, the investment in the capturing equipment should
     be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen|Renewable:
   definition: investments for the production of hydrogen from the specified source.
     For plants equipped with CCS, the investment in the capturing equipment should
     be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Liquids:
   definition: investments for the production of liquid fuels. For plants equipped
     with CCS, the investment in the capturing equipment should be included but not
     the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Liquids|Biomass:
   definition: investments for the production of biofuels. These should not include
     the costs of the feedstock. For plants equipped with CCS, the investment in the
     capturing equipment should be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Liquids|Coal and Gas:
   definition: investments for the production of fossil-based synfuels (coal and gas).
     For plants equipped with CCS, the investment in the capturing equipment should
     be included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Liquids|Oil:
   definition: investments for the production of fossil fuels from oil refineries For
     plants equipped with CCS, the investment in the capturing equipment should be
     included but not the one on transport and storage.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Other:
   definition: investments in other types of energy conversion facilities
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure:
   definition: investment into infrastrucutre
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Industry|Green:
   definition: investment into industrial infrastructure (all types of new factories,
     plants, manufacturing facilities, etc. that are more efficient and utilize clean
     energy, as well as retrofits of non-green infrastructure to be more efficient
     and use clean energy)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Industry|Non-Green:
   definition: investment into industrial infrastructure (all types of new factories,
     plants, manufacturing facilities, etc. that are not overly efficient and do not
     utilize clean energy, as well as retrofits of non-green infrastructure that are
     neither efficient nor use clean energy)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Residential and Commercial|Building Retrofits:
   definition: investment into residential and commercial buildings infrastructure
     (all types of existing buildings that have been retrofitted to become more energy
     efficient)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Residential and Commercial|High-Efficiency Buildings:
   definition: investment into residential and commercial buildings infrastructure
     (all types of new buildings that are relatively high in their energy efficiency)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Residential and Commercial|Low-Efficiency Buildings:
   definition: investment into residential and commercial buildings infrastructure
     (all types of new buildings that are relatively low in their energy efficiency)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Residential and Commercial|Medium-Efficiency Buildings:
   definition: investment into residential and commercial buildings infrastructure
     (all types of new buildings that are relatively medium-range in their energy efficiency)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|Infrastructure|Transport:
   definition: 'investment into transport infrastructure - both newly constructed and
     maintenance of existing (all types: roads, bridges, ports, railways, refueling
     stations and charging infrastructure, etc.). Please specify in the comments section
     the type of infastructure that is being referred to here.'
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Investment|RnD|Energy Supply:
   definition: Investments into research and development, energy supply sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Lifetime|Electricity|Biomass|w/ CCS:
   definition: 'Lifetime of a new biomass power plant with CCS. Lifetime should be
     calculated by summing all vintages of a  capacity unit (e.g. (1+1+0.9+0.7+0.5)
@@ -4157,7 +4157,7 @@ OM Cost|Fixed|Electricity|Biomass|w/ CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Biomass|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass power plant
     w/o CCS. If more than one biomass power technology is modelled, modellers should
@@ -4166,7 +4166,7 @@ OM Cost|Fixed|Electricity|Biomass|w/o CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Coal|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new coal power plant
     with CCS. If more than one CCS coal power technology is modelled (e.g. subcritical
@@ -4177,7 +4177,7 @@ OM Cost|Fixed|Electricity|Coal|w/ CCS:
     ... OM Cost|Fixed|Electricity|Coal|w/ CCS|N (with N = number of represented technologies)
     (matching the assignment of plant types to technologies in the reporting of capital
     costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Coal|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new coal power plant
     w/o CCS. If more than one coal power technology is modelled (e.g. subcritical
@@ -4186,7 +4186,7 @@ OM Cost|Fixed|Electricity|Coal|w/o CCS:
     CCS|2, ... OM Cost|Fixed|Electricity|Coal|w/o CCS|N (with N = number of represented
     technologies) (matching the assignment of plant types to technologies in the reporting
     of capital costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Gas|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new gas power plant
     with CCS. If more than one CCS gas power technology is modelled, modellers should
@@ -4195,7 +4195,7 @@ OM Cost|Fixed|Electricity|Gas|w/ CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Gas|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new gas power plant
     w/o CCS. If more than one gas power technology is modelled, modellers should report
@@ -4204,7 +4204,7 @@ OM Cost|Fixed|Electricity|Gas|w/o CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Geothermal:
   definition: Annual fixed operation & maintainance cost of a new geothermal power
     plants. If more than one geothermal power plant technology is modelled (e.g.,
@@ -4213,7 +4213,7 @@ OM Cost|Fixed|Electricity|Geothermal:
     ... Capital|Cost|Electricity|Geothermal|N (with N = number of represented geothermal
     power technologies) (matching the assignment of plant types to technologies in
     the reporting of capital costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Hydro:
   definition: Annual fixed operation & maintainance cost of a new hydropower plant.
     If more than one hydropower technology is modelled, modellers should report fixed
@@ -4221,7 +4221,7 @@ OM Cost|Fixed|Electricity|Hydro:
     ... OM Cost|Fixed|Electricity|Hydro|N (with N = number of represented technologies)
     (matching the assignment of plant types to technologies in the reporting of capital
     costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Nuclear:
   definition: Annual fixed operation & maintainance cost of a new nuclear power plants.
     If more than one nuclear power plant technology is modelled (e.g., Gen II, III,
@@ -4231,7 +4231,7 @@ OM Cost|Fixed|Electricity|Nuclear:
     (with N = number of represented nuclear power technologies) (matching the assignment
     of plant types to technologies in the reporting of capital costs as documented
     in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Solar|CSP:
   definition: Annual fixed operation & maintainance cost of a new concentrated solar
     power plant. If more than one CSP technology is modelled (e.g., parabolic trough,
@@ -4240,7 +4240,7 @@ OM Cost|Fixed|Electricity|Solar|CSP:
     Capital|Cost|Electricity|Solar|CSP|N (with N = number of represented CSP technologies)
     (matching the assignment of plant types to technologies in the reporting of capital
     costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Solar|PV:
   definition: Annual fixed operation & maintainance cost of a new solar PV units.
     If more than one PV technology is modelled (e.g., centralized PV plant, distributed
@@ -4249,7 +4249,7 @@ OM Cost|Fixed|Electricity|Solar|PV:
     ... Capital|Cost|Electricity|Solar|PV|N (with N = number of represented PV technologies)
     (matching the assignment of plant types to technologies in the reporting of capital
     costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Wind:
   definition: Annual fixed operation & maintainance cost of a new wind power plants.
     This variable should only be filled, if wind power is not separated into onshore
@@ -4259,7 +4259,7 @@ OM Cost|Fixed|Electricity|Wind:
     ... Capital|Cost|Electricity|Wind|N (with N = number of represented wind power
     technologies) (matching the assignment of plant types to technologies in the reporting
     of capital costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Wind|Offshore:
   definition: Annual fixed operation & maintainance cost of a new offshore wind power
     plants. This variable should only be filled, if wind power is separated into onshore
@@ -4270,7 +4270,7 @@ OM Cost|Fixed|Electricity|Wind|Offshore:
     (with N = number of represented offshore wind power technologies) (matching the
     assignment of plant types to technologies in the reporting of capital costs as
     documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Electricity|Wind|Onshore:
   definition: Annual fixed operation & maintainance cost of a new onshore wind power
     plants. This variable should only be filled, if wind power is separated into onshore
@@ -4281,7 +4281,7 @@ OM Cost|Fixed|Electricity|Wind|Onshore:
     (with N = number of represented onshore wind power technologies) (matching the
     assignment of plant types to technologies in the reporting of capital costs as
     documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Gases|Biomass|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass to gas plant
     with CCS. If more than one CCS biomass to gas technology is modelled, modellers
@@ -4290,7 +4290,7 @@ OM Cost|Fixed|Gases|Biomass|w/ CCS:
     CCS|N (with N = number of represented technologies). (matching the assignment
     of plant types to technologies in the reporting of capital costs as documented
     in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Gases|Biomass|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass to gas plant
     w/o CCS. If more than one biomass to gas technology is modelled, modellers should
@@ -4299,7 +4299,7 @@ OM Cost|Fixed|Gases|Biomass|w/o CCS:
     CCS|N (with N = number of represented technologies). (matching the assignment
     of plant types to technologies in the reporting of capital costs as documented
     in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Gases|Coal|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new coal to gas plant
     with CCS. If more than one CCS coal to gas technology is modelled, modellers should
@@ -4308,7 +4308,7 @@ OM Cost|Fixed|Gases|Coal|w/ CCS:
     (with N = number of represented technologies) (matching the assignment of plant
     types to technologies in the reporting of capital costs as documented in the comments
     sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Gases|Coal|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new coal to gas plant
     w/o CCS. If more than one coal to gas technology is modelled, modellers should
@@ -4317,7 +4317,7 @@ OM Cost|Fixed|Gases|Coal|w/o CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Biomass|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass to hydrogen
     plant with CCS. If more than one CCS biomass to hydrogen technology is modelled,
@@ -4326,7 +4326,7 @@ OM Cost|Fixed|Hydrogen|Biomass|w/ CCS:
     Cost|Fixed|Hydrogen|Biomass|w/ CCS|N (with N = number of represented technologies)
     (matching the assignment of plant types to technologies in the reporting of capital
     costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Biomass|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass to hydrogen
     plant w/o CCS. If more than one biomass to hydrogen technology is modelled, modellers
@@ -4335,7 +4335,7 @@ OM Cost|Fixed|Hydrogen|Biomass|w/o CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Coal|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new coal to hydrogen
     plant with CCS. If more than one CCS coal to hydrogen technology is modelled,
@@ -4344,7 +4344,7 @@ OM Cost|Fixed|Hydrogen|Coal|w/ CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Coal|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new coal to hydrogen
     plant w/o CCS. If more than one coal to hydrogen technology is modelled, modellers
@@ -4353,7 +4353,7 @@ OM Cost|Fixed|Hydrogen|Coal|w/o CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Electricity:
   definition: Annual fixed operation & maintainance cost of a new hydrogen-by-electrolysis
     plant. If more than hydrogen-by-electrolysis technology is modelled, modellers
@@ -4362,7 +4362,7 @@ OM Cost|Fixed|Hydrogen|Electricity:
     (with N = number of represented technologies) (matching the assignment of plant
     types to technologies in the reporting of capital costs as documented in the comments
     sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Gas|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new gas to hydrogen
     plant with CCS. If more than one CCS gas to hydrogen technology is modelled, modellers
@@ -4371,7 +4371,7 @@ OM Cost|Fixed|Hydrogen|Gas|w/ CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Hydrogen|Gas|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new gas to hydrogen
     plant w/o CCS. If more than one gas to hydrogen technology is modelled, modellers
@@ -4380,7 +4380,7 @@ OM Cost|Fixed|Hydrogen|Gas|w/o CCS:
     CCS|N (with N = number of represented technologies) (matching the assignment of
     plant types to technologies in the reporting of capital costs as documented in
     the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Biomass|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass to liquids
     plant with CCS. If more than one CCS BTL technology is modelled, modellers should
@@ -4389,7 +4389,7 @@ OM Cost|Fixed|Liquids|Biomass|w/ CCS:
     (with N = number of represented technologies) (matching the assignment of plant
     types to technologies in the reporting of capital costs as documented in the comments
     sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Biomass|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new biomass to liquids
     plant w/o CCS. If more than one BTL technology is modelled, modellers should report
@@ -4397,7 +4397,7 @@ OM Cost|Fixed|Liquids|Biomass|w/o CCS:
     CCS|2, ... OM Cost|Fixed|Liquids|Biomass|w/o CCS|N (with N = number of represented
     technologies) (matching the assignment of plant types to technologies in the reporting
     of capital costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Coal|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new coal to liquids
     plant with CCS. If more than one CCS CTL technology is modelled, modellers should
@@ -4406,7 +4406,7 @@ OM Cost|Fixed|Liquids|Coal|w/ CCS:
     N = number of represented technologies) (matching the assignment of plant types
     to technologies in the reporting of capital costs as documented in the comments
     sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Coal|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new coal to liquids
     plant w/o CCS. If more than one CTL technology is modelled, modellers should report
@@ -4414,7 +4414,7 @@ OM Cost|Fixed|Liquids|Coal|w/o CCS:
     CCS|2, ... OM Cost|Fixed|Liquids|Coal|w/o CCS|N (with N = number of represented
     technologies) (matching the assignment of plant types to technologies in the reporting
     of capital costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Gas|w/ CCS:
   definition: Annual fixed operation & maintainance cost of a new gas to liquids plant
     with CCS. If more than one CCS GTL technology is modelled, modellers should report
@@ -4423,7 +4423,7 @@ OM Cost|Fixed|Liquids|Gas|w/ CCS:
     N = number of represented technologies) (matching the assignment of plant types
     to technologies in the reporting of capital costs as documented in the comments
     sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Gas|w/o CCS:
   definition: Annual fixed operation & maintainance cost of a new gas to liquids plant
     w/o CCS. If more than one GTL technology is modelled, modellers should report
@@ -4431,7 +4431,7 @@ OM Cost|Fixed|Liquids|Gas|w/o CCS:
     CCS|2, ... OM Cost|Fixed|Liquids|Gas|w/o CCS|N (with N = number of represented
     technologies) (matching the assignment of plant types to technologies in the reporting
     of capital costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 OM Cost|Fixed|Liquids|Oil:
   definition: Annual fixed operation & maintainance cost of a new oil refining plant.
     If more than one refinery technology is modelled, modellers should report fixed
@@ -4439,26 +4439,26 @@ OM Cost|Fixed|Liquids|Oil:
     ... OM Cost|Fixed|Liquids|Oil|N (with N = number of represented technologies)
     (matching the assignment of plant types to technologies in the reporting of capital
     costs as documented in the comments sheet).
-  unit: "\u20AC2020/kW/yr"
+  unit: EUR2020/kW/yr
 Policy Cost|Additional Total Energy System Cost:
   definition: additional energy system cost associated with the policy
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Policy Cost|Area under MAC Curve:
   definition: total costs of the policy, i.e. the area under the Marginal Abatement
     Cost (MAC) curve
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Policy Cost|Consumption Loss:
   definition: consumption loss in a policy scenario compared to the corresponding
     baseline (losses should be reported as positive numbers)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Policy Cost|GDP Loss:
   definition: GDP loss in a policy scenario compared to the corresponding baseline
     (losses should be reported as positive numbers)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Policy Cost|Other:
   definition: any other indicator of policy cost (e.g., compensated variation). (please
     indicate what type of policy cost is measured on the 'comments' tab)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Population:
   definition: Total population
   unit: million
@@ -4474,196 +4474,196 @@ Population|Working Age:
 Price|Carbon:
   definition: price of carbon (for regional aggregrates the weighted price of carbon
     by subregion should be used)
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|ETS:
   definition: Price of carbon within the EU ETS
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|EU-wide Regulation All Sectors:
   definition: Price of carbon that all sectors would see due to an EU-wide emission
     limit or carbon price. This does not include ETS prices
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|EU-wide Regulation Non-ETS:
   definition: Price of carbon implied by EU-wide Non-ETS sector target
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|National Climate Target:
   definition: Price of carbon due to national policies for all sectors - either from
     a direct carbon price, or as result of a national climate target
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|National Climate Target Non-ETS:
   definition: Price of carbon due to national policies for the non-ETS sectors - either
     from a direct carbon price, or as result of a national climate target for these
     sectors
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|Net|Electricity:
   definition: Net price of carbon applicable at national level for electricity sector
     (= sum of all overlapping regulations)
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|Net|Industry:
   definition: Net price of carbon applicable at national level for industry sector
     (= sum of all overlapping regulations)
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|Net|Residential and Commercial:
   definition: Net price of carbon applicable at national level for residential and
     commercial sector (= sum of all overlapping regulations)
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Carbon|Net|Transport:
   definition: Net price of carbon applicable at national level for transport sector
     (= sum of all overlapping regulations)
-  unit: "\u20AC2020/t CO2"
+  unit: EUR2020/t CO2
 Price|Final Energy|Industry|Electricity:
   definition: Electricity price at the final level in the industrial sector. Prices
     should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Industry|Gases:
   definition: Price for gases at the final level in the industrial sector. Prices
     should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Industry|Heat:
   definition: Heat price at the final level in the industrial sector. Prices should
     include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Industry|Hydrogen:
   definition: Hydrogen price at the final level in the industrial sector. Prices should
     include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Industry|Liquids:
   definition: Liquids price at the final level in the industrial sector. Prices should
     include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Industry|Solids:
   definition: Solids price at the final level in the industrial sector. Prices should
     include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Electricity:
   definition: electricity price at the final level in the residential sector. Prices
     should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Gases:
   definition: natural gas price at the final level in the residential sector. Prices
     should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Gases|Natural Gas:
   definition: natural gas price at the final level in the residential sector. Prices
     should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Hydrogen:
   definition: natural gas price at the final level in the residential sector. Prices
     should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Liquids:
   definition: biofuel price at the final level in the residential sector. Prices should
     include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Liquids|Biomass:
   definition: biofuel price at the final level in the residential sector. Prices should
     include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Liquids|Oil:
   definition: light fuel oil price at the final level in the residential sector. Prices
     should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Solids:
   definition: biomass price at the final level in the residential sector. Prices should
     include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Solids|Biomass:
   definition: biomass price at the final level in the residential sector. Prices should
     include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Residential|Solids|Coal:
   definition: coal price at the final level in the residential sector. Prices should
     include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Freight|Electricity:
   definition: Electricity price at the final level in the freight transport sector.
     Prices should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Freight|Gases:
   definition: Price for gases at the final level in the freight transport sector.
     Prices should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Freight|Hydrogen:
   definition: Hydrogen price at the final level in the freight transport sector. Prices
     should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Freight|Liquids:
   definition: Liquids price at the final level in the freight transport sector. Prices
     should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Freight|Solids:
   definition: Solids price at the final level in the freight transport sector. Prices
     should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Passenger|Electricity:
   definition: Electricity price at the final level in the passenger transport sector.
     Prices should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Passenger|Gases:
   definition: Price for gases at the final level in the passenger transport sector.
     Prices should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Passenger|Hydrogen:
   definition: Hydrogen price at the final level in the passenger transport sector.
     Prices should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Passenger|Liquids:
   definition: Liquids price at the final level in the passenger transport sector.
     Prices should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Passenger|Solids:
   definition: Solids price at the final level in the passenger transport sector. Prices
     should include the effect of carbon prices and all other taxes.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Primary Energy|Biomass:
   definition: biomass producer price
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Primary Energy|Coal:
   definition: coal price at the primary level (i.e. the spot price at the global or
     regional market)
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Primary Energy|Gas:
   definition: natural gas price at the primary level (i.e. the spot price at the global
     or regional market)
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Primary Energy|Oil:
   definition: crude oil price at the primary level (i.e. the spot price at the global
     or regional market)
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Electricity:
   definition: electricity price at the secondary level, i.e. for large scale consumers
     (e.g. aluminum production).  Prices should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Gases:
   definition: Price for gases at the secondary level,  i.e. for large scale consumers
     (e.g. gas power plant). Prices should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Gases|Natural Gas:
   definition: natural gas price at the secondary level, i.e. for large scale consumers
     (e.g. gas power plant). Prices should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Hydrogen:
   definition: hydrogen price at the secondary level. Prices should include the effect
     of carbon prices
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Liquids:
   definition: liquid fuel price at the secondary level, i.e. petrol, diesel, or weighted
     average
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Liquids|Biomass:
   definition: biofuel price at the secondary level, i.e. for biofuel consumers
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Liquids|Oil:
   definition: light fuel oil price at the secondary level, i.e. for large scale consumers
     (e.g. oil power plant). Prices should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Solids|Biomass:
   definition: biomass price at the secondary level, i.e. for large scale consumers
     (e.g. biomass power plant). Prices should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Price|Secondary Energy|Solids|Coal:
   definition: coal price at the secondary level, i.e. for large scale consumers (e.g.
     coal power plant). Prices should include the effect of carbon prices.
-  unit: "\u20AC2020/GJ"
+  unit: EUR2020/GJ
 Primary Energy:
   definition: total primary energy consumption (direct equivalent)
   unit: PJ/yr
@@ -4926,10 +4926,10 @@ Production|Steel:
   unit: Mt/year
 Revenue|government:
   definition: government revenue
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Revenue|government|Tax:
   definition: government revenue from taxes
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Secondary Energy:
   definition: total secondary energy - the sum of all secondary energy carrier production
     (for consistency checks)
@@ -5299,13 +5299,13 @@ Secondary Energy|Solids|Coal:
   unit: PJ/yr
 Subsidies|Energy:
   definition: Total energy-related subsidies
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Subsidies|Energy|Fossil:
   definition: Fossil fuel subsidies
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Subsidies|Food:
   definition: Food subsidies (both to producers and consumers)
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Tariffs|Average:
   definition: Weighted trade tariff-average (regional and global indicator relevant)
   unit: '%'
@@ -5315,10 +5315,10 @@ Tariffs|Average|Imports:
 Trade:
   definition: net exports of all goods, at the global level these should add up to
     the trade losses only
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Trade|Emissions Allowances|Value:
   definition: value of trade in GHG emission allowances
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Trade|Emissions Allowances|Volume:
   definition: physical trade volume in GHG emission allowances
   unit: Mt CO2-equiv/yr
@@ -5687,19 +5687,19 @@ Useful Energy|Transportation|Passenger|Train|Solids:
   unit: PJ/yr
 Value Added|Agriculture:
   definition: value added of the agricultural sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Value Added|Commercial:
   definition: value added of the commercial sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Value Added|Industry:
   definition: value added of the industry sector
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Value Added|Industry|Energy:
   definition: value added of the energy-related sectors
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Value Added|Industry|Energy Intensive:
   definition: value added of the energy-intensive industries.
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
 Value Added|Industry|Manufacturing:
   definition: value added of the manufacturing sectors
-  unit: "billion \u20AC2020/yr"
+  unit: billion EUR2020/yr
