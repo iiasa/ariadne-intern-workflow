@@ -26,12 +26,12 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 
     if illegal_vars:
         msg = 'The following variables are not defined in the project template:'
-        log.error('ERROR: ' + '\n - '.join([msg] + illegal_vars) + '\n')
+        log.error('\n - '.join([msg] + illegal_vars) + '\n')
 
     if illegal_units:
         msg = 'The following units are not in line with the project template:'
         lst = [f'{v} - expected: {e}, found: {u}' for v, u, e in illegal_units]
-        log.error('ERROR: ' + '\n - '.join([msg] + lst) + '\n')
+        log.error('\n - '.join([msg] + lst) + '\n')
 
     # return empty IamDataFrame if illegal variables or units
     if illegal_vars or illegal_units:
