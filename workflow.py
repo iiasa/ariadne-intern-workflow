@@ -10,9 +10,23 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Main function for validation and processing"""
     log.info('Starting ARIADNE timeseries-upload processing workflow...')
 
-    # load allowed list of variables
-    file = os.path.join(os.path.dirname(__file__), 'variables.yml')
-    with open(file, 'r') as stream:
+    # load list of allowed scenario names
+    scen_file = os.path.join(os.path.dirname(__file__), 'scenarios.yml')
+    with open(scen_file, 'r') as stream:
+        scenario_list = yaml.load(stream, Loader=yaml.FullLoader)
+
+    # validate list of submitted scenarios
+    illegal_scens = [s for s in df.scenario if s not in scenario_list]
+
+    if illegal_scens:
+        msg = 'The following scenarios are not defined in the project template:'
+        log.error('\n - '.join([msg] + illegal_scens) + '\n')
+        log.error('Aborting scenario import!')
+        return df.filter(scenario='')
+
+    # load list of allowed variables
+    var_file = os.path.join(os.path.dirname(__file__), 'variables.yml')
+    with open(var_file, 'r') as stream:
         variable_config = yaml.load(stream, Loader=yaml.FullLoader)
 
     # validate variables and against valid template
