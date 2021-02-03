@@ -63,24 +63,15 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 
         # if the meta column exists, check that values are allowed
         if key in df.meta.columns:
-            _meta = df.meta.loc[~df.meta[key].isna(), key]
-            _illegal_meta = [v for v in set(_meta) if v not in value]
-            if _illegal_meta:
-                df.set_meta(name='exclude', meta=True,
-                            index=df.filter(**{key: _illegal_meta}).index)
-                n = len(df.filter(exclude=True).index)
-                s = 's' if n > 1 else ''
-                log.error(f'Unknown values {_illegal_meta} for {key}, '
-                          f'dropping {n} scenario{s}')
-                # remove scenarios
-                df.filter(exclude=False, inplace=True)
-
-            # set any nan-values in the meta column to the default value
-            df.meta.loc[df.meta[key].isna(), key] = value[0]
-
+            unknown = [v for v in df.meta[key].unique() if v not in value]
+            if unknown:
+                log.warning(f'Unknown values {unknown} for `{key}`, '
+                            f'setting to default `{value[0]}`')
+                df.meta[key] = [v if v in value else value[0]
+                                for v in df.meta[key]]
         # if meta indicated was not provided, set to default
         else:
-            log.info(f'Setting indicator `{key}` to {value[0]}')
+            log.info(f'Setting `{key}` to default `{value[0]}`')
             df.set_meta(name=key, meta=value[0])
 
     return df
