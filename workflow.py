@@ -9,7 +9,7 @@ log = logging.getLogger(__name__)
 # allowed values for required meta columns, use first of list as default
 ALLOWED_META = {
     'Quality Assessment': ['preliminary', 'advanced', 'mature'],
-    'Kopernikus Release': [False, True],
+    'Internal usage within Kopernikus AG Szenarien': [False, True],
 }
 
 
