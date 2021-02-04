@@ -6,6 +6,13 @@ import pyam
 log = logging.getLogger(__name__)
 
 
+# allowed values for required meta columns, use first of list as default
+ALLOWED_META = {
+    'Quality Assessment': ['preliminary', 'advanced', 'mature'],
+    'Internal usage within Kopernikus AG Szenarien': [False, True],
+}
+
+
 def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Main function for validation and processing"""
     log.info('Starting ARIADNE timeseries-upload processing workflow...')
@@ -50,5 +57,21 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     # return empty IamDataFrame if illegal variables or units
     if illegal_vars or illegal_units:
         df.filter(model='', inplace=True)
+
+    # validate meta columns for accepted values (if provided) or assign default
+    for key, value in ALLOWED_META.items():
+
+        # if the meta column exists, check that values are allowed
+        if key in df.meta.columns:
+            unknown = [v for v in df.meta[key].unique() if v not in value]
+            if unknown:
+                log.warning(f'Unknown values {unknown} for `{key}`, '
+                            f'setting to default `{value[0]}`')
+                df.meta[key] = [v if v in value else value[0]
+                                for v in df.meta[key]]
+        # if meta indicated was not provided, set to default
+        else:
+            log.info(f'Setting `{key}` to default `{value[0]}`')
+            df.set_meta(name=key, meta=value[0])
 
     return df
