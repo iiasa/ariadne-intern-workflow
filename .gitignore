@@ -1,6 +1,7 @@
 # data files
 *.csv
 *.xlsx
+!attachments/*.xlsx
 
 # figures
 *.png
