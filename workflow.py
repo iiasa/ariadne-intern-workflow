@@ -3,7 +3,9 @@ import logging
 import yaml
 import pyam
 
-log = logging.getLogger(__name__)
+# define logger for this script at logging level INFO
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 
 # allowed values for required meta columns, use first of list as default
