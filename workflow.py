@@ -11,7 +11,7 @@ logger.setLevel(logging.INFO)
 # allowed values for required meta columns, use first of list as default
 ALLOWED_META = {
     "Quality Assessment": ["preliminary", "advanced", "mature"],
-    "Internal usage within Kopernikus AG Szenarien": [False, True],
+    "Internal usage within Kopernikus AG Szenarien": ["no", "yes"],
 }
 
 
@@ -59,6 +59,13 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     # return empty IamDataFrame if illegal variables or units
     if illegal_vars or illegal_units:
         df.filter(model="", inplace=True)
+
+    # remove unexpected meta columns
+    expected_meta = list(ALLOWED_META) + ["exclude"]
+    unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
+    if unexpected_meta:
+        logger.warning(f"Removing unexpected meta indicators: {unexpected_meta}")
+        df.meta.drop(unexpected_meta, axis=1, inplace=True)
 
     # validate meta columns for accepted values (if provided) or assign default
     for key, value in ALLOWED_META.items():
