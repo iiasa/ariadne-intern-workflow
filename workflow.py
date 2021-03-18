@@ -44,7 +44,7 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     with open(var_file, "r") as stream:
         variable_config = yaml.load(stream, Loader=yaml.FullLoader)
 
-    # validate variables and against valid template
+    # validate variables and units against template
     illegal_vars, illegal_units = [], []
 
     for i, (var, unit) in df.variables(include_units=True).iterrows():
@@ -59,10 +59,6 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     if illegal_units:
         lst = [f"{v} - expected: {e}, found: {u}" for v, u, e in illegal_units]
         raise_error("units", lst)
-
-    # return empty IamDataFrame if illegal variables or units
-    if illegal_vars or illegal_units:
-        df.filter(model="", inplace=True)
 
     # remove unexpected meta columns
     expected_meta = list(ALLOWED_META) + ["exclude"]
