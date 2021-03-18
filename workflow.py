@@ -1,4 +1,3 @@
-import os
 from pathlib import Path
 import logging
 import yaml
@@ -40,8 +39,7 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
         raise_error("scenarios", illegal_scens)
 
     # load list of allowed variables
-    var_file = os.path.join(os.path.dirname(__file__), "variables.yml")
-    with open(var_file, "r") as stream:
+    with open(path / "variables.yml", "r") as stream:
         variable_config = yaml.load(stream, Loader=yaml.FullLoader)
 
     # validate variables and units against template
