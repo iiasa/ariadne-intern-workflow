@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 import logging
 import yaml
 import pyam
@@ -7,6 +8,8 @@ import pyam
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+# get path to folder with definitions
+path = Path(__file__).parent
 
 # allowed values for required meta columns, use first of list as default
 ALLOWED_META = {
@@ -15,23 +18,26 @@ ALLOWED_META = {
 }
 
 
+def raise_error(name, lst):
+    """Compile an error message, write to log and raise an error"""
+    msg = f"The following {name} are not defined in the project template:"
+    error = "\n - ".join([msg] + lst)
+    logger.error(error)
+    raise ValueError(error)
+
+
 def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Main function for validation and processing"""
-    logger.info("Starting ARIADNE timeseries-upload processing workflow...")
 
     # load list of allowed scenario names
-    scen_file = os.path.join(os.path.dirname(__file__), "scenarios.yml")
-    with open(scen_file, "r") as stream:
+    with open(path / "scenarios.yml", "r") as stream:
         scenario_list = yaml.load(stream, Loader=yaml.FullLoader)
 
     # validate list of submitted scenarios
     illegal_scens = [s for s in df.scenario if s not in scenario_list]
 
     if illegal_scens:
-        msg = "The following scenarios are not defined in the project template:"
-        logger.error("\n - ".join([msg] + illegal_scens) + "\n")
-        logger.error("Aborting scenario import!")
-        return df.filter(scenario="")
+        raise_error("scenarios", illegal_scens)
 
     # load list of allowed variables
     var_file = os.path.join(os.path.dirname(__file__), "variables.yml")
@@ -48,13 +54,11 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
             illegal_units.append((var, unit, variable_config[var]["unit"]))
 
     if illegal_vars:
-        msg = "The following variables are not defined in the project template:"
-        logger.error("\n - ".join([msg] + illegal_vars) + "\n")
+        raise_error("variables", illegal_vars)
 
     if illegal_units:
-        msg = "The following units are not in line with the project template:"
         lst = [f"{v} - expected: {e}, found: {u}" for v, u, e in illegal_units]
-        logger.error("\n - ".join([msg] + lst) + "\n")
+        raise_error("units", lst)
 
     # return empty IamDataFrame if illegal variables or units
     if illegal_vars or illegal_units:
