@@ -1277,6 +1277,9 @@ Carbon Management|Carbon Capture and Storage:
 Carbon Management|Carbon Capture and Storage|Biomass:
   definition: total carbon dioxide from biomass captured and stored underground
   unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|DACCS:
+  definition: total carbon dioxide from direct air capture stored underground
+  unit: Mt CO2/yr
 Carbon Management|Carbon Capture and Storage|Fossil:
   definition: total carbon dioxide from fossil sources captured and stored underground
   unit: Mt CO2/yr
@@ -2144,13 +2147,50 @@ Emissions|CO2|Energy|Demand|Industry:
     1A2), net of negative emissions from Bioenergy with CCS (BECCS), excluding emissions
     related to feedstocks
   unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Chemicals:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the chemicals
+    sector
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Engineering:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the engineering
+    sector
+  unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Final Energy Consumption:
   definition: Fossil CO2 emissions from fuel combustion in industry due to final energy
     consumption excluding industry autoproduction, excluding emissions related to
     feedstocks
   unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Food and Tobacco:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the food and
+    tobacco sector
+  unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Industrial Autoproduction:
   definition: Fossil CO2 emissions from Industrial Autoproducers
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the non-ferrous
+    metals sector
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the non-metallic
+    minerals sector
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Pulp and Paper:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the pulp and
+    paper sector
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Steel:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the iron and
+    steel sector
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|Vehicle Construction:
+  definition: Fossil CO2 emissions from fuel combustion in industry in the vehicle
+    construction sector
+  unit: Mt CO2/yr
+Emissions|CO2|Energy|Demand|Industry|other Industries:
+  definition: Fossil CO2 emissions from fuel combustion in industry in other sectors
+    (please provide a definition of thesesectors in this category in the 'comments'
+    tab)
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Other Sector:
   definition: Fossil CO2 emissions from fuel combustion in other energy supply sectors
@@ -2834,8 +2874,7 @@ Final Energy:
     bunkers
   unit: PJ/yr
 Final Energy incl Non-Energy Use incl Bunkers:
-  definition: final energy consumed, excluding feedstocks, including bunkers and including
-    non-energy use
+  definition: final energy consumed, including bunkers and including non-energy use
   unit: PJ/yr
 Final Energy|Agriculture:
   definition: total final energy consumption by the agriculture sector
