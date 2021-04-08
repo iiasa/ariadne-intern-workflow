@@ -1,4 +1,5 @@
 from pathlib import Path
+import pandas as pd
 import logging
 import yaml
 import pyam
@@ -58,6 +59,27 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
         lst = [f"{v} - expected: {e}, found: {u}" for v, u, e in illegal_units]
         raise_error("units", lst)
 
+    # recasting from 'time' domain to 'year' + 'subannual'
+    if df.time_col == "time":
+        logger.info('Re-casting from "time" column to "subannual" format')
+        df = swap_time_for_subannual(df)
+
+    # validating entries in the 'subannual' column (if present)
+    if "subannual" in df.extra_cols:
+        valid_subannual = ["Year"] + list(
+            map(
+                lambda x: x.strftime("%m-%d %H:%M%z").replace("+0100", "+01:00"),
+                pd.date_range(
+                    start="2020-01-01 00:00+01:00",
+                    end="2020-12-31 23:00+01:00",
+                    freq="H",
+                ),
+            )
+        )
+        illegal_subannual = [s for s in df.subannual if s not in valid_subannual]
+        if illegal_subannual:
+            raise_error("subannual timesteps", illegal_subannual)
+
     # remove unexpected meta columns
     expected_meta = list(ALLOWED_META) + ["exclude"]
     unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
@@ -83,3 +105,18 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
             df.set_meta(name=key, meta=value[0])
 
     return df
+
+
+def swap_time_for_subannual(df):
+    """Convert an IamDataFrame with 'time' (datetime) domain to 'year' + 'subannual'"""
+    if df.time_col != "time":
+        raise ValueError("The IamDataFrame does not have `datetime` domain!")
+
+    data = df.data
+    data["year"] = [x.year for x in data.time]
+    data["subannual"] = [
+        x.strftime("%m-%d %H:%M%z").replace("+0100", "+01:00") for x in data.time
+    ]
+    data.drop(columns="time", inplace=True)
+
+    return pyam.IamDataFrame(data, meta=df.meta)
