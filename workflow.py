@@ -39,6 +39,44 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     if illegal_scens:
         raise_error("scenarios", illegal_scens)
 
+    # call validation function for variables, regions and subannual time resolution
+    df = _validate(df)
+
+    # remove unexpected meta columns
+    expected_meta = list(ALLOWED_META) + ["exclude"]
+    unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
+    if unexpected_meta:
+        logger.warning(f"Removing unexpected meta indicators: {unexpected_meta}")
+        df.meta.drop(unexpected_meta, axis=1, inplace=True)
+
+    # validate meta columns for accepted values (if provided) or assign default
+    for key, value in ALLOWED_META.items():
+
+        # if the meta column exists, check that values are allowed
+        if key in df.meta.columns:
+            unknown = [v for v in df.meta[key].unique() if v not in value]
+            if unknown:
+                logger.warning(
+                    f"Unknown values {unknown} for `{key}`, "
+                    f"setting to default `{value[0]}`"
+                )
+                df.meta[key] = [v if v in value else value[0] for v in df.meta[key]]
+        # if meta indicated was not provided, set to default
+        else:
+            logger.info(f"Setting `{key}` to default `{value[0]}`")
+            df.set_meta(name=key, meta=value[0])
+
+    return df
+
+
+def kopernikus(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    """Main function for validation and processing for the Kopernikus instance"""
+    return _validate(df)
+
+
+def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    """Validation function for variables, regions, and subannual time resolution"""
+
     # load list of allowed variables
     with open(path / "variables.yml", "r") as stream:
         variable_config = yaml.load(stream, Loader=yaml.FullLoader)
@@ -79,30 +117,6 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
         illegal_subannual = [s for s in df.subannual if s not in valid_subannual]
         if illegal_subannual:
             raise_error("subannual timesteps", illegal_subannual)
-
-    # remove unexpected meta columns
-    expected_meta = list(ALLOWED_META) + ["exclude"]
-    unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
-    if unexpected_meta:
-        logger.warning(f"Removing unexpected meta indicators: {unexpected_meta}")
-        df.meta.drop(unexpected_meta, axis=1, inplace=True)
-
-    # validate meta columns for accepted values (if provided) or assign default
-    for key, value in ALLOWED_META.items():
-
-        # if the meta column exists, check that values are allowed
-        if key in df.meta.columns:
-            unknown = [v for v in df.meta[key].unique() if v not in value]
-            if unknown:
-                logger.warning(
-                    f"Unknown values {unknown} for `{key}`, "
-                    f"setting to default `{value[0]}`"
-                )
-                df.meta[key] = [v if v in value else value[0] for v in df.meta[key]]
-        # if meta indicated was not provided, set to default
-        else:
-            logger.info(f"Setting `{key}` to default `{value[0]}`")
-            df.set_meta(name=key, meta=value[0])
 
     return df
 
