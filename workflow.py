@@ -12,9 +12,14 @@ logger.setLevel(logging.INFO)
 path = Path(__file__).parent
 
 # allowed values for required meta columns, use first of list as default
-ALLOWED_META = {
+ALLOWED_META_ARIADNE = {
     "Quality Assessment": ["preliminary", "advanced", "mature"],
     "Internal usage within Kopernikus AG Szenarien": ["no", "yes"],
+}
+
+ALLOWED_META_KOPERNIKUS = {
+    "Quality Assessment": ["preliminary", "advanced", "mature"],
+    "Release for publication": ["no", "yes"],
 }
 
 
@@ -27,7 +32,7 @@ def raise_error(name, lst):
 
 
 def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
-    """Main function for validation and processing"""
+    """Main function for validation and processing (for the ARIADNE-intern instance)"""
 
     # load list of allowed scenario names
     with open(path / "scenarios.yml", "r") as stream:
@@ -42,36 +47,22 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     # call validation function for variables, regions and subannual time resolution
     df = _validate(df)
 
-    # remove unexpected meta columns
-    expected_meta = list(ALLOWED_META) + ["exclude"]
-    unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
-    if unexpected_meta:
-        logger.warning(f"Removing unexpected meta indicators: {unexpected_meta}")
-        df.meta.drop(unexpected_meta, axis=1, inplace=True)
-
-    # validate meta columns for accepted values (if provided) or assign default
-    for key, value in ALLOWED_META.items():
-
-        # if the meta column exists, check that values are allowed
-        if key in df.meta.columns:
-            unknown = [v for v in df.meta[key].unique() if v not in value]
-            if unknown:
-                logger.warning(
-                    f"Unknown values {unknown} for `{key}`, "
-                    f"setting to default `{value[0]}`"
-                )
-                df.meta[key] = [v if v in value else value[0] for v in df.meta[key]]
-        # if meta indicated was not provided, set to default
-        else:
-            logger.info(f"Setting `{key}` to default `{value[0]}`")
-            df.set_meta(name=key, meta=value[0])
+    # call validation function for meta indicators
+    df = _validate_meta(df, ALLOWED_META_ARIADNE)
 
     return df
 
 
 def kopernikus(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Main function for validation and processing for the Kopernikus instance"""
-    return _validate(df)
+
+    # call validation function for variables, regions and subannual time resolution
+    df = _validate(df)
+
+    # call validation function for meta indicators
+    df = _validate_meta(df, ALLOWED_META_KOPERNIKUS)
+
+    return df
 
 
 def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
@@ -120,6 +111,35 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 
     return df
 
+
+def _validate_meta(df: pyam.IamDataFrame, allowed_meta: dict) -> pyam.IamDataFrame:
+    """Validation function for meta indicators"""
+
+    # remove unexpected meta columns
+    expected_meta = list(allowed_meta) + ["exclude"]
+    unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
+    if unexpected_meta:
+        logger.warning(f"Removing unexpected meta indicators: {unexpected_meta}")
+        df.meta.drop(unexpected_meta, axis=1, inplace=True)
+
+    # validate meta columns for accepted values (if provided) or assign default
+    for key, value in allowed_meta.items():
+
+        # if the meta column exists, check that values are allowed
+        if key in df.meta.columns:
+            unknown = [v for v in df.meta[key].unique() if v not in value]
+            if unknown:
+                logger.warning(
+                    f"Unknown values {unknown} for `{key}`, "
+                    f"setting to default `{value[0]}`"
+                )
+                df.meta[key] = [v if v in value else value[0] for v in df.meta[key]]
+        # if meta indicated was not provided, set to default
+        else:
+            logger.info(f"Setting `{key}` to default `{value[0]}`")
+            df.set_meta(name=key, meta=value[0])
+
+    return df
 
 def swap_time_for_subannual(df):
     """Convert an IamDataFrame with 'time' (datetime) domain to 'year' + 'subannual'"""
