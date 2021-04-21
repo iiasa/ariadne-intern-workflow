@@ -804,6 +804,12 @@ Capacity|Heat|Solar thermal:
   definition: Total installed (available) capacity of solar thermal heat fed into
     district heating systems
   unit: GW
+Capacity|Heat|Storage Converter:
+  definition: Total installed net converter capacity of central thermal storages
+  unit: GW
+Capacity|Heat|Storage Reservoir:
+  definition: Total installed net capacity of central thermal storages
+  unit: GW
 Capacity|Hydrogen:
   definition: Total installed (available) capacity of all hydrogen plants.
   unit: GW
@@ -2149,11 +2155,13 @@ Emissions|CO2|Energy|Demand|Industry:
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Chemicals:
   definition: Fossil CO2 emissions from fuel combustion in industry in the chemicals
-    sector
+    sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding emissions
+    related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Engineering:
   definition: Fossil CO2 emissions from fuel combustion in industry in the engineering
-    sector
+    sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding emissions
+    related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Final Energy Consumption:
   definition: Fossil CO2 emissions from fuel combustion in industry due to final energy
@@ -2162,35 +2170,42 @@ Emissions|CO2|Energy|Demand|Industry|Final Energy Consumption:
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Food and Tobacco:
   definition: Fossil CO2 emissions from fuel combustion in industry in the food and
-    tobacco sector
+    tobacco sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
+    emissions related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Industrial Autoproduction:
   definition: Fossil CO2 emissions from Industrial Autoproducers
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals:
   definition: Fossil CO2 emissions from fuel combustion in industry in the non-ferrous
-    metals sector
+    metals sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
+    emissions related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals:
   definition: Fossil CO2 emissions from fuel combustion in industry in the non-metallic
-    minerals sector
+    minerals sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
+    emissions related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Pulp and Paper:
   definition: Fossil CO2 emissions from fuel combustion in industry in the pulp and
-    paper sector
+    paper sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
+    emissions related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Steel:
   definition: Fossil CO2 emissions from fuel combustion in industry in the iron and
-    steel sector
+    steel sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
+    emissions related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|Vehicle Construction:
   definition: Fossil CO2 emissions from fuel combustion in industry in the vehicle
-    construction sector
+    construction sector, net of negative emissions from Bioenergy with CCS (BECCS),
+    excluding emissions related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Industry|other Industries:
   definition: Fossil CO2 emissions from fuel combustion in industry in other sectors
-    (please provide a definition of thesesectors in this category in the 'comments'
-    tab)
+    (please provide a definition of these sectors in this category in the 'comments'
+    tab), net of negative emissions from Bioenergy with CCS (BECCS), excluding emissions
+    related to feedstocks
   unit: Mt CO2/yr
 Emissions|CO2|Energy|Demand|Other Sector:
   definition: Fossil CO2 emissions from fuel combustion in other energy supply sectors
@@ -2290,7 +2305,8 @@ Emissions|CO2|Industrial Processes:
   definition: CO2 emissions from industrial processes (IPCC categories 2A, B, C, E)
   unit: Mt CO2/yr
 Emissions|CO2|Industry:
-  definition: CO2 emissions by the industrial sector (energy and process emissions)
+  definition: CO2 emissions by the industrial sector (energy and process emissions),
+    net of negative emissions from Bioenergy with CCS (BECCS)
   unit: Mt CO2/yr
 Emissions|CO2|Other:
   definition: CO2 emissions from other sources (please provide a definition of other
@@ -2817,6 +2833,40 @@ Energy Service|Transportation|Passenger|Road|LDV|ICE:
   unit: bn pkm/yr
 Expenditure|Energy|Fossil:
   definition: Fossil fuel expenditure
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry:
+  definition: energy expenditure of the industry
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Chemicals:
+  definition: energy expenditure of the chemicals sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Engineering:
+  definition: energy expenditure of the engineering sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Food and Tobacco:
+  definition: energy expenditure of the food and tobacco sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Non-Ferrous Metals:
+  definition: energy expenditure of the non-ferrous metals sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Non-Metallic Minerals:
+  definition: energy expenditure of the non-metallic minerals sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Pulp and Paper:
+  definition: energy expenditure of the pulp and paper sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Steel:
+  definition: energy expenditure of the iron and steel sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|Vehicle Construction:
+  definition: energy expenditure of the vehicle construction sector
+  unit: billion EUR2020/yr
+Expenditure|Energy|Industry|other Industries:
+  definition: energy expenditure of other industry sectors (please provide a definition
+    of the industries in this category in the 'comments' tab)
+  unit: billion EUR2020/yr
+Expenditure|Energy|Infrastructure:
+  definition: investment into infrastrucutre
   unit: billion EUR2020/yr
 Expenditure|RnD:
   definition: expenditure on research and development
@@ -4988,52 +5038,140 @@ Investment:
   definition: Total economy wide investments (macroecomic capital stock, energy system,
     R&D, ...)
   unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial:
+  definition: investment into residential and commercial building shells (not including
+    the costs of the general building structure, technical equipment, etc.)
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Building Retrofits:
+  definition: investment into residential and commercial building shells (all types
+    of existing buildings that have been retrofitted to become more energy efficient),
+    not including the costs of the general building structure, technical equipment,
+    etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Building Retrofits|High-Efficiency:
+  definition: investment into residential and commercial building shells (all types
+    of existing buildings that have been retrofitted to become highly energy efficient),
+    not including the costs of the general building structure, technical equipment,
+    etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Building Retrofits|Medium-Efficiency:
+  definition: investment into residential and commercial building shells (all types
+    of existing buildings that have been retrofitted to become medium energy efficient),
+    not including the costs of the general building structure, technical equipment,
+    etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Building Retrofits|Reduction of Flow-Temperature:
+  definition: investment into residential and commercial building shells (switch from
+    a high temperature heating system (e.g. radiatior) to a low temperature heating
+    system (e.g. floor-heating)), not including the costs of the general building
+    structure, technical equipment, etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|High-Efficiency Buildings:
+  definition: investment into residential and commercial building shells(all types
+    of new buildings that are relatively high in their energy efficiency), not including
+    the costs of the general building structure, technical equipment, etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Low-Efficiency Buildings:
+  definition: investment into residential and commercial building shells (all types
+    of new buildings that are relatively low in their energy efficiency), not including
+    the costs of the general building structure, technical equipment, etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Medium-Efficiency Buildings:
+  definition: investment into residential and commercial building shells (all types
+    of new buildings that are relatively medium-range in their energy efficiency),
+    not including the costs of the general building structure, technical equipment,
+    etc.
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating:
+  definition: investments into space heating devices for individual buildings in the
+    Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Biomass Boiler:
+  definition: investments into decentral biomass (wood) boilers for individual buildings
+    in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|CHP:
+  definition: investments into decentral micro combined heat and power units (<100
+    kWel) for individual buildings in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Gas Boiler:
+  definition: investments into decentral gas boilers for individual buildings in the
+    Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Heat Pump:
+  definition: investments into decentral heat pumps for individual buildings in the
+    Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Hydrogen Boiler:
+  definition: investments into decentral hydrogen boilers for individual buildings
+    in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Hydrogen Fuel Cell:
+  definition: investments into decentral hydrogen fuel cells for electricity and heat
+    for individual buildings in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Methane Fuel Cell:
+  definition: investments into decentral methane fuel cells for elelctricity and heat
+    for individual buildings in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Oil Boiler:
+  definition: investments into decentral oil boilers for individual buildings in the
+    Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Solar Thermal:
+  definition: investments into decentral solar thermal heating for individual buildings
+    in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
+Investment|Energy Demand|Residential and Commercial|Space Heating|Thermal Storage:
+  definition: investments into decentral thermal storages for individual buildings
+    in the Residential and Commercial Sector
+  unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation:
   definition: investments into new vehicle technologies in the transport sector
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Bus:
-  definition: 'investments into new vehicle technologies in the transport sector (heavy
+  definition: 'investments through new vehicle purchases in the transport sector (heavy
     duty vehicles i.e. buses: internal combustion engine technologies running on any
     type of liquid or gaseous fuel)'
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|LDV:
-  definition: investments into new vehicle technologies in the transport sector (light-duty
+  definition: investments through new vehicle purchases in the transport sector (light-duty
     cars and trucks)
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|LDV|BEV:
-  definition: 'investments into new vehicle technologies in the transport sector (light-duty
+  definition: 'investments through new vehicle purchases in the transport sector (light-duty
     cars and trucks: electric vehicle technologies, including all-electrics and plug-in
     hybrids)'
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|LDV|FCEV:
-  definition: 'investments into new vehicle technologies in the transport sector (light-duty
+  definition: 'investments through new vehicle purchases in the transport sector (light-duty
     cars and trucks: fuel cell technologies running on hydrogen or another type of
     fuel)'
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|LDV|ICE:
-  definition: 'investments into new vehicle technologies in the transport sector (light-duty
+  definition: 'investments through new vehicle purchases in the transport sector (light-duty
     cars and trucks: internal combustion engine technologies running on any type of
     liquid or gaseous fuel; including hybrids and plug-in hybrids)'
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Rail:
-  definition: investments into new vehicle technologies in the transport sector (rail)
+  definition: investments through new vehicle purchases in the transport sector (rail)
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Truck:
-  definition: investments into new vehicle technologies in the transport sector (heavy-duty
+  definition: investments through new vehicle purchases in the transport sector (heavy-duty
     freight trucks)
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Truck|BEV:
-  definition: 'investments into new vehicle technologies in the transport sector (heavy-duty
+  definition: 'investments through new vehicle purchases in the transport sector (heavy-duty
     freight trucks: electric vehicle technologies, including all-electrics and plug-in
     hybrids)'
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Truck|FCEV:
-  definition: 'investments into new vehicle technologies in the transport sector (heavy-duty
+  definition: 'investments through new vehicle purchases in the transport sector (heavy-duty
     freight trucks: fuel cell technologies running on hydrogen or another type of
     fuel)'
   unit: billion EUR2020/yr
 Investment|Energy Demand|Transportation|Truck|ICE:
-  definition: 'investments into new vehicle technologies in the transport sector (heavy-duty
+  definition: 'investments through new vehicle purchases in the transport sector (heavy-duty
     freight trucks: internal combustion engine technologies running on any type of
     liquid or gaseous fuel, including hybrids and plug-in hybrids)'
   unit: billion EUR2020/yr
@@ -5213,8 +5351,14 @@ Investment|Energy Supply|Extraction|Uranium:
   definition: investments for extraction and conversion of uranium. These should include
     mining, conversion and enrichment
   unit: billion EUR2020/yr
+Investment|Energy Supply|Gases|Transmission and Distribution:
+  definition: investments into transmission and distribution of gases
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Heat:
   definition: investments in heat generation facilities
+  unit: billion EUR2020/yr
+Investment|Energy Supply|Heat|Transmission and Distribution:
+  definition: investments into district heating infrastructure
   unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen:
   definition: investments for the production of hydrogen from all energy sources (fossil,
@@ -5235,6 +5379,9 @@ Investment|Energy Supply|Hydrogen|Renewable:
   definition: investments for the production of hydrogen from the specified source.
     For plants equipped with CCS, the investment in the capturing equipment should
     be included but not the one on transport and storage.
+  unit: billion EUR2020/yr
+Investment|Energy Supply|Hydrogen|Transmission and Distribution:
+  definition: investments into transmission and distribution of hydrogen
   unit: billion EUR2020/yr
 Investment|Energy Supply|Liquids:
   definition: investments for the production of liquid fuels. For plants equipped
@@ -5259,8 +5406,36 @@ Investment|Energy Supply|Liquids|Oil:
 Investment|Energy Supply|Other:
   definition: investments in other types of energy conversion facilities
   unit: billion EUR2020/yr
-Investment|Infrastructure:
-  definition: investment into infrastrucutre
+Investment|Industry:
+  definition: investments into industry
+  unit: billion EUR2020/yr
+Investment|Industry|Chemicals:
+  definition: investments into the chemicals sector
+  unit: billion EUR2020/yr
+Investment|Industry|Engineering:
+  definition: investments into the engineering sector
+  unit: billion EUR2020/yr
+Investment|Industry|Food and Tobacco:
+  definition: investments into the food and tobacco sector
+  unit: billion EUR2020/yr
+Investment|Industry|Non-Ferrous Metals:
+  definition: investments into the non-ferrous metals sector
+  unit: billion EUR2020/yr
+Investment|Industry|Non-Metallic Minerals:
+  definition: investments into the non-metallic minerals sector
+  unit: billion EUR2020/yr
+Investment|Industry|Pulp and Paper:
+  definition: investments into the pulp and paper sector
+  unit: billion EUR2020/yr
+Investment|Industry|Steel:
+  definition: investments into the iron and steel sector
+  unit: billion EUR2020/yr
+Investment|Industry|Vehicle Construction:
+  definition: investments into the vehicle construction sector
+  unit: billion EUR2020/yr
+Investment|Industry|other Industries:
+  definition: investments into other industry sectors (please provide a definition
+    of the industries in this category in the 'comments' tab)
   unit: billion EUR2020/yr
 Investment|Infrastructure|Industry|Green:
   definition: investment into industrial infrastructure (all types of new factories,
@@ -5273,23 +5448,6 @@ Investment|Infrastructure|Industry|Non-Green:
     plants, manufacturing facilities, etc. that are not overly efficient and do not
     utilize clean energy, as well as retrofits of non-green infrastructure that are
     neither efficient nor use clean energy)
-  unit: billion EUR2020/yr
-Investment|Infrastructure|Residential and Commercial|Building Retrofits:
-  definition: investment into residential and commercial buildings infrastructure
-    (all types of existing buildings that have been retrofitted to become more energy
-    efficient)
-  unit: billion EUR2020/yr
-Investment|Infrastructure|Residential and Commercial|High-Efficiency Buildings:
-  definition: investment into residential and commercial buildings infrastructure
-    (all types of new buildings that are relatively high in their energy efficiency)
-  unit: billion EUR2020/yr
-Investment|Infrastructure|Residential and Commercial|Low-Efficiency Buildings:
-  definition: investment into residential and commercial buildings infrastructure
-    (all types of new buildings that are relatively low in their energy efficiency)
-  unit: billion EUR2020/yr
-Investment|Infrastructure|Residential and Commercial|Medium-Efficiency Buildings:
-  definition: investment into residential and commercial buildings infrastructure
-    (all types of new buildings that are relatively medium-range in their energy efficiency)
   unit: billion EUR2020/yr
 Investment|Infrastructure|Transport:
   definition: 'investment into transport infrastructure - both newly constructed and
@@ -6755,6 +6913,15 @@ Primary Energy|Wind:
 Production|Chemicals:
   definition: production of chemicals (e.g. sulfuric acid)
   unit: Mt/yr
+Production|Chemicals|Ammonia:
+  definition: Production of ammonia
+  unit: Mt/yr
+Production|Chemicals|Ethylene:
+  definition: Production of ethylene
+  unit: Mt/yr
+Production|Chemicals|Methanol:
+  definition: Production of methanol
+  unit: Mt/yr
 Production|Non-Ferrous Metals:
   definition: production of non-ferrous metals (e.g., aluminum)
   unit: Mt/yr
@@ -6782,6 +6949,171 @@ Revenue|government:
 Revenue|government|Tax:
   definition: government revenue from taxes
   unit: billion EUR2020/yr
+Sales|Transport|LDV|Large:
+  definition: Sales of large cars (EEC class D)
+  unit: thousand vehicles
+Sales|Transport|LDV|Large|BEV:
+  definition: Sales of large battery electric cars (EEC class D)
+  unit: thousand vehicles
+Sales|Transport|LDV|Large|FCEV:
+  definition: Sales of large fuel cell electric cars (EEC class D)
+  unit: thousand vehicles
+Sales|Transport|LDV|Large|HEV:
+  definition: Sales of Large hybrid electric cars (EEC class D)
+  unit: thousand vehicles
+Sales|Transport|LDV|Large|ICEV:
+  definition: Sales of large internal combustion engine cars (EEC class D)
+  unit: thousand vehicles
+Sales|Transport|LDV|Large|PHEV:
+  definition: Sales of Large plug-in hybrid electric cars (EEC class D)
+  unit: thousand vehicles
+Sales|Transport|LDV|Medium:
+  definition: Sales of medium cars (EEC class C)
+  unit: thousand vehicles
+Sales|Transport|LDV|Medium|BEV:
+  definition: Sales of medium battery electric cars (EEC class C)
+  unit: thousand vehicles
+Sales|Transport|LDV|Medium|FCEV:
+  definition: Sales of medium fuel cell electric cars (EEC class C)
+  unit: thousand vehicles
+Sales|Transport|LDV|Medium|HEV:
+  definition: Sales of Medium hybrid electric cars (EEC class C)
+  unit: thousand vehicles
+Sales|Transport|LDV|Medium|ICEV:
+  definition: Sales of medium internal combustion engine cars (EEC class C)
+  unit: thousand vehicles
+Sales|Transport|LDV|Medium|PHEV:
+  definition: Sales of Medium plug-in hybrid electric cars (EEC class C)
+  unit: thousand vehicles
+Sales|Transport|LDV|Mini:
+  definition: Sales of mini cars (EEC class A)
+  unit: thousand vehicles
+Sales|Transport|LDV|Mini|BEV:
+  definition: Sales of mini battery electric cars (EEC class A)
+  unit: thousand vehicles
+Sales|Transport|LDV|Mini|FCEV:
+  definition: Sales of mini fuel cell electric cars (EEC class A)
+  unit: thousand vehicles
+Sales|Transport|LDV|Mini|HEV:
+  definition: Sales of mini hybrid electric cars (EEC class A)
+  unit: thousand vehicles
+Sales|Transport|LDV|Mini|ICEV:
+  definition: Sales of mini internal combustion engine cars (EEC class A)
+  unit: thousand vehicles
+Sales|Transport|LDV|Mini|PHEV:
+  definition: Sales of mini plug-in hybrid electric cars (EEC class A)
+  unit: thousand vehicles
+Sales|Transport|LDV|SUV:
+  definition: Sales of SUVs (EEC class J)
+  unit: thousand vehicles
+Sales|Transport|LDV|SUV|BEV:
+  definition: Sales of battery electric SUVs (EEC class J)
+  unit: thousand vehicles
+Sales|Transport|LDV|SUV|FCEV:
+  definition: Sales of fuel cell electric SUVs (EEC class J)
+  unit: thousand vehicles
+Sales|Transport|LDV|SUV|HEV:
+  definition: Sales of hybrid electric SUVs (EEC class J)
+  unit: thousand vehicles
+Sales|Transport|LDV|SUV|ICEV:
+  definition: Sales of internal combustion engine SUVs (EEC class J)
+  unit: thousand vehicles
+Sales|Transport|LDV|SUV|PHEV:
+  definition: Sales of plug-in hybrid electric SUVs (EEC class J)
+  unit: thousand vehicles
+Sales|Transport|LDV|Small:
+  definition: Sales of small cars (EEC class B)
+  unit: thousand vehicles
+Sales|Transport|LDV|Small|BEV:
+  definition: Sales of small battery electric cars (EEC class B)
+  unit: thousand vehicles
+Sales|Transport|LDV|Small|FCEV:
+  definition: Sales of small fuel cell electric cars (EEC class B)
+  unit: thousand vehicles
+Sales|Transport|LDV|Small|HEV:
+  definition: Sales of Small hybrid electric cars (EEC class B)
+  unit: thousand vehicles
+Sales|Transport|LDV|Small|ICEV:
+  definition: Sales of small internal combustion engine cars (EEC class B)
+  unit: thousand vehicles
+Sales|Transport|LDV|Small|PHEV:
+  definition: Sales of Small plug-in hybrid electric cars (EEC class B)
+  unit: thousand vehicles
+Sales|Transport|LDV|Two-Wheelers:
+  definition: Sales of two-wheelers
+  unit: thousand vehicles
+Sales|Transport|LDV|Two-Wheelers|BEV:
+  definition: Sales of battery electric two-wheelers
+  unit: thousand vehicles
+Sales|Transport|LDV|Two-Wheelers|ICEV:
+  definition: Sales of internal combustion engine two-wheelers
+  unit: thousand vehicles
+Sales|Transport|LDV|Van:
+  definition: Sales of Vans (EEC class M)
+  unit: thousand vehicles
+Sales|Transport|LDV|Van|BEV:
+  definition: Sales of battery electric Vans (EEC class M)
+  unit: thousand vehicles
+Sales|Transport|LDV|Van|FCEV:
+  definition: Sales of fuel cell electric Vans (EEC class M)
+  unit: thousand vehicles
+Sales|Transport|LDV|Van|HEV:
+  definition: Sales of hybrid electric Vans (EEC class M)
+  unit: thousand vehicles
+Sales|Transport|LDV|Van|ICEV:
+  definition: Sales of internal combustion engine Vans (EEC class M)
+  unit: thousand vehicles
+Sales|Transport|LDV|Van|PHEV:
+  definition: Sales of plug-in hybrid electric Vans (EEC class M)
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (0-3.5t):
+  definition: Sales of trucks with weight < 3.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (0-3.5t)|BEV:
+  definition: Sales of battery electric trucks with weight < 3.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (0-3.5t)|FCEV:
+  definition: Sales of fuel-cell electric trucks with weight < 3.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (0-3.5t)|ICEV:
+  definition: Sales of internal-combustion engine trucks with weight < 3.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (26t):
+  definition: Sales of trucks with weight 26t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (26t)|BEV:
+  definition: Sales of battery electric trucks with weight 26t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (26t)|FCEV:
+  definition: Sales of fuel-cell electric trucks with weight 26t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (26t)|ICEV:
+  definition: Sales of internal-combustion engine trucks with weight 26t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (40t):
+  definition: Sales of trucks with weight 40t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (40t)|BEV:
+  definition: Sales of battery electric trucks with weight 40t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (40t)|FCEV:
+  definition: Sales of fuel-cell electric trucks with weight 40t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (40t)|ICEV:
+  definition: Sales of internal-combustion engine trucks with weight 40t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (7.5t):
+  definition: Sales of trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (7.5t)|BEV:
+  definition: Sales of battery electric trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (7.5t)|FCEV:
+  definition: Sales of fuel cell electric trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
+Sales|Transport|Truck|Truck (7.5t)|ICEV:
+  definition: Sales of internal combustion engine trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
 Sale|Transportation|Bus:
   definition: Sale of heavy buses
   unit: million
@@ -6804,9 +7136,15 @@ Sale|Transportation|LDV|BEV:
 Sale|Transportation|LDV|FCEV:
   definition: Sale of light duty fuel cell electric vehicles
   unit: million
+Sale|Transportation|LDV|HEV:
+  definition: Sale of light duty hybrid electric vehicles
+  unit: million
 Sale|Transportation|LDV|ICE:
   definition: Sale of light duty vehicles with internal combustion engine including
     hybrids and plug-in hybrids
+  unit: million
+Sale|Transportation|LDV|PHEV:
+  definition: Sale of light duty plug-in hybrid electric vehicles
   unit: million
 Sale|Transportation|Truck:
   definition: Sale of heavy trucks
@@ -6832,6 +7170,9 @@ Secondary Energy Input|Electricity|Heat:
 Secondary Energy Input|Electricity|Hydrogen:
   definition: secondary energy consumption of electricity for the production of hydrogen
   unit: PJ/yr
+Secondary Energy Input|Electricity|Hydrogen|Autoproduction:
+  definition: secondary energy consumption of hydrogen for the autoproduction of electricity
+  unit: PJ/yr
 Secondary Energy Input|Hydrogen|Electricity:
   definition: secondary energy consumption of hydrogen for the production of electricity
   unit: PJ/yr
@@ -6843,8 +7184,13 @@ Secondary Energy Input|Hydrogen|Liquids:
   definition: secondary energy consumption of hydrogen for the production of liquids
     (synfuels)
   unit: PJ/yr
+Secondary Energy Input|Hydrogen|Liquids|Autoproduction:
+  definition: secondary energy consumption of hydrogen for the autoproduction of liquids,
+    incl. hydrocarbon inputs for olefine production
+  unit: PJ/yr
 Secondary Energy|Electricity:
-  definition: total net electricity production
+  definition: total net electricity production, incl. electricity for hydrogen storage
+    that is then converted back to electricity
   unit: PJ/yr
 Secondary Energy|Electricity|Biomass:
   definition: net electricity production from municipal solid waste, purpose-grown
@@ -7167,6 +7513,10 @@ Secondary Energy|Hydrogen|Coal|w/o CCS:
 Secondary Energy|Hydrogen|Electricity:
   definition: hydrogen production from electricity via electrolysis
   unit: PJ/yr
+Secondary Energy|Hydrogen|Electricity|Autoproduction:
+  definition: Production of hydrogen from electricity by autoproducers (in units of
+    output)
+  unit: PJ/yr
 Secondary Energy|Hydrogen|Fossil:
   definition: hydrogen production from fossil fuels
   unit: PJ/yr
@@ -7281,6 +7631,9 @@ Secondary Energy|Liquids|Gas|w/o CCS:
 Secondary Energy|Liquids|Hydrogen:
   definition: Total production of liquids from hydrogen and CO2
   unit: PJ/yr
+Secondary Energy|Liquids|Hydrogen|Autoproduction:
+  definition: Production of liquids from hydrogen by autoproducers (in units of output)
+  unit: PJ/yr
 Secondary Energy|Liquids|Oil:
   definition: total production of liquid fuels from petroleum, including both conventional
     and unconventional sources
@@ -7305,146 +7658,146 @@ Secondary Energy|Solids|Coal:
   definition: solid secondary energy carriers produced from coal (e.g., briquettes,
     coke)
   unit: PJ/yr
-Stock|Space Heating|Heating Device:
-  definition: Stock of space heating devices
-  unit: million
-Stock|Space Heating|Heating Device|Biomass Boiler:
+Stock|Space Heating|Biomass Boiler:
   definition: Stock of decentral biomass (wood) boilers for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Biomass Boiler|HT:
+Stock|Space Heating|Biomass Boiler|HT:
   definition: Stock of decentral biomass (wood) boilers for individual buildings in
     a high temperature system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Biomass Boiler|LT:
+Stock|Space Heating|Biomass Boiler|LT:
   definition: Stock of decentral biomass (wood) boilers for individual buildings in
     a low temperature system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|CHP:
+Stock|Space Heating|CHP:
   definition: Stock of decentral micro combined heat and power units (<100 kWel) for
     individual buildings
   unit: million
-Stock|Space Heating|Heating Device|CHP|HT:
+Stock|Space Heating|CHP|HT:
   definition: Stock of decentral micro combined heat and power units (<100 kWel) for
     individual buildings in a high temperature system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|CHP|LT:
+Stock|Space Heating|CHP|LT:
   definition: Stock of decentral micro combined heat and power units (<100 kWel) for
     individual buildings in a low temperature system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|District Heating:
+Stock|Space Heating|District Heating:
   definition: Stock of buildings connected to district heating. Installed capacities
     for different district heating technologies are given in Capacity|Heat variables
   unit: million
-Stock|Space Heating|Heating Device|Gas Boiler:
+Stock|Space Heating|Gas Boiler:
   definition: Stock of decentral gas boilers for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Gas Boiler|HT:
+Stock|Space Heating|Gas Boiler|HT:
   definition: Stock of decentral gas boilers for individual buildings in a high temperature
     system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Gas Boiler|LT:
+Stock|Space Heating|Gas Boiler|LT:
   definition: Stock of decentral gas boilers for individual buildings in a low temperature
     system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump:
+Stock|Space Heating|Heat Pump:
   definition: Stock of decentral heat pumps for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical:
+Stock|Space Heating|Heat Pump|Electrical:
   definition: 'Stock of decentral electrical heat pumps (heat source: ground and air)
     for individual buildings'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical|Air:
+Stock|Space Heating|Heat Pump|Electrical|Air:
   definition: 'Stock of decentral electrical heat pumps (heat source: air) for individual
     buildings'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical|Air|HT:
+Stock|Space Heating|Heat Pump|Electrical|Air|HT:
   definition: 'Stock of decentral electrical heat pumps (heat source: air) for individual
     buildings in a high temperature system (i.e. radiator)'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical|Air|LT:
+Stock|Space Heating|Heat Pump|Electrical|Air|LT:
   definition: 'Stock of decentral electrical heat pumps (heat source: air) for individual
     buildings in a low temperature system (i.e. floor heating)'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical|Ground:
+Stock|Space Heating|Heat Pump|Electrical|Ground:
   definition: 'Stock of decentral electrical heat pumps (heat source: ground) for
     individual buildings'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical|Ground|HT:
+Stock|Space Heating|Heat Pump|Electrical|Ground|HT:
   definition: 'Stock of decentral electrical heat pumps (heat source: ground) for
     individual buildings in a high temperature system (i.e. radiator)'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Electrical|Ground|LT:
+Stock|Space Heating|Heat Pump|Electrical|Ground|LT:
   definition: 'Stock of decentral electrical heat pumps (heat source: ground) for
     individual buildings in a low temperature system (i.e. floor heating)'
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Gas:
+Stock|Space Heating|Heat Pump|Gas:
   definition: Stock of decentral gas heat pumps for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Gas|HT:
+Stock|Space Heating|Heat Pump|Gas|HT:
   definition: Stock of decentral gas heat pumps for individual buildings in a high
     temperature system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Gas|LT:
+Stock|Space Heating|Heat Pump|Gas|LT:
   definition: Stock of decentral gas heat pumps for individual buildings in a low
     temperature system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Hybrid:
+Stock|Space Heating|Heat Pump|Hybrid:
   definition: Stock of decentral hybrid heat pumps (electrical heat pump with heat
     source air and gas boiler) for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Hybrid|HT:
+Stock|Space Heating|Heat Pump|Hybrid|HT:
   definition: Stock of decentral hybrid heat pumps (electrical heat pump with heat
     source air and gas boiler) for individual buildings in a high temperature system
     (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Heat Pump|Hybrid|LT:
+Stock|Space Heating|Heat Pump|Hybrid|LT:
   definition: Stock of decentral hybrid heat pumps (electrical heat pump with heat
     source air and gas boiler) for individual buildings in a low temperature system
     (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|Hydrogen Boiler:
+Stock|Space Heating|Heating Device:
+  definition: Stock of space heating devices
+  unit: million
+Stock|Space Heating|Hydrogen Boiler:
   definition: Stock of decentral hydrogen boilers for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Hydrogen Boiler|HT:
+Stock|Space Heating|Hydrogen Boiler|HT:
   definition: Stock of decentral hydrogen boilers for individual buildings in a high
     temperature system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Hydrogen Boiler|LT:
+Stock|Space Heating|Hydrogen Boiler|LT:
   definition: Stock of decentral hydrogen boilers for individual buildings in a low
     temperature system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|Hydrogen Fuel Cell:
+Stock|Space Heating|Hydrogen Fuel Cell:
   definition: Stock of decentral hydrogen fuel cells for electricity and heat for
     individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Hydrogen Fuel Cell|HT:
+Stock|Space Heating|Hydrogen Fuel Cell|HT:
   definition: Stock of decentral hydrogen fuel cells for electricity and heat for
     individual buildings in a high temperature system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Hydrogen Fuel Cell|LT:
+Stock|Space Heating|Hydrogen Fuel Cell|LT:
   definition: Stock of decentral hydrogen fuel cells for electricity and heat for
     individual buildings in a low temperature system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|Methane Fuel Cell:
+Stock|Space Heating|Methane Fuel Cell:
   definition: Stock of decentral methane fuel cells for electricity and heat for individual
     buildings
   unit: million
-Stock|Space Heating|Heating Device|Methane Fuel Cell|HT:
+Stock|Space Heating|Methane Fuel Cell|HT:
   definition: Stock of decentral methane fuel cells for electricity and heat for individual
     buildings in a high temperature system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Methane Fuel Cell|LT:
+Stock|Space Heating|Methane Fuel Cell|LT:
   definition: Stock of decentral methane fuel cells for electricity and heat for individual
     buildings in a low temperature system (i.e. floor heating)
   unit: million
-Stock|Space Heating|Heating Device|Oil Boiler:
+Stock|Space Heating|Oil Boiler:
   definition: Stock of decentral oil boilers for individual buildings
   unit: million
-Stock|Space Heating|Heating Device|Oil Boiler|HT:
+Stock|Space Heating|Oil Boiler|HT:
   definition: Stock of decentral oil boilers for individual buildings in a high temperature
     system (i.e. radiator)
   unit: million
-Stock|Space Heating|Heating Device|Oil Boiler|LT:
+Stock|Space Heating|Oil Boiler|LT:
   definition: Stock of decentral oil boilers for individual buildings in a low temperature
     system (i.e. floor heating)
   unit: million
@@ -7470,9 +7823,15 @@ Stock|Transportation|LDV|BEV:
 Stock|Transportation|LDV|FCEV:
   definition: Stock of light duty fuel cell electric vehicles
   unit: million
+Stock|Transportation|LDV|HEV:
+  definition: Stock of light duty hybrid electric vehicles
+  unit: million
 Stock|Transportation|LDV|ICE:
   definition: Stock of light duty vehicles with internal combustion engine including
     hybrids and plug-in hybrids
+  unit: million
+Stock|Transportation|LDV|PHEV:
+  definition: Stock of light duty plug-in hybrid electric vehicles
   unit: million
 Stock|Transportation|Truck:
   definition: Stock of trucks
@@ -7487,6 +7846,171 @@ Stock|Transportation|Truck|ICE:
   definition: Stock of trucks with internal combustion engine including hybrids and
     plug-in hybrids
   unit: million
+Stock|Transport|LDV|Large:
+  definition: Stock of large cars (EEC class D)
+  unit: thousand vehicles
+Stock|Transport|LDV|Large|BEV:
+  definition: Stock of large battery electric cars (EEC class D)
+  unit: thousand vehicles
+Stock|Transport|LDV|Large|FCEV:
+  definition: Stock of large fuel cell electric cars (EEC class D)
+  unit: thousand vehicles
+Stock|Transport|LDV|Large|HEV:
+  definition: Stock of Large hybrid electric cars (EEC class D)
+  unit: thousand vehicles
+Stock|Transport|LDV|Large|ICEV:
+  definition: Stock of large internal combustion engine cars (EEC class D)
+  unit: thousand vehicles
+Stock|Transport|LDV|Large|PHEV:
+  definition: Stock of Large plug-in hybrid electric cars (EEC class D)
+  unit: thousand vehicles
+Stock|Transport|LDV|Medium:
+  definition: Stock of medium cars (EEC class C)
+  unit: thousand vehicles
+Stock|Transport|LDV|Medium|BEV:
+  definition: Stock of medium battery electric cars (EEC class C)
+  unit: thousand vehicles
+Stock|Transport|LDV|Medium|FCEV:
+  definition: Stock of medium fuel cell electric cars (EEC class C)
+  unit: thousand vehicles
+Stock|Transport|LDV|Medium|HEV:
+  definition: Stock of Medium hybrid electric cars (EEC class C)
+  unit: thousand vehicles
+Stock|Transport|LDV|Medium|ICEV:
+  definition: Stock of medium internal combustion engine cars (EEC class C)
+  unit: thousand vehicles
+Stock|Transport|LDV|Medium|PHEV:
+  definition: Stock of Medium plug-in hybrid electric cars (EEC class C)
+  unit: thousand vehicles
+Stock|Transport|LDV|Mini:
+  definition: Stock of mini cars (EEC class A)
+  unit: thousand vehicles
+Stock|Transport|LDV|Mini|BEV:
+  definition: Stock of mini battery electric cars (EEC class A)
+  unit: thousand vehicles
+Stock|Transport|LDV|Mini|FCEV:
+  definition: Stock of mini fuel cell electric cars (EEC class A)
+  unit: thousand vehicles
+Stock|Transport|LDV|Mini|HEV:
+  definition: Stock of mini hybrid electric cars (EEC class A)
+  unit: thousand vehicles
+Stock|Transport|LDV|Mini|ICEV:
+  definition: Stock of mini internal combustion engine cars (EEC class A)
+  unit: thousand vehicles
+Stock|Transport|LDV|Mini|PHEV:
+  definition: Stock of mini plug-in hybrid electric cars (EEC class A)
+  unit: thousand vehicles
+Stock|Transport|LDV|SUV:
+  definition: Stock of SUVs (EEC class J)
+  unit: thousand vehicles
+Stock|Transport|LDV|SUV|BEV:
+  definition: Stock of battery electric SUVs (EEC class J)
+  unit: thousand vehicles
+Stock|Transport|LDV|SUV|FCEV:
+  definition: Stock of fuel cell electric SUVs (EEC class J)
+  unit: thousand vehicles
+Stock|Transport|LDV|SUV|HEV:
+  definition: Stock of hybrid electric SUVs (EEC class J)
+  unit: thousand vehicles
+Stock|Transport|LDV|SUV|ICEV:
+  definition: Stock of internal combustion engine SUVs (EEC class J)
+  unit: thousand vehicles
+Stock|Transport|LDV|SUV|PHEV:
+  definition: Stock of plug-in hybrid electric SUVs (EEC class J)
+  unit: thousand vehicles
+Stock|Transport|LDV|Small:
+  definition: Stock of small cars (EEC class B)
+  unit: thousand vehicles
+Stock|Transport|LDV|Small|BEV:
+  definition: Stock of small battery electric cars (EEC class B)
+  unit: thousand vehicles
+Stock|Transport|LDV|Small|FCEV:
+  definition: Stock of small fuel cell electric cars (EEC class B)
+  unit: thousand vehicles
+Stock|Transport|LDV|Small|HEV:
+  definition: Stock of Small hybrid electric cars (EEC class B)
+  unit: thousand vehicles
+Stock|Transport|LDV|Small|ICEV:
+  definition: Stock of small internal combustion engine cars (EEC class B)
+  unit: thousand vehicles
+Stock|Transport|LDV|Small|PHEV:
+  definition: Stock of Small plug-in hybrid electric cars (EEC class B)
+  unit: thousand vehicles
+Stock|Transport|LDV|Two-Wheelers:
+  definition: Stock of two-wheelers
+  unit: thousand vehicles
+Stock|Transport|LDV|Two-Wheelers|BEV:
+  definition: Stock of battery electric two-wheelers
+  unit: thousand vehicles
+Stock|Transport|LDV|Two-Wheelers|ICEV:
+  definition: Stock of internal combustion engine two-wheelers
+  unit: thousand vehicles
+Stock|Transport|LDV|Van:
+  definition: Stock of Vans (EEC class M)
+  unit: thousand vehicles
+Stock|Transport|LDV|Van|BEV:
+  definition: Stock of battery electric Vans (EEC class M)
+  unit: thousand vehicles
+Stock|Transport|LDV|Van|FCEV:
+  definition: Stock of fuel cell electric Vans (EEC class M)
+  unit: thousand vehicles
+Stock|Transport|LDV|Van|HEV:
+  definition: Stock of hybrid electric Vans (EEC class M)
+  unit: thousand vehicles
+Stock|Transport|LDV|Van|ICEV:
+  definition: Stock of internal combustion engine Vans (EEC class M)
+  unit: thousand vehicles
+Stock|Transport|LDV|Van|PHEV:
+  definition: Stock of plug-in hybrid electric Vans (EEC class M)
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (0-3.5t):
+  definition: Stock of trucks with weight < 3.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (0-3.5t)|BEV:
+  definition: Stock battery electric trucks with weight < 3.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (0-3.5t)|FCEV:
+  definition: Stock fuel-cell electric trucks with weight < 3.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (0-3.5t)|ICEV:
+  definition: Stock internal-combustion engine trucks with weight < 3.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (26t):
+  definition: Stock of trucks with weight 26t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (26t)|BEV:
+  definition: Stock battery electric trucks with weight 26t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (26t)|FCEV:
+  definition: Stock fuel-cell electric trucks with weight 26t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (26t)|ICEV:
+  definition: Stock internal-combustion engine trucks with weight 26t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (40t):
+  definition: Stock of trucks with weight 40t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (40t)|BEV:
+  definition: Stock battery electric trucks with weight 40t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (40t)|FCEV:
+  definition: Stock fuel-cell electric trucks with weight 40t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (40t)|ICEV:
+  definition: Stock internal-combustion engine trucks with weight 40t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (7.5t):
+  definition: Stock of trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (7.5t)|BEV:
+  definition: Stock battery electric trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (7.5t)|FCEV:
+  definition: Stock fuel cell electric trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
+Stock|Transport|Truck|Truck (7.5t)|ICEV:
+  definition: Stock internal combustion engine trucks with weight 3.5 - 7.5t
+  unit: thousand vehicles
 Subsidies|Energy:
   definition: Total energy-related subsidies
   unit: billion EUR2020/yr
