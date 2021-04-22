@@ -3,8 +3,13 @@
 - Trend
 - 9Gt_Bal
 - 9Gt_Elec
+- 9Gt_Elec_Dom
+- 9Gt_Elec_Imp
 - 9Gt_H2
+- 9Gt_H2_Dom
+- 9Gt_H2_Imp
 - 9Gt_SynF
+- 9Gt_SynF_Imp
 - 9Gt_Bal_Eff
 - CO2Price_Bal
 - CO2Price_Elec
