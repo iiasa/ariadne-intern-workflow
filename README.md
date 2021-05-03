@@ -10,7 +10,7 @@ This repository is released under the [APACHE 2.0 license](LICENSE).
 This repository contains the scenario validation workflow
 for the [ARIADNE project](https://www.pik-potsdam.de/de/institut/abteilungen/transformationspfade/projekte/ariadne).
 
-The ain entry point is the `workflow.py` script, which has a function
+The main entry point is the `workflow.py` script, which has a function
 that takes an **pyam.IamDataFrame** as argument and returns a modified instance (if validation is successful)
 or raises an error if the scenario data is not compliant with the project specifications.
 [Read the docs](https://pyam-iamc.readthedocs.io/) for more information on the **pyam** package.
