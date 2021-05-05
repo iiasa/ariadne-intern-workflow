@@ -15,6 +15,7 @@ path = Path(__file__).parent
 ALLOWED_META_ARIADNE = {
     "Quality Assessment": ["preliminary", "advanced", "mature"],
     "Internal usage within Kopernikus AG Szenarien": ["no", "yes"],
+    "Release for publication": ["no", "yes"],
 }
 
 ALLOWED_META_KOPERNIKUS = {
