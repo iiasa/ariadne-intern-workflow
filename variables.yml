@@ -297,7 +297,7 @@ Capacity Additions|Heat|Storage Converter:
 Capacity Additions|Heat|Storage Reservoir:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of central thermal storages
-  unit: GW/yr
+  unit: GWh/yr
 Capacity Additions|Hydrogen|Biomass:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of biomass to hydrogen plants.
@@ -817,7 +817,7 @@ Capacity|Heat|Storage Converter:
   unit: GW
 Capacity|Heat|Storage Reservoir:
   definition: Total installed net capacity of central thermal storages
-  unit: GW
+  unit: GWh
 Capacity|Hydrogen:
   definition: Total installed (available) capacity of all hydrogen plants.
   unit: GW
@@ -3094,7 +3094,7 @@ Final Energy|Electricity:
   unit: PJ/yr
 Final Energy|Gases:
   definition: final energy consumption of gases (natural gas, biogas, coal-gas), excluding
-    transmission/distribution losses, incl. non-energy feedstocks
+    transmission/distribution losses, excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Gases|Biomass:
   definition: final energy consumption of biogas
@@ -3995,23 +3995,23 @@ Final Energy|Industry|Waste:
   unit: PJ/yr
 Final Energy|Liquids:
   definition: final energy consumption of refined liquids (conventional & unconventional
-    oil, biofuels, coal-to-liquids, gas-to-liquids, efuels), incl. non-energy feedstocks,
-    incl. bunkers
+    oil, biofuels, coal-to-liquids, gas-to-liquids, efuels), excl. non-energy feedstocks,
+    excl. bunkers
   unit: PJ/yr
 Final Energy|Liquids|Biomass:
-  definition: final energy consumption of liquid biofuels, incl. non-energy feedstocks
+  definition: final energy consumption of liquid biofuels, excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Liquids|Efuel:
   definition: final energy consumption of synthetic liquid efuels ("power-to-liquid"),
-    incl. non-energy feedstocks
+    excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Liquids|Petroleum:
   definition: final energy consumption of liquids from fossil origin (conventional
-    & unconventional petroleum), incl. non-energy feedstocks
+    & unconventional petroleum), excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Liquids|Synthetic Fossil:
   definition: final energy consumption of synthetic liquids of fossil origin (e.g.
-    coal or gas liquefaction), incl. non-energy feedstocks
+    coal or gas liquefaction), excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Non-Energy Use:
   definition: Final energy consumption by the non-combustion processes
@@ -4656,7 +4656,7 @@ Final Energy|Solar:
   unit: PJ/yr
 Final Energy|Solids:
   definition: final energy solid fuel consumption (including coal and solid biomass),
-    incl. non-energy feedstocks
+    excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Solids|Biomass:
   definition: final energy consumption of solid biomass (modern and traditional, including
@@ -4667,7 +4667,7 @@ Final Energy|Solids|Biomass|Traditional:
   definition: final energy consumption of traditional biomass
   unit: PJ/yr
 Final Energy|Solids|Coal:
-  definition: final energy coal consumption, incl. non-energy feedstocks
+  definition: final energy coal consumption, excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Transportation:
   definition: final energy consumed in the transportation sector, excluding pipelines,
@@ -6483,6 +6483,26 @@ Price|Carbon|EU-wide Regulation All Sectors:
 Price|Carbon|EU-wide Regulation Non-ETS:
   definition: Price of carbon implied by EU-wide Non-ETS sector target
   unit: EUR2020/t CO2
+Price|Carbon|Final Energy|Transportation|Electricity:
+  definition: Electricity price at the final level in the freight transport sector.
+    Prices should include the effect of carbon prices and all other taxes.
+  unit: EUR2020/GJ
+Price|Carbon|Final Energy|Transportation|Gases:
+  definition: Price for gases at the final level in the freight transport sector.
+    Prices should include the effect of carbon prices and all other taxes.
+  unit: EUR2020/GJ
+Price|Carbon|Final Energy|Transportation|Hydrogen:
+  definition: Hydrogen price at the final level in the freight transport sector. Prices
+    should include the effect of carbon prices and all other taxes.
+  unit: EUR2020/GJ
+Price|Carbon|Final Energy|Transportation|Liquids:
+  definition: Liquids price at the final level in the freight transport sector. Prices
+    should include the effect of carbon prices and all other taxes.
+  unit: EUR2020/GJ
+Price|Carbon|Final Energy|Transportation|Solids:
+  definition: Solids price at the final level in the freight transport sector. Prices
+    should include the effect of carbon prices and all other taxes.
+  unit: EUR2020/GJ
 Price|Carbon|National Climate Target:
   definition: Price of carbon due to national policies for all sectors - either from
     a direct carbon price, or as result of a national climate target
@@ -6903,11 +6923,6 @@ Primary Energy|Other:
     category (direct equivalent, please provide a definition of the sources in this
     category in the 'comments' tab)
   unit: PJ/yr
-Primary Energy|Secondary Energy Trade:
-  definition: trade in secondary energy carriers that cannot be unambiguoulsy mapped
-    to one of the existing primary energy categories (e.g. electricity, hydrogen,
-    fossil synfuels, negative means net exports)
-  unit: PJ/yr
 Primary Energy|Solar:
   definition: total solar primary energy consumption
   unit: PJ/yr
@@ -7323,9 +7338,6 @@ Secondary Energy|Electricity|Hydrogen|OC:
     low capital intensity existent technologies (steam turbines, combustion turbines
     and internal combustion)
   unit: PJ/yr
-Secondary Energy|Electricity|Net Imports:
-  definition: Net electricity imports. Report exports as negative
-  unit: PJ/yr
 Secondary Energy|Electricity|Non-Biomass Renewables:
   definition: net electricity production from hydro, wind, solar, geothermal, ocean,
     and other renewable sources (excluding bioenergy). This is a summary category
@@ -7559,10 +7571,6 @@ Secondary Energy|Hydrogen|Gas|w/ CCS:
 Secondary Energy|Hydrogen|Gas|w/o CCS:
   definition: hydrogen production from natural gas with freely vented CO2 emissions
     ("grey H2")
-  unit: PJ/yr
-Secondary Energy|Hydrogen|Non-Biomass Renewables|Autoproduction:
-  definition: Production of hydrogen from non-biomass renewables by autoproducers
-    (in units of output)
   unit: PJ/yr
 Secondary Energy|Hydrogen|Nuclear:
   definition: total hydrogen production from nuclear energy (e.g. thermochemical water
