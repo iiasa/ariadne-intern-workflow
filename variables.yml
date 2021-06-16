@@ -297,7 +297,7 @@ Capacity Additions|Heat|Storage Converter:
 Capacity Additions|Heat|Storage Reservoir:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of central thermal storages
-  unit: GW/yr
+  unit: GWh/yr
 Capacity Additions|Hydrogen|Biomass:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of biomass to hydrogen plants.
@@ -817,7 +817,7 @@ Capacity|Heat|Storage Converter:
   unit: GW
 Capacity|Heat|Storage Reservoir:
   definition: Total installed net capacity of central thermal storages
-  unit: GW
+  unit: GWh
 Capacity|Hydrogen:
   definition: Total installed (available) capacity of all hydrogen plants.
   unit: GW
@@ -3094,7 +3094,7 @@ Final Energy|Electricity:
   unit: PJ/yr
 Final Energy|Gases:
   definition: final energy consumption of gases (natural gas, biogas, coal-gas), excluding
-    transmission/distribution losses, incl. non-energy feedstocks
+    transmission/distribution losses, excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Gases|Biomass:
   definition: final energy consumption of biogas
@@ -3995,23 +3995,23 @@ Final Energy|Industry|Waste:
   unit: PJ/yr
 Final Energy|Liquids:
   definition: final energy consumption of refined liquids (conventional & unconventional
-    oil, biofuels, coal-to-liquids, gas-to-liquids, efuels), incl. non-energy feedstocks,
-    incl. bunkers
+    oil, biofuels, coal-to-liquids, gas-to-liquids, efuels), excl. non-energy feedstocks,
+    excl. bunkers
   unit: PJ/yr
 Final Energy|Liquids|Biomass:
-  definition: final energy consumption of liquid biofuels, incl. non-energy feedstocks
+  definition: final energy consumption of liquid biofuels, excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Liquids|Efuel:
   definition: final energy consumption of synthetic liquid efuels ("power-to-liquid"),
-    incl. non-energy feedstocks
+    excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Liquids|Petroleum:
   definition: final energy consumption of liquids from fossil origin (conventional
-    & unconventional petroleum), incl. non-energy feedstocks
+    & unconventional petroleum), excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Liquids|Synthetic Fossil:
   definition: final energy consumption of synthetic liquids of fossil origin (e.g.
-    coal or gas liquefaction), incl. non-energy feedstocks
+    coal or gas liquefaction), excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Non-Energy Use:
   definition: Final energy consumption by the non-combustion processes
@@ -4656,7 +4656,7 @@ Final Energy|Solar:
   unit: PJ/yr
 Final Energy|Solids:
   definition: final energy solid fuel consumption (including coal and solid biomass),
-    incl. non-energy feedstocks
+    excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Solids|Biomass:
   definition: final energy consumption of solid biomass (modern and traditional, including
@@ -4667,7 +4667,7 @@ Final Energy|Solids|Biomass|Traditional:
   definition: final energy consumption of traditional biomass
   unit: PJ/yr
 Final Energy|Solids|Coal:
-  definition: final energy coal consumption, incl. non-energy feedstocks
+  definition: final energy coal consumption, excl. non-energy feedstocks
   unit: PJ/yr
 Final Energy|Transportation:
   definition: final energy consumed in the transportation sector, excluding pipelines,
@@ -5381,20 +5381,25 @@ Investment|Energy Supply|Hydrogen:
     biomass, electrolysis). For plants equipped with CCS, the investment in the capturing
     equipment should be included but not the one on transport and storage.
   unit: billion EUR2020/yr
+Investment|Energy Supply|Hydrogen|Biomass:
+  definition: investments for the production of hydrogen from biomass. For plants
+    equipped with CCS, the investment in the capturing equipment should be included
+    but not the one on transport and storage.
+  unit: billion EUR2020/yr
+Investment|Energy Supply|Hydrogen|Electrolysis:
+  definition: investments for the production of hydrogen from electrolysis. For plants
+    equipped with CCS, the investment in the capturing equipment should be included
+    but not the one on transport and storage.
+  unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen|Fossil:
   definition: investments for the production of hydrogen from the specified source.
     For plants equipped with CCS, the investment in the capturing equipment should
     be included but not the one on transport and storage.
   unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen|Other:
-  definition: investments for the production of hydrogen from the specified source.
-    For plants equipped with CCS, the investment in the capturing equipment should
-    be included but not the one on transport and storage.
-  unit: billion EUR2020/yr
-Investment|Energy Supply|Hydrogen|Renewable:
-  definition: investments for the production of hydrogen from the specified source.
-    For plants equipped with CCS, the investment in the capturing equipment should
-    be included but not the one on transport and storage.
+  definition: investments for the production of hydrogen from other sources. For plants
+    equipped with CCS, the investment in the capturing equipment should be included
+    but not the one on transport and storage.
   unit: billion EUR2020/yr
 Investment|Energy Supply|Hydrogen|Transmission and Distribution:
   definition: investments into transmission and distribution of hydrogen
@@ -6572,6 +6577,10 @@ Price|Final Energy|Residential|Solids|Coal:
   definition: coal price at the final level in the residential sector. Prices should
     include the effect of carbon prices.
   unit: EUR2020/GJ
+Price|Final Energy|Transportation|Electricity|Carbon Price Component:
+  definition: Carbon price markup to the electricity price at the final level in the
+    transport sector.
+  unit: EUR2020/GJ
 Price|Final Energy|Transportation|Freight|Electricity:
   definition: Electricity price at the final level in the freight transport sector.
     Prices should include the effect of carbon prices and all other taxes.
@@ -6591,6 +6600,18 @@ Price|Final Energy|Transportation|Freight|Liquids:
 Price|Final Energy|Transportation|Freight|Solids:
   definition: Solids price at the final level in the freight transport sector. Prices
     should include the effect of carbon prices and all other taxes.
+  unit: EUR2020/GJ
+Price|Final Energy|Transportation|Gases|Carbon Price Component:
+  definition: Carbon price markup to the gas price at the final level in the transport
+    sector.
+  unit: EUR2020/GJ
+Price|Final Energy|Transportation|Hydrogen|Carbon Price Component:
+  definition: Carbon price markup to the hydrogen price at the final level in the
+    transport sector.
+  unit: EUR2020/GJ
+Price|Final Energy|Transportation|Liquids|Carbon Price Component:
+  definition: Carbon price markup to the liquids price at the final level in the transport
+    sector.
   unit: EUR2020/GJ
 Price|Final Energy|Transportation|Passenger|Electricity:
   definition: Electricity price at the final level in the passenger transport sector.
@@ -6635,6 +6656,10 @@ Price|Secondary Energy|Gases:
   definition: Price for gases at the secondary level, i.e. for large scale consumers
     (e.g. gas power plant). Prices should include the effect of carbon prices.
   unit: EUR2020/GJ
+Price|Secondary Energy|Gases|Hydrogen:
+  definition: synthetic gas price at the secondary level, i.e. for large scale consumers
+    (e.g. gas power plant). Prices should include the effect of carbon prices.
+  unit: EUR2020/GJ
 Price|Secondary Energy|Gases|Natural Gas:
   definition: natural gas price at the secondary level, i.e. for large scale consumers
     (e.g. gas power plant). Prices should include the effect of carbon prices.
@@ -6649,6 +6674,10 @@ Price|Secondary Energy|Liquids:
   unit: EUR2020/GJ
 Price|Secondary Energy|Liquids|Biomass:
   definition: biofuel price at the secondary level, i.e. for biofuel consumers
+  unit: EUR2020/GJ
+Price|Secondary Energy|Liquids|Hydrogen:
+  definition: synthetic fuel price at the secondary level, i.e. for large scale consumers
+    (e.g. oil power plant). Prices should include the effect of carbon prices.
   unit: EUR2020/GJ
 Price|Secondary Energy|Liquids|Oil:
   definition: light fuel oil price at the secondary level, i.e. for large scale consumers
@@ -6903,11 +6932,6 @@ Primary Energy|Other:
     category (direct equivalent, please provide a definition of the sources in this
     category in the 'comments' tab)
   unit: PJ/yr
-Primary Energy|Secondary Energy Trade:
-  definition: trade in secondary energy carriers that cannot be unambiguoulsy mapped
-    to one of the existing primary energy categories (e.g. electricity, hydrogen,
-    fossil synfuels, negative means net exports)
-  unit: PJ/yr
 Primary Energy|Solar:
   definition: total solar primary energy consumption
   unit: PJ/yr
@@ -6965,169 +6989,121 @@ Revenue|government:
 Revenue|government|Tax:
   definition: government revenue from taxes
   unit: billion EUR2020/yr
-Sales|Transport|LDV|Large:
-  definition: Sales of large cars (EEC class D)
+Sales|Transportation|LDV|Compact Car:
+  definition: Sales of compact cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Large|BEV:
-  definition: Sales of large battery electric cars (EEC class D)
+Sales|Transportation|LDV|Compact Car|BEV:
+  definition: Sales of compact battery electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Large|FCEV:
-  definition: Sales of large fuel cell electric cars (EEC class D)
+Sales|Transportation|LDV|Compact Car|FCEV:
+  definition: Sales of compact fuel cell electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Large|HEV:
-  definition: Sales of Large hybrid electric cars (EEC class D)
+Sales|Transportation|LDV|Compact Car|ICEV:
+  definition: Sales of compact internal combustion engine cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Large|ICEV:
-  definition: Sales of large internal combustion engine cars (EEC class D)
+Sales|Transportation|LDV|Compact Car|PHEV:
+  definition: Sales of compact plug-in hybrid electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Large|PHEV:
-  definition: Sales of Large plug-in hybrid electric cars (EEC class D)
+Sales|Transportation|LDV|Large Car and SUV:
+  definition: Sales of large cars and SUVs (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Medium:
-  definition: Sales of medium cars (EEC class C)
+Sales|Transportation|LDV|Large Car and SUV|BEV:
+  definition: Sales of large battery electric cars and SUVs (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Medium|BEV:
-  definition: Sales of medium battery electric cars (EEC class C)
+Sales|Transportation|LDV|Large Car and SUV|FCEV:
+  definition: Sales of large fuel cell electric cars and SUVs (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Medium|FCEV:
-  definition: Sales of medium fuel cell electric cars (EEC class C)
+Sales|Transportation|LDV|Large Car and SUV|ICEV:
+  definition: Sales of large internal combustion engine cars and SUVs (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Medium|HEV:
-  definition: Sales of Medium hybrid electric cars (EEC class C)
+Sales|Transportation|LDV|Large Car and SUV|PHEV:
+  definition: Sales of Large plug-in hybrid electric cars and SUVs (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Medium|ICEV:
-  definition: Sales of medium internal combustion engine cars (EEC class C)
+Sales|Transportation|LDV|Midsize Car:
+  definition: Sales of midsize cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Medium|PHEV:
-  definition: Sales of Medium plug-in hybrid electric cars (EEC class C)
+Sales|Transportation|LDV|Midsize Car|BEV:
+  definition: Sales of midsize battery electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Mini:
-  definition: Sales of mini cars (EEC class A)
+Sales|Transportation|LDV|Midsize Car|FCEV:
+  definition: Sales of midsize fuel cell electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Mini|BEV:
-  definition: Sales of mini battery electric cars (EEC class A)
+Sales|Transportation|LDV|Midsize Car|ICEV:
+  definition: Sales of midsize internal combustion engine cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Mini|FCEV:
-  definition: Sales of mini fuel cell electric cars (EEC class A)
+Sales|Transportation|LDV|Midsize Car|PHEV:
+  definition: Sales of midsize plug-in hybrid electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Mini|HEV:
-  definition: Sales of mini hybrid electric cars (EEC class A)
+Sales|Transportation|LDV|Subcompact Car:
+  definition: Sales of subcompact (and smaller) cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Mini|ICEV:
-  definition: Sales of mini internal combustion engine cars (EEC class A)
+Sales|Transportation|LDV|Subcompact Car|BEV:
+  definition: Sales of subcompact battery electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|Mini|PHEV:
-  definition: Sales of mini plug-in hybrid electric cars (EEC class A)
+Sales|Transportation|LDV|Subcompact Car|FCEV:
+  definition: Sales of subcompact fuel cell electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|SUV:
-  definition: Sales of SUVs (EEC class J)
+Sales|Transportation|LDV|Subcompact Car|ICEV:
+  definition: Sales of subcompact internal combustion engine cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|SUV|BEV:
-  definition: Sales of battery electric SUVs (EEC class J)
+Sales|Transportation|LDV|Subcompact Car|PHEV:
+  definition: Sales of subcompact plug-in hybrid electric cars (US EPA)
   unit: thousand vehicles
-Sales|Transport|LDV|SUV|FCEV:
-  definition: Sales of fuel cell electric SUVs (EEC class J)
-  unit: thousand vehicles
-Sales|Transport|LDV|SUV|HEV:
-  definition: Sales of hybrid electric SUVs (EEC class J)
-  unit: thousand vehicles
-Sales|Transport|LDV|SUV|ICEV:
-  definition: Sales of internal combustion engine SUVs (EEC class J)
-  unit: thousand vehicles
-Sales|Transport|LDV|SUV|PHEV:
-  definition: Sales of plug-in hybrid electric SUVs (EEC class J)
-  unit: thousand vehicles
-Sales|Transport|LDV|Small:
-  definition: Sales of small cars (EEC class B)
-  unit: thousand vehicles
-Sales|Transport|LDV|Small|BEV:
-  definition: Sales of small battery electric cars (EEC class B)
-  unit: thousand vehicles
-Sales|Transport|LDV|Small|FCEV:
-  definition: Sales of small fuel cell electric cars (EEC class B)
-  unit: thousand vehicles
-Sales|Transport|LDV|Small|HEV:
-  definition: Sales of Small hybrid electric cars (EEC class B)
-  unit: thousand vehicles
-Sales|Transport|LDV|Small|ICEV:
-  definition: Sales of small internal combustion engine cars (EEC class B)
-  unit: thousand vehicles
-Sales|Transport|LDV|Small|PHEV:
-  definition: Sales of Small plug-in hybrid electric cars (EEC class B)
-  unit: thousand vehicles
-Sales|Transport|LDV|Two-Wheelers:
+Sales|Transportation|LDV|Two-Wheelers:
   definition: Sales of two-wheelers
   unit: thousand vehicles
-Sales|Transport|LDV|Two-Wheelers|BEV:
+Sales|Transportation|LDV|Two-Wheelers|BEV:
   definition: Sales of battery electric two-wheelers
   unit: thousand vehicles
-Sales|Transport|LDV|Two-Wheelers|ICEV:
+Sales|Transportation|LDV|Two-Wheelers|ICEV:
   definition: Sales of internal combustion engine two-wheelers
   unit: thousand vehicles
-Sales|Transport|LDV|Van:
-  definition: Sales of Vans (EEC class M)
-  unit: thousand vehicles
-Sales|Transport|LDV|Van|BEV:
-  definition: Sales of battery electric Vans (EEC class M)
-  unit: thousand vehicles
-Sales|Transport|LDV|Van|FCEV:
-  definition: Sales of fuel cell electric Vans (EEC class M)
-  unit: thousand vehicles
-Sales|Transport|LDV|Van|HEV:
-  definition: Sales of hybrid electric Vans (EEC class M)
-  unit: thousand vehicles
-Sales|Transport|LDV|Van|ICEV:
-  definition: Sales of internal combustion engine Vans (EEC class M)
-  unit: thousand vehicles
-Sales|Transport|LDV|Van|PHEV:
-  definition: Sales of plug-in hybrid electric Vans (EEC class M)
-  unit: thousand vehicles
-Sales|Transport|Truck|Truck (0-3.5t):
+Sales|Transportation|Truck|Truck (0-3.5t):
   definition: Sales of trucks with weight < 3.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (0-3.5t)|BEV:
+Sales|Transportation|Truck|Truck (0-3.5t)|BEV:
   definition: Sales of battery electric trucks with weight < 3.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (0-3.5t)|FCEV:
+Sales|Transportation|Truck|Truck (0-3.5t)|FCEV:
   definition: Sales of fuel-cell electric trucks with weight < 3.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (0-3.5t)|ICEV:
+Sales|Transportation|Truck|Truck (0-3.5t)|ICEV:
   definition: Sales of internal-combustion engine trucks with weight < 3.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (26t):
+Sales|Transportation|Truck|Truck (26t):
   definition: Sales of trucks with weight 26t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (26t)|BEV:
+Sales|Transportation|Truck|Truck (26t)|BEV:
   definition: Sales of battery electric trucks with weight 26t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (26t)|FCEV:
+Sales|Transportation|Truck|Truck (26t)|FCEV:
   definition: Sales of fuel-cell electric trucks with weight 26t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (26t)|ICEV:
+Sales|Transportation|Truck|Truck (26t)|ICEV:
   definition: Sales of internal-combustion engine trucks with weight 26t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (40t):
+Sales|Transportation|Truck|Truck (40t):
   definition: Sales of trucks with weight 40t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (40t)|BEV:
+Sales|Transportation|Truck|Truck (40t)|BEV:
   definition: Sales of battery electric trucks with weight 40t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (40t)|FCEV:
+Sales|Transportation|Truck|Truck (40t)|FCEV:
   definition: Sales of fuel-cell electric trucks with weight 40t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (40t)|ICEV:
+Sales|Transportation|Truck|Truck (40t)|ICEV:
   definition: Sales of internal-combustion engine trucks with weight 40t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (7.5t):
+Sales|Transportation|Truck|Truck (7.5t):
   definition: Sales of trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (7.5t)|BEV:
+Sales|Transportation|Truck|Truck (7.5t)|BEV:
   definition: Sales of battery electric trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (7.5t)|FCEV:
+Sales|Transportation|Truck|Truck (7.5t)|FCEV:
   definition: Sales of fuel cell electric trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
-Sales|Transport|Truck|Truck (7.5t)|ICEV:
+Sales|Transportation|Truck|Truck (7.5t)|ICEV:
   definition: Sales of internal combustion engine trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
 Sale|Transportation|Bus:
@@ -7152,15 +7128,9 @@ Sale|Transportation|LDV|BEV:
 Sale|Transportation|LDV|FCEV:
   definition: Sale of light duty fuel cell electric vehicles
   unit: million
-Sale|Transportation|LDV|HEV:
-  definition: Sale of light duty hybrid electric vehicles
-  unit: million
 Sale|Transportation|LDV|ICE:
   definition: Sale of light duty vehicles with internal combustion engine including
     hybrids and plug-in hybrids
-  unit: million
-Sale|Transportation|LDV|PHEV:
-  definition: Sale of light duty plug-in hybrid electric vehicles
   unit: million
 Sale|Transportation|Truck:
   definition: Sale of heavy trucks
@@ -7179,6 +7149,9 @@ Secondary Energy:
   definition: total secondary energy - the sum of all secondary energy carrier production
     (for consistency checks)
   unit: PJ/yr
+Secondary Energy Input|Efuel|Electricity:
+  definition: secondary energy consumption of efuels for the production of electricity
+  unit: PJ/yr
 Secondary Energy Input|Electricity|Heat:
   definition: secondary energy consumption of electricity for the production of heat
     (large-scale heat pumps)
@@ -7187,7 +7160,8 @@ Secondary Energy Input|Electricity|Hydrogen:
   definition: secondary energy consumption of electricity for the production of hydrogen
   unit: PJ/yr
 Secondary Energy Input|Electricity|Hydrogen|Autoproduction:
-  definition: secondary energy consumption of hydrogen for the autoproduction of electricity
+  definition: secondary energy consumption of electricity for the autoproduction of
+    hydrogen
   unit: PJ/yr
 Secondary Energy Input|Hydrogen|Electricity:
   definition: secondary energy consumption of hydrogen for the production of electricity
@@ -7277,7 +7251,7 @@ Secondary Energy|Electricity|Fossil|w/o CCS:
     oil without CCS
   unit: PJ/yr
 Secondary Energy|Electricity|Gas:
-  definition: net electricity production from natural gas
+  definition: net electricity production from gas
   unit: PJ/yr
 Secondary Energy|Electricity|Gas|Autoproduction:
   definition: Production of electricity from gas by autoproducers (in units of output)
@@ -7291,16 +7265,22 @@ Secondary Energy|Electricity|Gas|CC|w/ CCS:
 Secondary Energy|Electricity|Gas|CC|w/o CCS:
   definition: Net electricity production from gas CC without CCS
   unit: PJ/yr
+Secondary Energy|Electricity|Gas|Efuel:
+  definition: net electricity production from synthetic gas
+  unit: PJ/yr
+Secondary Energy|Electricity|Gas|Natural Gas:
+  definition: net electricity production from natural gas
+  unit: PJ/yr
 Secondary Energy|Electricity|Gas|OC:
   definition: Net electricity production from gas Open Cycle (OC) units. Includes
     low capital intensity existent technologies (steam turbines, combustion turbines
     and internal combustion)
   unit: PJ/yr
 Secondary Energy|Electricity|Gas|w/ CCS:
-  definition: net electricity production from natural gas with a CO2 capture component
+  definition: net electricity production from gas with a CO2 capture component
   unit: PJ/yr
 Secondary Energy|Electricity|Gas|w/o CCS:
-  definition: net electricity production from natural gas with freely vented CO2 emissions
+  definition: net electricity production from gas with freely vented CO2 emissions
   unit: PJ/yr
 Secondary Energy|Electricity|Geothermal:
   definition: net electricity production from all sources of geothermal energy (e.g.,
@@ -7322,9 +7302,6 @@ Secondary Energy|Electricity|Hydrogen|OC:
   definition: Net electricity production from hydrogen Open Cycle (OC) units. Includes
     low capital intensity existent technologies (steam turbines, combustion turbines
     and internal combustion)
-  unit: PJ/yr
-Secondary Energy|Electricity|Net Imports:
-  definition: Net electricity imports. Report exports as negative
   unit: PJ/yr
 Secondary Energy|Electricity|Non-Biomass Renewables:
   definition: net electricity production from hydro, wind, solar, geothermal, ocean,
@@ -7430,7 +7407,10 @@ Secondary Energy|Gases|Hydrogen:
   definition: Total production of gases from hydrogen and CO2
   unit: PJ/yr
 Secondary Energy|Gases|Natural Gas:
-  definition: total production of natural gas
+  definition: Secondary energy gases derived from natural gas (excluding pure hydrogen)
+    for the usage in the buildings, transport and industry sector. This does not include
+    the usage of natural gas for energy conversion into secondary energy other than
+    gases.
   unit: PJ/yr
 Secondary Energy|Gases|Other:
   definition: total production of gases from sources that do not fit any other category
@@ -7470,6 +7450,12 @@ Secondary Energy|Heat|Gas:
   unit: PJ/yr
 Secondary Energy|Heat|Gas|Autoproduction:
   definition: Production of heat from oil by autoproducers (in units of output)
+  unit: PJ/yr
+Secondary Energy|Heat|Gas|Efuel:
+  definition: district heat generation from synthetic gases
+  unit: PJ/yr
+Secondary Energy|Heat|Gas|Natural Gas:
+  definition: district heat generation from natural gas
   unit: PJ/yr
 Secondary Energy|Heat|Geothermal:
   definition: district heat generation from geothermal energy EXCLUDING geothermal
@@ -7559,10 +7545,6 @@ Secondary Energy|Hydrogen|Gas|w/ CCS:
 Secondary Energy|Hydrogen|Gas|w/o CCS:
   definition: hydrogen production from natural gas with freely vented CO2 emissions
     ("grey H2")
-  unit: PJ/yr
-Secondary Energy|Hydrogen|Non-Biomass Renewables|Autoproduction:
-  definition: Production of hydrogen from non-biomass renewables by autoproducers
-    (in units of output)
   unit: PJ/yr
 Secondary Energy|Hydrogen|Nuclear:
   definition: total hydrogen production from nuclear energy (e.g. thermochemical water
@@ -7671,8 +7653,9 @@ Secondary Energy|Solids|Biomass:
     charcoal, wood chips, wood pellets). Tradional bioenergy use is excluded.
   unit: PJ/yr
 Secondary Energy|Solids|Coal:
-  definition: solid secondary energy carriers produced from coal (e.g., briquettes,
-    coke)
+  definition: Solid secondary energy derived from coal (e.g., briquettes, coke) for
+    the usage in the buildings, transport and industry sector. This does not include
+    the usage of coal for energy conversion into other (non-solid) secondary energy.
   unit: PJ/yr
 Stock|Space Heating:
   definition: Stock of space heating devices
@@ -7836,19 +7819,82 @@ Stock|Transportation|LDV:
 Stock|Transportation|LDV|BEV:
   definition: Stock of light duty battery electric vehicles
   unit: million
+Stock|Transportation|LDV|Compact Car:
+  definition: Stock of compact cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Compact Car|BEV:
+  definition: Stock of compact battery electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Compact Car|FCEV:
+  definition: Stock of compact fuel cell electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Compact Car|ICEV:
+  definition: Stock of compact internal combustion engine cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Compact Car|PHEV:
+  definition: Stock of compact plug-in hybrid electric cars (US EPA)
+  unit: thousand vehicles
 Stock|Transportation|LDV|FCEV:
   definition: Stock of light duty fuel cell electric vehicles
-  unit: million
-Stock|Transportation|LDV|HEV:
-  definition: Stock of light duty hybrid electric vehicles
   unit: million
 Stock|Transportation|LDV|ICE:
   definition: Stock of light duty vehicles with internal combustion engine including
     hybrids and plug-in hybrids
   unit: million
-Stock|Transportation|LDV|PHEV:
-  definition: Stock of light duty plug-in hybrid electric vehicles
-  unit: million
+Stock|Transportation|LDV|Large Car and SUV:
+  definition: Stock of large cars and SUVs (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Large Car and SUV|BEV:
+  definition: Stock of large battery electric cars and SUVs (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Large Car and SUV|FCEV:
+  definition: Stock of large fuel cell electric cars and SUVs (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Large Car and SUV|ICEV:
+  definition: Stock of large internal combustion engine cars and SUVs (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Large Car and SUV|PHEV:
+  definition: Stock of Large plug-in hybrid electric cars and SUVs (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Midsize Car:
+  definition: Stock of midsize cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Midsize Car|BEV:
+  definition: Stock of midsize battery electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Midsize Car|FCEV:
+  definition: Stock of midsize fuel cell electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Midsize Car|ICEV:
+  definition: Stock of midsize internal combustion engine cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Midsize Car|PHEV:
+  definition: Stock of midsize plug-in hybrid electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Subcompact Car:
+  definition: Stock of subcompact (and smaller) cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Subcompact Car|BEV:
+  definition: Stock of subcompact battery electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Subcompact Car|FCEV:
+  definition: Stock of subcompact fuel cell electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Subcompact Car|ICEV:
+  definition: Stock of subcompact internal combustion engine cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Subcompact Car|PHEV:
+  definition: Stock of subcompact plug-in hybrid electric cars (US EPA)
+  unit: thousand vehicles
+Stock|Transportation|LDV|Two-Wheelers:
+  definition: Stock of two-wheelers
+  unit: thousand vehicles
+Stock|Transportation|LDV|Two-Wheelers|BEV:
+  definition: Stock of battery electric two-wheelers
+  unit: thousand vehicles
+Stock|Transportation|LDV|Two-Wheelers|ICEV:
+  definition: Stock of internal combustion engine two-wheelers
+  unit: thousand vehicles
 Stock|Transportation|Truck:
   definition: Stock of trucks
   unit: million
@@ -7862,169 +7908,52 @@ Stock|Transportation|Truck|ICE:
   definition: Stock of trucks with internal combustion engine including hybrids and
     plug-in hybrids
   unit: million
-Stock|Transport|LDV|Large:
-  definition: Stock of large cars (EEC class D)
-  unit: thousand vehicles
-Stock|Transport|LDV|Large|BEV:
-  definition: Stock of large battery electric cars (EEC class D)
-  unit: thousand vehicles
-Stock|Transport|LDV|Large|FCEV:
-  definition: Stock of large fuel cell electric cars (EEC class D)
-  unit: thousand vehicles
-Stock|Transport|LDV|Large|HEV:
-  definition: Stock of Large hybrid electric cars (EEC class D)
-  unit: thousand vehicles
-Stock|Transport|LDV|Large|ICEV:
-  definition: Stock of large internal combustion engine cars (EEC class D)
-  unit: thousand vehicles
-Stock|Transport|LDV|Large|PHEV:
-  definition: Stock of Large plug-in hybrid electric cars (EEC class D)
-  unit: thousand vehicles
-Stock|Transport|LDV|Medium:
-  definition: Stock of medium cars (EEC class C)
-  unit: thousand vehicles
-Stock|Transport|LDV|Medium|BEV:
-  definition: Stock of medium battery electric cars (EEC class C)
-  unit: thousand vehicles
-Stock|Transport|LDV|Medium|FCEV:
-  definition: Stock of medium fuel cell electric cars (EEC class C)
-  unit: thousand vehicles
-Stock|Transport|LDV|Medium|HEV:
-  definition: Stock of Medium hybrid electric cars (EEC class C)
-  unit: thousand vehicles
-Stock|Transport|LDV|Medium|ICEV:
-  definition: Stock of medium internal combustion engine cars (EEC class C)
-  unit: thousand vehicles
-Stock|Transport|LDV|Medium|PHEV:
-  definition: Stock of Medium plug-in hybrid electric cars (EEC class C)
-  unit: thousand vehicles
-Stock|Transport|LDV|Mini:
-  definition: Stock of mini cars (EEC class A)
-  unit: thousand vehicles
-Stock|Transport|LDV|Mini|BEV:
-  definition: Stock of mini battery electric cars (EEC class A)
-  unit: thousand vehicles
-Stock|Transport|LDV|Mini|FCEV:
-  definition: Stock of mini fuel cell electric cars (EEC class A)
-  unit: thousand vehicles
-Stock|Transport|LDV|Mini|HEV:
-  definition: Stock of mini hybrid electric cars (EEC class A)
-  unit: thousand vehicles
-Stock|Transport|LDV|Mini|ICEV:
-  definition: Stock of mini internal combustion engine cars (EEC class A)
-  unit: thousand vehicles
-Stock|Transport|LDV|Mini|PHEV:
-  definition: Stock of mini plug-in hybrid electric cars (EEC class A)
-  unit: thousand vehicles
-Stock|Transport|LDV|SUV:
-  definition: Stock of SUVs (EEC class J)
-  unit: thousand vehicles
-Stock|Transport|LDV|SUV|BEV:
-  definition: Stock of battery electric SUVs (EEC class J)
-  unit: thousand vehicles
-Stock|Transport|LDV|SUV|FCEV:
-  definition: Stock of fuel cell electric SUVs (EEC class J)
-  unit: thousand vehicles
-Stock|Transport|LDV|SUV|HEV:
-  definition: Stock of hybrid electric SUVs (EEC class J)
-  unit: thousand vehicles
-Stock|Transport|LDV|SUV|ICEV:
-  definition: Stock of internal combustion engine SUVs (EEC class J)
-  unit: thousand vehicles
-Stock|Transport|LDV|SUV|PHEV:
-  definition: Stock of plug-in hybrid electric SUVs (EEC class J)
-  unit: thousand vehicles
-Stock|Transport|LDV|Small:
-  definition: Stock of small cars (EEC class B)
-  unit: thousand vehicles
-Stock|Transport|LDV|Small|BEV:
-  definition: Stock of small battery electric cars (EEC class B)
-  unit: thousand vehicles
-Stock|Transport|LDV|Small|FCEV:
-  definition: Stock of small fuel cell electric cars (EEC class B)
-  unit: thousand vehicles
-Stock|Transport|LDV|Small|HEV:
-  definition: Stock of Small hybrid electric cars (EEC class B)
-  unit: thousand vehicles
-Stock|Transport|LDV|Small|ICEV:
-  definition: Stock of small internal combustion engine cars (EEC class B)
-  unit: thousand vehicles
-Stock|Transport|LDV|Small|PHEV:
-  definition: Stock of Small plug-in hybrid electric cars (EEC class B)
-  unit: thousand vehicles
-Stock|Transport|LDV|Two-Wheelers:
-  definition: Stock of two-wheelers
-  unit: thousand vehicles
-Stock|Transport|LDV|Two-Wheelers|BEV:
-  definition: Stock of battery electric two-wheelers
-  unit: thousand vehicles
-Stock|Transport|LDV|Two-Wheelers|ICEV:
-  definition: Stock of internal combustion engine two-wheelers
-  unit: thousand vehicles
-Stock|Transport|LDV|Van:
-  definition: Stock of Vans (EEC class M)
-  unit: thousand vehicles
-Stock|Transport|LDV|Van|BEV:
-  definition: Stock of battery electric Vans (EEC class M)
-  unit: thousand vehicles
-Stock|Transport|LDV|Van|FCEV:
-  definition: Stock of fuel cell electric Vans (EEC class M)
-  unit: thousand vehicles
-Stock|Transport|LDV|Van|HEV:
-  definition: Stock of hybrid electric Vans (EEC class M)
-  unit: thousand vehicles
-Stock|Transport|LDV|Van|ICEV:
-  definition: Stock of internal combustion engine Vans (EEC class M)
-  unit: thousand vehicles
-Stock|Transport|LDV|Van|PHEV:
-  definition: Stock of plug-in hybrid electric Vans (EEC class M)
-  unit: thousand vehicles
-Stock|Transport|Truck|Truck (0-3.5t):
+Stock|Transportation|Truck|Truck (0-3.5t):
   definition: Stock of trucks with weight < 3.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (0-3.5t)|BEV:
+Stock|Transportation|Truck|Truck (0-3.5t)|BEV:
   definition: Stock battery electric trucks with weight < 3.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (0-3.5t)|FCEV:
+Stock|Transportation|Truck|Truck (0-3.5t)|FCEV:
   definition: Stock fuel-cell electric trucks with weight < 3.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (0-3.5t)|ICEV:
+Stock|Transportation|Truck|Truck (0-3.5t)|ICEV:
   definition: Stock internal-combustion engine trucks with weight < 3.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (26t):
+Stock|Transportation|Truck|Truck (26t):
   definition: Stock of trucks with weight 26t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (26t)|BEV:
+Stock|Transportation|Truck|Truck (26t)|BEV:
   definition: Stock battery electric trucks with weight 26t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (26t)|FCEV:
+Stock|Transportation|Truck|Truck (26t)|FCEV:
   definition: Stock fuel-cell electric trucks with weight 26t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (26t)|ICEV:
+Stock|Transportation|Truck|Truck (26t)|ICEV:
   definition: Stock internal-combustion engine trucks with weight 26t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (40t):
+Stock|Transportation|Truck|Truck (40t):
   definition: Stock of trucks with weight 40t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (40t)|BEV:
+Stock|Transportation|Truck|Truck (40t)|BEV:
   definition: Stock battery electric trucks with weight 40t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (40t)|FCEV:
+Stock|Transportation|Truck|Truck (40t)|FCEV:
   definition: Stock fuel-cell electric trucks with weight 40t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (40t)|ICEV:
+Stock|Transportation|Truck|Truck (40t)|ICEV:
   definition: Stock internal-combustion engine trucks with weight 40t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (7.5t):
+Stock|Transportation|Truck|Truck (7.5t):
   definition: Stock of trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (7.5t)|BEV:
+Stock|Transportation|Truck|Truck (7.5t)|BEV:
   definition: Stock battery electric trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (7.5t)|FCEV:
+Stock|Transportation|Truck|Truck (7.5t)|FCEV:
   definition: Stock fuel cell electric trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
-Stock|Transport|Truck|Truck (7.5t)|ICEV:
+Stock|Transportation|Truck|Truck (7.5t)|ICEV:
   definition: Stock internal combustion engine trucks with weight 3.5 - 7.5t
   unit: thousand vehicles
 Subsidies|Energy:
