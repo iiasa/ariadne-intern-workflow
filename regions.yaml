@@ -4,6 +4,9 @@
 # Any changes to this file must also be migrated manually
 # to the IIASA Scenario Explorer by an IIASA admin before any data uploads.
 
+common:
+  World:
+
 Europäische Länder:
   Bulgarien:
     iso3: BGR
