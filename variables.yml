@@ -1291,11 +1291,34 @@ Carbon Management|Carbon Capture and Storage:
 Carbon Management|Carbon Capture and Storage|Biomass:
   definition: total carbon dioxide from biomass captured and stored underground
   unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|Biomass|Energy|Supply:
+  definition: total carbon dioxide emissions captured from bioenergy use and stored
+    underground
+  unit: Mt CO2/yr
 Carbon Management|Carbon Capture and Storage|DACCS:
   definition: total carbon dioxide from direct air capture stored underground
   unit: Mt CO2/yr
 Carbon Management|Carbon Capture and Storage|Fossil:
   definition: total carbon dioxide from fossil sources captured and stored underground
+  unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|Fossil|Energy|Supply:
+  definition: total carbon dioxide emissions captured from fossil fuel use in energy
+    supply (IPCC category 1A) and stored underground
+  unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|Industrial Processes:
+  definition: total carbon dioxide emissions from industrial processes as listed in
+    IPCC categories 2A, B, C, E captured and stored underground
+  unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|Industry:
+  definition: total carbon dioxide emissions from industry captured and stored underground
+  unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|Industry|Biomass:
+  definition: total carbon dioxide emissions from biomass captured in industry sector
+    and stored underground
+  unit: Mt CO2/yr
+Carbon Management|Carbon Capture and Storage|Industry|Fossil:
+  definition: total carbon dioxide emissions from fossils (incl. minerals) captured
+    in industry sector and stored underground
   unit: Mt CO2/yr
 Carbon Management|Carbon Capture and Usage:
   definition: total carbon dioxide captured and used (e.g. as feedstock in industry
@@ -5083,7 +5106,7 @@ Investment|Energy Demand|Residential and Commercial|Building Retrofits|Reduction
     structure, technical equipment, etc.
   unit: billion EUR2020/yr
 Investment|Energy Demand|Residential and Commercial|High-Efficiency Buildings:
-  definition: investment into residential and commercial building shells(all types
+  definition: investment into residential and commercial building shells (all types
     of new buildings that are relatively high in their energy efficiency), not including
     the costs of the general building structure, technical equipment, etc.
   unit: billion EUR2020/yr
@@ -6989,161 +7012,164 @@ Revenue|government:
 Revenue|government|Tax:
   definition: government revenue from taxes
   unit: billion EUR2020/yr
+Sales|Transportation|Bus:
+  definition: Sales of heavy buses
+  unit: million
+Sales|Transportation|Bus|BEV:
+  definition: Sales of battery electric buses
+  unit: million
+Sales|Transportation|Bus|FCEV:
+  definition: Sales of fuel cell electric buses
+  unit: million
+Sales|Transportation|Bus|ICE:
+  definition: Sales of buses with internal combustion engine including hybrids and
+    plug-in hybrids
+  unit: million
+Sales|Transportation|LDV:
+  definition: Sales of light duty vehicles
+  unit: million
+Sales|Transportation|LDV|BEV:
+  definition: Sales of light duty battery electric vehicles
+  unit: million
+Sales|Transportation|LDV|BEV|Compact Car:
+  definition: Sales of compact battery electric cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|BEV|Large Car and SUV:
+  definition: Sales of large battery electric cars and SUVs (US EPA)
+  unit: million
+Sales|Transportation|LDV|BEV|Midsize Car:
+  definition: Sales of midsize battery electric cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|BEV|Subcompact Car:
+  definition: Sales of subcompact battery electric cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|BEV|Two-Wheelers:
+  definition: Sales of battery electric two-wheelers
+  unit: million
 Sales|Transportation|LDV|Compact Car:
   definition: Sales of compact cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Compact Car|BEV:
-  definition: Sales of compact battery electric cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Compact Car|FCEV:
+  unit: million
+Sales|Transportation|LDV|FCEV:
+  definition: Sales of light duty fuel cell electric vehicles
+  unit: million
+Sales|Transportation|LDV|FCEV|Compact Car:
   definition: Sales of compact fuel cell electric cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Compact Car|ICEV:
+  unit: million
+Sales|Transportation|LDV|FCEV|Large Car and SUV:
+  definition: Sales of large fuel cell electric cars and SUVs (US EPA)
+  unit: million
+Sales|Transportation|LDV|FCEV|Midsize Car:
+  definition: Sales of midsize fuel cell electric cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|FCEV|Subcompact Car:
+  definition: Sales of subcompact fuel cell electric cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|ICE:
+  definition: Sales of light duty vehicles with internal combustion engine including
+    mild-hybrids and excluding plug-in hybrids
+  unit: million
+Sales|Transportation|LDV|ICE|Compact Car:
   definition: Sales of compact internal combustion engine cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Compact Car|PHEV:
-  definition: Sales of compact plug-in hybrid electric cars (US EPA)
-  unit: thousand vehicles
+  unit: million
+Sales|Transportation|LDV|ICE|Large Car and SUV:
+  definition: Sales of large internal combustion engine cars and SUVs (US EPA)
+  unit: million
+Sales|Transportation|LDV|ICE|Midsize Car:
+  definition: Sales of midsize internal combustion engine cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|ICE|Subcompact Car:
+  definition: Sales of subcompact internal combustion engine cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|ICE|Two-Wheelers:
+  definition: Sales of internal combustion engine two-wheelers
+  unit: million
 Sales|Transportation|LDV|Large Car and SUV:
   definition: Sales of large cars and SUVs (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Large Car and SUV|BEV:
-  definition: Sales of large battery electric cars and SUVs (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Large Car and SUV|FCEV:
-  definition: Sales of large fuel cell electric cars and SUVs (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Large Car and SUV|ICEV:
-  definition: Sales of large internal combustion engine cars and SUVs (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Large Car and SUV|PHEV:
-  definition: Sales of Large plug-in hybrid electric cars and SUVs (US EPA)
-  unit: thousand vehicles
+  unit: million
 Sales|Transportation|LDV|Midsize Car:
   definition: Sales of midsize cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Midsize Car|BEV:
-  definition: Sales of midsize battery electric cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Midsize Car|FCEV:
-  definition: Sales of midsize fuel cell electric cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Midsize Car|ICEV:
-  definition: Sales of midsize internal combustion engine cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Midsize Car|PHEV:
+  unit: million
+Sales|Transportation|LDV|PHEV:
+  definition: Sales of light duty plug-in hybrid electric cars
+  unit: million
+Sales|Transportation|LDV|PHEV|Compact Car:
+  definition: Sales of compact plug-in hybrid electric cars (US EPA)
+  unit: million
+Sales|Transportation|LDV|PHEV|Large Car and SUV:
+  definition: Sales of Large plug-in hybrid electric cars and SUVs (US EPA)
+  unit: million
+Sales|Transportation|LDV|PHEV|Midsize Car:
   definition: Sales of midsize plug-in hybrid electric cars (US EPA)
-  unit: thousand vehicles
+  unit: million
+Sales|Transportation|LDV|PHEV|Subcompact Car:
+  definition: Sales of subcompact plug-in hybrid electric cars (US EPA)
+  unit: million
 Sales|Transportation|LDV|Subcompact Car:
   definition: Sales of subcompact (and smaller) cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Subcompact Car|BEV:
-  definition: Sales of subcompact battery electric cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Subcompact Car|FCEV:
-  definition: Sales of subcompact fuel cell electric cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Subcompact Car|ICEV:
-  definition: Sales of subcompact internal combustion engine cars (US EPA)
-  unit: thousand vehicles
-Sales|Transportation|LDV|Subcompact Car|PHEV:
-  definition: Sales of subcompact plug-in hybrid electric cars (US EPA)
-  unit: thousand vehicles
+  unit: million
 Sales|Transportation|LDV|Two-Wheelers:
   definition: Sales of two-wheelers
-  unit: thousand vehicles
-Sales|Transportation|LDV|Two-Wheelers|BEV:
-  definition: Sales of battery electric two-wheelers
-  unit: thousand vehicles
-Sales|Transportation|LDV|Two-Wheelers|ICEV:
-  definition: Sales of internal combustion engine two-wheelers
-  unit: thousand vehicles
+  unit: million
+Sales|Transportation|Truck:
+  definition: Sales of heavy trucks
+  unit: million
+Sales|Transportation|Truck|BEV:
+  definition: Sales of battery electric trucks
+  unit: million
+Sales|Transportation|Truck|BEV|Truck (0-3.5t):
+  definition: Sales of battery electric trucks with weight < 3.5t
+  unit: million
+Sales|Transportation|Truck|BEV|Truck (26t):
+  definition: Sales of battery electric trucks with weight 26t
+  unit: million
+Sales|Transportation|Truck|BEV|Truck (40t):
+  definition: Sales of battery electric trucks with weight 40t
+  unit: million
+Sales|Transportation|Truck|BEV|Truck (7.5t):
+  definition: Sales of battery electric trucks with weight 3.5 - 7.5t
+  unit: million
+Sales|Transportation|Truck|FCEV:
+  definition: Sales of fuel cell electric trucks
+  unit: million
+Sales|Transportation|Truck|FCEV|Truck (0-3.5t):
+  definition: Sales of fuel-cell electric trucks with weight < 3.5t
+  unit: million
+Sales|Transportation|Truck|FCEV|Truck (26t):
+  definition: Sales of fuel-cell electric trucks with weight 26t
+  unit: million
+Sales|Transportation|Truck|FCEV|Truck (40t):
+  definition: Sales of fuel-cell electric trucks with weight 40t
+  unit: million
+Sales|Transportation|Truck|FCEV|Truck (7.5t):
+  definition: Sales of fuel cell electric trucks with weight 3.5 - 7.5t
+  unit: million
+Sales|Transportation|Truck|ICE:
+  definition: Sales of trucks with internal combustion engine including hybrids and
+    plug-in hybrids
+  unit: million
+Sales|Transportation|Truck|ICE|Truck (0-3.5t):
+  definition: Sales of internal-combustion engine trucks with weight < 3.5t
+  unit: million
+Sales|Transportation|Truck|ICE|Truck (26t):
+  definition: Sales of internal-combustion engine trucks with weight 26t
+  unit: million
+Sales|Transportation|Truck|ICE|Truck (40t):
+  definition: Sales of internal-combustion engine trucks with weight 40t
+  unit: million
+Sales|Transportation|Truck|ICE|Truck (7.5t):
+  definition: Sales of internal combustion engine trucks with weight 3.5 - 7.5t
+  unit: million
 Sales|Transportation|Truck|Truck (0-3.5t):
   definition: Sales of trucks with weight < 3.5t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (0-3.5t)|BEV:
-  definition: Sales of battery electric trucks with weight < 3.5t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (0-3.5t)|FCEV:
-  definition: Sales of fuel-cell electric trucks with weight < 3.5t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (0-3.5t)|ICEV:
-  definition: Sales of internal-combustion engine trucks with weight < 3.5t
-  unit: thousand vehicles
+  unit: million
 Sales|Transportation|Truck|Truck (26t):
   definition: Sales of trucks with weight 26t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (26t)|BEV:
-  definition: Sales of battery electric trucks with weight 26t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (26t)|FCEV:
-  definition: Sales of fuel-cell electric trucks with weight 26t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (26t)|ICEV:
-  definition: Sales of internal-combustion engine trucks with weight 26t
-  unit: thousand vehicles
+  unit: million
 Sales|Transportation|Truck|Truck (40t):
   definition: Sales of trucks with weight 40t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (40t)|BEV:
-  definition: Sales of battery electric trucks with weight 40t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (40t)|FCEV:
-  definition: Sales of fuel-cell electric trucks with weight 40t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (40t)|ICEV:
-  definition: Sales of internal-combustion engine trucks with weight 40t
-  unit: thousand vehicles
+  unit: million
 Sales|Transportation|Truck|Truck (7.5t):
   definition: Sales of trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (7.5t)|BEV:
-  definition: Sales of battery electric trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (7.5t)|FCEV:
-  definition: Sales of fuel cell electric trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Sales|Transportation|Truck|Truck (7.5t)|ICEV:
-  definition: Sales of internal combustion engine trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Sale|Transportation|Bus:
-  definition: Sale of heavy buses
-  unit: million
-Sale|Transportation|Bus|BEV:
-  definition: Sale of battery electric buses
-  unit: million
-Sale|Transportation|Bus|FCEV:
-  definition: Sale of fuel cell electric buses
-  unit: million
-Sale|Transportation|Bus|ICE:
-  definition: Sale of buses with internal combustion engine including hybrids and
-    plug-in hybrids
-  unit: million
-Sale|Transportation|LDV:
-  definition: Sale of light duty vehicles
-  unit: million
-Sale|Transportation|LDV|BEV:
-  definition: Sale of light duty battery electric vehicles
-  unit: million
-Sale|Transportation|LDV|FCEV:
-  definition: Sale of light duty fuel cell electric vehicles
-  unit: million
-Sale|Transportation|LDV|ICE:
-  definition: Sale of light duty vehicles with internal combustion engine including
-    hybrids and plug-in hybrids
-  unit: million
-Sale|Transportation|Truck:
-  definition: Sale of heavy trucks
-  unit: million
-Sale|Transportation|Truck|BEV:
-  definition: Sale of battery electric trucks
-  unit: million
-Sale|Transportation|Truck|FCEV:
-  definition: Sale of fuel cell electric trucks
-  unit: million
-Sale|Transportation|Truck|ICE:
-  definition: Sale of trucks with internal combustion engine including hybrids and
-    plug-in hybrids
   unit: million
 Secondary Energy:
   definition: total secondary energy - the sum of all secondary energy carrier production
@@ -7657,6 +7683,35 @@ Secondary Energy|Solids|Coal:
     the usage in the buildings, transport and industry sector. This does not include
     the usage of coal for energy conversion into other (non-solid) secondary energy.
   unit: PJ/yr
+Stock|Residential and Commercial|Building Retrofits:
+  definition: stock of residential and commercial building shells that have been retrofitted
+    to become more energy efficient (all types of existing buildings)
+  unit: million
+Stock|Residential and Commercial|Building Retrofits|High-Efficiency:
+  definition: stock of residential and commercial building shells that have been retrofitted
+    to become highly energy efficient (all types of existing buildings)
+  unit: million
+Stock|Residential and Commercial|Building Retrofits|Medium-Efficiency:
+  definition: stock of residential and commercial building shells that have been retrofitted
+    to become medium energy efficient (all types of existing buildings)
+  unit: million
+Stock|Residential and Commercial|Building Retrofits|Reduction of Flow-Temperature:
+  definition: stock of residential and commercial building shells that have undergone
+    a switch from a high temperature heating system (e.g. radiatior) to a low temperature
+    heating system (e.g. floor-heating)
+  unit: million
+Stock|Residential and Commercial|High-Efficiency Buildings:
+  definition: stock of residential and commercial building shells (all types of new
+    buildings that are relatively high in their energy efficiency)
+  unit: million
+Stock|Residential and Commercial|Low-Efficiency Buildings:
+  definition: stock of residential and commercial building shells (all types of new
+    buildings that are relatively low in their energy efficiency)
+  unit: million
+Stock|Residential and Commercial|Medium-Efficiency Buildings:
+  definition: stock of residential and commercial building shells (all types of new
+    buildings that are relatively medium-range in their energy efficiency)
+  unit: million
 Stock|Space Heating:
   definition: Stock of space heating devices
   unit: million
@@ -7819,143 +7874,146 @@ Stock|Transportation|LDV:
 Stock|Transportation|LDV|BEV:
   definition: Stock of light duty battery electric vehicles
   unit: million
+Stock|Transportation|LDV|BEV|Compact Car:
+  definition: Stock of compact battery electric cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|BEV|Large Car and SUV:
+  definition: Stock of large battery electric cars and SUVs (US EPA)
+  unit: million
+Stock|Transportation|LDV|BEV|Midsize Car:
+  definition: Stock of midsize battery electric cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|BEV|Subcompact Car:
+  definition: Stock of subcompact battery electric cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|BEV|Two-Wheelers:
+  definition: Stock of battery electric two-wheelers
+  unit: million
 Stock|Transportation|LDV|Compact Car:
   definition: Stock of compact cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Compact Car|BEV:
-  definition: Stock of compact battery electric cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Compact Car|FCEV:
-  definition: Stock of compact fuel cell electric cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Compact Car|ICEV:
-  definition: Stock of compact internal combustion engine cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Compact Car|PHEV:
-  definition: Stock of compact plug-in hybrid electric cars (US EPA)
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|LDV|FCEV:
   definition: Stock of light duty fuel cell electric vehicles
   unit: million
+Stock|Transportation|LDV|FCEV|Compact Car:
+  definition: Stock of compact fuel cell electric cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|FCEV|Large Car and SUV:
+  definition: Stock of large fuel cell electric cars and SUVs (US EPA)
+  unit: million
+Stock|Transportation|LDV|FCEV|Midsize Car:
+  definition: Stock of midsize fuel cell electric cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|FCEV|Subcompact Car:
+  definition: Stock of subcompact fuel cell electric cars (US EPA)
+  unit: million
 Stock|Transportation|LDV|ICE:
   definition: Stock of light duty vehicles with internal combustion engine including
-    hybrids and plug-in hybrids
+    mild-hybrids and excluding plug-in hybrids
+  unit: million
+Stock|Transportation|LDV|ICE|Compact Car:
+  definition: Stock of compact internal combustion engine cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|ICE|Large Car and SUV:
+  definition: Stock of large internal combustion engine cars and SUVs (US EPA)
+  unit: million
+Stock|Transportation|LDV|ICE|Midsize Car:
+  definition: Stock of midsize internal combustion engine cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|ICE|Subcompact Car:
+  definition: Stock of subcompact internal combustion engine cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|ICE|Two-Wheelers:
+  definition: Stock of internal combustion engine two-wheelers
   unit: million
 Stock|Transportation|LDV|Large Car and SUV:
   definition: Stock of large cars and SUVs (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Large Car and SUV|BEV:
-  definition: Stock of large battery electric cars and SUVs (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Large Car and SUV|FCEV:
-  definition: Stock of large fuel cell electric cars and SUVs (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Large Car and SUV|ICEV:
-  definition: Stock of large internal combustion engine cars and SUVs (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Large Car and SUV|PHEV:
-  definition: Stock of Large plug-in hybrid electric cars and SUVs (US EPA)
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|LDV|Midsize Car:
   definition: Stock of midsize cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Midsize Car|BEV:
-  definition: Stock of midsize battery electric cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Midsize Car|FCEV:
-  definition: Stock of midsize fuel cell electric cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Midsize Car|ICEV:
-  definition: Stock of midsize internal combustion engine cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Midsize Car|PHEV:
+  unit: million
+Stock|Transportation|LDV|PHEV:
+  definition: Stock of light duty plug-in hybrid electric cars
+  unit: million
+Stock|Transportation|LDV|PHEV|Compact Car:
+  definition: Stock of compact plug-in hybrid electric cars (US EPA)
+  unit: million
+Stock|Transportation|LDV|PHEV|Large Car and SUV:
+  definition: Stock of Large plug-in hybrid electric cars and SUVs (US EPA)
+  unit: million
+Stock|Transportation|LDV|PHEV|Midsize Car:
   definition: Stock of midsize plug-in hybrid electric cars (US EPA)
-  unit: thousand vehicles
+  unit: million
+Stock|Transportation|LDV|PHEV|Subcompact Car:
+  definition: Stock of subcompact plug-in hybrid electric cars (US EPA)
+  unit: million
 Stock|Transportation|LDV|Subcompact Car:
   definition: Stock of subcompact (and smaller) cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Subcompact Car|BEV:
-  definition: Stock of subcompact battery electric cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Subcompact Car|FCEV:
-  definition: Stock of subcompact fuel cell electric cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Subcompact Car|ICEV:
-  definition: Stock of subcompact internal combustion engine cars (US EPA)
-  unit: thousand vehicles
-Stock|Transportation|LDV|Subcompact Car|PHEV:
-  definition: Stock of subcompact plug-in hybrid electric cars (US EPA)
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|LDV|Two-Wheelers:
   definition: Stock of two-wheelers
-  unit: thousand vehicles
-Stock|Transportation|LDV|Two-Wheelers|BEV:
-  definition: Stock of battery electric two-wheelers
-  unit: thousand vehicles
-Stock|Transportation|LDV|Two-Wheelers|ICEV:
-  definition: Stock of internal combustion engine two-wheelers
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|Truck:
   definition: Stock of trucks
   unit: million
 Stock|Transportation|Truck|BEV:
   definition: Stock of battery electric trucks
   unit: million
+Stock|Transportation|Truck|BEV|Truck (0-3.5t):
+  definition: Stock of battery electric trucks with weight < 3.5t
+  unit: million
+Stock|Transportation|Truck|BEV|Truck (26t):
+  definition: Stock of battery electric trucks with weight 26t
+  unit: million
+Stock|Transportation|Truck|BEV|Truck (40t):
+  definition: Stock of battery electric trucks with weight 40t
+  unit: million
+Stock|Transportation|Truck|BEV|Truck (7.5t):
+  definition: Stock of battery electric trucks with weight 3.5 - 7.5t
+  unit: million
 Stock|Transportation|Truck|FCEV:
   definition: Stock of fuel cell electric trucks
+  unit: million
+Stock|Transportation|Truck|FCEV|Truck (0-3.5t):
+  definition: Stock of fuel-cell electric trucks with weight < 3.5t
+  unit: million
+Stock|Transportation|Truck|FCEV|Truck (26t):
+  definition: Stock of fuel-cell electric trucks with weight 26t
+  unit: million
+Stock|Transportation|Truck|FCEV|Truck (40t):
+  definition: Stock of fuel-cell electric trucks with weight 40t
+  unit: million
+Stock|Transportation|Truck|FCEV|Truck (7.5t):
+  definition: Stock of fuel cell electric trucks with weight 3.5 - 7.5t
   unit: million
 Stock|Transportation|Truck|ICE:
   definition: Stock of trucks with internal combustion engine including hybrids and
     plug-in hybrids
   unit: million
+Stock|Transportation|Truck|ICE|Truck (0-3.5t):
+  definition: Stock of internal-combustion engine trucks with weight < 3.5t
+  unit: million
+Stock|Transportation|Truck|ICE|Truck (26t):
+  definition: Stock of internal-combustion engine trucks with weight 26t
+  unit: million
+Stock|Transportation|Truck|ICE|Truck (40t):
+  definition: Stock of internal-combustion engine trucks with weight 40t
+  unit: million
+Stock|Transportation|Truck|ICE|Truck (7.5t):
+  definition: Stock of internal combustion engine trucks with weight 3.5 - 7.5t
+  unit: million
 Stock|Transportation|Truck|Truck (0-3.5t):
   definition: Stock of trucks with weight < 3.5t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (0-3.5t)|BEV:
-  definition: Stock battery electric trucks with weight < 3.5t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (0-3.5t)|FCEV:
-  definition: Stock fuel-cell electric trucks with weight < 3.5t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (0-3.5t)|ICEV:
-  definition: Stock internal-combustion engine trucks with weight < 3.5t
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|Truck|Truck (26t):
   definition: Stock of trucks with weight 26t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (26t)|BEV:
-  definition: Stock battery electric trucks with weight 26t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (26t)|FCEV:
-  definition: Stock fuel-cell electric trucks with weight 26t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (26t)|ICEV:
-  definition: Stock internal-combustion engine trucks with weight 26t
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|Truck|Truck (40t):
   definition: Stock of trucks with weight 40t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (40t)|BEV:
-  definition: Stock battery electric trucks with weight 40t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (40t)|FCEV:
-  definition: Stock fuel-cell electric trucks with weight 40t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (40t)|ICEV:
-  definition: Stock internal-combustion engine trucks with weight 40t
-  unit: thousand vehicles
+  unit: million
 Stock|Transportation|Truck|Truck (7.5t):
   definition: Stock of trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (7.5t)|BEV:
-  definition: Stock battery electric trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (7.5t)|FCEV:
-  definition: Stock fuel cell electric trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
-Stock|Transportation|Truck|Truck (7.5t)|ICEV:
-  definition: Stock internal combustion engine trucks with weight 3.5 - 7.5t
-  unit: thousand vehicles
+  unit: million
 Subsidies|Energy:
   definition: Total energy-related subsidies
   unit: billion EUR2020/yr
