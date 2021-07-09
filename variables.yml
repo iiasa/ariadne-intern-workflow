@@ -4413,10 +4413,6 @@ Final Energy|Other Sector|Solids:
   definition: final energy solid fuel consumption by other sectors (including coal
     and solid biomass)
   unit: PJ/yr
-Final Energy|Residential:
-  definition: Final energy consumption of other sources that do not fit to any other
-    category by the Space Heating sector
-  unit: PJ/yr
 Final Energy|Residential and Commercial:
   definition: final energy consumed in the residential & commercial sector
   unit: PJ/yr
@@ -4595,6 +4591,10 @@ Final Energy|Residential and Commercial|Space Heating|Other:
 Final Energy|Residential and Commercial|Space Heating|Solids:
   definition: Final energy solid fuel consumption by the Space Heating sector (including
     coal and solid biomass)
+  unit: PJ/yr
+Final Energy|Residential and Commercial|Space and Water Heating:
+  definition: Final energy consumed for space heating in residential and commercial
+    buildings and final energy consumed in the Water Heating sector
   unit: PJ/yr
 Final Energy|Residential and Commercial|Water Heating:
   definition: Final energy consumed in the Water Heating sector
@@ -4993,6 +4993,11 @@ Final Energy|Transportation|Waste:
 Final Energy|Waste:
   definition: final energy consumption of non-renewable waste
   unit: PJ/yr
+? Final energy consumed for space heating in residential and commercial buildings
+  and final energy consumed in the Water Heating sector
+: definition: Final energy consumption of other sources that do not fit to any other
+    category by the Space Heating sector
+  unit: PJ/yr
 GDP|MER:
   definition: GDP at market exchange rate
   unit: billion EUR2020/yr
@@ -5022,9 +5027,6 @@ Gross Value Added|Industry|Engineering:
   unit: billion EUR2020/yr
 Gross Value Added|Industry|Food and Tobacco:
   definition: gross value added of the food and tobacco sector
-  unit: billion EUR2020/yr
-Gross Value Added|Industry|Iron and Steel:
-  definition: gross value added of iron and steel production
   unit: billion EUR2020/yr
 Gross Value Added|Industry|Manufacturing:
   definition: gross value added of the manufacturing sectors
@@ -7012,6 +7014,148 @@ Revenue|government:
 Revenue|government|Tax:
   definition: government revenue from taxes
   unit: billion EUR2020/yr
+Sales|Space Heating:
+  definition: Sales of space heating devices
+  unit: million
+Sales|Space Heating|Biomass Boiler:
+  definition: Sales of decentral biomass (wood) boilers for individual buildings
+  unit: million
+Sales|Space Heating|Biomass Boiler|HT:
+  definition: Sales of decentral biomass (wood) boilers for individual buildings in
+    a high temperature system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Biomass Boiler|LT:
+  definition: Sales of decentral biomass (wood) boilers for individual buildings in
+    a low temperature system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|CHP:
+  definition: Sales of decentral micro combined heat and power units (<100 kWel) for
+    individual buildings
+  unit: million
+Sales|Space Heating|CHP|HT:
+  definition: Sales of decentral micro combined heat and power units (<100 kWel) for
+    individual buildings in a high temperature system (i.e. radiator)
+  unit: million
+Sales|Space Heating|CHP|LT:
+  definition: Sales of decentral micro combined heat and power units (<100 kWel) for
+    individual buildings in a low temperature system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|District Heating:
+  definition: Number of newly installed connections from buildings to district heating
+  unit: million
+Sales|Space Heating|Gas Boiler:
+  definition: Sales of decentral gas boilers for individual buildings
+  unit: million
+Sales|Space Heating|Gas Boiler|HT:
+  definition: Sales of decentral gas boilers for individual buildings in a high temperature
+    system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Gas Boiler|LT:
+  definition: Sales of decentral gas boilers for individual buildings in a low temperature
+    system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|Heat Pump:
+  definition: Sales of decentral heat pumps for individual buildings
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical:
+  definition: 'Sales of decentral electrical heat pumps (heat source: ground and air)
+    for individual buildings'
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical|Air:
+  definition: 'Sales of decentral electrical heat pumps (heat source: air) for individual
+    buildings'
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical|Air|HT:
+  definition: 'Sales of decentral electrical heat pumps (heat source: air) for individual
+    buildings in a high temperature system (i.e. radiator)'
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical|Air|LT:
+  definition: 'Sales of decentral electrical heat pumps (heat source: air) for individual
+    buildings in a low temperature system (i.e. floor heating)'
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical|Ground:
+  definition: 'Sales of decentral electrical heat pumps (heat source: ground) for
+    individual buildings'
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical|Ground|HT:
+  definition: 'Sales of decentral electrical heat pumps (heat source: ground) for
+    individual buildings in a high temperature system (i.e. radiator)'
+  unit: million
+Sales|Space Heating|Heat Pump|Electrical|Ground|LT:
+  definition: 'Sales of decentral electrical heat pumps (heat source: ground) for
+    individual buildings in a low temperature system (i.e. floor heating)'
+  unit: million
+Sales|Space Heating|Heat Pump|Gas:
+  definition: Sales of decentral gas heat pumps for individual buildings
+  unit: million
+Sales|Space Heating|Heat Pump|Gas|HT:
+  definition: Sales of decentral gas heat pumps for individual buildings in a high
+    temperature system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Heat Pump|Gas|LT:
+  definition: Sales of decentral gas heat pumps for individual buildings in a low
+    temperature system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|Heat Pump|Hybrid:
+  definition: Sales of decentral hybrid heat pumps (electrical heat pump with heat
+    source air and gas boiler) for individual buildings
+  unit: million
+Sales|Space Heating|Heat Pump|Hybrid|HT:
+  definition: Sales of decentral hybrid heat pumps (electrical heat pump with heat
+    source air and gas boiler) for individual buildings in a high temperature system
+    (i.e. radiator)
+  unit: million
+Sales|Space Heating|Heat Pump|Hybrid|LT:
+  definition: Sales of decentral hybrid heat pumps (electrical heat pump with heat
+    source air and gas boiler) for individual buildings in a low temperature system
+    (i.e. floor heating)
+  unit: million
+Sales|Space Heating|Hydrogen Boiler:
+  definition: Sales of decentral hydrogen boilers for individual buildings
+  unit: million
+Sales|Space Heating|Hydrogen Boiler|HT:
+  definition: Sales of decentral hydrogen boilers for individual buildings in a high
+    temperature system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Hydrogen Boiler|LT:
+  definition: Sales of decentral hydrogen boilers for individual buildings in a low
+    temperature system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|Hydrogen Fuel Cell:
+  definition: Sales of decentral hydrogen fuel cells for electricity and heat for
+    individual buildings
+  unit: million
+Sales|Space Heating|Hydrogen Fuel Cell|HT:
+  definition: Sales of decentral hydrogen fuel cells for electricity and heat for
+    individual buildings in a high temperature system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Hydrogen Fuel Cell|LT:
+  definition: Sales of decentral hydrogen fuel cells for electricity and heat for
+    individual buildings in a low temperature system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|Methane Fuel Cell:
+  definition: Sales of decentral methane fuel cells for electricity and heat for individual
+    buildings
+  unit: million
+Sales|Space Heating|Methane Fuel Cell|HT:
+  definition: Sales of decentral methane fuel cells for electricity and heat for individual
+    buildings in a high temperature system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Methane Fuel Cell|LT:
+  definition: Sales of decentral methane fuel cells for electricity and heat for individual
+    buildings in a low temperature system (i.e. floor heating)
+  unit: million
+Sales|Space Heating|Oil Boiler:
+  definition: Sales of decentral oil boilers for individual buildings
+  unit: million
+Sales|Space Heating|Oil Boiler|HT:
+  definition: Sales of decentral oil boilers for individual buildings in a high temperature
+    system (i.e. radiator)
+  unit: million
+Sales|Space Heating|Oil Boiler|LT:
+  definition: Sales of decentral oil boilers for individual buildings in a low temperature
+    system (i.e. floor heating)
+  unit: million
 Sales|Transportation|Bus:
   definition: Sales of heavy buses
   unit: million
@@ -7683,6 +7827,29 @@ Secondary Energy|Solids|Coal:
     the usage in the buildings, transport and industry sector. This does not include
     the usage of coal for energy conversion into other (non-solid) secondary energy.
   unit: PJ/yr
+Stock Addition|Industrial Steam generation:
+  definition: Industrial steam generation from newly added industrial steam generators
+  unit: TWh/yr
+Stock Addition|Industrial Steam generation|Electricity:
+  definition: Industrial steam generation from newly added industrial steam generators
+    using electricity
+  unit: TWh/yr
+Stock Addition|Industrial Steam generation|Fossil:
+  definition: Industrial steam generation from newly added industrial steam generators
+    using fossil sources
+  unit: TWh/yr
+Stock Addition|Industrial Steam generation|Heat Pump:
+  definition: Industrial steam generation from newly added industrial steam generators
+    using heat pumps
+  unit: TWh/yr
+Stock Addition|Industrial Steam generation|Hydrogen:
+  definition: Industrial steam generation from newly added industrial steam generators
+    using hydrogen
+  unit: TWh/yr
+Stock Addition|Industrial Steam generation|Synthetic Fossil:
+  definition: Industrial steam generation from newly added industrial steam generators
+    using synthetic fossils
+  unit: TWh/yr
 Stock|Residential and Commercial|Building Retrofits:
   definition: stock of residential and commercial building shells that have been retrofitted
     to become more energy efficient (all types of existing buildings)
