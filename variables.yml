@@ -50,11 +50,11 @@ Capacity Additions|Electricity|Gas|CC:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of gas Combined Cycle (CC) power plants
   unit: GW/yr
-Capacity Additions|Electricity|Gas|CC| w/ CCS:
+Capacity Additions|Electricity|Gas|CC|w/ CCS:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of gas Combined Cycle (CC) power plants with CCS
   unit: GW/yr
-Capacity Additions|Electricity|Gas|CC| w/o CCS:
+Capacity Additions|Electricity|Gas|CC|w/o CCS:
   definition: Additions of new capacities (gross, w/o accounting for retirements)
     of gas Combined Cycle (CC) power plants without CCS
   unit: GW/yr
@@ -4413,6 +4413,9 @@ Final Energy|Other Sector|Solids:
   definition: final energy solid fuel consumption by other sectors (including coal
     and solid biomass)
   unit: PJ/yr
+Final Energy|Residential:
+  definition: final energy consumption by the residential sector
+  unit: PJ/yr
 Final Energy|Residential and Commercial:
   definition: final energy consumed in the residential & commercial sector
   unit: PJ/yr
@@ -4636,9 +4639,6 @@ Final Energy|Residential and Commercial|Water Heating|Solids:
   definition: Final energy solid fuel consumption by the Water Heating sector (including
     coal and solid biomass)
   unit: PJ/yr
-Final Energy|Residential| Waste:
-  definition: final energy consumption by the residential sector of waste
-  unit: PJ/yr
 Final Energy|Residential|Electricity:
   definition: final energy consumption by the residential sector of electricity (including
     on-site solar PV), excluding transmission/distribution losses
@@ -4672,6 +4672,9 @@ Final Energy|Residential|Renewables:
 Final Energy|Residential|Solids:
   definition: final energy solid fuel consumption by the residential sector (including
     coal and solid biomass)
+  unit: PJ/yr
+Final Energy|Residential|Waste:
+  definition: final energy consumption by the residential sector of waste
   unit: PJ/yr
 Final Energy|Solar:
   definition: final energy consumption of solar energy (e.g., from roof-top solar
@@ -4992,11 +4995,6 @@ Final Energy|Transportation|Waste:
   unit: PJ/yr
 Final Energy|Waste:
   definition: final energy consumption of non-renewable waste
-  unit: PJ/yr
-? Final energy consumed for space heating in residential and commercial buildings
-  and final energy consumed in the Water Heating sector
-: definition: Final energy consumption of other sources that do not fit to any other
-    category by the Space Heating sector
   unit: PJ/yr
 GDP|MER:
   definition: GDP at market exchange rate
