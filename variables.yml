@@ -3049,7 +3049,7 @@ Final Energy|Bunkers|Navigation|Liquids|Efuel:
 Final Energy|Bunkers|Navigation|Liquids|Petroleum:
   definition: final energy consumption of liquids from fossil origin (conventional
     & unconventional petroleum) as bunker fuels for navigation
-  unit: .nan
+  unit: PJ/yr
 Final Energy|Bunkers|Navigation|Liquids|Synthetic Fossil:
   definition: final energy consumption of synthetic liquids of fossil origin (e.g.
     coal or gas liquefaction) as bunker fuels for navigation
