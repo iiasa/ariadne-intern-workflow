@@ -3289,6 +3289,9 @@ Final Energy|Industry excl Non-Energy Use|Engineering|Other:
     sector (please provide a definition of the energy carriers in this category in
     the 'comments' tab)
   unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Engineering|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for engineering
+  unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Engineering|Solar:
   definition: Final energy consumption of solar thermal heat by the engineering sector
   unit: PJ/yr
@@ -3366,6 +3369,9 @@ Final Energy|Industry excl Non-Energy Use|Food and Tobacco|Other:
   definition: Final energy consumption of other energy carriers by the food and tobacco
     sector (please provide a definition of the energy carriers in this category in
     the 'comments' tab)
+  unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Food and Tobacco|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for food and tobacco
   unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Food and Tobacco|Solar:
   definition: Final energy consumption of solar thermal heat by the food and tobacco
@@ -3500,6 +3506,9 @@ Final Energy|Industry excl Non-Energy Use|Non-Ferrous Metals|Other:
     metals sector (please provide a definition of the energy carriers in this category
     in the 'comments' tab)
   unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Non-Ferrous Metals|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for non-ferrous metals
+  unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Non-Ferrous Metals|Solar:
   definition: Final energy consumption of solar thermal heat by the non-ferrous metals
     sector
@@ -3583,6 +3592,9 @@ Final Energy|Industry excl Non-Energy Use|Non-Metallic Minerals|Other:
     minerals sector (please provide a definition of the energy carriers in this category
     in the 'comments' tab)
   unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Non-Metallic Minerals|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for non-metallic minerals
+  unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Non-Metallic Minerals|Solar:
   definition: Final energy consumption of solar thermal heat by the non-metallic minerals
     sector
@@ -3606,6 +3618,9 @@ Final Energy|Industry excl Non-Energy Use|Other:
   definition: final energy consumption by the industrial sector of other sources that
     do not fit to any other category, excluding feedstocks (please provide a definition
     of the sources in this category in the 'comments' tab)
+  unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Power2Heat:
+  definition: final energy coal consumption by the industrial sector
   unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Pulp and Paper:
   definition: Final energy consumption of the pulp and paper sector
@@ -3665,6 +3680,9 @@ Final Energy|Industry excl Non-Energy Use|Pulp and Paper|Other:
   definition: Final energy consumption of other energy carriers by the pulp and paper
     sector (please provide a definition of the energy carriers in this category in
     the 'comments' tab)
+  unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Pulp and Paper|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for pulp and paper
   unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Pulp and Paper|Solar:
   definition: Final energy consumption of solar thermal heat by the pulp and paper
@@ -3759,6 +3777,9 @@ Final Energy|Industry excl Non-Energy Use|Steel|Other:
     sector (please provide a definition of the energy carriers in this category in
     the 'comments' tab)
   unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Steel|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for steel production
+  unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Steel|Solar:
   definition: Final energy consumption of solar thermal heat by the iron and steel
     sector
@@ -3840,6 +3861,9 @@ Final Energy|Industry excl Non-Energy Use|Vehicle Construction|Other:
   definition: Final energy consumption of other energy carriers by the vehicle construction
     sector (please provide a definition of the energy carriers in this category in
     the 'comments' tab)
+  unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Vehicle Construction|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for vehicle construction
   unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Vehicle Construction|Solar:
   definition: Final energy consumption of solar thermal heat by the vehicle construction
@@ -3923,6 +3947,9 @@ Final Energy|Industry excl Non-Energy Use|other Industries|Other:
   definition: Final energy consumption of other energy carriers by other industry
     sectors (please provide a definition of the energy carriers in this category in
     the 'comments' tab)
+  unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|other Industries|Power2Heat:
+  definition: 'Final energy consumption of p2heat in industry for other industries '
   unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|other Industries|Solar:
   definition: Final energy consumption of solar thermal heat by other industry sectors
@@ -7320,6 +7347,9 @@ Secondary Energy:
 Secondary Energy Input|Efuel|Electricity:
   definition: secondary energy consumption of efuels for the production of electricity
   unit: PJ/yr
+Secondary Energy Input|Efuel|Heat:
+  definition: secondary energy consumption of efuels for the production of heat
+  unit: PJ/yr
 Secondary Energy Input|Electricity|Heat:
   definition: secondary energy consumption of electricity for the production of heat
     (large-scale heat pumps)
@@ -8220,14 +8250,24 @@ Trade|Primary Energy|Oil|Volume:
   definition: net exports of crude oil, at the global level these should add up to
     the trade losses only
   unit: PJ/yr
+Trade|Secondary Energy|Electricity|Gross Import|Volume:
+  definition: gross imports of electricity, excluding export
+  unit: PJ/yr
 Trade|Secondary Energy|Electricity|Volume:
   definition: net exports of electricity, at the global level these should add up
     to the trade losses only
+  unit: PJ/yr
+Trade|Secondary Energy|Gases|Hydrogen|Gross Import|Volume:
+  definition: gross imports of gaseous hydrocarbon fuels from renewable hydrogen and
+    renewable CO2 (green syngases), excluding export
   unit: PJ/yr
 Trade|Secondary Energy|Gases|Hydrogen|Volume:
   definition: net exports of gaseous hydrocarbon fuels from renewable hydrogen and
     renewable CO2 (green syngases), at the global level these should add up to the
     trade losses only
+  unit: PJ/yr
+Trade|Secondary Energy|Hydrogen|Gross Import|Volume:
+  definition: gross imports of hydrogen, excluding export
   unit: PJ/yr
 Trade|Secondary Energy|Hydrogen|Volume:
   definition: net exports of hydrogen, at the global level these should add up to
@@ -8245,6 +8285,10 @@ Trade|Secondary Energy|Liquids|Coal|Volume:
 Trade|Secondary Energy|Liquids|Gas|Volume:
   definition: net exports of fossil liquid synfuels from gas-to-liquids (GTL) technologies,
     at the global level these should add up to the trade losses only
+  unit: PJ/yr
+Trade|Secondary Energy|Liquids|Hydrogen|Gross Import|Volume:
+  definition: gross imports of liquid hydrocarbon fuels from renewable hydrogen  and
+    renewable CO2 (green synfuels), excluding export
   unit: PJ/yr
 Trade|Secondary Energy|Liquids|Hydrogen|Volume:
   definition: net exports of liquid hydrocarbon fuels from renewable hydrogen and
