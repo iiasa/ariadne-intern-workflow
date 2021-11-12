@@ -3210,6 +3210,9 @@ Final Energy|Industry excl Non-Energy Use|Chemicals|Other:
     (please provide a definition of the energy carriers in this category in the 'comments'
     tab)
   unit: PJ/yr
+Final Energy|Industry excl Non-Energy Use|Chemicals|Power2Heat:
+  definition: Final energy consumption of p2heat in industry for chemicals
+  unit: PJ/yr
 Final Energy|Industry excl Non-Energy Use|Chemicals|Solar:
   definition: Final energy consumption of solar thermal heat by the chemicals sector
   unit: PJ/yr
