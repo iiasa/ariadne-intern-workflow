@@ -4,174 +4,174 @@
 # Any changes to this file must also be migrated manually
 # to the IIASA Scenario Explorer by an IIASA admin before any data uploads.
 
-common:
-  World:
+- common:
+    - World
 
-Europäische Länder:
-  Bulgarien:
-    iso3: BGR
-  Dänemark:
-    iso3: DNK
-  Deutschland:
-    iso3: DEU
-  Estland:
-    iso3: EST
-  Finnland:
-    iso3: FIN
-  Frankreich:
-    iso3: FRA
-  Griechenland:
-    iso3: GRC
-  Irland:
-    iso3: IRL
-  Italien:
-    iso3: ITA
-  Kroatien:
-    iso3: HRV
-  Lettland:
-    iso3: LVA
-  Litauen:
-    iso3: LTU
-  Luxemburg:
-    iso3: LUX
-  Malta:
-    iso3: MLT
-  Niederlande:
-    iso3: NLD
-  Österreich:
-    iso3: AUT
-  Polen:
-    iso3: POL
-  Portugal:
-    iso3: PRT
-  Rumänien:
-    iso3: ROU
-  Schweden:
-    iso3: SWE
-  Slowakei:
-    iso3: SVK
-  Slowenien:
-    iso3: SVN
-  Spanien:
-    iso3: ESP
-  Tschechien:
-    iso3: CZE
-  Ungarn:
-    iso3: HUN 
-  Zypern:
-    iso3: CYP
-  Vereinigtes Königreich:
-    iso3: GBR
-  Norwegen:
-    iso3: NOR
-  Schweiz:
-    iso3: CHE
-Europäische Regionen:
-  EU_East:
-    definition: Polen, Tschechien, Slowakei, Estland, Lettland, Litauen
-  EU_SouthEast:
-    definition: Bulgarien, Kroatien, Ungarn, Rumänien, Slowenien
-  EU_South:
-    definition: Zypern, Griechenland, Italien, Malta
-  EU_SouthWest:
-    definition: Spanien, Portugal
-  EU_West:
-    definition: Österreich, Belgien, Luxemburg, Niederlande, Frankreich
-  EU_Scand:
-    definition: Aland Islands, Dänemark, Faröer Inseln, Finnland, Schweden
-  GBR_IRL:
-    definition: Gibraltar, Guernsey, Irland, Isle of Man, Jersey, UK
-  EFTA:
-    definition: Grönland, Island, Lichtenstein, Norwegen, Schweiz,
-      Svalbard and Jan Mayen
-  Non-EU-Europe_South:
-    definition: Albanien, Andorra, Bosnien und Herzegovina,  Vatikanstaat,
-      Nordmazedonien, Monaco, Montenegro, San Marino, Serbien, Türkei
-  EU27_GBR:
-    definition: EU27 + UK
-  EU27_GBR_NOR_CHE:
-    definition: EU27 + UK + Norwegen + Schweiz
-  Europa (EU + Nicht-EU) ohne Deutschland:
-    abbr: Europe_excl_DEU
-    definition: Albanien, Andorra, Belgien, Bosnien und Herzegowina, Bulgarien,
-      Dänemark, Estland, Finnland, Frankreich, Griechenland, Irland, Island,
-      Italien, Kasachstan, Kosovo, Kroatien, Lettland, Liechtenstein, Litauen,
-      Luxemburg, Malta, Republik Moldau, Monaco, Montenegro, Niederlande,
-      Nordmazedonien, Norwegen, Österreich, Polen, Portugal, Rumänien, Russland,
-      San Marino, Schweden, Schweiz, Serbien, Slowakei, Slowenien, Spanien,
-      Tschechien, Türkei, Ukraine, Ungarn, Vatikanstadt, Vereinigtes Königreich,
-      Weißrussland
-Einzelne Länder außerhalb Europas:
-  China (inkl. Hongkong, Macao, Taiwan):
-    abbr: CHN_HKG_MAC_TWN
-  Indien:
-    iso3: IND
-  Japan:
-    iso3: JPN
-  USA:
-Regionen außerhalb Europas: 
-  CAN_NZL_AUS:
-    definition: Kanada, Neuseeland, Australien, Heard Island & McDonald Islands,
-      Saint Pierre & Miquelon
-  Lateinamerika:
-  Mittlerer Osten und Nordafrika:
-  Südostasien:
-  Reforming_economies:
-    definition: Armenien, Aserbaidschan, Belarus, Georgien, Kasachstan,
-      Kirgistan, Moldova, Russland, Tadschikistan, Turkmenistan, Ukraine,
-      Usbekistan
-  SubSaharaAfrica: Sub-Sahara Afrika
-Deutschland (Bundesländer):
-  Baden-Württemberg:
-    abbr: BW
-  Bayern:
-    abbr: BY
-  Berlin:
-    abbr: BE
-  Brandenburg:
-    abbr: BB
-  Bremen:
-    abbr: HB 
-  Hamburg:
-    abbr: HH
-  Hessen:
-    abbr: HE 
-  Mecklenburg-Vorpommern:
-    abbr: MV
-  Niedersachsen:
-    abbr: NI
-  Nordrhein-Westfalen:
-    abbr: NW
-  Rheinland-Pfalz:
-    abbr: RP
-  Saarland:
-    abbr: SL
-  Sachsen:
-    abbr: SN
-  Sachsen-Anhalt:
-    abbr: ST
-  Schleswig-Holstein:
-    abbr: SH
-  Thüringen:
-    abbr: TH
-Deutschland (REMod-Regionen):
-  Schleswig-Holstein, Hamburg und Mecklenburg-Vorpommern:
-    abbr: SH_HH_MV_REMod
-  Niedersachsen und Bremen:
-    abbr: NI_HB_REMod
-  Berlin und Brandenburg:
-    abbr: BE_BB_REMod
-  Nordrhein-Westfalen (REMod):
-    abbr: NW_REMod
-  Hessen (REMod):
-    abbr: HE_REMod
-  Sachsen-Anhalt und Thüringen:
-    abbr: ST_TH_REMod
-  Sachsen (REMod):
-    abbr: SN_REMod
-  Rheinland-Pfalz und Saarland:
-    abbr: RP_SL_REMod
-  Baden-Württemberg (REMod):
-    abbr: BW_REMod
-  Bayern (REMod):
-    abbr: BY_REMod
+- Europäische Länder:
+  - Bulgarien:
+      iso3: BGR
+  - Dänemark:
+      iso3: DNK
+  - Deutschland:
+      iso3: DEU
+  - Estland:
+      iso3: EST
+  - Finnland:
+      iso3: FIN
+  - Frankreich:
+      iso3: FRA
+  - Griechenland:
+      iso3: GRC
+  - Irland:
+      iso3: IRL
+  - Italien:
+      iso3: ITA
+  - Kroatien:
+      iso3: HRV
+  - Lettland:
+      iso3: LVA
+  - Litauen:
+      iso3: LTU
+  - Luxemburg:
+      iso3: LUX
+  - Malta:
+      iso3: MLT
+  - Niederlande:
+      iso3: NLD
+  - Österreich:
+      iso3: AUT
+  - Polen:
+      iso3: POL
+  - Portugal:
+      iso3: PRT
+  - Rumänien:
+      iso3: ROU
+  - Schweden:
+      iso3: SWE
+  - Slowakei:
+      iso3: SVK
+  - Slowenien:
+      iso3: SVN
+  - Spanien:
+      iso3: ESP
+  - Tschechien:
+      iso3: CZE
+  - Ungarn:
+      iso3: HUN
+  - Zypern:
+      iso3: CYP
+  - Vereinigtes Königreich:
+      iso3: GBR
+  - Norwegen:
+      iso3: NOR
+  - Schweiz:
+      iso3: CHE
+- Europäische Regionen:
+  - EU_East:
+      definition: Polen, Tschechien, Slowakei, Estland, Lettland, Litauen
+  - EU_SouthEast:
+      definition: Bulgarien, Kroatien, Ungarn, Rumänien, Slowenien
+  - EU_South:
+      definition: Zypern, Griechenland, Italien, Malta
+  - EU_SouthWest:
+      definition: Spanien, Portugal
+  - EU_West:
+      definition: Österreich, Belgien, Luxemburg, Niederlande, Frankreich
+  - EU_Scand:
+      definition: Aland Islands, Dänemark, Faröer Inseln, Finnland, Schweden
+  - GBR_IRL:
+      definition: Gibraltar, Guernsey, Irland, Isle of Man, Jersey, UK
+  - EFTA:
+      definition: Grönland, Island, Lichtenstein, Norwegen, Schweiz,
+        Svalbard and Jan Mayen
+  - Non-EU-Europe_South:
+      definition: Albanien, Andorra, Bosnien und Herzegovina,  Vatikanstaat,
+        Nordmazedonien, Monaco, Montenegro, San Marino, Serbien, Türkei
+  - EU27_GBR:
+      definition: EU27 + UK
+  - EU27_GBR_NOR_CHE:
+      definition: EU27 + UK + Norwegen + Schweiz
+  - Europa (EU + Nicht-EU) ohne Deutschland:
+      abbr: Europe_excl_DEU
+      definition: Albanien, Andorra, Belgien, Bosnien und Herzegowina, Bulgarien,
+        Dänemark, Estland, Finnland, Frankreich, Griechenland, Irland, Island,
+        Italien, Kasachstan, Kosovo, Kroatien, Lettland, Liechtenstein, Litauen,
+        Luxemburg, Malta, Republik Moldau, Monaco, Montenegro, Niederlande,
+        Nordmazedonien, Norwegen, Österreich, Polen, Portugal, Rumänien, Russland,
+        San Marino, Schweden, Schweiz, Serbien, Slowakei, Slowenien, Spanien,
+        Tschechien, Türkei, Ukraine, Ungarn, Vatikanstadt, Vereinigtes Königreich,
+        Weißrussland
+- Einzelne Länder außerhalb Europas:
+  - China (inkl. Hongkong, Macao, Taiwan):
+      abbr: CHN_HKG_MAC_TWN
+  - Indien:
+      iso3: IND
+  - Japan:
+      iso3: JPN
+  - USA
+- Regionen außerhalb Europas:
+  - CAN_NZL_AUS:
+      definition: Kanada, Neuseeland, Australien, Heard Island & McDonald Islands,
+        Saint Pierre & Miquelon
+  - Lateinamerika
+  - Mittlerer Osten und Nordafrika
+  - Südostasien
+  - Reforming_economies:
+      definition: Armenien, Aserbaidschan, Belarus, Georgien, Kasachstan,
+        Kirgistan, Moldova, Russland, Tadschikistan, Turkmenistan, Ukraine,
+        Usbekistan
+  - SubSaharaAfrica
+- Deutschland (Bundesländer):
+  - Baden-Württemberg:
+      abbr: BW
+  - Bayern:
+      abbr: BY
+  - Berlin:
+      abbr: BE
+  - Brandenburg:
+      abbr: BB
+  - Bremen:
+      abbr: HB
+  - Hamburg:
+      abbr: HH
+  - Hessen:
+      abbr: HE
+  - Mecklenburg-Vorpommern:
+      abbr: MV
+  - Niedersachsen:
+      abbr: NI
+  - Nordrhein-Westfalen:
+      abbr: NW
+  - Rheinland-Pfalz:
+      abbr: RP
+  - Saarland:
+      abbr: SL
+  - Sachsen:
+      abbr: SN
+  - Sachsen-Anhalt:
+      abbr: ST
+  - Schleswig-Holstein:
+      abbr: SH
+  - Thüringen:
+      abbr: TH
+- Deutschland (REMod-Regionen):
+  - Schleswig-Holstein, Hamburg und Mecklenburg-Vorpommern:
+      abbr: SH_HH_MV_REMod
+  - Niedersachsen und Bremen:
+      abbr: NI_HB_REMod
+  - Berlin und Brandenburg:
+      abbr: BE_BB_REMod
+  - Nordrhein-Westfalen (REMod):
+      abbr: NW_REMod
+  - Hessen (REMod):
+      abbr: HE_REMod
+  - Sachsen-Anhalt und Thüringen:
+      abbr: ST_TH_REMod
+  - Sachsen (REMod):
+      abbr: SN_REMod
+  - Rheinland-Pfalz und Saarland:
+      abbr: RP_SL_REMod
+  - Baden-Württemberg (REMod):
+      abbr: BW_REMod
+  - Bayern (REMod):
+      abbr: BY_REMod
