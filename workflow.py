@@ -1,15 +1,20 @@
 from pathlib import Path
-import pandas as pd
 import logging
-import yaml
+from datetime import datetime, timedelta
 import pyam
+from nomenclature import DataStructureDefinition
+
 
 # define logger for this script at logging level INFO
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
 # get path to folder with definitions
-path = Path(__file__).parent
+here = Path(__file__).absolute().parent
+
+# datetime must be in Central European Time (CET)
+EXP_TZ = "UTC+01:00"
+EXP_TIME_OFFSET = timedelta(seconds=3600)
 
 # allowed values for required meta columns, use first of list as default
 ALLOWED_META_ARIADNE = {
@@ -24,26 +29,12 @@ ALLOWED_META_KOPERNIKUS = {
 }
 
 
-def raise_error(name, lst):
-    """Compile an error message, write to log and raise an error"""
-    msg = f"The following {name} are not defined in the project template:"
-    error = "\n - ".join([msg] + lst)
-    logger.error(error)
-    raise ValueError(error)
-
-
 def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Main function for validation and processing (for the ARIADNE-intern instance)"""
 
-    # load list of allowed scenario names
-    with open(path / "scenarios.yml", "r") as stream:
-        scenario_list = yaml.load(stream, Loader=yaml.FullLoader)
-
-    # validate list of submitted scenarios
-    illegal_scens = [s for s in df.scenario if s not in scenario_list]
-
-    if illegal_scens:
-        raise_error("scenarios", illegal_scens)
+    # validate that scenario names are defined
+    definition = DataStructureDefinition(here / "definitions", dimensions=["scenario"])
+    definition.validate(df, dimensions=["scenario"])
 
     # call validation function for variables, regions and subannual time resolution
     df = _validate(df)
@@ -69,46 +60,40 @@ def kopernikus(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Validation function for variables, regions, and subannual time resolution"""
 
-    # load list of allowed variables
-    with open(path / "variables.yml", "r") as stream:
-        variable_config = yaml.load(stream, Loader=yaml.FullLoader)
+    # load definitions (including 'subannual' if included in the scenario data)
+    if "subannual" in df.dimensions or df.time_col == "time":
+        dimensions = ["region", "variable", "subannual"]
+    else:
+        dimensions = ["region", "variable"]
 
-    # validate variables and units against template
-    illegal_vars, illegal_units = [], []
+    definition = DataStructureDefinition(here / "definitions", dimensions=dimensions)
 
-    for i, (var, unit) in df.variables(include_units=True).iterrows():
-        if var not in variable_config:
-            illegal_vars.append(var)
-        elif unit != variable_config[var]["unit"]:
-            illegal_units.append((var, unit, variable_config[var]["unit"]))
+    # check variables and regions
+    definition.validate(df, dimensions=["region", "variable"])
 
-    if illegal_vars:
-        raise_error("variables", illegal_vars)
-
-    if illegal_units:
-        lst = [f"{v} - expected: {e}, found: {u}" for v, u, e in illegal_units]
-        raise_error("units", lst)
-
-    # recasting from 'time' domain to 'year' + 'subannual'
+    # convert to subannual format if data provided in datetime format
     if df.time_col == "time":
-        logger.info('Re-casting from "time" column to "subannual" format')
-        df = swap_time_for_subannual(df)
+        logger.info('Re-casting from "time" column to categorical "subannual" format')
+        df = df.swap_time_for_year(subannual=True)
 
-    # validating entries in the 'subannual' column (if present)
-    if "subannual" in df.extra_cols:
-        valid_subannual = ["Year"] + list(
-            map(
-                lambda x: x.strftime("%m-%d %H:%M%z").replace("+0100", "+01:00"),
-                pd.date_range(
-                    start="2020-01-01 00:00+01:00",
-                    end="2020-12-31 23:00+01:00",
-                    freq="H",
-                ),
-            )
-        )
-        illegal_subannual = [s for s in df.subannual if s not in valid_subannual]
-        if illegal_subannual:
-            raise_error("subannual timesteps", illegal_subannual)
+    # check that any datetime-like items in "subannual" are valid datetime and UTC+01:00
+    if "subannual" in df.dimensions:
+        _datetime = [s for s in df.subannual if s not in definition.subannual]
+
+        for d in _datetime:
+            try:
+                _dt = datetime.strptime(f"2020-{d}", "%Y-%m-%d %H:%M%z")
+            except ValueError:
+                try:
+                    datetime.strptime(f"2020-{d}", "%Y-%m-%d %H:%M")
+                except ValueError:
+                    raise ValueError(f"Invalid subannual timeslice: {d}")
+
+                raise ValueError(f"Missing timezone: {d}")
+
+            # casting to datetime with timezone was successful
+            if not (_dt.tzname() == EXP_TZ or _dt.utcoffset() == EXP_TIME_OFFSET):
+                raise ValueError(f"Invalid timezone: {d}")
 
     return df
 
@@ -141,17 +126,3 @@ def _validate_meta(df: pyam.IamDataFrame, allowed_meta: dict) -> pyam.IamDataFra
             df.set_meta(name=key, meta=value[0])
 
     return df
-
-def swap_time_for_subannual(df):
-    """Convert an IamDataFrame with 'time' (datetime) domain to 'year' + 'subannual'"""
-    if df.time_col != "time":
-        raise ValueError("The IamDataFrame does not have `datetime` domain!")
-
-    data = df.data
-    data["year"] = [x.year for x in data.time]
-    data["subannual"] = [
-        x.strftime("%m-%d %H:%M%z").replace("+0100", "+01:00") for x in data.time
-    ]
-    data.drop(columns="time", inplace=True)
-
-    return pyam.IamDataFrame(data, meta=df.meta)
