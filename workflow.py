@@ -68,6 +68,16 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 
     definition = DataStructureDefinition(here / "definitions", dimensions=dimensions)
 
+    # apply a renaming from region-synonyms to region-names
+    rename_dict = {}
+
+    for region, attibutes in definition.region.items():
+        for synonym in ["abbr", "iso3"]:
+            if synonym in attibutes:
+                rename_dict[attibutes[synonym]] = region
+
+    df.rename(region=rename_dict, inplace=True)
+
     # check variables and regions
     definition.validate(df, dimensions=["region", "variable"])
 
