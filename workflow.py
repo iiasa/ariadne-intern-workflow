@@ -15,6 +15,7 @@ here = Path(__file__).absolute().parent
 # datetime must be in Central European Time (CET)
 EXP_TZ = "UTC+01:00"
 EXP_TIME_OFFSET = timedelta(seconds=3600)
+OE_SUBANNUAL_FORMAT = lambda x: x.strftime("%m-%d %H:%M%z").replace("+0100", "+01:00")
 
 # allowed values for required meta columns, use first of list as default
 ALLOWED_META_ARIADNE = {
@@ -84,7 +85,7 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     # convert to subannual format if data provided in datetime format
     if df.time_col == "time":
         logger.info('Re-casting from "time" column to categorical "subannual" format')
-        df = df.swap_time_for_year(subannual=True)
+        df = df.swap_time_for_year(subannual=OE_SUBANNUAL_FORMAT)
 
     # check that any datetime-like items in "subannual" are valid datetime and UTC+01:00
     if "subannual" in df.dimensions:
