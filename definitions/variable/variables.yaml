@@ -138,7 +138,7 @@
     unit: Mt CO2/yr
 - Emissions|CO2|AFOLU:
     definition: CO2 emissions from agriculture, forestry and other land use (IPCC
-      category 3)
+      category 3 and 4)
     unit: Mt CO2/yr
 - Emissions|CO2|Energy and Industrial Processes:
     definition: Fossil CO2 emissions from energy use on supply and demand side (IPCC
@@ -705,6 +705,40 @@
     unit: Mt CO2-equiv/yr
 - Emissions|Kyoto Gases|Fugitive Emissions:
     definition: Kyoto GHG emissions from fugitive emissions (IPCC category 1B)
+    unit: Mt CO2-equiv/yr
+- Emissions|Kyoto Gases|Energy|Supply:
+    definition: 'Kyoto GHG emissions from fuel combustion and fugitive emissions from
+      fuels: electricity and heat production and distribution (IPCC category 1A1a),
+      other energy conversion (e.g. refineries, synfuel production, solid fuel processing,
+      IPCC category 1Ab, 1Ac), incl. pipeline transportation (IPCC category 1A3ei),
+      fugitive emissions from fuels (IPCC category 1B) and emissions from carbon dioxide
+      transport and storage (IPCC category 1C), net of negative emissions from Bioenergy
+      with CCS (BECCS), exc. industrial autoproduction'
+    unit: Mt CO2-equiv/yr
+- Emissions|Gross|Kyoto Gases|Energy|Supply:
+    definition: 'Kyoto GHG emissions from fuel combustion and fugitive emissions from
+      fuels: electricity and heat production and distribution (IPCC category 1A1a),
+      other energy conversion (e.g. refineries, synfuel production, solid fuel processing,
+      IPCC category 1Ab, 1Ac), incl. pipeline transportation (IPCC category 1A3ei),
+      fugitive emissions from fuels (IPCC category 1B) and emissions from carbon dioxide
+      transport and storage (IPCC category 1C), not accounting for negative emissions
+      from BECCS, exc. industrial autoproduction'
+    unit: Mt CO2-equiv/yr
+- Emissions|Gross|Kyoto Gases|Industry:
+    definition: Kyoto GHG emissions from fuel combustion in industry, and Kyoto GHG
+      emissions from industrial processes (IPCC categories 2A, B, C, E), including
+      CO2, CH4, N2O and F-gases (preferably use 100-year GWPs from AR4 for aggregation
+      of different gases, not accounting for negative emissions from BECCS; in case
+      other GWPs have been used, please document this on the 'comments' tab)
+    unit: Mt CO2-equiv/yr
+- Emissions|Kyoto Gases|Land-Use Change:
+    definition: Kyoto GHG emissions from land use and land-use change (IPCC category
+      4), including CO2, CH4, N2O and F-gases (preferably use 100-year GWPs from AR4
+      for aggregation of different gases; in case other GWPs have been used, please
+      document this on the 'comments' tab)
+    unit: Mt CO2-equiv/yr
+- Emissions|CO2|Land-Use Change:
+    definition: CO2 emissions from land use and land-use change (IPCC category 4)
     unit: Mt CO2-equiv/yr
 - Emissions|N2O:
     definition: total N2O emissions
@@ -3149,7 +3183,7 @@
       gas, biogas, coal-gas), excluding transmission/distribution losses
     unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use|other Industries|Power2Heat:
-    definition: 'Final energy consumption of p2heat in industry for other industries '
+    definition: Final energy consumption of p2heat in industry for other industries
     unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use|other Industries|Gases|Natural Gas:
     definition: Final energy consumption of natural gas by other industry sectors
@@ -4091,6 +4125,21 @@
 - Final Energy|Bunkers:
     definition: final energy consumption of bunker fuels
     unit: PJ/yr
+- Final Energy|Bunkers|Liquids|Biomass:
+    definition: final energy consumption of liquid biofuels as bunker fuels
+    unit: PJ/yr
+- Final Energy|Bunkers|Liquids|Synthetic Fossil:
+    definition: final energy consumption of synthetic liquids of fossil origin (e.g.
+      coal or gas liquefaction) as bunker fuels
+    unit: PJ/yr
+- Final Energy|Bunkers|Liquids|Efuel:
+    definition: final energy consumption of synthetic liquid efuels ("power-to-liquid")
+      as bunker fuels
+    unit: PJ/yr
+- Final Energy|Bunkers|Liquids|Petroleum:
+    definition: final energy consumption of liquids from fossil origin (conventional
+      & unconventional petroleum) as bunker fuels
+    unit: PJ/yr
 - Final Energy|Bunkers|Liquids:
     definition: final energy consumption of liquid bunker fuels in international aviation
       and navigation (IPCC category 1A3ai and 1A3di)
@@ -4490,6 +4539,14 @@
     definition: synthetic gas price at the secondary level, i.e. for large scale consumers
       (e.g. gas power plant). Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Secondary Energy|Gases|Biomass:
+    definition: biogas price at the secondary level, i.e. for large scale consumers
+      (e.g. biomass power plant). Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Secondary Energy|Gases|Efuel:
+    definition: Price for gaseous Efuels at the secondary level, i.e. for large scale
+      consumers. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
 - Price|Secondary Energy|Hydrogen:
     definition: hydrogen price at the secondary level. Prices should include the effect
       of carbon prices
@@ -4510,6 +4567,10 @@
     definition: synthetic fuel price at the secondary level, i.e. for large scale
       consumers (e.g. oil power plant). Prices should include the effect of carbon
       prices.
+    unit: EUR2020/GJ
+- Price|Secondary Energy|Liquids|Efuel:
+    definition: Price for liquid Efuels at the secondary level, i.e. for large scale
+      consumers. Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
 - Price|Secondary Energy|Solids|Biomass:
     definition: biomass price at the secondary level, i.e. for large scale consumers
@@ -4558,6 +4619,114 @@
 - Price|Final Energy|Transportation|Passenger|Solids:
     definition: Solids price at the final level in the passenger transport sector.
       Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Petroleum:
+    definition: Price for petroleum at the final level in the transport sector. Prices
+      should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Petroleum|Transport and Distribution:
+    definition: Transport and Distribution component of the price for petroleum at
+      the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Petroleum|Carbon Price Component:
+    definition: Carbon price component of the price for petroleum at the final level
+      in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Petroleum|Other Taxes:
+    definition: Other taxes and subsidies included in the price for petroleum at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Diesel:
+    definition: Price for diesel at the final level in the transport sector. Prices
+      should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Diesel|Transport and Distribution:
+    definition: Transport and Distribution component of the price for diesel at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Diesel|Carbon Price Component:
+    definition: Carbon price component of the price for diesel at the final level
+      in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Diesel|Other Taxes:
+    definition: Other taxes and subsidies included in the price for diesel at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Natural Gas:
+    definition: Price for natural gas at the final level in the freight transport
+      sector. Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Natural Gas|Transport and Distribution:
+    definition: Transport and Distribution component of the price for natural gas
+      at the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Natural Gas|Carbon Price Component:
+    definition: Carbon price component of the price for natural gas at the final level
+      in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Natural Gas|Other Taxes:
+    definition: Other taxes and subsidies included in the price for natural gas at
+      the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Biomass:
+    definition: Price for biofuel at the final level in the transport sector. Prices
+      should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the price for biofuel at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the price for biofuel at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Efuel:
+    definition: Price for liquid Efuel at the final level in the transport sector.
+      Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Efuel|Transport and Distribution:
+    definition: Transport and Distribution component of the price for liquid Efuel
+      at the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Efuel|Other Taxes:
+    definition: Other taxes and subsidies included in the price for liquid Efuel at
+      the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Efuel:
+    definition: Price for gaseous Efuel at the final level in the transport sector.
+      Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Efuel|Transport and Distribution:
+    definition: Transport and Distribution component of the price for gaseous Efuel
+      at the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Efuel|Other Taxes:
+    definition: Other taxes and subsidies included in the price for gaseous Efuel
+      at the final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Hydrogen:
+    definition: Hydrogen price at the final level in the transport sector. Prices
+      should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Hydrogen|Transport and Distribution:
+    definition: Transport and Distribution component of the Hydrogen price at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Hydrogen|Other Taxes:
+    definition: Other taxes and subsidies included in the Hydrogen price at the final
+      level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Electricity:
+    definition: Electricity price at the final level in the transport sector. Prices
+      should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Electricity|Transport and Distribution:
+    definition: Transport and Distribution component of the Electricity price at the
+      final level in the transport sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Electricity|Other Taxes:
+    definition: Other taxes and subsidies included in the Electricity price at the
+      final level in the transport sector.
     unit: EUR2020/GJ
 - Primary Energy:
     definition: total primary energy consumption (direct equivalent)
@@ -5699,8 +5868,8 @@
       trade losses only
     unit: PJ/yr
 - Trade|Secondary Energy|Liquids|Hydrogen|Gross Import|Volume:
-    definition: gross imports of liquid hydrocarbon fuels from renewable hydrogen  and
-      renewable CO2 (green synfuels), excluding export
+    definition: gross imports of liquid hydrocarbon fuels from renewable hydrogen
+      and renewable CO2 (green synfuels), excluding export
     unit: PJ/yr
 - Trade|Secondary Energy|Gases|Hydrogen|Gross Import|Volume:
     definition: gross imports of gaseous hydrocarbon fuels from renewable hydrogen
@@ -5750,6 +5919,135 @@
     definition: coal price at the final level in the residential sector. Prices should
       include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Oil:
+    definition: Price for light fuel oil at the final level in the residential and
+      commercial sector. Prices should include the effect of carbon prices and all
+      other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Oil|Transportation and Distribution:
+    definition: Transport and Distribution component of the price for light fuel oil
+      at the final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Oil|Carbon Price Component:
+    definition: Carbon price component of the price for light fuel oil at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Oil|Other Taxes:
+    definition: Other taxes and subsidies included in the price for light fuel oil
+      at the final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Natural Gas:
+    definition: natural gas price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Natural Gas|Transport and Distribution:
+    definition: Transport and Distribution component of the natural gas price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Natural Gas|Carbon Price Component:
+    definition: Carbon price component of the natural gas price at the final level
+      in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Natural Gas|Other Taxes:
+    definition: Other taxes and subsidies included in the natural gas price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Heat:
+    definition: heat price at the final level in the residential and commercial sector.
+      Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Heat|Transport and Distribution:
+    definition: Transport and Distribution component of the heat price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Heat|Other Taxes:
+    definition: Other taxes and subsidies included in the heat price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Biomass:
+    definition: biofuel price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the biofuel price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the biofuel price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Solids|Biomass:
+    definition: biomass price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Solids|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the biomass price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Solids|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the biomass price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Biomass:
+    definition: biogas price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the biogas price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the biogas price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Efuel:
+    definition: liquid Efuel price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Efuel|Transport and Distribution:
+    definition: Transport and Distribution component of the liquid Efuel price at
+      the final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Efuel|Other Taxes:
+    definition: Other taxes and subsidies included in the liquid Efuel price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Efuel:
+    definition: Gaseous Efuel price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Efuel|Transport and Distribution:
+    definition: Transport and Distribution component of the gaseous Efuel price at
+      the final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Efuel|Other Taxes:
+    definition: Other taxes and subsidies included in the gaseous Efuel price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Hydrogen:
+    definition: Hydrogen price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Hydrogen|Transport and Distribution:
+    definition: Transport and Distribution component of the Hydrogen price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Hydrogen|Other Taxes:
+    definition: Other taxes and subsidies included in the Hydrogen price at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Electricity:
+    definition: electricity price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Electricity|Transport and Distribution:
+    definition: Transport and Distribution component of the Electricity price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Electricity|Other Taxes:
+    definition: Other taxes and subsidies included in the Electricity price at the
+      final level in the residential and commercial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Electricity:
     definition: Electricity price at the final level in the industrial sector. Prices
       should include the effect of carbon prices and all other taxes.
@@ -5773,6 +6071,138 @@
 - Price|Final Energy|Industry|Solids:
     definition: Solids price at the final level in the industrial sector. Prices should
       include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Oil:
+    definition: Price for light fuel oil at the final level in the industrial sector.
+      Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Oil|Transportation and Distribution:
+    definition: Transport and Distribution component of the price for light fuel oil
+      at the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Oil|Carbon Price Component:
+    definition: Carbon price component of the price for light fuel oil at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Oil|Other Taxes:
+    definition: Other taxes and subsidies included in the price for light fuel oil
+      at the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Coal:
+    definition: Price for hard coal at the final level in the industrial sector. Prices
+      should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Coal|Transportation and Distribution:
+    definition: Transport and Distribution component of the price for hard coal at
+      the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Coal|Carbon Price Component:
+    definition: Carbon price component of the price for hard coal at the final level
+      in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Coal|Other Taxes:
+    definition: Other taxes and subsidies included in the price for hard coal at the
+      final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Natural Gas:
+    definition: Price for natural gas at the final level in the industrial sector.
+      Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Natural Gas|Transport and Distribution:
+    definition: Transport and Distribution component of the price for natural gas
+      at the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Natural Gas|Carbon Price Component:
+    definition: Carbon price component of the price for natural gas at the final level
+      in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Natural Gas|Other Taxes:
+    definition: Other taxes and subsidies included in the price for natural gas at
+      the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Heat|Transport and Distribution:
+    definition: Transport and Distribution component of the price for heat at the
+      final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Heat|Other Taxes:
+    definition: Other taxes and subsidies included in the price for heat at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Biomass:
+    definition: biofuel price at the final level in the industrial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the biofuel price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the biofuel price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Biomass:
+    definition: biomass price at the final level in the industrial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the biomass price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the biomass price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Biomass:
+    definition: biogas price at the final level in the industrial sector. Prices should
+      include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Biomass|Transport and Distribution:
+    definition: Transport and Distribution component of the biogas price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Biomass|Other Taxes:
+    definition: Other taxes and subsidies included in the biogas price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Efuel:
+    definition: liquid Efuel price at the final level in the industrial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Efuel|Transport and Distribution:
+    definition: Transport and Distribution component of the liquid Efuel price at
+      the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Efuel|Other Taxes:
+    definition: Other taxes and subsidies included in the liquid Efuel price at the
+      final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Efuel:
+    definition: Gaseous Efuel price at the final level in the industrial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Efuel|Transport and Distribution:
+    definition: Transport and Distribution component of the gaseous Efuel price at
+      the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Efuel|Other Taxes:
+    definition: Other taxes and subsidies included in the gaseous Efuel price at the
+      final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Hydrogen|Transport and Distribution:
+    definition: Transport and Distribution component of the Hydrogen price at the
+      final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Hydrogen|Other Taxes:
+    definition: Other taxes and subsidies included in the Hydrogen price at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Electricity|Transport and Distribution:
+    definition: Transport and Distribution component of the Electricity price at the
+      final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Electricity|Other Taxes:
+    definition: Other taxes and subsidies included in the Electricity price at the
+      final level in the industrial sector.
     unit: EUR2020/GJ
 - Tariffs|Average:
     definition: Weighted trade tariff-average (regional and global indicator relevant)
