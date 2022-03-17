@@ -5924,7 +5924,7 @@
       commercial sector. Prices should include the effect of carbon prices and all
       other taxes.
     unit: EUR2020/GJ
-- Price|Final Energy|Residential and Commercial|Liquids|Oil|Transportation and Distribution:
+- Price|Final Energy|Residential and Commercial|Liquids|Oil|Transport and Distribution:
     definition: Transport and Distribution component of the price for light fuel oil
       at the final level in the residential and commercial sector.
     unit: EUR2020/GJ
@@ -6076,7 +6076,7 @@
     definition: Price for light fuel oil at the final level in the industrial sector.
       Prices should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
-- Price|Final Energy|Industry|Liquids|Oil|Transportation and Distribution:
+- Price|Final Energy|Industry|Liquids|Oil|Transport and Distribution:
     definition: Transport and Distribution component of the price for light fuel oil
       at the final level in the industrial sector.
     unit: EUR2020/GJ
@@ -6092,7 +6092,7 @@
     definition: Price for hard coal at the final level in the industrial sector. Prices
       should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
-- Price|Final Energy|Industry|Solids|Coal|Transportation and Distribution:
+- Price|Final Energy|Industry|Solids|Coal|Transport and Distribution:
     definition: Transport and Distribution component of the price for hard coal at
       the final level in the industrial sector.
     unit: EUR2020/GJ
