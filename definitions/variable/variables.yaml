@@ -1496,11 +1496,12 @@
     unit: GW
 - Capacity|Hydrogen|Electricity:
     definition: Total installed (available) capacity of hydrogen-by-electrolysis plants.
-      The installed (available) capacity of hydrogen-by-electrolysis plants by plant
-      type for which capital costs are reported should be reported by adding variables
-      Capacity|Hydrogen|Electricity|1, ..., Capacity|Hydrogen|Electricity|N (matching
-      the assignment of plant types to technologies in the reporting of capital costs
-      as documented in the comments sheet).
+      It is given in input electricity terms (i.e. electric converter capacity) of
+      the electrolyser plant. The installed (available) capacity of hydrogen-by-electrolysis
+      plants by plant type for which capital costs are reported should be reported
+      by adding variables Capacity|Hydrogen|Electricity|1, ..., Capacity|Hydrogen|Electricity|N
+      (matching the assignment of plant types to technologies in the reporting of
+      capital costs as documented in the comments sheet).
     unit: GW
 - Capacity|Hydrogen|Reservoir:
     definition: Total installed (available) reservoir size of hydrogen storage.
@@ -3090,6 +3091,14 @@
 - Final Energy|Industry excl Non-Energy Use|Steel:
     definition: Final energy consumed by the iron and steel sector, excluding feedstocks
     unit: PJ/yr
+- Final Energy|Industry excl Non-Energy Use|Steel|Primary:
+    definition: Final energy consumed by the iron and steel sector for primary steel
+      production, excluding feedstocks
+    unit: PJ/yr
+- Final Energy|Industry excl Non-Energy Use|Steel|Secondary:
+    definition: Final energy consumed by the iron and steel sector for secondary steel
+      production, excluding feedstocks
+    unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use|Steel|Electricity:
     definition: Final energy consumption of electricity by the iron and steel sector
     unit: PJ/yr
@@ -3976,6 +3985,11 @@
 - Final Energy|Residential and Commercial|Space Heating|Other:
     definition: Final energy consumption of other sources that do not fit to any other
       category by the Space Heating sector
+    unit: PJ/yr
+- Final Energy|Residential and Commercial|Non-Heating|Electricity:
+    definition: Final energy consumption of electricity by the residential & commercial
+      sector for all non-heating applications, excluding transmission/distribution
+      losses
     unit: PJ/yr
 - Final Energy|Residential and Commercial|Space and Water Heating:
     definition: Final energy consumed for space heating in residential and commercial
