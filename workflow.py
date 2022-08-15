@@ -18,13 +18,26 @@ EXP_TIME_OFFSET = timedelta(seconds=3600)
 OE_SUBANNUAL_FORMAT = lambda x: x.strftime("%m-%d %H:%M%z").replace("+0100", "+01:00")
 
 # allowed values for required meta columns, use first of list as default
-ALLOWED_META_ARIADNE = {
+REQUIRED_META_ARIADNE = {
     "Quality Assessment": ["preliminary", "advanced", "mature"],
     "Internal usage within Kopernikus AG Szenarien": ["no", "yes"],
     "Release for publication": ["no", "yes"],
 }
 
-ALLOWED_META_KOPERNIKUS = {
+OPTIONAL_META_ARIADNE = [
+    "FORECAST|model_version",
+    "FORECAST|scenario_version",
+    "DEMO|model_version",
+    "DEMO|scenario_version",
+    "REMod|model_version",
+    "REMod|scenario_version",
+    "REMIND-EU|model_version",
+    "REMIND-EU|scenario_version",
+    "TIMES PanEU|model_version",
+    "TIMES PanEU|scenario_version",
+]
+
+REQUIRED_META_KOPERNIKUS = {
     "Quality Assessment": ["preliminary", "advanced", "mature"],
     "Release for publication": ["no", "yes"],
 }
@@ -41,7 +54,7 @@ def main(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     df = _validate(df)
 
     # call validation function for meta indicators
-    df = _validate_meta(df, ALLOWED_META_ARIADNE)
+    df = _validate_meta(df, REQUIRED_META_ARIADNE, OPTIONAL_META_ARIADNE)
 
     return df
 
@@ -53,7 +66,7 @@ def kopernikus(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     df = _validate(df)
 
     # call validation function for meta indicators
-    df = _validate_meta(df, ALLOWED_META_KOPERNIKUS)
+    df = _validate_meta(df, REQUIRED_META_KOPERNIKUS)
 
     return df
 
@@ -109,11 +122,13 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     return df
 
 
-def _validate_meta(df: pyam.IamDataFrame, allowed_meta: dict) -> pyam.IamDataFrame:
+def _validate_meta(
+    df: pyam.IamDataFrame, allowed_meta: dict, optional_meta: list = []
+) -> pyam.IamDataFrame:
     """Validation function for meta indicators"""
 
     # remove unexpected meta columns
-    expected_meta = list(allowed_meta) + ["exclude"]
+    expected_meta = list(allowed_meta) + optional_meta + ["exclude"]
     unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
     if unexpected_meta:
         logger.warning(f"Removing unexpected meta indicators: {unexpected_meta}")
