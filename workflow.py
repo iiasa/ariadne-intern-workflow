@@ -88,7 +88,7 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     for region in definition.region.values():
         for synonym in ("abbr", "iso3"):
             if synonym in region.extra_attributes:
-                rename_dict[region.extra_attributes(synonym)] = region.name
+                rename_dict[region.extra_attributes[synonym]] = region.name
 
     df.rename(region=rename_dict, inplace=True)
 
