@@ -7987,6 +7987,24 @@
     unit: Mt/yr
     skip-region-aggregation: false
     check-aggregate: false
+- Production|Steel|Primary|Oxygen:
+    description: Production of primary / virgin steel via basic oxygen process in
+      an oxygen furnace route
+    unit: Mt/yr
+    skip-region-aggregation: false
+    check-aggregate: false
+- Production|Steel|Primary|DirectReductionNG:
+    description: Production of primary / virgin steel via direct reduction in an electric-arc
+      furnace using natural gas
+    unit: Mt/yr
+    skip-region-aggregation: false
+    check-aggregate: false
+- Production|Steel|Primary|DirectReductionH2:
+    description: Production of primary / virgin steel via direct reduction in an electric-arc
+      furnace based on hydrogen (renewable)
+    unit: Mt/yr
+    skip-region-aggregation: false
+    check-aggregate: false
 - Production|Steel|Secondary:
     description: Production of secondary steel from recycling of scrap
     unit: Mt/yr
@@ -8009,6 +8027,16 @@
     check-aggregate: false
 - Production|Chemicals|Ethylene:
     description: Production of ethylene
+    unit: Mt/yr
+    skip-region-aggregation: false
+    check-aggregate: false
+- Production|Chemicals|Ethylene|Fossil:
+    description: Production of ethylene using fossil fuels
+    unit: Mt/yr
+    skip-region-aggregation: false
+    check-aggregate: false
+- Production|Chemicals|Ethylene|LowCarbon:
+    description: Production of ethylene with new low carbon /carbon-free methods
     unit: Mt/yr
     skip-region-aggregation: false
     check-aggregate: false
