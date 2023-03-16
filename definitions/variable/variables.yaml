@@ -5393,6 +5393,18 @@
 - Production|Steel|Primary:
     definition: Production of primary / virgin steel
     unit: Mt/yr
+- Production|Steel|Primary|Oxygen:
+    definition: Production of primary / virgin steel via basic oxygen process in an
+      oxygen furnace route
+    unit: Mt/yr
+- Production|Steel|Primary|DirectReductionNG:
+    definition: Production of primary / virgin steel via direct reduction in an electric-arc
+      furnace using natural gas
+    unit: Mt/yr
+- Production|Steel|Primary|DirectReductionH2:
+    definition: Production of primary / virgin steel via direct reduction in an electric-arc
+      furnace based on hydrogen (renewable)
+    unit: Mt/yr
 - Production|Steel|Secondary:
     definition: Production of secondary steel from recycling of scrap
     unit: Mt/yr
@@ -5407,6 +5419,12 @@
     unit: Mt/yr
 - Production|Chemicals|Ethylene:
     definition: Production of ethylene
+    unit: Mt/yr
+- Production|Chemicals|Ethylene|Fossil:
+    definition: Production of ethylene using fossil fuels
+    unit: Mt/yr
+- Production|Chemicals|Ethylene|LowCarbon:
+    definition: Production of ethylene with new low carbon /carbon-free methods
     unit: Mt/yr
 - Production|Pulp and Paper:
     definition: production of pulp and paper
