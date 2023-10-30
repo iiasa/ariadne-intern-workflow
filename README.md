@@ -26,3 +26,4 @@ To install necessary requirements run in the repository root folder:
 ```
 pip install -r requirements.txt
 ```
+
