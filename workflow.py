@@ -152,3 +152,5 @@ def _validate_meta(
             df.set_meta(name=key, meta=value[0])
 
     return df
+def passthrough(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    return df
