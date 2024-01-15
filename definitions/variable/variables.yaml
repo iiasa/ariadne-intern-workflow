@@ -185,8 +185,8 @@
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry:
     description: Fossil CO2 emissions from fuel combustion in industry (IPCC category
-      1A2), net of negative emissions from Bioenergy with CCS (BECCS), excluding emissions
-      related to feedstocks
+      1A2), incl. negative emissions from CCS from carbon-neutral fuels (biofuels,
+      efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Industrial Autoproduction:
     description: Fossil CO2 emissions from Industrial Autoproducers
@@ -198,49 +198,49 @@
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals:
     description: Fossil CO2 emissions from fuel combustion in industry in the non-metallic
-      minerals sector, net of negative emissions from Bioenergy with CCS (BECCS),
-      excluding emissions related to feedstocks
+      minerals sector, incl. negative emissions from CCS from carbon-neutral fuels
+      (biofuels, efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Chemicals:
     description: Fossil CO2 emissions from fuel combustion in industry in the chemicals
-      sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
-      emissions related to feedstocks
+      sector, incl. negative emissions from CCS from carbon-neutral fuels (biofuels,
+      efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Steel:
     description: Fossil CO2 emissions from fuel combustion in industry in the iron
-      and steel sector, net of negative emissions from Bioenergy with CCS (BECCS),
-      excluding emissions related to feedstocks
+      and steel sector, incl. negative emissions from CCS from carbon-neutral fuels
+      (biofuels, efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|other Industries:
     description: Fossil CO2 emissions from fuel combustion in industry in other sectors
       (please provide a definition of these sectors in this category in the 'comments'
-      tab), net of negative emissions from Bioenergy with CCS (BECCS), excluding emissions
-      related to feedstocks
+      tab), incl. negative emissions from CCS from carbon-neutral fuels (biofuels,
+      efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Pulp and Paper:
     description: Fossil CO2 emissions from fuel combustion in industry in the pulp
-      and paper sector, net of negative emissions from Bioenergy with CCS (BECCS),
-      excluding emissions related to feedstocks
+      and paper sector, incl. negative emissions from CCS from carbon-neutral fuels
+      (biofuels, efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Food and Tobacco:
     description: Fossil CO2 emissions from fuel combustion in industry in the food
-      and tobacco sector, net of negative emissions from Bioenergy with CCS (BECCS),
-      excluding emissions related to feedstocks
+      and tobacco sector, incl. negative emissions from CCS from carbon-neutral fuels
+      (biofuels, efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals:
     description: Fossil CO2 emissions from fuel combustion in industry in the non-ferrous
-      metals sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
-      emissions related to feedstocks
+      metals sector, incl. negative emissions from CCS from carbon-neutral fuels (biofuels,
+      efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Engineering:
     description: Fossil CO2 emissions from fuel combustion in industry in the engineering
-      sector, net of negative emissions from Bioenergy with CCS (BECCS), excluding
-      emissions related to feedstocks
+      sector, incl. negative emissions from CCS from carbon-neutral fuels (biofuels,
+      efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Industry|Vehicle Construction:
     description: Fossil CO2 emissions from fuel combustion in industry in the vehicle
-      construction sector, net of negative emissions from Bioenergy with CCS (BECCS),
-      excluding emissions related to feedstocks
+      construction sector, incl. negative emissions from CCS from carbon-neutral fuels
+      (biofuels, efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Residential and Commercial:
     description: Fossil CO2 emissions from fuel combustion in residential, commercial,
@@ -357,7 +357,7 @@
     unit: Mt CO2/yr
 - Emissions|CO2|Industry:
     description: CO2 emissions by the industrial sector (energy and process emissions),
-      net of negative emissions from Bioenergy with CCS (BECCS)
+      incl. negative emissions from CCS from carbon-neutral fuels (biofuels, efuels)
     unit: Mt CO2/yr
 - Emissions|Gross Fossil CO2|Energy:
     description: Fossil CO2 emissions from energy use on supply and demand side (IPCC
@@ -410,8 +410,8 @@
     unit: Mt CO2/yr
 - Emissions|Gross Fossil CO2|Energy|Demand|Industry:
     description: Fossil CO2 emissions from fuel combustion in industry (IPCC category
-      1A2), not accounting for negative emissions from BECCS, excluding emissions
-      related to feedstocks
+      1A2), not accounting for negative emissions from CCS from carbon-neutral fuels
+      (biofuels, efuels), excluding emissions related to feedstocks
     unit: Mt CO2/yr
 - Emissions|CO2|Other:
     description: CO2 emissions from other sources (please provide a definition of
@@ -556,6 +556,10 @@
     unit: Mt CO2/yr
 - Carbon Management|Carbon Capture and Storage|DACCS:
     description: total carbon dioxide from direct air capture stored underground
+    unit: Mt CO2/yr
+- Carbon Management|Carbon Capture and Storage|Industry|Efuel:
+    description: total carbon dioxide emissions from Efuels captured in industry sector
+      and stored underground
     unit: Mt CO2/yr
 - Carbon Sequestration:
     description: total carbon dioxide sequestered, stored amounts should be reported
@@ -730,8 +734,9 @@
     description: Kyoto GHG emissions from fuel combustion in industry, and Kyoto GHG
       emissions from industrial processes (IPCC categories 2A, B, C, E), including
       CO2, CH4, N2O and F-gases (preferably use 100-year GWPs from AR4 for aggregation
-      of different gases, not accounting for negative emissions from BECCS; in case
-      other GWPs have been used, please document this on the 'comments' tab)
+      of different gases, not accounting for negative emissions from CCS from carbon-neutral
+      fuels (biofuels, efuels); in case other GWPs have been used, please document
+      this on the 'comments' tab)
     unit: Mt CO2-equiv/yr
 - Emissions|Kyoto Gases|Land-Use Change:
     description: Kyoto GHG emissions from land use and land-use change (IPCC category
@@ -2401,11 +2406,17 @@
 - Final Energy:
     description: total final energy consumption by all end-use sectors and all fuels,
       excluding transmission/distribution losses, excluding non-energy use, excluding
-      bunkers
+      bunkers, excluding ambient heat
+    unit: PJ/yr
+- Final Energy|Ambient Heat:
+    description: total final energy consumption by all end-use sectors of ambient
+      heat, excluding transmission/distribution losses, excluding non-energy use,
+      excluding bunkers, this variable is not included into the total final energy
+      demand of all sectors
     unit: PJ/yr
 - Final Energy incl Non-Energy Use incl Bunkers:
     description: final energy consumed, including bunkers and including non-energy
-      use
+      use, excluding ambient heat
     unit: PJ/yr
 - Final Energy|Agriculture:
     description: total final energy consumption by the agriculture sector
@@ -2847,14 +2858,19 @@
     description: final energy consumption of non-renewable waste
     unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use:
-    description: final energy consumed by the industrial sector, excluding feedstocks
+    description: final energy consumed by the industrial sector, excluding feedstocks,
+      excluding ambient heat
+    unit: PJ/yr
+- Final Energy|Industry excl Non-Energy Use|Ambient Heat:
+    description: final energy consumed by the industrial sector of ambient heat, this
+      variable is not included in the total final energy
     unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use|Electricity:
     description: final energy consumed by the industrial sector of electricity
     unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use|Heat:
     description: final energy consumption by the industrial sector of centrally supplied
-      heat
+      heat, ambient heat is not included
     unit: PJ/yr
 - Final Energy|Industry excl Non-Energy Use|Solar:
     description: final energy consumption by the industrial sector of solar thermal
@@ -3695,7 +3711,11 @@
     unit: PJ/yr
 - Final Energy|Industry:
     description: final energy consumed by the industrial sector, including feedstocks,
-      including agriculture and fishing
+      including agriculture and fishing, excluding ambient heat
+    unit: PJ/yr
+- Final Energy|Industry|Ambient Heat:
+    description: final energy consumed by the industrial sector of ambient heat, this
+      variable is not included in the total final energy of the industrial sector
     unit: PJ/yr
 - Final Energy|Industry|Electricity:
     description: final energy consumption by the industrial sector of electricity
@@ -3721,7 +3741,8 @@
     unit: PJ/yr
 - Final Energy|Industry|Heat:
     description: final energy consumption by the industrial sector of heat (e.g.,
-      district heat, process heat), excluding transmission/distribution losses
+      district heat, process heat), excluding transmission/distribution losses, excluding
+      ambient heat
     unit: PJ/yr
 - Final Energy|Industry|Solar:
     description: final energy consumption by the industrial sector of solar thermal
@@ -3775,7 +3796,13 @@
       sector
     unit: PJ/yr
 - Final Energy|Residential and Commercial:
-    description: final energy consumed in the residential & commercial sector
+    description: final energy consumed in the residential & commercial sector, ambient
+      heat is not included here
+    unit: PJ/yr
+- Final Energy|Residential and Commercial|Ambient Heat:
+    description: final energy consumption by the residential & commercial sector of
+      ambient heat, this variable is not included into the total final energy of the
+      residential and commercial sector
     unit: PJ/yr
 - Final Energy|Residential and Commercial|Electricity:
     description: final energy consumption by the residential & commercial sector of
@@ -3805,7 +3832,7 @@
 - Final Energy|Residential and Commercial|Heat:
     description: final energy consumption by the residential & commercial sector of
       heat (e.g., district heat, process heat and warm water), excluding transmission/distribution
-      losses
+      losses, excluding ambient heat
     unit: PJ/yr
 - Final Energy|Residential and Commercial|Hydrogen:
     description: final energy consumption by the residential & commercial sector of
@@ -4653,6 +4680,10 @@
     description: Price for petroleum at the final level in the transport sector. Prices
       should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Petroleum|Sales Margin:
+    description: Sales margin component of the price for petroleum at the final level
+      in the transport sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Liquids|Petroleum|Transport and Distribution:
     description: Transport and Distribution component of the price for petroleum at
       the final level in the transport sector.
@@ -4668,6 +4699,10 @@
 - Price|Final Energy|Transportation|Liquids|Diesel:
     description: Price for diesel at the final level in the transport sector. Prices
       should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Diesel|Sales Margin:
+    description: Sales margin component of the price for diesel at the final level
+      in the transport sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Liquids|Diesel|Transport and Distribution:
     description: Transport and Distribution component of the price for diesel at the
@@ -4685,6 +4720,10 @@
     description: Price for natural gas at the final level in the freight transport
       sector. Prices should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Natural Gas|Sales Margin:
+    description: Sales margin component of the price for natural gas at the final
+      level in the transport sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Gases|Natural Gas|Transport and Distribution:
     description: Transport and Distribution component of the price for natural gas
       at the final level in the transport sector.
@@ -4701,6 +4740,10 @@
     description: Price for biofuel at the final level in the transport sector. Prices
       should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Biomass|Sales Margin:
+    description: Sales margin component of the price for biofuel at the final level
+      in the transport sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Liquids|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the price for biofuel at
       the final level in the transport sector.
@@ -4712,6 +4755,10 @@
 - Price|Final Energy|Transportation|Liquids|Efuel:
     description: Price for liquid Efuel at the final level in the transport sector.
       Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Liquids|Efuel|Sales Margin:
+    description: Sales margin component of the price for liquid Efuel at the final
+      level in the transport sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Liquids|Efuel|Transport and Distribution:
     description: Transport and Distribution component of the price for liquid Efuel
@@ -4725,6 +4772,10 @@
     description: Price for gaseous Efuel at the final level in the transport sector.
       Prices should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Gases|Efuel|Sales Margin:
+    description: Sales margin component of the price for gaseous Efuel at the final
+      level in the transport sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Gases|Efuel|Transport and Distribution:
     description: Transport and Distribution component of the price for gaseous Efuel
       at the final level in the transport sector.
@@ -4737,6 +4788,10 @@
     description: Hydrogen price at the final level in the transport sector. Prices
       should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Hydrogen|Sales Margin:
+    description: Sales margin component of the Hydrogen price at the final level in
+      the transport sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Hydrogen|Transport and Distribution:
     description: Transport and Distribution component of the Hydrogen price at the
       final level in the transport sector.
@@ -4748,6 +4803,10 @@
 - Price|Final Energy|Transportation|Electricity:
     description: Electricity price at the final level in the transport sector. Prices
       should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Transportation|Electricity|Sales Margin:
+    description: Sales margin component of the Electricity price at the final level
+      in the transport sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Transportation|Electricity|Transport and Distribution:
     description: Transport and Distribution component of the Electricity price at
@@ -5442,7 +5501,7 @@
     description: Production of ethylene using fossil fuels
     unit: Mt/yr
 - Production|Chemicals|Ethylene|Low-Carbon:
-    description: Production of ethylene with new low carbon/carbon-free methods
+    description: Production of ethylene with new low carbon /carbon-free methods
     unit: Mt/yr
 - Production|Pulp and Paper:
     description: production of pulp and paper
@@ -5975,6 +6034,10 @@
       commercial sector. Prices should include the effect of carbon prices and all
       other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Oil|Sales Margin:
+    description: Sales margin component of the price for light fuel oil at the final
+      level in the residential and commercial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Liquids|Oil|Transport and Distribution:
     description: Transport and Distribution component of the price for light fuel
       oil at the final level in the residential and commercial sector.
@@ -5990,6 +6053,10 @@
 - Price|Final Energy|Residential and Commercial|Gases|Natural Gas:
     description: natural gas price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Natural Gas|Sales Margin:
+    description: Sales margin component of the natural gas price at the final level
+      in the residential and commercial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Gases|Natural Gas|Transport and Distribution:
     description: Transport and Distribution component of the natural gas price at
@@ -6007,6 +6074,10 @@
     description: heat price at the final level in the residential and commercial sector.
       Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Heat|Sales Margin:
+    description: Sales margin component of the heat price at the final level in the
+      residential and commercial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Heat|Transport and Distribution:
     description: Transport and Distribution component of the heat price at the final
       level in the residential and commercial sector.
@@ -6018,6 +6089,10 @@
 - Price|Final Energy|Residential and Commercial|Liquids|Biomass:
     description: biofuel price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Biomass|Sales Margin:
+    description: Sales margin component of the biofuel price at the final level in
+      the residential and commercial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Liquids|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the biofuel price at the
@@ -6031,6 +6106,10 @@
     description: biomass price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Solids|Biomass|Sales Margin:
+    description: Sales margin component of the biomass price at the final level in
+      the residential and commercial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Solids|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the biomass price at the
       final level in the residential and commercial sector.
@@ -6042,6 +6121,10 @@
 - Price|Final Energy|Residential and Commercial|Gases|Biomass:
     description: biogas price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Biomass|Sales Margin:
+    description: Sales margin component of the biogas price at the final level in
+      the residential and commercial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Gases|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the biogas price at the final
@@ -6055,6 +6138,10 @@
     description: liquid Efuel price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids|Efuel|Sales Margin:
+    description: Sales margin component of the liquid Efuel price at the final level
+      in the residential and commercial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Liquids|Efuel|Transport and Distribution:
     description: Transport and Distribution component of the liquid Efuel price at
       the final level in the residential and commercial sector.
@@ -6066,6 +6153,10 @@
 - Price|Final Energy|Residential and Commercial|Gases|Efuel:
     description: Gaseous Efuel price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases|Efuel|Sales Margin:
+    description: Sales margin component of the gaseous Efuel price at the final level
+      in the residential and commercial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Gases|Efuel|Transport and Distribution:
     description: Transport and Distribution component of the gaseous Efuel price at
@@ -6079,6 +6170,10 @@
     description: Hydrogen price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Hydrogen|Sales Margin:
+    description: Sales margin component of the Hydrogen price at the final level in
+      the residential and commercial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Hydrogen|Transport and Distribution:
     description: Transport and Distribution component of the Hydrogen price at the
       final level in the residential and commercial sector.
@@ -6090,6 +6185,10 @@
 - Price|Final Energy|Residential and Commercial|Electricity:
     description: electricity price at the final level in the residential and commercial
       sector. Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Electricity|Sales Margin:
+    description: Sales margin component of the Electricity price at the final level
+      in the residential and commercial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Electricity|Transport and Distribution:
     description: Transport and Distribution component of the Electricity price at
@@ -6127,6 +6226,10 @@
     description: Price for light fuel oil at the final level in the industrial sector.
       Prices should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Oil|Sales Margin:
+    description: Sales margin component of the price for light fuel oil at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Liquids|Oil|Transport and Distribution:
     description: Transport and Distribution component of the price for light fuel
       oil at the final level in the industrial sector.
@@ -6142,6 +6245,10 @@
 - Price|Final Energy|Industry|Solids|Coal:
     description: Price for hard coal at the final level in the industrial sector.
       Prices should include the effect of carbon prices and all other taxes.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Coal|Sales Margin:
+    description: Sales margin component of the price for hard coal at the final level
+      in the industrial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Industry|Solids|Coal|Transport and Distribution:
     description: Transport and Distribution component of the price for hard coal at
@@ -6159,6 +6266,10 @@
     description: Price for natural gas at the final level in the industrial sector.
       Prices should include the effect of carbon prices and all other taxes.
     unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Natural Gas|Sales Margin:
+    description: Sales margin component of the price for natural gas at the final
+      level in the industrial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Gases|Natural Gas|Transport and Distribution:
     description: Transport and Distribution component of the price for natural gas
       at the final level in the industrial sector.
@@ -6170,6 +6281,10 @@
 - Price|Final Energy|Industry|Gases|Natural Gas|Other Taxes:
     description: Other taxes and subsidies included in the price for natural gas at
       the final level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Heat|Sales Margin:
+    description: Sales margin component of the price for heat at the final level in
+      the industrial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Industry|Heat|Transport and Distribution:
     description: Transport and Distribution component of the price for heat at the
@@ -6183,6 +6298,10 @@
     description: biofuel price at the final level in the industrial sector. Prices
       should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Biomass|Sales Margin:
+    description: Sales margin component of the biofuel price at the final level in
+      the industrial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Liquids|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the biofuel price at the
       final level in the industrial sector.
@@ -6194,6 +6313,10 @@
 - Price|Final Energy|Industry|Solids|Biomass:
     description: biomass price at the final level in the industrial sector. Prices
       should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Solids|Biomass|Sales Margin:
+    description: Sales margin component of the biomass price at the final level in
+      the industrial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Industry|Solids|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the biomass price at the
@@ -6207,6 +6330,10 @@
     description: biogas price at the final level in the industrial sector. Prices
       should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Biomass|Sales Margin:
+    description: Sales margin component of the biogas price at the final level in
+      the industrial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Gases|Biomass|Transport and Distribution:
     description: Transport and Distribution component of the biogas price at the final
       level in the industrial sector.
@@ -6218,6 +6345,10 @@
 - Price|Final Energy|Industry|Liquids|Efuel:
     description: liquid Efuel price at the final level in the industrial sector. Prices
       should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Liquids|Efuel|Sales Margin:
+    description: Sales margin component of the liquid Efuel price at the final level
+      in the industrial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Industry|Liquids|Efuel|Transport and Distribution:
     description: Transport and Distribution component of the liquid Efuel price at
@@ -6231,6 +6362,10 @@
     description: Gaseous Efuel price at the final level in the industrial sector.
       Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Industry|Gases|Efuel|Sales Margin:
+    description: Sales margin component of the gaseous Efuel price at the final level
+      in the industrial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Gases|Efuel|Transport and Distribution:
     description: Transport and Distribution component of the gaseous Efuel price at
       the final level in the industrial sector.
@@ -6239,6 +6374,10 @@
     description: Other taxes and subsidies included in the gaseous Efuel price at
       the final level in the industrial sector.
     unit: EUR2020/GJ
+- Price|Final Energy|Industry|Hydrogen|Sales Margin:
+    description: Sales margin component of the Hydrogen price at the final level in
+      the industrial sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Industry|Hydrogen|Transport and Distribution:
     description: Transport and Distribution component of the Hydrogen price at the
       final level in the industrial sector.
@@ -6246,6 +6385,10 @@
 - Price|Final Energy|Industry|Hydrogen|Other Taxes:
     description: Other taxes and subsidies included in the Hydrogen price at the final
       level in the industrial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry|Electricity|Sales Margin:
+    description: Sales margin component of the Electricity price at the final level
+      in the industrial sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Industry|Electricity|Transport and Distribution:
     description: Transport and Distribution component of the Electricity price at
