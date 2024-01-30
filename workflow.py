@@ -154,6 +154,7 @@ def _validate_meta(
     return df
 
 def kopernikus_public(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    definition = DataStructureDefinition(here / "definitions", dimensions=["region"])
     for region in definition.region.values():
         for synonym in ("abbr", "iso3"):
             if synonym in region.extra_attributes:
