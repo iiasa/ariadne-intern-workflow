@@ -152,5 +152,11 @@ def _validate_meta(
             df.set_meta(name=key, meta=value[0])
 
     return df
-def passthrough(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
-    return df
+
+def kopernikus_public(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    for region in definition.region.values():
+        for synonym in ("abbr", "iso3"):
+            if synonym in region.extra_attributes:
+                rename_dict[region.extra_attributes[synonym]] = region.name
+
+    return df.rename(region=rename_dict)
