@@ -136,7 +136,6 @@ def _validate_meta(
 
     # validate meta columns for accepted values (if provided) or assign default
     for key, value in allowed_meta.items():
-
         # if the meta column exists, check that values are allowed
         if key in df.meta.columns:
             unknown = [v for v in df.meta[key].unique() if v not in value]
@@ -153,11 +152,14 @@ def _validate_meta(
 
     return df
 
+
 def kopernikus_public(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     definition = DataStructureDefinition(here / "definitions", dimensions=["region"])
-    for region in definition.region.values():
-        for synonym in ("abbr", "iso3"):
-            if synonym in region.extra_attributes:
-                rename_dict[region.extra_attributes[synonym]] = region.name
+    rename_dict = {
+        region.extra_attributes[synonym]: region.name
+        for region in definition.region.values()
+        for synonym in ("abbr", "iso3")
+        if synonym in region.extra_attributes
+    }
 
     return df.rename(region=rename_dict)
