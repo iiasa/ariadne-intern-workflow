@@ -5705,6 +5705,15 @@
 - Stock|Transportation|Truck|ICE|Truck (7.5t):
     description: Stock of internal combustion engine trucks with weight 3.5 - 7.5t
     unit: million
+- Stock|Transportation|Truck|ICE|Truck (12t):
+    description: Stock of internal-combustion engine trucks with weight 7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|ICE|Truck (12t+):
+    description: Stock of internal-combustion engine trucks with weight >12t
+    unit: million
+- Stock|Transportation|Truck|ICE|Tractor Truck:
+    description: Stock of internal combustion engine tractor trucks
+    unit: million
 - Stock|Transportation|Truck|BEV:
     description: Stock of battery electric trucks
     unit: million
@@ -5719,6 +5728,15 @@
     unit: million
 - Stock|Transportation|Truck|BEV|Truck (7.5t):
     description: Stock of battery electric trucks with weight 3.5 - 7.5t
+    unit: million
+- Stock|Transportation|Truck|BEV|Truck (12t):
+    description: Stock of battery electric trucks with weight 7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|BEV|Truck (12t+):
+    description: Stock of battery electric trucks with weight >12t
+    unit: million
+- Stock|Transportation|Truck|BEV|Tractor Truck:
+    description: Stock of battery electric tractor trucks
     unit: million
 - Stock|Transportation|Truck|FCEV:
     description: Stock of fuel cell electric trucks
@@ -5735,6 +5753,73 @@
 - Stock|Transportation|Truck|FCEV|Truck (7.5t):
     description: Stock of fuel cell electric trucks with weight 3.5 - 7.5t
     unit: million
+- Stock|Transportation|Truck|PHEV:
+    description: Stock of plug-in hybrid electric trucks
+    unit: million
+- Stock|Transportation|Truck|PHEV|Truck (0-3.5t):
+    description: Stock of plug-in hybrid electric trucks with weight < 3.5t
+    unit: million
+- Stock|Transportation|Truck|PHEV|Truck (7.5t):
+    description: Stock of plug-in hybrid electric trucks with weight 3.5 - 7.5t
+    unit: million
+- Stock|Transportation|Truck|PHEV|Truck (12t):
+    description: Stock of plug-in hybrid electric trucks with weight 7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|PHEV|Truck (12t+):
+    description: Stock of plug-in hybrid electric trucks with weight >12t
+    unit: million
+- Stock|Transportation|Truck|PHEV|Tractor Truck:
+    description: Stock of plug-in hybrid electric tractor trucks
+    unit: million
+- Stock|Transportation|Truck|Overhead Line:
+    description: Stock of overhead line trucks
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|BEV:
+    description: Stock of overhead line trucks with additional battery
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|BEV|Truck (0-3.5t):
+    description: Stock of overhead line trucks with additional battery and weight
+      < 3.5t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|BEV|Truck (7.5t):
+    description: Stock of overhead line trucks with additional battery and weight
+      3.5 - 7.5t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|BEV|Truck (12t):
+    description: Stock of overhead line trucks with additional battery and weight
+      7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|BEV|Truck (12t+):
+    description: Stock of overhead line trucks with additional battery and weight
+      >12t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|BEV|Tactor Truck:
+    description: Stock of overhead line tractor trucks with additional battery
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|ICE:
+    description: Stock of overhead line trucks with additional internal combustion
+      engine
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|ICE|Truck (0-3.5t):
+    description: Stock of overhead line trucks with additional internal combustion
+      engine and weight < 3.5t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|ICE|Truck (7.5t):
+    description: Stock of overhead line trucks with additional internal combustion
+      engine and weight 3.5 - 7.5t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|ICE|Truck (12t):
+    description: Stock of overhead line trucks with additional internal combustion
+      engine and weight 7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|ICE|Truck (12t+):
+    description: Stock of overhead line trucks with additional internal combustion
+      engine and weight >12t
+    unit: million
+- Stock|Transportation|Truck|Overhead Line|ICE|Tactor Truck:
+    description: Stock of overhead line tractor trucks with additional internal combustion
+      engine
+    unit: million
 - Stock|Transportation|Truck|Truck (0-3.5t):
     description: Stock of trucks with weight < 3.5t
     unit: million
@@ -5746,6 +5831,15 @@
     unit: million
 - Stock|Transportation|Truck|Truck (7.5t):
     description: Stock of trucks with weight 3.5 - 7.5t
+    unit: million
+- Stock|Transportation|Truck|Truck (12t):
+    description: Stock of trucks with weight 7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|Truck (12t+):
+    description: Stock of trucks with weight >12t
+    unit: million
+- Stock|Transportation|Truck|Tractor Truck:
+    description: Stock of tractor trucks
     unit: million
 - Stock|Transportation|Bus:
     description: Stock of buses
@@ -5864,6 +5958,15 @@
 - Sales|Transportation|Truck|ICE|Truck (7.5t):
     description: Sales of internal combustion engine trucks with weight 3.5 - 7.5t
     unit: million
+- Sales|Transportation|Truck|ICE|Truck (12t):
+    description: Sales of internal-combustion engine trucks with weight 7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|ICE|Truck (12t+):
+    description: Sales of internal-combustion engine trucks with weight >12t
+    unit: million
+- Sales|Transportation|Truck|ICE|Tractor Truck:
+    description: Sales of internal combustion engine tractor trucks
+    unit: million
 - Sales|Transportation|Truck|BEV:
     description: Sales of battery electric trucks
     unit: million
@@ -5878,6 +5981,15 @@
     unit: million
 - Sales|Transportation|Truck|BEV|Truck (7.5t):
     description: Sales of battery electric trucks with weight 3.5 - 7.5t
+    unit: million
+- Sales|Transportation|Truck|BEV|Truck (12t):
+    description: Sales of battery electric trucks with weight 7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|BEV|Truck (12t+):
+    description: Sales of battery electric trucks with weight >12t
+    unit: million
+- Sales|Transportation|Truck|BEV|Tractor Truck:
+    description: Sales of battery electric tractor trucks
     unit: million
 - Sales|Transportation|Truck|FCEV:
     description: Sales of fuel cell electric trucks
@@ -5894,6 +6006,73 @@
 - Sales|Transportation|Truck|FCEV|Truck (7.5t):
     description: Sales of fuel cell electric trucks with weight 3.5 - 7.5t
     unit: million
+- Sales|Transportation|Truck|PHEV:
+    description: Sales of plug-in hybrid electric trucks
+    unit: million
+- Sales|Transportation|Truck|PHEV|Truck (0-3.5t):
+    description: Sales of plug-in hybrid electric trucks with weight < 3.5t
+    unit: million
+- Sales|Transportation|Truck|PHEV|Truck (7.5t):
+    description: Sales of plug-in hybrid electric trucks with weight 3.5 - 7.5t
+    unit: million
+- Sales|Transportation|Truck|PHEV|Truck (12t):
+    description: Sales of plug-in hybrid electric trucks with weight 7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|PHEV|Truck (12t+):
+    description: Sales of plug-in hybrid electric trucks with weight >12t
+    unit: million
+- Sales|Transportation|Truck|PHEV|Tractor Truck:
+    description: Sales of plug-in hybrid electric tractor trucks
+    unit: million
+- Sales|Transportation|Truck|Overhead Line:
+    description: Sales of overhead line trucks
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|BEV:
+    description: Sales of overhead line trucks with additional battery
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|BEV|Truck (0-3.5t):
+    description: Sales of overhead line trucks with additional battery and weight
+      < 3.5t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|BEV|Truck (7.5t):
+    description: Sales of overhead line trucks with additional battery and weight
+      3.5 - 7.5t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|BEV|Truck (12t):
+    description: Sales of overhead line trucks with additional battery and weight
+      7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|BEV|Truck (12t+):
+    description: Sales of overhead line trucks with additional battery and weight
+      >12t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|BEV|Tactor Truck:
+    description: Sales of overhead line tractor trucks with additional battery
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|ICE:
+    description: Sales of overhead line trucks with additional internal combustion
+      engine
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|ICE|Truck (0-3.5t):
+    description: Sales of overhead line trucks with additional internal combustion
+      engine and weight < 3.5t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|ICE|Truck (7.5t):
+    description: Sales of overhead line trucks with additional internal combustion
+      engine and weight 3.5 - 7.5t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|ICE|Truck (12t):
+    description: Sales of overhead line trucks with additional internal combustion
+      engine and weight 7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|ICE|Truck (12t+):
+    description: Sales of overhead line trucks with additional internal combustion
+      engine and weight >12t
+    unit: million
+- Sales|Transportation|Truck|Overhead Line|ICE|Tactor Truck:
+    description: Sales of overhead line tractor trucks with additional internal combustion
+      engine
+    unit: million
 - Sales|Transportation|Truck|Truck (0-3.5t):
     description: Sales of trucks with weight < 3.5t
     unit: million
@@ -5905,6 +6084,15 @@
     unit: million
 - Sales|Transportation|Truck|Truck (7.5t):
     description: Sales of trucks with weight 3.5 - 7.5t
+    unit: million
+- Sales|Transportation|Truck|Truck (12t):
+    description: Sales of trucks with weight 7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|Truck (12t+):
+    description: Sales of trucks with weight >12t
+    unit: million
+- Sales|Transportation|Truck|Tractor Truck:
+    description: Sales of tractor trucks
     unit: million
 - Sales|Transportation|Bus:
     description: Sales of heavy buses
