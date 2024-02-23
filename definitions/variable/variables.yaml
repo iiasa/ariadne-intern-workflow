@@ -4989,176 +4989,251 @@
     unit: PJ/yr
 - Secondary Energy|Electricity:
     description: total net electricity production, incl. electricity for hydrogen
-      storage that is then converted back to electricity
+      storage that is then converted back to electricity  (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Biomass:
     description: net electricity production from municipal solid waste, purpose-grown
-      biomass, crop residues, forest industry waste, biogas
+      biomass, crop residues, forest industry waste, biogas (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Biomass|w/ CCS:
     description: net electricity production from municipal solid waste, purpose-grown
-      biomass, crop residues, forest industry waste with a CO2 capture component
+      biomass, crop residues, forest industry waste with a CO2 capture component (net
+      generation = gross generation minus the own electricity consumption of power
+      stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Biomass|w/o CCS:
     description: net electricity production from municipal solid waste, purpose-grown
       biomass, crop residues, forest industry waste with freely vented CO2 emissions
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Biomass|Solid:
     description: net electricity production from solid biomass and renewable waste
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Biomass|Gaseous and Liquid:
-    description: net electricity production from biogas and biofuels
+    description: net electricity production from biogas and biofuels (net generation
+      = gross generation minus the own electricity consumption of power stations,
+      minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal:
-    description: net electricity production from coal
+    description: net electricity production from coal (net generation = gross generation
+      minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|w/ CCS:
     description: net electricity production from coal with a CO2 capture component
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|w/o CCS:
     description: net electricity production from coal with freely vented CO2 emissions
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|Hard Coal:
-    description: Net electricity production from hard coal
+    description: Net electricity production from hard coal (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|Hard Coal|w/ CCS:
     description: net electricity production from hard coal with a CO2 capture component
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|Hard Coal|w/o CCS:
     description: net electricity production from hard coal with freely vented CO2
-      emissions
+      emissions (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|Lignite:
-    description: Net electricity production from lignite
+    description: Net electricity production from lignite (net generation = gross generation
+      minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|Lignite|w/ CCS:
     description: net electricity production from lignite with a CO2 capture component
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Coal|Lignite|w/o CCS:
     description: net electricity production from lignite with freely vented CO2 emissions
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Fossil:
     description: net electricity production from coal, gas, conventional and unconventional
-      oil
+      oil (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Fossil|w/ CCS:
     description: net electricity production from coal, gas, conventional and unconventional
-      oil used in combination with CCS
+      oil used in combination with CCS (net generation = gross generation minus the
+      own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Fossil|w/o CCS:
     description: net electricity production from coal, gas, conventional and unconventional
-      oil without CCS
+      oil without CCS (net generation = gross generation minus the own electricity
+      consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas:
-    description: net electricity production from gas
+    description: net electricity production from gas (net generation = gross generation
+      minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|Efuel:
-    description: net electricity production from synthetic gas
+    description: net electricity production from synthetic gas (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|Natural Gas:
-    description: net electricity production from natural gas
+    description: net electricity production from natural gas (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|w/ CCS:
     description: net electricity production from gas with a CO2 capture component
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|w/o CCS:
     description: net electricity production from gas with freely vented CO2 emissions
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|CC:
-    description: Net electricity production from gas Combined Cycle (CC) units
+    description: Net electricity production from gas Combined Cycle (CC) units (net
+      generation = gross generation minus the own electricity consumption of power
+      stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|CC|w/ CCS:
-    description: Net electricity production from gas CC with CCS
+    description: Net electricity production from gas CC with CCS (net generation =
+      gross generation minus the own electricity consumption of power stations, minus
+      curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|CC|w/o CCS:
-    description: Net electricity production from gas CC without CCS
+    description: Net electricity production from gas CC without CCS (net generation
+      = gross generation minus the own electricity consumption of power stations,
+      minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|OC:
     description: Net electricity production from gas Open Cycle (OC) units. Includes
       low capital intensity existent technologies (steam turbines, combustion turbines
-      and internal combustion)
+      and internal combustion) (net generation = gross generation minus the own electricity
+      consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Geothermal:
     description: net electricity production from all sources of geothermal energy
-      (e.g., hydrothermal, enhanced geothermal systems)
+      (e.g., hydrothermal, enhanced geothermal systems) (net generation = gross generation
+      minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Hydro:
-    description: net hydroelectric production
+    description: net hydroelectric production (net generation = gross generation minus
+      the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Non-Biomass Renewables:
     description: net electricity production from hydro, wind, solar, geothermal, ocean,
       and other renewable sources (excluding bioenergy). This is a summary category
-      for all the non-biomass renewables.
+      for all the non-biomass renewables. (net generation = gross generation minus
+      the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Nuclear:
-    description: net electricity production from nuclear energy
+    description: net electricity production from nuclear energy (net generation =
+      gross generation minus the own electricity consumption of power stations, minus
+      curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Oil:
-    description: net electricity production from refined liquid oil products
+    description: net electricity production from refined liquid oil products (net
+      generation = gross generation minus the own electricity consumption of power
+      stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Oil|w/ CCS:
     description: net electricity production from refined liquids with a CO2 capture
-      component
+      component (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Oil|w/o CCS:
     description: net electricity production from refined liquids with freely vented
-      CO2 emissions
+      CO2 emissions (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Solar:
     description: net electricity production from all sources of solar energy (e.g.,
-      PV and concentrating solar power)
+      PV and concentrating solar power) (net generation = gross generation minus the
+      own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Solar|CSP:
-    description: net electricity production from concentrating solar power (CSP)
+    description: net electricity production from concentrating solar power (CSP) (net
+      generation = gross generation minus the own electricity consumption of power
+      stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Solar|PV:
-    description: net electricity production from solar photovoltaics (PV)
+    description: net electricity production from solar photovoltaics (PV) (net generation
+      = gross generation minus the own electricity consumption of power stations,
+      minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Solar|PV|Rooftop:
     description: net electricity production from solar photovoltaics (PV) rooftop
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Solar|PV|Open Field:
     description: net electricity production from solar photovoltaics (PV) open field
-      / ground mounted
+      / ground mounted (net generation = gross generation minus the own electricity
+      consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Waste:
-    description: net electricity production from non-renewable waste
+    description: net electricity production from non-renewable waste (net generation
+      = gross generation minus the own electricity consumption of power stations,
+      minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Wind:
-    description: net electricity production from wind energy (on- and offshore)
+    description: net electricity production from wind energy (on- and offshore) (net
+      generation = gross generation minus the own electricity consumption of power
+      stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Wind|Offshore:
-    description: net electricity production from offshore wind energy
+    description: net electricity production from offshore wind energy (net generation
+      = gross generation minus the own electricity consumption of power stations,
+      minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Wind|Onshore:
-    description: net electricity production from onshore wind energy
+    description: net electricity production from onshore wind energy (net generation
+      = gross generation minus the own electricity consumption of power stations,
+      minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Hydrogen:
-    description: Net electricity production from hydrogen
+    description: Net electricity production from hydrogen (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Hydrogen|CC:
     description: Net electricity production from hydrogen Combined Cycle (CC) units
+      (net generation = gross generation minus the own electricity consumption of
+      power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Hydrogen|FC:
-    description: Net electricity production from hydrogen Fuel Cell (FC) units.
+    description: Net electricity production from hydrogen Fuel Cell (FC) units. (net
+      generation = gross generation minus the own electricity consumption of power
+      stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Hydrogen|OC:
     description: Net electricity production from hydrogen Open Cycle (OC) units. Includes
       low capital intensity existent technologies (steam turbines, combustion turbines
-      and internal combustion)
+      and internal combustion) (net generation = gross generation minus the own electricity
+      consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Curtailment:
     description: curtailment of electricity production due to oversupply from variable
-      renewable sources (typically from wind and solar)
+      renewable sources (typically from wind and solar) (all other SE|Electricity|...
+      variables are already net curtailed electricity production)
     unit: PJ/yr
 - Secondary Energy|Electricity|Ocean:
     description: net electricity production from all sources of ocean energy (e.g.,
-      tidal, wave, ocean thermal electricity generation)
+      tidal, wave, ocean thermal electricity generation) (net generation = gross generation
+      minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Other:
     description: net electricity production from sources that do not fit to any other
       category (please provide a definition of the sources in this category in the
-      'comments' tab)
+      'comments' tab) (net generation = gross generation minus the own electricity
+      consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Storage Losses:
     description: losses from electricity storage
@@ -5753,6 +5828,15 @@
 - Stock|Transportation|Truck|FCEV|Truck (7.5t):
     description: Stock of fuel cell electric trucks with weight 3.5 - 7.5t
     unit: million
+- Stock|Transportation|Truck|FCEV|Truck (12t):
+    description: Stock of fuel cell electric trucks with weight 7.5 - 12t
+    unit: million
+- Stock|Transportation|Truck|FCEV|Truck (12t+):
+    description: Stock of fuel cell electric trucks with weight >12t
+    unit: million
+- Stock|Transportation|Truck|FCEV|Tractor Truck:
+    description: Stock of fuel cell electric tractor trucks
+    unit: million
 - Stock|Transportation|Truck|PHEV:
     description: Stock of plug-in hybrid electric trucks
     unit: million
@@ -5793,7 +5877,7 @@
     description: Stock of overhead line trucks with additional battery and weight
       >12t
     unit: million
-- Stock|Transportation|Truck|Overhead Line|BEV|Tactor Truck:
+- Stock|Transportation|Truck|Overhead Line|BEV|Tractor Truck:
     description: Stock of overhead line tractor trucks with additional battery
     unit: million
 - Stock|Transportation|Truck|Overhead Line|ICE:
@@ -5816,7 +5900,7 @@
     description: Stock of overhead line trucks with additional internal combustion
       engine and weight >12t
     unit: million
-- Stock|Transportation|Truck|Overhead Line|ICE|Tactor Truck:
+- Stock|Transportation|Truck|Overhead Line|ICE|Tractor Truck:
     description: Stock of overhead line tractor trucks with additional internal combustion
       engine
     unit: million
@@ -6006,6 +6090,15 @@
 - Sales|Transportation|Truck|FCEV|Truck (7.5t):
     description: Sales of fuel cell electric trucks with weight 3.5 - 7.5t
     unit: million
+- Sales|Transportation|Truck|FCEV|Truck (12t):
+    description: Sales of fuel cell electric trucks with weight 7.5 - 12t
+    unit: million
+- Sales|Transportation|Truck|FCEV|Truck (12t+):
+    description: Sales of fuel cell electric trucks with weight >12t
+    unit: million
+- Sales|Transportation|Truck|FCEV|Tractor Truck:
+    description: Sales of fuel cell electric tractor trucks
+    unit: million
 - Sales|Transportation|Truck|PHEV:
     description: Sales of plug-in hybrid electric trucks
     unit: million
@@ -6046,7 +6139,7 @@
     description: Sales of overhead line trucks with additional battery and weight
       >12t
     unit: million
-- Sales|Transportation|Truck|Overhead Line|BEV|Tactor Truck:
+- Sales|Transportation|Truck|Overhead Line|BEV|Tractor Truck:
     description: Sales of overhead line tractor trucks with additional battery
     unit: million
 - Sales|Transportation|Truck|Overhead Line|ICE:
@@ -6069,7 +6162,7 @@
     description: Sales of overhead line trucks with additional internal combustion
       engine and weight >12t
     unit: million
-- Sales|Transportation|Truck|Overhead Line|ICE|Tactor Truck:
+- Sales|Transportation|Truck|Overhead Line|ICE|Tractor Truck:
     description: Sales of overhead line tractor trucks with additional internal combustion
       engine
     unit: million
@@ -8831,23 +8924,28 @@
     unit: EUR2020/t CO2
 - Secondary Energy|Electricity|Coal|Autoproduction:
     description: Production of electricity from coal by autoproducers (in units of
-      output)
+      output) (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|Autoproduction:
     description: Production of electricity from gas by autoproducers (in units of
-      output)
+      output) (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Oil|Autoproduction:
     description: Production of electricity from oil by autoproducers (in units of
-      output)
+      output) (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Biomass|Autoproduction:
     description: Production of electricity from biomass by autoproducers (in units
-      of output)
+      of output) (net generation = gross generation minus the own electricity consumption
+      of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Non-Biomass Renewables|Autoproduction:
     description: Production of electricity from non-biomass renewables by autoproducers
-      (in units of output)
+      (in units of output) (net generation = gross generation minus the own electricity
+      consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Heat|Coal|Autoproduction:
     description: Production of heat from coal by autoproducers (in units of output)
