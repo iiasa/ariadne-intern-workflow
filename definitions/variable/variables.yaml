@@ -81,36 +81,42 @@
     unit: billion EUR2020/yr
 - Capital Stock:
     description: Macroeconomic capital stock
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
+- Capital Stock|Transportation:
+    description: end use capital in the transport sector
+    unit: billion EUR2020
+- Capital Stock|Industry:
+    description: end use capital in the industrial sector
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial:
     description: end use capital in the residential & commercial sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Appliances and Lighting:
     description: end use capital for appliances and lighting in the residential &
       commercial sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Insulation:
     description: end use capital for insulation in the residential & commercial sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Space Cooling:
     description: end use capital for space cooling in the residential & commercial
       sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Space Heating:
     description: end use capital for space heating in the residential & commercial
       sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Water Heating and Cooking:
     description: end use capital for water heating and cooking in the residential
       & commercial sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Water Heating and Cooking|Cooking:
     description: end use capital for water heating in the residential & commercial
       sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Capital Stock|Residential and Commercial|Water Heating and Cooking|Water Heating:
     description: end use capital for cooking in the residential & commercial sector
-    unit: billion EUR2020/yr
+    unit: billion EUR2020
 - Interest Rate|Real:
     description: Real interest rate or return on capital that is relevant for energy
       system investments
@@ -1415,6 +1421,26 @@
 - Capacity|Heat|Storage Converter:
     description: Total installed net converter capacity of central thermal storages
     unit: GW
+- Capacity|Heat|Biomass|w/ CCS:
+    description: Total installed (available) capacity of centralized biomass heating
+      w/ CCS fed into district heating systems.
+    unit: GW
+- Capacity|Heat|Biomass|w/o CCS:
+    description: Total installed (available) capacity of centralized biomass heating
+      w/o CCS fed into district heating systems.
+    unit: GW
+- Capacity|Heat|Biomass:
+    description: Total installed (available) capacity of centralized biomass heating
+      fed into district heating systems.
+    unit: GW
+- Capacity|Heat|Resistive heater:
+    description: Total installed (available) capacity of resistive heaters fed into
+      district heating systems.
+    unit: GW
+- Capacity|Heat|Industrial Processes:
+    description: Total installed (available) capacity of waste heat from industrial
+      process fed into district heating systems.
+    unit: GW
 - Capacity|Decentral Heat|Solar thermal:
     description: Total installed (available) capacity of decentraliezd rooftop solar
       thermal heat
@@ -1611,6 +1637,9 @@
 - Capacity|Liquids|Hydrogen:
     description: Total installed (available) capacity of plants for synthetic liquid
       e-fuels
+    unit: GW
+- Capacity|Methanol:
+    description: Total installed (available) capacity of methanol plants.
     unit: GW
 - Cumulative Capacity|Electricity|Biomass:
     description: Cumulative installed net capacity (since 2020) of biomass power plants.
@@ -1985,6 +2014,10 @@
       of biomass power plants without CCS (yearly average additions between previous
       and current model time step)
     unit: GW/yr
+- Capacity Additions|Electricity|Biomass|Solids:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of solid biomass and renewable waste power plants
+    unit: GW/yr
 - Capacity Additions|Electricity|Coal:
     description: Additions of new capacities (gross, w/o accounting for retirements)
       of all coal power plants (yearly average additions between previous and current
@@ -2221,6 +2254,30 @@
     description: Additions of new converter capacities (gross, w/o accounting for
       retirements) of central thermal storages
     unit: GW/yr
+- Capacity Additions|Heat|Biomass|w/ CCS:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of biomass heating w/ CCS.
+    unit: GW/yr
+- Capacity Additions|Heat|Biomass|w/o CCS:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of biomass heating w/o CCS.
+    unit: GW/yr
+- Capacity Additions|Heat|Biomass:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of biomass heating.
+    unit: GW/yr
+- Capacity Additions|Heat|Resistive heater:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of resistive heating.
+    unit: GW/yr
+- Capacity Additions|Heat|Industrial Processes:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of waste heat from industrial process fed into district heating systems.
+    unit: GW/yr
+- Capacity Additions|Gases:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of gas plants.
+    unit: GW/yr
 - Capacity Additions|Gases|Biomass:
     description: Additions of new capacities (gross, w/o accounting for retirements)
       of biomass to gas plants.
@@ -2264,6 +2321,10 @@
 - Capacity Additions|Gases|Hydrogen:
     description: Additions of new capacities (gross, w/o accounting for retirements)
       of synthetic gas plants.
+    unit: GW/yr
+- Capacity Additions|Hydrogen:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of hydrogen plants.
     unit: GW/yr
 - Capacity Additions|Hydrogen|Biomass:
     description: Additions of new capacities (gross, w/o accounting for retirements)
@@ -2334,6 +2395,14 @@
       be reported by adding variables Capacity|Hydrogen|Gas|w/o CCS|1, ..., Capacity|Hydrogen|Gas|w/o
       CCS|N (matching the assignment of plant types to technologies in the reporting
       of capital costs as documented in the comments sheet).
+    unit: GW/yr
+- Capacity Additions|Hydrogen|Storage Reservoir:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of central hydrogen storages
+    unit: GW/yr
+- Capacity Additions|Liquids:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of liquids plants.
     unit: GW/yr
 - Capacity Additions|Liquids|Biomass:
     description: Additions of new capacities (gross, w/o accounting for retirements)
@@ -2408,6 +2477,10 @@
 - Capacity Additions|Liquids|Hydrogen:
     description: Additions of new capacities (gross, w/o accounting for retirements)
       of synthetic liquids plants.
+    unit: GW/yr
+- Capacity Additions|Methanol:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of methanol plants.
     unit: GW/yr
 - Final Energy:
     description: total final energy consumption by all end-use sectors and all fuels,
@@ -6335,16 +6408,18 @@
       should include the effect of carbon prices.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Gases:
-    description: natural gas price at the final level in the residential sector. Prices
-      should include the effect of carbon prices.
+    description: Gas price at the final level in the residential sector (can be a
+      mix of natural gas, Biogas, and synth. gas). Prices should include the effect
+      of carbon prices.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Gases|Natural Gas:
     description: natural gas price at the final level in the residential sector. Prices
       should include the effect of carbon prices.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Liquids:
-    description: biofuel price at the final level in the residential sector. Prices
-      should include the effect of carbon prices.
+    description: Liquids price at the final level in the residential sector (can be
+      a mix of heating oil, Biofuels and E-fuels). Prices should include the effect
+      of carbon prices.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Liquids|Biomass:
     description: biofuel price at the final level in the residential sector. Prices
@@ -6366,6 +6441,11 @@
     description: coal price at the final level in the residential sector. Prices should
       include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Liquids:
+    description: Liquids price at the final level in the residential and commercial
+      sector (can be a mix of heating oil, Biofuels and E-fuels). Prices should include
+      the effect of carbon prices.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Liquids|Oil:
     description: Price for light fuel oil at the final level in the residential and
       commercial sector. Prices should include the effect of carbon prices and all
@@ -6386,6 +6466,11 @@
 - Price|Final Energy|Residential and Commercial|Liquids|Oil|Other Taxes:
     description: Other taxes and subsidies included in the price for light fuel oil
       at the final level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Gases:
+    description: Gas price at the final level in the residential and commercial sector
+      (can be a mix of natural gas, Biogas, and synth. gas). Prices should include
+      the effect of carbon prices.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Gases|Natural Gas:
     description: natural gas price at the final level in the residential and commercial
@@ -6441,6 +6526,10 @@
 - Price|Final Energy|Residential and Commercial|Liquids|Biomass|Other Taxes:
     description: Other taxes and subsidies included in the biofuel price at the final
       level in the residential and commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential and Commercial|Solids:
+    description: Biomass price at the final level in the residential and commercial
+      sector. Prices should include the effect of carbon prices.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Solids|Biomass:
     description: biomass price at the final level in the residential and commercial
@@ -6925,8 +7014,8 @@
     description: Investments into the energy supply system
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity:
-    description: Investments into electricity generation and supply (including electricity
-      storage and transmission & distribution)
+    description: Total investment spending into electricity generation and supply
+      (including electricity storage and transmission & distribution)
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Extraction|Fossil:
     description: investments for all types of fossil extraction
@@ -6951,497 +7040,676 @@
       include mining, conversion and enrichment
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Fossil:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Coal:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Coal|w/ CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Coal|w/o CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Gas:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category (for gas generation also the upgrade of existing plants
+      to H2 plants should be included). If the model features several sub-categories,
+      the total investments should be reported. For plants equipped with CCS, the
+      investment in the capturing equipment should be included but not the one on
+      transport and storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Gas|w/ CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category (for gas generation also the upgrade of existing plants
+      to H2 plants should be included). If the model features several sub-categories,
+      the total investments should be reported. For plants equipped with CCS, the
+      investment in the capturing equipment should be included but not the one on
+      transport and storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Gas|w/o CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category (for gas generation also the upgrade of existing plants
+      to H2 plants should be included). If the model features several sub-categories,
+      the total investments should be reported. For plants equipped with CCS, the
+      investment in the capturing equipment should be included but not the one on
+      transport and storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Oil:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Oil|w/ CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Oil|w/o CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Non-fossil:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Biomass:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Biomass|w/ CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Biomass|w/o CCS:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Nuclear:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Non-Biomass Renewables:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Hydro:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Hydrogen:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Solar:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Wind:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Wind Onshore:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Wind Offshore:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Geothermal:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Ocean:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Other:
-    description: investments in new power generation for the specified power plant
-      category. If the model features several sub-categories, the total investments
-      should be reported. For plants equipped with CCS, the investment in the capturing
-      equipment should be included but not the one on transport and storage.
+    description: Total investment spending in new power generation for the specified
+      power plant category. If the model features several sub-categories, the total
+      investments should be reported. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage of CO2.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Transmission and Distribution:
-    description: investments in transmission and distribution of power generation
+    description: Total investment spending in transmission and distribution of power
+      generation, including offshore wind linkage.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Electricity|Transmission:
+    description: investments in transmission of power generation
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Electricity|Transmission|AC:
+    description: investments in AC transmission of power generation
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Electricity|Transmission|DC:
+    description: investments in DC transmission of power generation
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Electricity|Distribution:
+    description: investments in distribution of power generation
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Electricity|Electricity Storage:
-    description: investments in electricity storage technologies (e.g., batteries,
-      compressed air storage reservoirs, etc.)
+    description: Total investment spending in electricity storage technologies (e.g.,
+      batteries, compressed air storage reservoirs, etc.)
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Heat|Geothermal:
-    description: investments in new heat generation for the specified category. If
-      the model features several sub-categories, the total investments should be reported.
+    description: Total investment spending in new heat generation for the specified
+      category. If the model features several sub-categories, the total investments
+      should be reported.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Heat|Heatpump:
-    description: investments in new heat generation for the specified category. If
-      the model features several sub-categories, the total investments should be reported.
+    description: Total investment spending in new heat generation for the specified
+      category. If the model features several sub-categories, the total investments
+      should be reported.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Heat|Solarthermal:
-    description: investments in new heat generation for the specified category. If
-      the model features several sub-categories, the total investments should be reported.
+    description: Total investment spending in new heat generation for the specified
+      category. If the model features several sub-categories, the total investments
+      should be reported.
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Heat|Transmission and Distribution:
-    description: investments into district heating infrastructure
+    description: Total investment spending into district heating infrastructure
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Gases|Transmission and Distribution:
-    description: investments into transmission and distribution of gases
+    description: 'Total investment spending into transmission and distribution of
+      gases (not included: investments to rededicate gas to h2 transmission and distribution)'
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Gases|Transmission:
+    description: investments into transmission of gases
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Hydrogen|Transmission and Distribution:
-    description: investments into transmission and distribution of hydrogen
+    description: Total investment spending into transmission and distribution of hydrogen
+      (new build networks should be included, as well as investments needed for rededication
+      of natural gas networks).
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Hydrogen|Transmission:
+    description: investments into transmission of hydrogen
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Hydrogen|Storage:
-    description: investments into storage of hydrogen
+    description: Total investment spending into storage of hydrogen
     unit: billion EUR2020/yr
 - Investment|Energy Supply|Hydrogen|Fossil:
-    description: investments for the production of hydrogen from the specified source.
-      For plants equipped with CCS, the investment in the capturing equipment should
-      be included but not the one on transport and storage.
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Hydrogen|Biomass:
-    description: investments for the production of hydrogen from biomass. For plants
-      equipped with CCS, the investment in the capturing equipment should be included
-      but not the one on transport and storage.
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Hydrogen|Electrolysis:
-    description: investments for the production of hydrogen from electrolysis. For
-      plants equipped with CCS, the investment in the capturing equipment should be
-      included but not the one on transport and storage.
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Hydrogen|Other:
-    description: investments for the production of hydrogen from other sources. For
-      plants equipped with CCS, the investment in the capturing equipment should be
-      included but not the one on transport and storage.
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Liquids:
-    description: investments for the production of liquid fuels. For plants equipped
-      with CCS, the investment in the capturing equipment should be included but not
-      the one on transport and storage.
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Liquids|Oil:
-    description: investments for the production of fossil fuels from oil refineries
-      For plants equipped with CCS, the investment in the capturing equipment should
-      be included but not the one on transport and storage.
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Liquids|Coal and Gas:
-    description: investments for the production of fossil-based synfuels (coal and
-      gas). For plants equipped with CCS, the investment in the capturing equipment
+    description: Total investment spending for the production of hydrogen from fossil
+      sources. For plants equipped with CCS, the investment in the capturing equipment
       should be included but not the one on transport and storage.
     unit: billion EUR2020/yr
-- Investment|Energy Supply|Liquids|Biomass:
-    description: investments for the production of biofuels. These should not include
-      the costs of the feedstock. For plants equipped with CCS, the investment in
-      the capturing equipment should be included but not the one on transport and
-      storage.
+- Investment|Energy Supply|Hydrogen|Biomass:
+    description: Total investment spending for the production of hydrogen from biomass.
+      For plants equipped with CCS, the investment in the capturing equipment should
+      be included but not the one on transport and storage.
     unit: billion EUR2020/yr
-- Investment|Energy Supply|Liquids|Hydrogen:
-    description: investments for the production of E-fuels. These should not include
-      the costs of the feedstock.
+- Investment|Energy Supply|Hydrogen|Electrolysis:
+    description: Total investment spending for the production of hydrogen from electrolysis.
+      For plants equipped with CCS, the investment in the capturing equipment should
+      be included but not the one on transport and storage.
     unit: billion EUR2020/yr
-- Investment|Energy Supply|CO2 Transport and Storage:
-    description: investment in CO2 transport and storage (note that investment in
-      the capturing equipment should be included along with the power plant technology)
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|DACCS:
-    description: investment in direct air capture and storage (only if not already
-      included in industrial investments as pasrt of an innovative process)
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Other:
-    description: investments in other types of energy conversion facilities
-    unit: billion EUR2020/yr
-- Investment|Energy Efficiency:
-    description: investments into the efficiency-increasing components of energy demand
-      technologies
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Heat:
-    description: investments in heat generation facilities
-    unit: billion EUR2020/yr
-- Investment|Energy Supply|Hydrogen:
-    description: investments for the production of hydrogen from all energy sources
-      (fossil, biomass, electrolysis). For plants equipped with CCS, the investment
+- Investment|Energy Supply|Hydrogen|Electrolysis|Abroad:
+    description: Total investment spending into projects abroad for the production
+      of hydrogen from electrolysis . For plants equipped with CCS, the investment
       in the capturing equipment should be included but not the one on transport and
       storage.
     unit: billion EUR2020/yr
+- Investment|Energy Supply|Hydrogen|Other:
+    description: Total investment spending for the production of hydrogen from other
+      sources. For plants equipped with CCS, the investment in the capturing equipment
+      should be included but not the one on transport and storage.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Liquids:
+    description: Total investment spending for the production of liquid fuels. For
+      plants equipped with CCS, the investment in the capturing equipment should be
+      included but not the one on transport and storage.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Liquids|Oil:
+    description: Total investment spending for the production of fossil fuels from
+      oil refineries For plants equipped with CCS, the investment in the capturing
+      equipment should be included but not the one on transport and storage.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Liquids|Coal and Gas:
+    description: Total investment spending for the production of fossil-based synfuels
+      (coal and gas). For plants equipped with CCS, the investment in the capturing
+      equipment should be included but not the one on transport and storage.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Liquids|Biomass:
+    description: Total investment spending for the production of biofuels. These should
+      not include the costs of the feedstock. For plants equipped with CCS, the investment
+      in the capturing equipment should be included but not the one on transport and
+      storage.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Liquids|Hydrogen:
+    description: Total investment spending for the production of E-fuels. These should
+      not include the costs of the feedstock.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Liquids|Hydrogen|Abroad:
+    description: Total investment spending into projects abroad for the production
+      of E-fuels. These should not include the costs of the feedstock.
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|CO2 Transport and Storage:
+    description: Total investment spending in CO2 transport and storage (note that
+      investment in the capturing equipment should be included along with the power
+      plant technology or in the industrial sector for BECCS)
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|DACCS:
+    description: Total investment spending in direct air capture and storage (only
+      the capturing equipment, storage is part of transport and storage)
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|other CDR:
+    description: Total investment spending into any other novel CDR technology not
+      included in another variable like Biomass power plant with CCS or industrial
+      plant (only the capturing equipment, storage is part of transport and storage)
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Other:
+    description: Total investment spending in other types of energy conversion facilities
+    unit: billion EUR2020/yr
+- Investment|Energy Efficiency:
+    description: Total investment spending into the efficiency-increasing components
+      of energy demand technologies
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Heat:
+    description: Total investment spending in heat generation facilities
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Heat|Renewable:
+    description: Total investment spending in renewable heat generation facilities
+      (including retrofitting of fossil plants)
+    unit: billion EUR2020/yr
+- Investment|Energy Supply|Hydrogen:
+    description: Total investment spending for the production of hydrogen from all
+      energy sources (fossil, biomass, electrolysis). For plants equipped with CCS,
+      the investment in the capturing equipment should be included but not the one
+      on transport and storage.
+    unit: billion EUR2020/yr
 - Investment|RnD|Energy Supply:
-    description: Investments into research and development, energy supply sector
+    description: Total investment spending into research and development, energy supply
+      sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation:
-    description: investments into new vehicle technologies in the transport sector
+    description: Total investment spending into vehicle purchases, infrastructure
+      and charging infrastructure in the transport sector (sum of all total investment/consumption
+      spending variables in the transport sector)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|LDV:
-    description: investments through new vehicle purchases in the transport sector
-      (light-duty cars and trucks)
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (light-duty cars and trucks)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|LDV|Additional:
+    description: Additional investment spending for climate friendly technologies
+      compared to the alternative fossil technology (e-car versus ICE, hybrid versus
+      ICE, and fuel cell versus ICE) through new vehicle purchases in the transport
+      sector (light-duty cars and trucks)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|LDV|ICE:
-    description: 'investments through new vehicle purchases in the transport sector
-      (light-duty cars and trucks: internal combustion engine technologies running
-      on any type of liquid or gaseous fuel; including mild hybrids and excluding
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (light-duty cars and trucks: internal combustion engine technologies
+      running on any type of liquid or gaseous fuel; including mild hybrids and excluding
       plug-in hybrids)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|LDV|BEV:
-    description: 'investments through new vehicle purchases in the transport sector
-      (light-duty cars and trucks: electric vehicle technologies, only all-electrics)'
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (light-duty cars and trucks: electric vehicle technologies, only all-electrics)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|LDV|BEV|Additional:
+    description: 'Additional investment spending for e-cars compared to the alternative
+      ICE technology through new vehicle purchases in the transport sector (light-duty
+      cars and trucks: electric vehicle technologies, only all-electrics)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|LDV|FCEV:
-    description: 'investments through new vehicle purchases in the transport sector
-      (light-duty cars and trucks: fuel cell technologies running on hydrogen or another
-      type of fuel)'
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (light-duty cars and trucks: fuel cell technologies running on hydrogen
+      or another type of fuel)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|LDV|FCEV|Additional:
+    description: 'Additional investment spending for FCEV-cars compared to the alternative
+      ICE technology through new vehicle purchases in the transport sector (light-duty
+      cars and trucks: fuel cell technologies running on hydrogen or another type
+      of fuel)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|LDV|PHEV:
-    description: 'investments through new vehicle purchases in the transport sector
-      (light-duty cars and trucks: plug-in hybrids with internal combustion engine
-      running on any type of liquid or gaseous fuel)'
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (light-duty cars and trucks: plug-in hybrids with internal combustion
+      engine running on any type of liquid or gaseous fuel)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|LDV|PHEV|Additional:
+    description: 'Additional investment spending for PHEV-cars compared to the alternative
+      ICE technology through new vehicle purchases in the transport sector (light-duty
+      cars and trucks: plug-in hybrids with internal combustion engine running on
+      any type of liquid or gaseous fuel)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Bus:
-    description: 'investments through new vehicle purchases in the transport sector
-      (heavy duty vehicles i.e. buses: internal combustion engine technologies running
-      on any type of liquid or gaseous fuel)'
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (buses, any type of engine and fuels)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Bus|Additional:
+    description: Additional investment spending for climate friendly bus technologies
+      compared the the fossil alternative (ICE)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Rail:
-    description: investments through new vehicle purchases in the transport sector
-      (rail)
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (rail)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Truck:
-    description: investments through new vehicle purchases in the transport sector
-      (heavy-duty freight trucks)
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|Additional:
+    description: Additional investment spending through new vehicle purchases in the
+      transport sector (heavy-duty freight trucks) for climate friendly trucks compared
+      the the fossil alternative (ICE)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Truck|ICE:
-    description: 'investments through new vehicle purchases in the transport sector
-      (heavy-duty freight trucks: internal combustion engine technologies running
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks: internal combustion engine technologies running
       on any type of liquid or gaseous fuel, including mild hybrids and excluding
       plug-in hybrids)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Truck|BEV:
-    description: 'investments through new vehicle purchases in the transport sector
-      (heavy-duty freight trucks: electric vehicle technologies, only all-electrics)'
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks: electric vehicle technologies, only all-electrics)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|BEV|Additional:
+    description: 'Additional investment spending for e-trucks compared to the alternative
+      ICE technology through new vehicle purchases in the transport sector (heavy-duty
+      freight trucks: electric vehicle technologies, only all-electrics)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Truck|FCEV:
-    description: 'investments through new vehicle purchases in the transport sector
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks: fuel cell technologies running on hydrogen
+      or another type of fuel)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|FCEV|Additional:
+    description: 'Additional investment spending for FCEV-trucks compared to the alternative
+      ICE technology spending through new vehicle purchases in the transport sector
       (heavy-duty freight trucks: fuel cell technologies running on hydrogen or another
       type of fuel)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Truck|PHEV:
-    description: 'investments through new vehicle purchases in the transport sector
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks: plug-in hybrids with internal combustion
+      engine running on any type of liquid or gaseous fuel)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|PHEV|Additional:
+    description: 'Additional investment spending for PHEV-trucks compared to the alternative
+      ICE technology spending through new vehicle purchases in the transport sector
       (heavy-duty freight trucks: plug-in hybrids with internal combustion engine
       running on any type of liquid or gaseous fuel)'
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Other:
-    description: "investments through new vehicle purchases in the transport sector\
-      \ (other, like bicycles, e-scooter, \u2026)"
+    description: "Total investment spending through new vehicle purchases in the transport\
+      \ sector (other, like bicycles, e-scooter, \u2026)"
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transport:
-    description: 'investment into transport infrastructure - both newly constructed
-      and maintenance of existing (all types: roads, bridges, ports, railways, refueling
-      stations and charging infrastructure, etc.). Please specify in the comments
-      section the type of infastructure that is being referred to here.'
+    description: 'Total investment spending into transport infrastructure - both newly
+      constructed and maintenance of existing (all types: roads, bridges, ports, railways,
+      refueling stations and charging infrastructure, etc.). Please specify in the
+      comments section the type of infastructure that is being referred to here.'
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transport|Rail:
-    description: investment into transport infrastructure - both newly constructed
-      and maintenance of existing (all realted to railway). Please specify in the
-      comments section the type of infastructure that is being referred to here.
+    description: Total investment spending into transport infrastructure - both newly
+      constructed and maintenance of existing (all related to railway). Please specify
+      in the comments section the type of infastructure that is being referred to
+      here.
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transport|Road:
-    description: investment into transport infrastructure - both newly constructed
-      and maintenance of existing (all realted to roads). Please specify in the comments
-      section the type of infastructure that is being referred to here.
+    description: Total investment spending into transport infrastructure - both newly
+      constructed and maintenance of existing (all related to roads). Please specify
+      in the comments section the type of infastructure that is being referred to
+      here.
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transport|Charging|Public:
-    description: investment into public charging infrastructure - both newly constructed
-      and maintenance of existing
+    description: Total investment spending into public charging infrastructure - both
+      newly constructed and maintenance of existing
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transport|Charging|Private:
-    description: investment into private charging infrastructure - both newly constructed
-      and maintenance of existing
+    description: Total investment spending into private charging infrastructure -
+      both newly constructed and maintenance of existing
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transport|Other:
-    description: investment into other transport infrastructure (like cycle paths,
-      mobility hubs, rail stations, ...) - both newly constructed and maintenance
-      of existing Please specify in the comments section the type of infastructure
+    description: Total investment spending into other transport infrastructure (like
+      cycle paths, mobility hubs, rail stations, ...) - both newly constructed and
+      maintenance of existing Please specify in the comments section the type of infastructure
       that is being referred to here.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial:
-    description: investment into residential and commercial building shells (not including
-      the costs of the general building structure, technical equipment, etc.)
+    description: Total investment spending into residential and commercial building
+      shells (not including the costs of the general building structure, technical
+      equipment, etc.)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Low-Efficiency Buildings:
-    description: investment into residential and commercial building shells (all types
-      of new buildings that are relatively low in their energy efficiency), not including
-      the costs of the general building structure, technical equipment, etc.
+    description: Total investment spending into residential and commercial building
+      shells (all types of new buildings that are relatively low in their energy efficiency),
+      not including the costs of the general building structure, technical equipment,
+      etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Medium-Efficiency Buildings:
-    description: investment into residential and commercial building shells (all types
-      of new buildings that are relatively medium-range in their energy efficiency),
-      not including the costs of the general building structure, technical equipment,
-      etc.
+    description: Total investment spending into residential and commercial building
+      shells (all types of new buildings that are relatively medium-range in their
+      energy efficiency), not including the costs of the general building structure,
+      technical equipment, etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|High-Efficiency Buildings:
-    description: investment into residential and commercial building shells (all types
-      of new buildings that are relatively high in their energy efficiency), not including
-      the costs of the general building structure, technical equipment, etc.
+    description: Total investment spending into residential and commercial building
+      shells (all types of new buildings that are relatively high in their energy
+      efficiency), not including the costs of the general building structure, technical
+      equipment, etc.
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Efficiency Buildings|Additional:
+    description: Additional investment spending into residential and commercial building
+      shells to reach a higher than standard efficiency for the new building (all
+      types of new buildings), not including the costs of the general building structure,
+      technical equipment, etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Building Retrofits:
-    description: investment into residential and commercial building shells (all types
-      of existing buildings that have been retrofitted to become more energy efficient),
-      not including the costs of the general building structure, technical equipment,
-      etc.
+    description: Total investment spending into residential and commercial building
+      shells (all types of existing buildings that have been retrofitted to become
+      more energy efficient), not including the costs of the general building structure,
+      technical equipment, etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Building Retrofits|Medium-Efficiency:
-    description: investment into residential and commercial building shells (all types
-      of existing buildings that have been retrofitted to become medium energy efficient),
-      not including the costs of the general building structure, technical equipment,
-      etc.
+    description: Total investment spending into residential and commercial building
+      shells (all types of existing buildings that have been retrofitted to become
+      medium energy efficient), not including the costs of the general building structure,
+      technical equipment, etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Building Retrofits|High-Efficiency:
-    description: investment into residential and commercial building shells (all types
-      of existing buildings that have been retrofitted to become highly energy efficient),
-      not including the costs of the general building structure, technical equipment,
-      etc.
+    description: Total investment spending into residential and commercial building
+      shells (all types of existing buildings that have been retrofitted to become
+      highly energy efficient), not including the costs of the general building structure,
+      technical equipment, etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Building Retrofits|Reduction of Flow-Temperature:
-    description: investment into residential and commercial building shells (switch
-      from a high temperature heating system (e.g. radiatior) to a low temperature
-      heating system (e.g. floor-heating)), not including the costs of the general
-      building structure, technical equipment, etc.
+    description: Total investment spending into residential and commercial building
+      shells (switch from a high temperature heating system (e.g. radiatior) to a
+      low temperature heating system (e.g. floor-heating)), not including the costs
+      of the general building structure, technical equipment, etc.
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating:
-    description: investments into space heating devices for individual buildings in
-      the Residential and Commercial Sector
-    unit: billion EUR2020/yr
-- Investment|Energy Demand|Residential and Commercial|Space Heating|Gas Boiler:
-    description: investments into decentral gas boilers for individual buildings in
-      the Residential and Commercial Sector
-    unit: billion EUR2020/yr
-- Investment|Energy Demand|Residential and Commercial|Space Heating|Oil Boiler:
-    description: investments into decentral oil boilers for individual buildings in
-      the Residential and Commercial Sector
-    unit: billion EUR2020/yr
-- Investment|Energy Demand|Residential and Commercial|Space Heating|Biomass Boiler:
-    description: investments into decentral biomass (wood) boilers for individual
+    description: Total investment spending into space heating devices for individual
       buildings in the Residential and Commercial Sector
     unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Additional:
+    description: Additional investment spending into space heating devices for individual
+      buildings compared to the alternative gas boiler in the Residential and Commercial
+      Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Gas Boiler:
+    description: Total investment spending into decentral gas boilers for individual
+      buildings in the Residential and Commercial Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Oil Boiler:
+    description: Total investment spending into decentral oil boilers for individual
+      buildings in the Residential and Commercial Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Biomass Boiler:
+    description: Total investment spending into decentral biomass (wood) boilers for
+      individual buildings in the Residential and Commercial Sector
+    unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|Hydrogen Fuel Cell:
-    description: investments into decentral hydrogen fuel cells for electricity and
-      heat for individual buildings in the Residential and Commercial Sector
+    description: Total investment spending into decentral hydrogen fuel cells for
+      electricity and heat for individual buildings in the Residential and Commercial
+      Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Hydrogen Fuel Cell|Additional:
+    description: Additional investment spending into decentral hydrogen fuel cells
+      (compared to the alternative gas heating technology) for electricity and heat
+      for individual buildings in the Residential and Commercial Sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|Methane Fuel Cell:
-    description: investments into decentral methane fuel cells for elelctricity and
-      heat for individual buildings in the Residential and Commercial Sector
+    description: Total investment spending into decentral methane fuel cells (compared
+      to the alternative gas heating technology) for elelctricity and heat for individual
+      buildings in the Residential and Commercial Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Methane Fuel Cell|Additional:
+    description: Additional investment spending into decentral methane fuel cells
+      for elelctricity and heat for individual buildings in the Residential and Commercial
+      Sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|CHP:
-    description: investments into decentral micro combined heat and power units (<100
-      kWel) for individual buildings in the Residential and Commercial Sector
+    description: Total investment spending into decentral micro combined heat and
+      power units (<100 kWel) for individual buildings in the Residential and Commercial
+      Sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|Heat Pump:
-    description: investments into decentral heat pumps for individual buildings in
-      the Residential and Commercial Sector
+    description: Total investment spending into decentral heat pumps for individual
+      buildings in the Residential and Commercial Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Heat Pump|Additional:
+    description: Additional investment spending into decentral heat pumps compared
+      to the alternative gas boiler for individual buildings in the Residential and
+      Commercial Sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|Hydrogen Boiler:
-    description: investments into decentral hydrogen boilers for individual buildings
-      in the Residential and Commercial Sector
+    description: Total investment spending into decentral hydrogen boilers for individual
+      buildings in the Residential and Commercial Sector
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Residential and Commercial|Space Heating|Hydrogen Boiler|Additional:
+    description: Additional investment spending into decentral hydrogen boilers compared
+      to the alternative gas boiler for individual buildings in the Residential and
+      Commercial Sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|Solar Thermal:
-    description: investments into decentral solar thermal heating for individual buildings
-      in the Residential and Commercial Sector
+    description: Total investment spending into decentral solar thermal heating for
+      individual buildings in the Residential and Commercial Sector
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Space Heating|Thermal Storage:
-    description: investments into decentral thermal storages for individual buildings
-      in the Residential and Commercial Sector
+    description: Total investment spending into decentral thermal storages for individual
+      buildings in the Residential and Commercial Sector
     unit: billion EUR2020/yr
 - Investment|Energy Efficiency|Residential and Commercial:
-    description: investment into more efficient devices in residential and commercial
-      sector
+    description: Total investment spending into more efficient devices in residential
+      and commercial sector
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Residential and Commercial|Heat Connection:
-    description: investment into residential and commercial connections to district
-      heating network
+    description: Total investment spending into residential and commercial connections
+      to district heating network
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Industry|Fuel Switch|Steam Generation:
-    description: investments into industry with regards to fuel switch in steam generators
+    description: Additional investment spending into industry with regards to fuel
+      switch in steam generators
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Industry|Fuel Switch|Space Heating:
-    description: investments into industry with regards to fuel switch in space heating
+    description: Additional investment spending into industry with regards to fuel
+      switch in space heating
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Industry|Fuel Switch|Industrial Furnace:
-    description: investments into industry with regards to fuel switch in industrial
-      furnaces
+    description: Additional investment spending into industry with regards to fuel
+      switch in industrial furnaces
     unit: billion EUR2020/yr
 - Investment|Energy Efficiency|Industry|Process Technology:
-    description: investments in industry to increase efficiency of process technologies
+    description: Total investment spending in industry to increase efficiency of process
+      technologies
     unit: billion EUR2020/yr
 - Investment|Energy Efficiency|Industry|Cross-Sectional Technology:
-    description: investments in industry into more efficient cross-sectional technologies
+    description: Total investment spending in industry into more efficient cross-sectional
+      technologies
     unit: billion EUR2020/yr
 - Investment|Energy Efficiency|Industry|Buildiung Shell:
-    description: investments in industry to increase efficiency of building shells
+    description: Total investment spending in industry to increase efficiency of building
+      shells (additional cost for new buildings to reach a better efficiency than
+      the standard and any retrofitting of existing buildings to increase efficiency;
+      not including the costs of the general building structure, technical equipment,
+      etc.)
     unit: billion EUR2020/yr
 - Investment|Energy Efficiency|Industry|Steam Distribution:
-    description: investments in industry to increase efficiency of steam distribution
-      systems
+    description: Total investment spending in industry to increase efficiency of steam
+      distribution systems
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Industry|Innovative Processes:
-    description: investments into innovative processes in industry
+    description: Total investment spending into innovative processes in industry (related
+      to more climate friendly production/ emission reductions)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Industry|Innovative Processes|Additional:
+    description: Additional investment spending into innovative processes in industry
+      compared to an investment into a "standard" process (related to more climate
+      friendly production/ emission reductions)
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Industry|CCS Capex:
-    description: investments into CCS infrastructure in industry
+    description: Total investment spending into CCS infrastructure in industry (only
+      the capturing equipment, not transport or storage infrastructure)
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Industry|CO2 Storage:
-    description: investments into CO2 storage infrastructure in industry
+    description: Total investments into CO2 storage infrastructure in industry
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Industry|CO2 Transport:
-    description: investments into CO2 transport infrastructure in industry
+    description: Total investments into CO2 transport infrastructure in industry
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Industry|Green:
-    description: investment into industrial infrastructure (all types of new factories,
-      plants, manufacturing facilities, etc. that are more efficient and utilize clean
-      energy, as well as retrofits of non-green infrastructure to be more efficient
-      and use clean energy)
+    description: Total investment spending into industrial infrastructure (all types
+      of new factories, plants, manufacturing facilities, etc. that are more efficient
+      and utilize clean energy, as well as retrofits of non-green infrastructure to
+      be more efficient and use clean energy)
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Industry|Non-Green:
-    description: investment into industrial infrastructure (all types of new factories,
-      plants, manufacturing facilities, etc. that are not overly efficient and do
-      not utilize clean energy, as well as retrofits of non-green infrastructure that
-      are neither efficient nor use clean energy)
+    description: Total investment spending into industrial infrastructure (all types
+      of new factories, plants, manufacturing facilities, etc. that are not overly
+      efficient and do not utilize clean energy, as well as retrofits of non-green
+      infrastructure that are neither efficient nor use clean energy)
     unit: billion EUR2020/yr
 - Investment|Industry:
-    description: investments into industry
+    description: Total investment spending into industry (all types of new factories,
+      plants, manufacturing facilities, infrastructure etc.)
     unit: billion EUR2020/yr
 - Investment|Industry|Non-Metallic Minerals:
     description: investments into the non-metallic minerals sector
@@ -7490,6 +7758,21 @@
       - either from a direct carbon price, or as result of a national climate target
       for these sectors
     unit: EUR2020/t CO2
+- Cost|Total Energy System Cost:
+    description: total energy system cost
+    unit: billion EUR2020/yr
+- Cost|Energy Service|Transportation|Passenger:
+    description: average/specific transportation cost per pkm
+    unit: EUR2020/Pkm
+- Cost|Energy Service|Transportation|Freight:
+    description: average/specific transportation cost per tkm
+    unit: EUR2020/tkm
+- Cost|Energy Service|Residential and Commercial|Heating:
+    description: average/specific heating cost per heated floor m2
+    unit: EUR2020/m2/yr
+- Cost|Industry|Steel:
+    description: average/specific production cost per ton of steel
+    unit: EUR2020/t
 - Policy Cost|Additional Total Energy System Cost:
     description: additional energy system cost associated with the policy
     unit: billion EUR2020/yr
@@ -9661,4 +9944,12 @@
 - Subsidies|Energy Supply|Hydrogen:
     description: Subsidies for energy infrastructure related to Hydrogen (generation
       plants, transport and storage)
+    unit: billion EUR2020/yr
+- Subsidies|Energy Supply|Infrastructure|Hydrogen:
+    description: Subsidies for energy infrastructure related to Hydrogen (transport
+      and storage)
+    unit: billion EUR2020/yr
+- Subsidies|Energy Supply|Infrastructure|Electricity:
+    description: Subsidies for energy infrastructure related to Electricity (transport
+      and storage)
     unit: billion EUR2020/yr
