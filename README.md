@@ -8,8 +8,14 @@ This repository is released under the [APACHE 2.0 license](LICENSE).
 
 ## Overview
 
-This repository contains the scenario validation workflow
-for the [ARIADNE project](https://www.pik-potsdam.de/de/institut/abteilungen/transformationspfade/projekte/ariadne).
+This repository contains the scenario validation workflow and codelists (variables,
+regions and other dimensions) for the [ARIADNE project](https://www.pik-potsdam.de/de/institut/abteilungen/transformationspfade/projekte/ariadne).
+
+> [!TIP]
+> For *users not comfortable working with GitHub repositories and yaml files*,
+> the definitions for this project are available for download as an xlsx spreadsheet
+> at https://files.ece.iiasa.ac.at/ariadne-intern/ariadne-intern-template.xlsx.
+
 
 The main entry point is the `workflow.py` script, which has a function
 that takes an **pyam.IamDataFrame** as argument and returns a modified instance (if validation is successful)
