@@ -281,6 +281,9 @@
 - Emissions|CO2|Energy|Demand|Transportation|Domestic Aviation:
     description: Fossil CO2 emissions from fuel combustion by domestic aviation
     unit: Mt CO2/yr
+- Emissions|CO2|Energy|Demand|Transportation|Domestic Navigation:
+    description: Fossil CO2 emissions from fuel combustion by domestic navigation
+    unit: Mt CO2/yr
 - Emissions|CO2|Energy|Demand|Transportation|Other transport:
     description: Fossil CO2 emissions from fuel combustion by other transport modes
     unit: Mt CO2/yr
@@ -3888,6 +3891,11 @@
       electricity (including on-site solar PV), excluding transmission/distribution
       losses
     unit: PJ/yr
+- Final Energy|Residential and Commercial|Electricity|Heat Pumps:
+    description: final energy consumption by the residential & commercial sector of
+      electricity (including on-site solar PV) for heat pumps, excluding transmission/distribution
+      losses
+    unit: PJ/yr
 - Final Energy|Residential and Commercial|Gases:
     description: final energy consumption by the residential & commercial sector of
       gases (natural gas, biogas, coal-gas), excluding transmission/distribution losses
@@ -4109,8 +4117,16 @@
       losses
     unit: PJ/yr
 - Final Energy|Residential and Commercial|Space and Water Heating:
-    description: Final energy consumed for space heating in residential and commercial
-      buildings and final energy consumed in the Water Heating sector
+    description: Final energy consumed for space and water heating in residential
+      and commercial buildings
+    unit: PJ/yr
+- Final Energy|Residential and Commercial|Space and Water Heating|Electricity|Heat Pumps:
+    description: Final energy consumption of electricity for heat pumps for space
+      and water heating in residential and commercial buildings
+    unit: PJ/yr
+- Final Energy|Residential and Commercial|Space and Water Heating|Heat:
+    description: Final energy consumption of heat for space and water heating in residential
+      and commercial buildings
     unit: PJ/yr
 - Final Energy|Residential:
     description: final energy consumption by the residential sector
@@ -4118,6 +4134,11 @@
 - Final Energy|Residential|Electricity:
     description: final energy consumption by the residential sector of electricity
       (including on-site solar PV), excluding transmission/distribution losses
+    unit: PJ/yr
+- Final Energy|Residential|Electricity|Heat Pumps:
+    description: final energy consumption by the residential sector of electricity
+      (including on-site solar PV) for heat pumps, excluding transmission/distribution
+      losses
     unit: PJ/yr
 - Final Energy|Residential|Gases:
     description: final energy consumption by the residential sector of gases (natural
@@ -4151,6 +4172,40 @@
     unit: PJ/yr
 - Final Energy|Residential|Waste:
     description: final energy consumption by the residential sector of waste
+    unit: PJ/yr
+- Final Energy|Residential|Space Heating:
+    description: Final energy consumption for space heating in residential buildings
+    unit: PJ/yr
+- Final Energy|Residential|Space Heating|Electricity|Heat Pumps:
+    description: Final energy consumption of electricity for heat pumps for space
+      heating in residential buildings
+    unit: PJ/yr
+- Final Energy|Residential|Space Heating|Heat:
+    description: Final energy consumption of heat for space heating in residential
+      buildings
+    unit: PJ/yr
+- Final Energy|Residential|Water Heating:
+    description: Final energy consumption for water heating in residential buildings
+    unit: PJ/yr
+- Final Energy|Residential|Water Heating|Electricity|Heat Pumps:
+    description: Final energy consumption of electricity for heat pumps for water
+      heating in residential buildings
+    unit: PJ/yr
+- Final Energy|Residential|Water Heating|Heat:
+    description: Final energy consumption of heat for water heating in residential
+      buildings
+    unit: PJ/yr
+- Final Energy|Residential|Space and Water Heating:
+    description: Final energy consumption for space and water heating in residential
+      buildings
+    unit: PJ/yr
+- Final Energy|Residential|Space and Water Heating|Electricity|Heat Pumps:
+    description: Final energy consumption of electricity for heat pumps for space
+      and water heating in residential buildings
+    unit: PJ/yr
+- Final Energy|Residential|Space and Water Heating|Heat:
+    description: Final energy consumption of heat for space and water heating in residential
+      buildings
     unit: PJ/yr
 - Final Energy|Commercial:
     description: final energy consumed in the commercial sector
@@ -5648,6 +5703,102 @@
       for the usage in the buildings, transport and industry sector. This does not
       include the usage of coal for energy conversion into other (non-solid) secondary
       energy.
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial:
+    description: Useful Energy consumption by the residential & commercial sector
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Electricity|Heat Pumps:
+    description: Useful Energy consumption by the residential & commercial sector
+      of electricity (including on-site solar PV) for heat pumps, excluding transmission/distribution
+      losses
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Heat:
+    description: Useful Energy consumption by the residential & commercial sector
+      of heat (e.g., district heat, process heat and warm water), excluding transmission/distribution
+      losses, excluding ambient heat
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Water Heating:
+    description: Useful Energy consumption by Water Heating
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Water Heating|Electricity|Heat Pumps:
+    description: Useful Energy consumption of electricity by Water Heating provided
+      from electric heat pumps
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Water Heating|Heat:
+    description: Useful Energy consumption of heat by the Water Heating sector (e.g.,
+      district heat, process heat and warm water), excluding transmission/distribution
+      losses
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Space Heating:
+    description: Useful Energy consumptionby Space Heating
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Space Heating|Electricity|Heat Pumps:
+    description: Useful Energy consumption of electricity by Space Heating provided
+      from electric heat pumps
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Space Heating|Heat:
+    description: Useful Energy consumption of heat by the Space Heating sector (e.g.,
+      district heat, process heat and warm water), excluding transmission/distribution
+      losses
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Space and Water Heating:
+    description: Useful Energy consumption for space and water heating in residential
+      and commercial buildings
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Space and Water Heating|Electricity|Heat Pumps:
+    description: Useful Energy consumption of electricity for heat pumps for space
+      and water heating in residential and commercial buildings
+    unit: PJ/yr
+- Useful Energy|Residential and Commercial|Space and Water Heating|Heat:
+    description: Useful Energy consumption of heat for space and water heating in
+      residential and commercial buildings
+    unit: PJ/yr
+- Useful Energy|Residential:
+    description: Useful Energy consumption by the residential sector
+    unit: PJ/yr
+- Useful Energy|Residential|Electricity|Heat Pumps:
+    description: Useful Energy consumption by the residential sector of electricity
+      (including on-site solar PV) for heat pumps, excluding transmission/distribution
+      losses
+    unit: PJ/yr
+- Useful Energy|Residential|Heat:
+    description: Useful Energy consumption by the residential sector of heat (e.g.,
+      district heat, process heat, solar heating and warm water), excluding transmission/distribution
+      losses
+    unit: PJ/yr
+- Useful Energy|Residential|Space Heating:
+    description: Useful Energy consumption for space heating in residential buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Space Heating|Electricity|Heat Pumps:
+    description: Useful Energy consumption of electricity for heat pumps for space
+      heating in residential buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Space Heating|Heat:
+    description: Useful Energy consumption of heat for space heating in residential
+      buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Water Heating:
+    description: Useful Energy consumption for water heating in residential buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Water Heating|Electricity|Heat Pumps:
+    description: Useful Energy consumption of electricity for heat pumps for water
+      heating in residential buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Water Heating|Heat:
+    description: Useful Energy consumption of heat for water heating in residential
+      buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Space and Water Heating:
+    description: Useful Energy consumption for space and water heating in residential
+      buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Space and Water Heating|Electricity|Heat Pumps:
+    description: Useful Energy consumption of electricity for heat pumps for space
+      and water heating in residential buildings
+    unit: PJ/yr
+- Useful Energy|Residential|Space and Water Heating|Heat:
+    description: Useful Energy consumption of heat for space and water heating in
+      residential buildings
     unit: PJ/yr
 - Energy Service|Commercial|Floor Space:
     description: energy service demand for conditioned floor space in commercial buildings
@@ -7366,10 +7517,15 @@
     description: Total investment spending into research and development, energy supply
       sector
     unit: billion EUR2020/yr
-- Investment|Energy Demand|Transportation:
+- Investment|Transportation:
     description: Total investment spending into vehicle purchases, infrastructure
       and charging infrastructure in the transport sector (sum of all total investment/consumption
       spending variables in the transport sector)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation:
+    description: Total investment spending into vehicle purchases in the transport
+      sector (sum of all total investment/consumption spending variables in the transport
+      sector)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|LDV:
     description: Total investment spending through new vehicle purchases in the transport
@@ -7426,9 +7582,37 @@
     description: Additional investment spending for climate friendly bus technologies
       compared the the fossil alternative (ICE)
     unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Bus|ICE:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (buses, internal combustion engine technologies running on any type of
+      liquid or gaseous fuel; including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Bus|BEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (buses, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Bus|FCEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (buses, fuel cell technologies running on hydrogen or another type of
+      fuel)
+    unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Rail:
     description: Total investment spending through new vehicle purchases in the transport
       sector (rail)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Rail|ICE:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (rail, internal combustion engine technologies running on any type of
+      liquid or gaseous fuel; including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Rail|BEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (rail, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Rail|FCEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (rail, fuel cell technologies running on hydrogen or another type of
+      fuel)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Truck:
     description: Total investment spending through new vehicle purchases in the transport
@@ -7476,46 +7660,206 @@
       (heavy-duty freight trucks: plug-in hybrids with internal combustion engine
       running on any type of liquid or gaseous fuel)'
     unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|Overhead Line|BEV:
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks using overhead line technology: electric vehicle
+      technologies, only all-electrics)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|Overhead Line|ICE:
+    description: 'Total investment spending through new vehicle purchases in the transport
+      sector (heavy-duty freight trucks using overhead line technology: internal combustion
+      engine technologies running on any type of liquid or gaseous fuel, including
+      mild hybrids and excluding plug-in hybrids)'
+    unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Other:
     description: "Total investment spending through new vehicle purchases in the transport\
       \ sector (other, like bicycles, e-scooter, \u2026)"
     unit: billion EUR2020/yr
-- Investment|Infrastructure|Transport:
-    description: 'Total investment spending into transport infrastructure - both newly
-      constructed and maintenance of existing (all types: roads, bridges, ports, railways,
-      refueling stations and charging infrastructure, etc.). Please specify in the
-      comments section the type of infastructure that is being referred to here.'
+- Investment|Energy Demand|Transportation|Domestic Navigation:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic navigation)
     unit: billion EUR2020/yr
-- Investment|Infrastructure|Transport|Rail:
-    description: Total investment spending into transport infrastructure - both newly
-      constructed and maintenance of existing (all related to railway). Please specify
-      in the comments section the type of infastructure that is being referred to
-      here.
+- Investment|Energy Demand|Transportation|Domestic Navigation|ICE:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic navigation, internal combustion engine technologies running
+      on any type of liquid or gaseous fuel, including mild hybrids and excluding
+      plug-in hybrids)
     unit: billion EUR2020/yr
-- Investment|Infrastructure|Transport|Road:
-    description: Total investment spending into transport infrastructure - both newly
-      constructed and maintenance of existing (all related to roads). Please specify
-      in the comments section the type of infastructure that is being referred to
-      here.
+- Investment|Energy Demand|Transportation|Domestic Navigation|BEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic navigation, electric vehicle technologies, only all-electrics)
     unit: billion EUR2020/yr
-- Investment|Infrastructure|Transport|Charging|Public:
-    description: Total investment spending into public charging infrastructure - both
-      newly constructed and maintenance of existing
+- Investment|Energy Demand|Transportation|Domestic Navigation|FCEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic navigation, fuel cell technologies running on hydrogen or another
+      type of fuel)
     unit: billion EUR2020/yr
-- Investment|Infrastructure|Transport|Charging|Private:
-    description: Total investment spending into private charging infrastructure -
-      both newly constructed and maintenance of existing
+- Investment|Energy Demand|Transportation|Domestic Aviation:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic aviation)
     unit: billion EUR2020/yr
-- Investment|Infrastructure|Transport|Other:
-    description: Total investment spending into other transport infrastructure (like
-      cycle paths, mobility hubs, rail stations, ...) - both newly constructed and
-      maintenance of existing Please specify in the comments section the type of infastructure
+- Investment|Energy Demand|Transportation|Domestic Aviation|ICE:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic aviation, internal combustion engine technologies running on
+      any type of liquid or gaseous fuel, including mild hybrids and excluding plug-in
+      hybrids)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Domestic Aviation|BEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic aviation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Domestic Aviation|FCEV:
+    description: Total investment spending through new vehicle purchases in the transport
+      sector (domestic aviation, fuel cell technologies running on hydrogen or another
+      type of fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation:
+    description: 'Total investment spending into transport infrastructure (all types:
+      roads, bridges, ports, railways, refueling stations and charging infrastructure,
+      etc.). Please specify in the comments section the type of infastructure that
+      is being referred to here.'
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|LDV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (light-duty cars and trucks)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|LDV|BEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (light-duty cars and trucks, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|LDV|BEV|Public:
+    description: Total public investment spending through Infrastructure in the transport
+      sector (light-duty cars and trucks, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|LDV|BEV|Work:
+    description: Total investment spending through Infrastructure in the transport
+      sector at working places (light-duty cars and trucks, electric vehicle technologies,
+      only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|LDV|BEV|Private:
+    description: Total investment spending through Infrastructure in the transport
+      sector at private homes (light-duty cars and trucks, electric vehicle technologies,
+      only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|LDV|FCEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (light-duty cars and trucks, fuel cell technologies running on hydrogen
+      or another type of fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Truck:
+    description: Total investment spending through Infrastructure in the transport
+      sector (heavy-duty freight trucks)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Truck|BEV:
+    description: 'Total investment spending through Infrastructure in the transport
+      sector (heavy-duty trucks: electric vehicle technologies, only all-electrics)'
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Truck|Overhead Line:
+    description: Total investment spending through Infrastructure in the transport
+      sector (heavy-duty trucks, all types)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Truck|FCEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (heavy-duty trucks, fuel cell technologies running on hydrogen or another
+      type of fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail:
+    description: Total investment spending into transport infrastructure (all related
+      to railway). Please specify in the comments section the type of infastructure
       that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail|ICE:
+    description: Total investment spending through Infrastructure in the transport
+      sector (rail, internal combustion engine technologies running on any type of
+      liquid or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail|BEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (rail, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail|FCEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (rail, fuel cell technologies running on hydrogen or another type of
+      fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Bus:
+    description: Total investment spending into transport infrastructure (all related
+      to buses). Please specify in the comments section the type of infastructure
+      that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Bus|ICE:
+    description: Total investment spending through Infrastructure in the transport
+      sector (bus, internal combustion engine technologies running on any type of
+      liquid or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Bus|BEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (bus, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Bus|FCEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (bus, fuel cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Road:
+    description: Total investment spending into transport infrastructure (all related
+      to roads). Please specify in the comments section the type of infastructure
+      that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Charging|Public:
+    description: Total investment spending into public charging infrastructure.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Charging|Private:
+    description: Total investment spending into private charging infrastructure
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Other:
+    description: Total investment spending into other transport infrastructure (like
+      cycle paths, mobility hubs, rail stations, ...). Please specify in the comments
+      section the type of infastructure that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Navigation:
+    description: Total investment spending into transport infrastructure (all related
+      to domestic navigation). Please specify in the comments section the type of
+      infastructure that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Navigation|ICE:
+    description: Total investment spending through Infrastructure in the transport
+      sector (domestic navigation, internal combustion engine technologies running
+      on any type of liquid or gaseous fuel, including mild hybrids and excluding
+      plug-in hybrids)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Navigation|BEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (domestic navigation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Navigation|FCEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (domestic navigation, fuel cell technologies running on hydrogen or another
+      type of fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Aviation:
+    description: Total investment spending into transport infrastructure (all related
+      to domestic aviation). Please specify in the comments section the type of infastructure
+      that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Aviation|ICE:
+    description: Total investment spending through Infrastructure in the transport
+      sector (domestic aviation, internal combustion engine technologies running on
+      any type of liquid or gaseous fuel, including mild hybrids and excluding plug-in
+      hybrids)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Aviation|BEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (domestic aviation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Domestic Aviation|FCEV:
+    description: Total investment spending through Infrastructure in the transport
+      sector (domestic aviation, fuel cell technologies running on hydrogen or another
+      type of fuel)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial:
     description: Total investment spending into residential and commercial building
-      shells (not including the costs of the general building structure, technical
-      equipment, etc.)
+      shells and space heating devices (not including the costs of the general building
+      structure, technical equipment, etc.)
     unit: billion EUR2020/yr
 - Investment|Energy Demand|Residential and Commercial|Low-Efficiency Buildings:
     description: Total investment spending into residential and commercial building
@@ -9308,6 +9652,139 @@
       (matching the assignment of plant types to technologies in the reporting of
       capital costs as documented in the comments sheet).
     unit: EUR2020/GJ
+- OM Cost|Transportation:
+    description: Total O&M spending into vehicle purchases, infrastructure and charging
+      infrastructure in the transport sector (sum of all total O&M/consumption spending
+      variables in the transport sector)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation:
+    description: Total O&M spending into vehicle purchases (sum of all total O&M/consumption
+      spending variables in the transport sector)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|LDV:
+    description: Total O&M spending for vehicles in the transport sector (light-duty
+      cars and trucks)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|LDV|ICE:
+    description: Total O&M spending for vehicles in the transport sector (light-duty
+      cars and trucks,  internal combustion engine technologies running on any type
+      of liquid or gaseous fuel; including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|LDV|BEV:
+    description: Total O&M spending for vehicles in the transport sector (light-duty
+      cars and trucks, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|LDV|PHEV:
+    description: Total O&M spending for vehicles in the transport sector (light-duty
+      cars and trucks, plug-in hybrids with internal combustion engine running on
+      any type of liquid or gaseous fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|LDV|FCEV:
+    description: Total O&M spending for vehicles in the transport sector (light-duty
+      cars and trucks, fuel cell technologies running on hydrogen or another type
+      of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck|ICE:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks, internal combustion engine technologies running on any type
+      of liquid or gaseous fuel; including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck|BEV:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck|PHEV:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks, plug-in hybrids with internal combustion engine running on any
+      type of liquid or gaseous fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck|Overhead Line | ICE:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks with overhead line technologies, internal combustion engine technologies
+      running on any type of liquid or gaseous fuel; including mild hybrids and excluding
+      plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck|Overhead Line | BEV:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks with overhead line technologies, electric vehicle technologies,
+      only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Truck|FCEV:
+    description: Total O&M spending for vehicles in the transport sector (heavy-duty
+      freight trucks, fuel cell technologies running on hydrogen or another type of
+      fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Rail:
+    description: Total O&M spending for vehicles in the transport sector (rail)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Rail|ICE:
+    description: Total O&M spending for vehicles in the transport sector (rail, internal
+      combustion engine technologies running on any type of liquid or gaseous fuel,
+      including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Rail|BEV:
+    description: Total O&M spending for vehicles in the transport sector (rail, electric
+      vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Rail|FCEV:
+    description: Total O&M spending for vehicles in the transport sector (rail, fuel
+      cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Bus:
+    description: Total O&M spending for vehicles in the transport sector (buses, any
+      type of engine and fuels)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Bus|ICE:
+    description: Total O&M spending for vehicles in the transport sector (buses, internal
+      combustion engine technologies running on any type of liquid or gaseous fuel,
+      including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Bus|BEV:
+    description: Total O&M spending for vehicles in the transport sector (buses, electric
+      vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Bus|FCEV:
+    description: Total O&M spending for vehicles in the transport sector (buses, fuel
+      cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Navigation:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      navigation)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Navigation|ICE:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      navigation, internal combustion engine technologies running on any type of liquid
+      or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Navigation|BEV:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      navigation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Navigation|FCEV:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      navigation, fuel cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Aviation:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      aviation)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Aviation|ICE:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      aviation, internal combustion engine technologies running on any type of liquid
+      or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Aviation|BEV:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      aviation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Domestic Aviation|FCEV:
+    description: Total O&M spending for vehicles in the transport sector (domestic
+      aviation, fuel cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
 - Export|Energy:
     description: export of energy commodities measured in monetary units.
     unit: billion EUR2020/yr
@@ -9916,6 +10393,126 @@
     unit: billion EUR2020/yr
 - Subsidies|Energy Demand|Residential and Commercial|Building Retrofits:
     description: Subsidies for residential or commercial building retrofits
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation:
+    description: Total O&M spending into infrastructure and charging infrastructure
+      in the transport sector (sum of all total O&M/consumption spending variables
+      in the transport sector)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|LDV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (light-duty cars and trucks)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|LDV|BEV:
+    description: 'Total O&M spending through Infrastructure in the transport sector
+      (light-duty cars and trucks: electric vehicle technologies, only all-electrics)'
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|LDV|BEV|Public:
+    description: Total public O&M spending through Infrastructure in the transport
+      sector (light-duty cars and trucks, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|LDV|BEV|Work:
+    description: Total O&M spending through Infrastructure at working places in the
+      transport sector (light-duty cars and trucks, electric vehicle technologies,
+      only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|LDV|BEV|Private:
+    description: Total O&M spending through Infrastructure at private homes in the
+      transport sector (light-duty cars and trucks, electric vehicle technologies,
+      only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|LDV|FCEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (light-duty cars and trucks, fuel cell technologies running on hydrogen or another
+      type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Truck:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (heavy-duty freight trucks)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Truck|BEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (heavy-duty freight trucks, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Truck|Overhead Line:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (heavy-duty freight trucks with overhead line technologies)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Truck|FCEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (heavy-duty freight trucks, fuel cell technologies running on hydrogen or another
+      type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Rail:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (rail)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Rail|ICE:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (rail, internal combustion engine technologies running on any type of liquid
+      or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Rail|BEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (rail, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Rail|FCEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (rail, fuel cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Bus:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (buses, any type of engine and fuels)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Bus|ICE:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (buses, internal combustion engine technologies running on any type of liquid
+      or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Bus|BEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (buses, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Bus|FCEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (buses, fuel cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Navigation:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic navigation)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Navigation|ICE:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic navigation, internal combustion engine technologies running on any
+      type of liquid or gaseous fuel, including mild hybrids and excluding plug-in
+      hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Navigation|BEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic navigation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Navigation|FCEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic navigation, fuel cell technologies running on hydrogen or another
+      type of fuel)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Aviation:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic aviation)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Aviation|ICE:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic aviation, internal combustion engine technologies running on any type
+      of liquid or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Aviation|BEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic aviation, electric vehicle technologies, only all-electrics)
+    unit: billion EUR2020/yr
+- OM Cost|Infrastructure|Transportation|Domestic Aviation|FCEV:
+    description: Total O&M spending through Infrastructure in the transport sector
+      (domestic aviation, fuel cell technologies running on hydrogen or another type
+      of fuel)
     unit: billion EUR2020/yr
 - Subsidies|Energy Demand|Transportation|LDV:
     description: Subsidies for LDV sales
