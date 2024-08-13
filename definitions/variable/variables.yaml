@@ -10550,3 +10550,423 @@
     description: Subsidies for energy infrastructure related to Electricity (transport
       and storage)
     unit: billion EUR2020/yr
+- Minerals|Aluminium|Wind:
+    description: Demand of Aluminium for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Aluminium|PV:
+    description: Demand of Aluminium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Aluminium|CSP:
+    description: Demand of Aluminium for CSP Plants
+    unit: Mt/yr
+- Minerals|Aluminium|Stationary Fuel Cells:
+    description: Demand of Aluminium for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Aluminium|Power Plants (renewable):
+    description: Demand of Aluminium for Power Plants (renewable)
+    unit: Mt/yr
+- Minerals|Aluminium|Power Plants (fossil + nuclear):
+    description: Demand of Aluminium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Aluminium|Stationary Batteries:
+    description: Demand of Aluminium for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Aluminium|Electrolyers:
+    description: Demand of Aluminium for Electrolyers
+    unit: Mt/yr
+- Minerals|Aluminium|Other Conversion Technologies:
+    description: Demand of Aluminium for Other Conversion Technologies
+    unit: Mt/yr
+- Minerals|Aluminium|Cars:
+    description: Demand of Aluminium for Cars
+    unit: Mt/yr
+- Minerals|Aluminium|Other Sectors:
+    description: Demand of Aluminium for Other Sectors
+    unit: Mt/yr
+- Minerals|Cadmium|PV:
+    description: Demand of Cadmium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Cadmium|Power Plants (fossil + nuclear):
+    description: Demand of Cadmium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Cadmium|Other Sectors:
+    description: Demand of Cadmium for Other Sectors
+    unit: Mt/yr
+- Minerals|Chromium|Wind:
+    description: Demand of Chromium for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Chromium|PV:
+    description: Demand of Chromium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Chromium|CSP:
+    description: Demand of Chromium for CSP Plants
+    unit: Mt/yr
+- Minerals|Chromium|Stationary Fuel Cells:
+    description: Demand of Chromium for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Chromium|Power Plants (renewable):
+    description: Demand of Chromium for Power Plants (renewable)
+    unit: Mt/yr
+- Minerals|Chromium|Power Plants (fossil + nuclear):
+    description: Demand of Chromium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Chromium|Cars:
+    description: Demand of Chromium for Cars
+    unit: Mt/yr
+- Minerals|Chromium|Other Sectors:
+    description: Demand of Chromium for Other Sectors
+    unit: Mt/yr
+- Minerals|Cobalt|Stationary Fuel Cells:
+    description: Demand of Cobalt for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Cobalt|Stationary Batteries:
+    description: Demand of Cobalt for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Cobalt|Electrolyers:
+    description: Demand of Cobalt for Electrolyers
+    unit: Mt/yr
+- Minerals|Cobalt|Other Conversion Technologies:
+    description: Demand of Cobalt for Other Conversion Technologies
+    unit: Mt/yr
+- Minerals|Cobalt|Cars:
+    description: Demand of Cobalt for Cars
+    unit: Mt/yr
+- Minerals|Cobalt|Other Sectors:
+    description: Demand of Cobalt for Other Sectors
+    unit: Mt/yr
+- Minerals|Copper|Wind:
+    description: Demand of Copper for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Copper|PV:
+    description: Demand of Copper for PV Power Plants
+    unit: Mt/yr
+- Minerals|Copper|CSP:
+    description: Demand of Copper for CSP Plants
+    unit: Mt/yr
+- Minerals|Copper|Stationary Fuel Cells:
+    description: Demand of Copper for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Copper|Power Plants (renewable):
+    description: Demand of Copper for Power Plants (renewable)
+    unit: Mt/yr
+- Minerals|Copper|Power Plants (fossil + nuclear):
+    description: Demand of Copper for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Copper|Stationary Batteries:
+    description: Demand of Copper for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Copper|Electrolyers:
+    description: Demand of Copper for Electrolyers
+    unit: Mt/yr
+- Minerals|Copper|Other Conversion Technologies:
+    description: Demand of Copper for Other Conversion Technologies
+    unit: Mt/yr
+- Minerals|Copper|Cars:
+    description: Demand of Copper for Cars
+    unit: Mt/yr
+- Minerals|Copper|Other Sectors:
+    description: Demand of Copper for Other Sectors
+    unit: Mt/yr
+- Minerals|Dysprosium|Wind:
+    description: Demand of Dysprosium for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Dysprosium|Other Sectors:
+    description: Demand of Dysprosium for Other Sectors
+    unit: Mt/yr
+- Minerals|Gallium|PV:
+    description: Demand of Gallium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Gallium|Other Sectors:
+    description: Demand of Gallium for Other Sectors
+    unit: Mt/yr
+- Minerals|Germanium|PV:
+    description: Demand of Germanium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Germanium|Other Sectors:
+    description: Demand of Germanium for Other Sectors
+    unit: Mt/yr
+- Minerals|Indium|PV:
+    description: Demand of Indium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Indium|Power Plants (fossil + nuclear):
+    description: Demand of Indium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Indium|Other Sectors:
+    description: Demand of Indium for Other Sectors
+    unit: Mt/yr
+- Minerals|Iridium|Electrolyers:
+    description: Demand of Iridium for Electrolyers
+    unit: Mt/yr
+- Minerals|Iridium|Other Sectors:
+    description: Demand of Iridium for Other Sectors
+    unit: Mt/yr
+- Minerals|Lanthanum|Electrolyers:
+    description: Demand of Lanthanum for Electrolyers
+    unit: Mt/yr
+- Minerals|Lanthanum|Other Sectors:
+    description: Demand of Lanthanum for Other Sectors
+    unit: Mt/yr
+- Minerals|Lead|PV:
+    description: Demand of Lead for PV Power Plants
+    unit: Mt/yr
+- Minerals|Lead|Stationary Batteries:
+    description: Demand of Lead for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Lead|Cars:
+    description: Demand of Lead for Cars
+    unit: Mt/yr
+- Minerals|Lead|Other Sectors:
+    description: Demand of Lead for Other Sectors
+    unit: Mt/yr
+- Minerals|Lithium|Stationary Batteries:
+    description: Demand of Lithium for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Lithium|Cars:
+    description: Demand of Lithium for Cars
+    unit: Mt/yr
+- Minerals|Lithium|Other Sectors:
+    description: Demand of Lithium for Other Sectors
+    unit: Mt/yr
+- Minerals|Magnesium|PV:
+    description: Demand of Magnesium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Magnesium|CSP:
+    description: Demand of Magnesium for CSP Plants
+    unit: Mt/yr
+- Minerals|Magnesium|Cars:
+    description: Demand of Magnesium for Cars
+    unit: Mt/yr
+- Minerals|Magnesium|Other Sectors:
+    description: Demand of Magnesium for Other Sectors
+    unit: Mt/yr
+- Minerals|Manganese|Wind:
+    description: Demand of Manganese for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Manganese|PV:
+    description: Demand of Manganese for PV Power Plants
+    unit: Mt/yr
+- Minerals|Manganese|CSP:
+    description: Demand of Manganese for CSP Plants
+    unit: Mt/yr
+- Minerals|Manganese|Stationary Fuel Cells:
+    description: Demand of Manganese for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Manganese|Power Plants (fossil + nuclear):
+    description: Demand of Manganese for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Manganese|Stationary Batteries:
+    description: Demand of Manganese for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Manganese|Electrolyers:
+    description: Demand of Manganese for Electrolyers
+    unit: Mt/yr
+- Minerals|Manganese|Other Conversion Technologies:
+    description: Demand of Manganese for Other Conversion Technologies
+    unit: Mt/yr
+- Minerals|Manganese|Cars:
+    description: Demand of Manganese for Cars
+    unit: Mt/yr
+- Minerals|Manganese|Other Sectors:
+    description: Demand of Manganese for Other Sectors
+    unit: Mt/yr
+- Minerals|Neodymium|Wind:
+    description: Demand of Neodymium for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Neodymium|Other Sectors:
+    description: Demand of Neodymium for Other Sectors
+    unit: Mt/yr
+- Minerals|Nickel|Wind:
+    description: Demand of Nickel for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Nickel|PV:
+    description: Demand of Nickel for PV Power Plants
+    unit: Mt/yr
+- Minerals|Nickel|CSP:
+    description: Demand of Nickel for CSP Plants
+    unit: Mt/yr
+- Minerals|Nickel|Stationary Fuel Cells:
+    description: Demand of Nickel for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Nickel|Power Plants (renewable):
+    description: Demand of Nickel for Power Plants (renewable)
+    unit: Mt/yr
+- Minerals|Nickel|Power Plants (fossil + nuclear):
+    description: Demand of Nickel for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Nickel|Stationary Batteries:
+    description: Demand of Nickel for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Nickel|Electrolyers:
+    description: Demand of Nickel for Electrolyers
+    unit: Mt/yr
+- Minerals|Nickel|Other Conversion Technologies:
+    description: Demand of Nickel for Other Conversion Technologies
+    unit: Mt/yr
+- Minerals|Nickel|Cars:
+    description: Demand of Nickel for Cars
+    unit: Mt/yr
+- Minerals|Nickel|Other Sectors:
+    description: Demand of Nickel for Other Sectors
+    unit: Mt/yr
+- Minerals|Platinum|Electrolyers:
+    description: Demand of Platinum for Electrolyers
+    unit: Mt/yr
+- Minerals|Platinum|Cars:
+    description: Demand of Platinum for Cars
+    unit: Mt/yr
+- Minerals|Platinum|Other Sectors:
+    description: Demand of Platinum for Other Sectors
+    unit: Mt/yr
+- Minerals|Potassium|CSP:
+    description: Demand of Potassium for CSP Plants
+    unit: Mt/yr
+- Minerals|Potassium|Stationary Fuel Cells:
+    description: Demand of Potassium for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Potassium|Electrolyers:
+    description: Demand of Potassium for Electrolyers
+    unit: Mt/yr
+- Minerals|Potassium|Other Sectors:
+    description: Demand of Potassium for Other Sectors
+    unit: Mt/yr
+- Minerals|Selenium|PV:
+    description: Demand of Selenium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Selenium|Other Sectors:
+    description: Demand of Selenium for Other Sectors
+    unit: Mt/yr
+- Minerals|Silicon|PV:
+    description: Demand of Silicon for PV Power Plants
+    unit: Mt/yr
+- Minerals|Silicon|Other Sectors:
+    description: Demand of Silicon for Other Sectors
+    unit: Mt/yr
+- Minerals|Silver|PV:
+    description: Demand of Silver for PV Power Plants
+    unit: Mt/yr
+- Minerals|Silver|CSP:
+    description: Demand of Silver for CSP Plants
+    unit: Mt/yr
+- Minerals|Silver|Power Plants (fossil + nuclear):
+    description: Demand of Silver for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Silver|Other Sectors:
+    description: Demand of Silver for Other Sectors
+    unit: Mt/yr
+- Minerals|Steel|Wind:
+    description: Demand of Steel for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Steel|PV:
+    description: Demand of Steel for PV Power Plants
+    unit: Mt/yr
+- Minerals|Steel|CSP:
+    description: Demand of Steel for CSP Plants
+    unit: Mt/yr
+- Minerals|Steel|Stationary Fuel Cells:
+    description: Demand of Steel for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Steel|Power Plants (renewable):
+    description: Demand of Steel for Power Plants (renewable)
+    unit: Mt/yr
+- Minerals|Steel|Power Plants (fossil + nuclear):
+    description: Demand of Steel for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Steel|Stationary Batteries:
+    description: Demand of Steel for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Steel|Electrolyers:
+    description: Demand of Steel for Electrolyers
+    unit: Mt/yr
+- Minerals|Steel|Other Conversion Technologies:
+    description: Demand of Steel for Other Conversion Technologies
+    unit: Mt/yr
+- Minerals|Steel|Cars:
+    description: Demand of Steel for Cars
+    unit: Mt/yr
+- Minerals|Steel|Other Sectors:
+    description: Demand of Steel for Other Sectors
+    unit: Mt/yr
+- Minerals|Sulfur|Stationary Batteries:
+    description: Demand of Sulfur for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Sulfur|Other Sectors:
+    description: Demand of Sulfur for Other Sectors
+    unit: Mt/yr
+- Minerals|Tellurium|PV:
+    description: Demand of Tellurium for PV Power Plants
+    unit: Mt/yr
+- Minerals|Tellurium|Other Sectors:
+    description: Demand of Tellurium for Other Sectors
+    unit: Mt/yr
+- Minerals|Vanadium|Wind:
+    description: Demand of Vanadium for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Vanadium|CSP:
+    description: Demand of Vanadium for CSP Plants
+    unit: Mt/yr
+- Minerals|Vanadium|Stationary Fuel Cells:
+    description: Demand of Vanadium for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Vanadium|Power Plants (fossil + nuclear):
+    description: Demand of Vanadium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Vanadium|Stationary Batteries:
+    description: Demand of Vanadium for Stationary Batteries
+    unit: Mt/yr
+- Minerals|Vanadium|Electrolyers:
+    description: Demand of Vanadium for Electrolyers
+    unit: Mt/yr
+- Minerals|Vanadium|Other Sectors:
+    description: Demand of Vanadium for Other Sectors
+    unit: Mt/yr
+- Minerals|Yttrium|Wind:
+    description: Demand of Yttrium for Wind Power Plants
+    unit: Mt/yr
+- Minerals|Yttrium|Stationary Fuel Cells:
+    description: Demand of Yttrium for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Yttrium|Power Plants (fossil + nuclear):
+    description: Demand of Yttrium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Yttrium|Electrolyers:
+    description: Demand of Yttrium for Electrolyers
+    unit: Mt/yr
+- Minerals|Yttrium|Other Sectors:
+    description: Demand of Yttrium for Other Sectors
+    unit: Mt/yr
+- Minerals|Zinc|PV:
+    description: Demand of Zinc for PV Power Plants
+    unit: Mt/yr
+- Minerals|Zinc|CSP:
+    description: Demand of Zinc for CSP Plants
+    unit: Mt/yr
+- Minerals|Zinc|Other Sectors:
+    description: Demand of Zinc for Other Sectors
+    unit: Mt/yr
+- Minerals|Zirconium|Stationary Fuel Cells:
+    description: Demand of Zirconium for Stationary Fuel Cells
+    unit: Mt/yr
+- Minerals|Zirconium|Power Plants (fossil + nuclear):
+    description: Demand of Zirconium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Zirconium|Electrolyers:
+    description: Demand of Zirconium for Electrolyers
+    unit: Mt/yr
+- Minerals|Zirconium|Other Sectors:
+    description: Demand of Zirconium for Other Sectors
+    unit: Mt/yr
+- Minerals|Oil|Power Plants (fossil + nuclear):
+    description: Demand of Oil for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Oil|Cars:
+    description: Demand of Oil for Cars
+    unit: Mt/yr
+- Minerals|Gas|Power Plants (fossil + nuclear):
+    description: Demand of Gas for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Coal|Power Plants (fossil + nuclear):
+    description: Demand of Coal for Power Plants (fossil + nuclear)
+    unit: Mt/yr
+- Minerals|Uranium|Power Plants (fossil + nuclear):
+    description: Demand of Uranium for Power Plants (fossil + nuclear)
+    unit: Mt/yr
