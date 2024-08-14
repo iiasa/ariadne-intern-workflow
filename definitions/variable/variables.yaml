@@ -9702,13 +9702,13 @@
       freight trucks, plug-in hybrids with internal combustion engine running on any
       type of liquid or gaseous fuel)
     unit: billion EUR2020/yr
-- OM Cost|Energy Demand|Transportation|Truck|Overhead Line | ICE:
+- OM Cost|Energy Demand|Transportation|Truck|Overhead Line|ICE:
     description: Total O&M spending for vehicles in the transport sector (heavy-duty
       freight trucks with overhead line technologies, internal combustion engine technologies
       running on any type of liquid or gaseous fuel; including mild hybrids and excluding
       plug-in hybrids)
     unit: billion EUR2020/yr
-- OM Cost|Energy Demand|Transportation|Truck|Overhead Line | BEV:
+- OM Cost|Energy Demand|Transportation|Truck|Overhead Line|BEV:
     description: Total O&M spending for vehicles in the transport sector (heavy-duty
       freight trucks with overhead line technologies, electric vehicle technologies,
       only all-electrics)
@@ -10571,8 +10571,8 @@
 - Minerals|Aluminium|Stationary Batteries:
     description: Demand of Aluminium for Stationary Batteries
     unit: Mt/yr
-- Minerals|Aluminium|Electrolyers:
-    description: Demand of Aluminium for Electrolyers
+- Minerals|Aluminium|Electrolysers:
+    description: Demand of Aluminium for Electrolysers
     unit: Mt/yr
 - Minerals|Aluminium|Other Conversion Technologies:
     description: Demand of Aluminium for Other Conversion Technologies
@@ -10622,8 +10622,8 @@
 - Minerals|Cobalt|Stationary Batteries:
     description: Demand of Cobalt for Stationary Batteries
     unit: Mt/yr
-- Minerals|Cobalt|Electrolyers:
-    description: Demand of Cobalt for Electrolyers
+- Minerals|Cobalt|Electrolysers:
+    description: Demand of Cobalt for Electrolysers
     unit: Mt/yr
 - Minerals|Cobalt|Other Conversion Technologies:
     description: Demand of Cobalt for Other Conversion Technologies
@@ -10655,8 +10655,8 @@
 - Minerals|Copper|Stationary Batteries:
     description: Demand of Copper for Stationary Batteries
     unit: Mt/yr
-- Minerals|Copper|Electrolyers:
-    description: Demand of Copper for Electrolyers
+- Minerals|Copper|Electrolysers:
+    description: Demand of Copper for Electrolysers
     unit: Mt/yr
 - Minerals|Copper|Other Conversion Technologies:
     description: Demand of Copper for Other Conversion Technologies
@@ -10694,14 +10694,14 @@
 - Minerals|Indium|Other Sectors:
     description: Demand of Indium for Other Sectors
     unit: Mt/yr
-- Minerals|Iridium|Electrolyers:
-    description: Demand of Iridium for Electrolyers
+- Minerals|Iridium|Electrolysers:
+    description: Demand of Iridium for Electrolysers
     unit: Mt/yr
 - Minerals|Iridium|Other Sectors:
     description: Demand of Iridium for Other Sectors
     unit: Mt/yr
-- Minerals|Lanthanum|Electrolyers:
-    description: Demand of Lanthanum for Electrolyers
+- Minerals|Lanthanum|Electrolysers:
+    description: Demand of Lanthanum for Electrolysers
     unit: Mt/yr
 - Minerals|Lanthanum|Other Sectors:
     description: Demand of Lanthanum for Other Sectors
@@ -10757,8 +10757,8 @@
 - Minerals|Manganese|Stationary Batteries:
     description: Demand of Manganese for Stationary Batteries
     unit: Mt/yr
-- Minerals|Manganese|Electrolyers:
-    description: Demand of Manganese for Electrolyers
+- Minerals|Manganese|Electrolysers:
+    description: Demand of Manganese for Electrolysers
     unit: Mt/yr
 - Minerals|Manganese|Other Conversion Technologies:
     description: Demand of Manganese for Other Conversion Technologies
@@ -10796,8 +10796,8 @@
 - Minerals|Nickel|Stationary Batteries:
     description: Demand of Nickel for Stationary Batteries
     unit: Mt/yr
-- Minerals|Nickel|Electrolyers:
-    description: Demand of Nickel for Electrolyers
+- Minerals|Nickel|Electrolysers:
+    description: Demand of Nickel for Electrolysers
     unit: Mt/yr
 - Minerals|Nickel|Other Conversion Technologies:
     description: Demand of Nickel for Other Conversion Technologies
@@ -10808,8 +10808,8 @@
 - Minerals|Nickel|Other Sectors:
     description: Demand of Nickel for Other Sectors
     unit: Mt/yr
-- Minerals|Platinum|Electrolyers:
-    description: Demand of Platinum for Electrolyers
+- Minerals|Platinum|Electrolysers:
+    description: Demand of Platinum for Electrolysers
     unit: Mt/yr
 - Minerals|Platinum|Cars:
     description: Demand of Platinum for Cars
@@ -10823,8 +10823,8 @@
 - Minerals|Potassium|Stationary Fuel Cells:
     description: Demand of Potassium for Stationary Fuel Cells
     unit: Mt/yr
-- Minerals|Potassium|Electrolyers:
-    description: Demand of Potassium for Electrolyers
+- Minerals|Potassium|Electrolysers:
+    description: Demand of Potassium for Electrolysers
     unit: Mt/yr
 - Minerals|Potassium|Other Sectors:
     description: Demand of Potassium for Other Sectors
@@ -10874,8 +10874,8 @@
 - Minerals|Steel|Stationary Batteries:
     description: Demand of Steel for Stationary Batteries
     unit: Mt/yr
-- Minerals|Steel|Electrolyers:
-    description: Demand of Steel for Electrolyers
+- Minerals|Steel|Electrolysers:
+    description: Demand of Steel for Electrolysers
     unit: Mt/yr
 - Minerals|Steel|Other Conversion Technologies:
     description: Demand of Steel for Other Conversion Technologies
@@ -10913,8 +10913,8 @@
 - Minerals|Vanadium|Stationary Batteries:
     description: Demand of Vanadium for Stationary Batteries
     unit: Mt/yr
-- Minerals|Vanadium|Electrolyers:
-    description: Demand of Vanadium for Electrolyers
+- Minerals|Vanadium|Electrolysers:
+    description: Demand of Vanadium for Electrolysers
     unit: Mt/yr
 - Minerals|Vanadium|Other Sectors:
     description: Demand of Vanadium for Other Sectors
@@ -10928,8 +10928,8 @@
 - Minerals|Yttrium|Power Plants (fossil + nuclear):
     description: Demand of Yttrium for Power Plants (fossil + nuclear)
     unit: Mt/yr
-- Minerals|Yttrium|Electrolyers:
-    description: Demand of Yttrium for Electrolyers
+- Minerals|Yttrium|Electrolysers:
+    description: Demand of Yttrium for Electrolysers
     unit: Mt/yr
 - Minerals|Yttrium|Other Sectors:
     description: Demand of Yttrium for Other Sectors
@@ -10949,8 +10949,8 @@
 - Minerals|Zirconium|Power Plants (fossil + nuclear):
     description: Demand of Zirconium for Power Plants (fossil + nuclear)
     unit: Mt/yr
-- Minerals|Zirconium|Electrolyers:
-    description: Demand of Zirconium for Electrolyers
+- Minerals|Zirconium|Electrolysers:
+    description: Demand of Zirconium for Electrolysers
     unit: Mt/yr
 - Minerals|Zirconium|Other Sectors:
     description: Demand of Zirconium for Other Sectors
