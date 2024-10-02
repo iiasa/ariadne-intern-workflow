@@ -105,9 +105,9 @@
   - China (inkl. Hongkong, Macao, Taiwan):
       abbr: CHN_HKG_MAC_TWN
   - Indien:
-      countries: [ IND
+      countries: [ IND ]
   - Japan:
-      countries: [ JPN
+      countries: [ JPN ]
   - USA
 - Regionen außerhalb Europas:
   - CAN_NZL_AUS:
