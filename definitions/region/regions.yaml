@@ -1,4 +1,4 @@
-# All iso3 and abbreviations (abbr) can be used as synonyms
+# All countries a[ nd abbreviations (abbr) can be used as synonyms
 # when uploading to the IIASA Scenario Explorer infrastructure
 
 # Any changes to this file must also be migrated manually
@@ -9,63 +9,63 @@
 
 - Europäische Länder:
   - Bulgarien:
-      iso3: BGR
+      countries: [ Bulgaria ]
   - Dänemark:
-      iso3: DNK
+      countries: [ Denmark ]
   - Deutschland:
-      iso3: DEU
+      countries: [ Germany ]
   - Estland:
-      iso3: EST
+      countries: [ Estonia ]
   - Finnland:
-      iso3: FIN
+      countries: [ Finland ]
   - Frankreich:
-      iso3: FRA
+      countries: [ France ]
   - Griechenland:
-      iso3: GRC
+      countries: [ Greece ]
   - Irland:
-      iso3: IRL
+      countries: [ Ireland ]
   - Italien:
-      iso3: ITA
+      countries: [ Italy ]
   - Kroatien:
-      iso3: HRV
+      countries: [ Croatia ]
   - Lettland:
-      iso3: LVA
+      countries: [ Latvia ]
   - Litauen:
-      iso3: LTU
+      countries: [ Lithuania ]
   - Luxemburg:
-      iso3: LUX
+      countries: [ Luxembourg ]
   - Malta:
-      iso3: MLT
+      countries: [ Malta ]
   - Niederlande:
-      iso3: NLD
+      countries: [ Netherlands ]
   - Österreich:
-      iso3: AUT
+      countries: [ Austria ]
   - Polen:
-      iso3: POL
+      countries: [ Poland ]
   - Portugal:
-      iso3: PRT
+      countries: [ Portugal ]
   - Rumänien:
-      iso3: ROU
+      countries: [ Romania ]
   - Schweden:
-      iso3: SWE
+      countries: [ Sweden ]
   - Slowakei:
-      iso3: SVK
+      countries: [ Slovakia ]
   - Slowenien:
-      iso3: SVN
+      countries: [ Slovenia ]
   - Spanien:
-      iso3: ESP
+      countries: [ Spain ]
   - Tschechien:
-      iso3: CZE
+      countries: [ Czechia ]
   - Ungarn:
-      iso3: HUN
+      countries: [ Hungary ]
   - Zypern:
-      iso3: CYP
+      countries: [ Cyprus ]
   - Vereinigtes Königreich:
-      iso3: GBR
+      countries: [ United Kingdom ]
   - Norwegen:
-      iso3: NOR
+      countries: [ Norway ]
   - Schweiz:
-      iso3: CHE
+      countries: [ Switzerland ]
 - Europäische Regionen:
   - EU_East:
       definition: Polen, Tschechien, Slowakei, Estland, Lettland, Litauen
@@ -105,9 +105,9 @@
   - China (inkl. Hongkong, Macao, Taiwan):
       abbr: CHN_HKG_MAC_TWN
   - Indien:
-      iso3: IND
+      countries: [ IND
   - Japan:
-      iso3: JPN
+      countries: [ JPN
   - USA
 - Regionen außerhalb Europas:
   - CAN_NZL_AUS:
