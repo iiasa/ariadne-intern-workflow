@@ -1,7 +1,8 @@
 # ADIADNE project - scenario processing workflow
 
+Copyright (c) 2021-2024 IIASA and the ARIADNE consortium
 
-Copyright (c) 2021 IIASA and the ARIADNE consortium
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
 This repository is released under the [APACHE 2.0 license](LICENSE).  
 ![GitHub](https://img.shields.io/github/license/iiasa/ariadne-intern-workflow)
