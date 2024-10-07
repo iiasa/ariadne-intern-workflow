@@ -10,62 +10,91 @@
 - Europäische Länder:
   - Bulgarien:
       countries: [ Bulgaria ]
+      iso3: BGR
   - Dänemark:
       countries: [ Denmark ]
+      iso3: DNK
   - Deutschland:
       countries: [ Germany ]
+      iso3: DEU
   - Estland:
       countries: [ Estonia ]
+      iso3: EST
   - Finnland:
       countries: [ Finland ]
+      iso3: FIN
   - Frankreich:
       countries: [ France ]
+      iso3: FRA
   - Griechenland:
       countries: [ Greece ]
+      iso3: GRC
   - Irland:
       countries: [ Ireland ]
+      iso3: IRL
   - Italien:
       countries: [ Italy ]
+      iso3: ITA
   - Kroatien:
       countries: [ Croatia ]
+      iso3: HRV
   - Lettland:
       countries: [ Latvia ]
+      iso3: LVA
   - Litauen:
       countries: [ Lithuania ]
+      iso3: LTU
   - Luxemburg:
       countries: [ Luxembourg ]
+      iso3: LUX
   - Malta:
       countries: [ Malta ]
+      iso3: MLT
   - Niederlande:
       countries: [ Netherlands ]
+      iso3: NLD
   - Österreich:
       countries: [ Austria ]
+      iso3: AUT
   - Polen:
       countries: [ Poland ]
+      iso3: POL
   - Portugal:
       countries: [ Portugal ]
+      iso3: PRT
   - Rumänien:
       countries: [ Romania ]
+      iso3: ROU
   - Schweden:
       countries: [ Sweden ]
+      iso3: SWE
   - Slowakei:
       countries: [ Slovakia ]
+      iso3: SVK
   - Slowenien:
       countries: [ Slovenia ]
+      iso3: SVN
   - Spanien:
       countries: [ Spain ]
+      iso3: ESP
   - Tschechien:
       countries: [ Czechia ]
+      iso3: CZE
   - Ungarn:
       countries: [ Hungary ]
+      iso3: HUN
   - Zypern:
       countries: [ Cyprus ]
+      iso3: CYP
   - Vereinigtes Königreich:
       countries: [ United Kingdom ]
+      iso3: GBR
   - Norwegen:
       countries: [ Norway ]
+      iso3: NOR
   - Schweiz:
       countries: [ Switzerland ]
+      iso3: CHE
 - Europäische Regionen:
   - EU_East:
       definition: Polen, Tschechien, Slowakei, Estland, Lettland, Litauen
@@ -106,8 +135,10 @@
       abbr: CHN_HKG_MAC_TWN
   - Indien:
       countries: [ India ]
+      iso3: IND
   - Japan:
       countries: [ Japan ]
+      iso3: JPN
   - USA
 - Regionen außerhalb Europas:
   - CAN_NZL_AUS:
