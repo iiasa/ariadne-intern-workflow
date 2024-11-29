@@ -4301,6 +4301,9 @@
     description: final energy consumption by the transportation sector of synthetic
       liquid efuels ("power-to-liquid")
     unit: PJ/yr
+- Final Energy|Transportation|Methanol:
+    description: final energy consumption by the transportation sector of methanol
+    unit: PJ/yr
 - Final Energy|Transportation|Waste:
     description: final energy consumption by the transportation sector of waste
     unit: PJ/yr
@@ -4396,6 +4399,9 @@
     unit: PJ/yr
 - Final Energy|Bunkers|Navigation|Hydrogen:
     description: final energy consumption of hydrogen as bunker fuels for navigation
+    unit: PJ/yr
+- Final Energy|Bunkers|Navigation|Methanol:
+    description: final energy consumption of methanol as bunker fuels for navigation
     unit: PJ/yr
 - Final Energy|Transportation|Renewables:
     description: final energy consumption by the transportation sector of renewables
@@ -5497,6 +5503,9 @@
     description: district heat generation from geothermal energy EXCLUDING geothermal
       heat pumps
     unit: PJ/yr
+- Secondary Energy|Heat|Hydrogen:
+    description: district heat generation from hydrogen
+    unit: PJ/yr
 - Secondary Energy|Heat|Nuclear:
     description: district heat generation from nuclear energy
     unit: PJ/yr
@@ -5571,6 +5580,9 @@
     description: hydrogen production from natural gas via methane pyrolysis with elemental
       carbon as by-product ("turquoise H2")
     unit: PJ/yr
+- Secondary Energy|Methanol:
+    description: total methanol production
+    unit: PJ/yr
 - Secondary Energy Input|Efuel|Electricity:
     description: secondary energy consumption of efuels for the production of electricity
     unit: PJ/yr
@@ -5587,6 +5599,9 @@
 - Secondary Energy Input|Hydrogen|Gases:
     description: secondary energy consumption of hydrogen for the production of gases
       (syngases)
+    unit: PJ/yr
+- Secondary Energy Input|Hydrogen|Heat:
+    description: secondary energy consumption of hydrogen for the production of heat
     unit: PJ/yr
 - Secondary Energy Input|Electricity|Hydrogen:
     description: secondary energy consumption of electricity for the production of
@@ -6533,6 +6548,16 @@
       renewable CO2 (green synfuels), at the global level these should add up to the
       trade losses only
     unit: PJ/yr
+- Trade|Secondary Energy|Gases|Biomass|Volume:
+    description: net exports of biogas, at the global level these should add up to
+      the trade losses only (for those models that are able to split solid and liquid
+      bioenergy)
+    unit: PJ/yr
+- Trade|Secondary Energy|Gases|Biomass|Gross Import|Volume:
+    description: gross imports of biogas, at the global level these should add up
+      to the trade losses only (for those models that are able to split solid and
+      liquid bioenergy)
+    unit: PJ/yr
 - Trade|Secondary Energy|Gases|Hydrogen|Volume:
     description: net exports of gaseous hydrocarbon fuels from renewable hydrogen
       and renewable CO2 (green syngases), at the global level these should add up
@@ -6545,6 +6570,15 @@
 - Trade|Secondary Energy|Gases|Hydrogen|Gross Import|Volume:
     description: gross imports of gaseous hydrocarbon fuels from renewable hydrogen
       and renewable CO2 (green syngases), excluding export
+    unit: PJ/yr
+- Trade|Secondary Energy|Methanol|Hydrogen|Volume:
+    description: net exports of methanol from renewable hydrogen and renewable CO2
+      (green synfuels), at the global level these should add up to the trade losses
+      only
+    unit: PJ/yr
+- Trade|Secondary Energy|Methanol|Hydrogen|Gross Import|Volume:
+    description: gross imports of methanol from renewable hydrogen and renewable CO2
+      (green synfuels), excluding export
     unit: PJ/yr
 - Trade|Uranium|Mass:
     description: net exports of Uranium, at the global level these should add up to
@@ -7671,6 +7705,18 @@
       engine technologies running on any type of liquid or gaseous fuel, including
       mild hybrids and excluding plug-in hybrids)'
     unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|Overhead Line|BEV|Additional:
+    description: 'Additional investment spending through new vehicle purchases in
+      the transport sector compared to fossil alternative (heavy-duty freight trucks
+      using overhead line technology: electric vehicle technologies, only all-electrics)'
+    unit: billion EUR2020/yr
+- Investment|Energy Demand|Transportation|Truck|Overhead Line|ICE|Additional:
+    description: 'Additional investment spending through new vehicle purchases in
+      the transport sector compared to fossil alternativ (heavy-duty freight trucks
+      using overhead line technology: internal combustion engine technologies running
+      on any type of liquid or gaseous fuel, including mild hybrids and excluding
+      plug-in hybrids)'
+    unit: billion EUR2020/yr
 - Investment|Energy Demand|Transportation|Other:
     description: "Total investment spending through new vehicle purchases in the transport\
       \ sector (other, like bicycles, e-scooter, \u2026)"
@@ -7768,19 +7814,35 @@
       to railway). Please specify in the comments section the type of infastructure
       that is being referred to here.
     unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail|Additional:
+    description: Additional investment spending into transport infrastructure for
+      the energy transition (all related to railway). Please specify in the comments
+      section the type of infastructure that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail|Railtracks:
+    description: Total investment spending into transport infrastructure (all related
+      to railway). Please specify in the comments section the type of infastructure
+      that is being referred to here.
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Rail|Railtracks|Additional:
+    description: Additional investment spending into transport infrastructure for
+      the energy transition (all related to railway). Please specify in the comments
+      section the type of infastructure that is being referred to here.
+    unit: billion EUR2020/yr
 - Investment|Infrastructure|Transportation|Rail|ICE:
-    description: Total investment spending through Infrastructure in the transport
-      sector (rail, internal combustion engine technologies running on any type of
-      liquid or gaseous fuel, including mild hybrids and excluding plug-in hybrids)
+    description: Total investment spending through refueling Infrastructure in the
+      transport sector (rail, internal combustion engine technologies running on any
+      type of liquid or gaseous fuel, including mild hybrids and excluding plug-in
+      hybrids)
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transportation|Rail|BEV:
-    description: Total investment spending through Infrastructure in the transport
-      sector (rail, electric vehicle technologies, only all-electrics)
+    description: Total investment spending through charging Infrastructure in the
+      transport sector (rail, electric vehicle technologies, only all-electrics)
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transportation|Rail|FCEV:
-    description: Total investment spending through Infrastructure in the transport
-      sector (rail, fuel cell technologies running on hydrogen or another type of
-      fuel)
+    description: Total investment spending through refueling Infrastructure in the
+      transport sector (rail, fuel cell technologies running on hydrogen or another
+      type of fuel)
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transportation|Bus:
     description: Total investment spending into transport infrastructure (all related
@@ -7799,6 +7861,11 @@
 - Investment|Infrastructure|Transportation|Bus|FCEV:
     description: Total investment spending through Infrastructure in the transport
       sector (bus, fuel cell technologies running on hydrogen or another type of fuel)
+    unit: billion EUR2020/yr
+- Investment|Infrastructure|Transportation|Road|Additional:
+    description: Additional investment spending into transport infrastructure for
+      the energy transition (all related to roads). Please specify in the comments
+      section the type of infastructure that is being referred to here.
     unit: billion EUR2020/yr
 - Investment|Infrastructure|Transportation|Road:
     description: Total investment spending into transport infrastructure (all related
