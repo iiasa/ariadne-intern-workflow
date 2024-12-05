@@ -41,6 +41,11 @@
 # Valid scenario names (Ariadne 2)
 
 - CurrentPolicies
+
+- NPI_LowDemand
+- NPI_HighDemand
+- NPI_Balance
+
 - KN2045_Bal_v4
 - KN2045_Elec_v4
 - KN2045_H2_v4
@@ -56,3 +61,8 @@
 - KN2045plus_EasyRide_{Roadmap}
 - KN2045minus_WorstCase_{Roadmap}
 - KN2045minus_SupplyFocus_{Roadmap}
+
+- KN2045_LowDemand
+- KN2045_EasyRide
+- KN2045_WorstCase
+- KN2045_SupplyFocus
