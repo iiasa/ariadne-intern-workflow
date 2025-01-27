@@ -5611,6 +5611,10 @@
     description: secondary energy consumption of electricity for the production of
       heat (large-scale heat pumps)
     unit: PJ/yr
+- Secondary Energy Input|Electricity|Liquids:
+    description: secondary energy consumption of electricity for the production of
+      methanol
+    unit: PJ/yr
 - Secondary Energy|Hydrogen|Nuclear:
     description: total hydrogen production from nuclear energy (e.g. thermochemical
       water splitting with nucelar heat)
@@ -6588,31 +6592,153 @@
     description: electricity price at the final level in the residential sector. Prices
       should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity|Sales Margin:
+    description: Sales margin component of the Electricity price at the final level
+      in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity|Transport and Distribution:
+    description: Transport and Distribution component of the Electricity price at
+      the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity|Other Taxes:
+    description: Other taxes and subsidies included in the Electricity price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity Heating:
+    description: electricity price for heating at the final level in the Residential
+      sector. Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity Heating|Sales Margin:
+    description: Sales margin component of the Electricity price for heating at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity Heating|Transport and Distribution:
+    description: Transport and Distribution component of the Electricity price for
+      heating at the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Electricity Heating|Other Taxes:
+    description: Other taxes and subsidies included in the Electricity price for heating
+      at the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|SNG:
+    description: Synthetic Natural Gas price at the final level in the Residential
+      sector. Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|SNG|Sales Margin:
+    description: Sales margin component of the Synthetic Natural Gas price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|SNG|Transport and Distribution:
+    description: Transport and Distribution component of the Synthetic Natural Gas
+      price at the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|SNG|Other Taxes:
+    description: Other taxes and subsidies included in the Synthetic Natural Gas price
+      at the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|SNG|Carbon Price Component:
+    description: Carbon price component of the synthetic natural gas price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential|Hydrogen:
     description: natural gas price at the final level in the residential sector. Prices
       should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Hydrogen|Sales Margin:
+    description: Sales margin component of the Hydrogen price at the final level in
+      the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Hydrogen|Transport and Distribution:
+    description: Transport and Distribution component of the Hydrogen price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Hydrogen|Other Taxes:
+    description: Other taxes and subsidies included in the Hydrogen price at the final
+      level in the Residential sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Gases:
     description: Gas price at the final level in the residential sector (can be a
       mix of natural gas, Biogas, and synth. gas). Prices should include the effect
       of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Biomass:
+    description: Sales margin component of the biogas price at the final level in
+      the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Biomass|Sales Margin:
+    description: Sales margin component of the biogas price at the final level in
+      the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biogas price at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biogas price at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential|Gases|Natural Gas:
     description: natural gas price at the final level in the residential sector. Prices
       should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Natural Gas|Sales Margin:
+    description: Sales margin component of the natural gas price at the final level
+      in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Natural Gas|Transport and Distribution:
+    description: Transport and Distribution component of the natural gas price at
+      the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Natural Gas|Carbon Price Component:
+    description: Carbon price component of the natural gas price at the final level
+      in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Natural Gas|Other Taxes:
+    description: Other taxes and subsidies included in the natural gas price at the
+      final level in the Residential sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Liquids:
     description: Liquids price at the final level in the residential sector (can be
       a mix of heating oil, Biofuels and E-fuels). Prices should include the effect
       of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Oil:
+    description: light fuel oil price at the final level in the residential sector.
+      Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Oil|Sales Margin:
+    description: Sales margin component of the price for light fuel oil at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Oil|Transport and Distribution:
+    description: Transport and Distribution component of the price for light fuel
+      oil at the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Oil|Carbon Price Component:
+    description: Carbon price component of the price for light fuel oil at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Oil|Other Taxes:
+    description: Other taxes and subsidies included in the price for light fuel oil
+      at the final level in the Residential sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential|Liquids|Biomass:
     description: biofuel price at the final level in the residential sector. Prices
       should include the effect of carbon prices.
     unit: EUR2020/GJ
-- Price|Final Energy|Residential|Liquids|Oil:
-    description: light fuel oil price at the final level in the residential sector.
-      Prices should include the effect of carbon prices.
+- Price|Final Energy|Residential|Liquids|Biomass|Sales Margin:
+    description: Sales margin component of the biofuel price at the final level in
+      the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biofuel price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biofuel price at the final
+      level in the Residential sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential|Solids:
     description: biomass price at the final level in the residential sector. Prices
@@ -6622,9 +6748,72 @@
     description: biomass price at the final level in the residential sector. Prices
       should include the effect of carbon prices.
     unit: EUR2020/GJ
+- Price|Final Energy|Residential|Solids|Biomass|Sales Margin:
+    description: Sales margin component of the biomass price at the final level in
+      the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Solids|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biomass price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Solids|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biomass price at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
 - Price|Final Energy|Residential|Solids|Coal:
     description: coal price at the final level in the residential sector. Prices should
       include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Heat:
+    description: heat price at the final level in the Residential sector. Prices should
+      include the effect of all other taxes, transport and distribution cost and sales
+      margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Heat|Sales Margin:
+    description: Sales margin component of the heat price at the final level in the
+      Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Heat|Transport and Distribution:
+    description: Transport and Distribution component of the heat price at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Heat|Other Taxes:
+    description: Other taxes and subsidies included in the heat price at the final
+      level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Efuel:
+    description: liquid Efuel price at the final level in the Residential sector.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Efuel|Sales Margin:
+    description: Sales margin component of the liquid Efuel price at the final level
+      in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Efuel|Transport and Distribution:
+    description: Transport and Distribution component of the liquid Efuel price at
+      the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Liquids|Efuel|Other Taxes:
+    description: Other taxes and subsidies included in the liquid Efuel price at the
+      final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Efuel:
+    description: Gaseous Efuel price at the final level in the Residential sector.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Efuel|Sales Margin:
+    description: Sales margin component of the gaseous Efuel price at the final level
+      in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Efuel|Transport and Distribution:
+    description: Transport and Distribution component of the gaseous Efuel price at
+      the final level in the Residential sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Residential|Gases|Efuel|Other Taxes:
+    description: Other taxes and subsidies included in the gaseous Efuel price at
+      the final level in the Residential sector.
     unit: EUR2020/GJ
 - Price|Final Energy|Residential and Commercial|Liquids:
     description: Liquids price at the final level in the residential and commercial
@@ -11037,3 +11226,843 @@
 - Minerals|Uranium|Power Plants (fossil + nuclear):
     description: Demand of Uranium for Power Plants (fossil + nuclear)
     unit: Mt/yr
+- Price|Final Energy|Commercial|Electricity:
+    description: electricity price at the final level in the Commercial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity|Sales Margin:
+    description: Sales margin component of the Electricity price at the final level
+      in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity|Transport and Distribution:
+    description: Transport and Distribution component of the Electricity price at
+      the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity|Other Taxes:
+    description: Other taxes and subsidies included in the Electricity price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity Heating:
+    description: electricity price for heating at the final level in the Commercial
+      sector. Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity Heating|Sales Margin:
+    description: Sales margin component of the Electricity price for heating at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity Heating|Transport and Distribution:
+    description: Transport and Distribution component of the Electricity price for
+      heating at the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Electricity Heating|Other Taxes:
+    description: Other taxes and subsidies included in the Electricity price for heating
+      at the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|SNG:
+    description: Synthetic Natural Gas price at the final level in the Commercial
+      sector. Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|SNG|Sales Margin:
+    description: Sales margin component of the Synthetic Natural Gas price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|SNG|Transport and Distribution:
+    description: Transport and Distribution component of the Synthetic Natural Gas
+      price at the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|SNG|Other Taxes:
+    description: Other taxes and subsidies included in the Synthetic Natural Gas price
+      at the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|SNG|Carbon Price Component:
+    description: Carbon price component of the synthetic natural gas price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Hydrogen:
+    description: natural gas price at the final level in the Commercial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Hydrogen|Sales Margin:
+    description: Sales margin component of the Hydrogen price at the final level in
+      the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Hydrogen|Transport and Distribution:
+    description: Transport and Distribution component of the Hydrogen price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Hydrogen|Other Taxes:
+    description: Other taxes and subsidies included in the Hydrogen price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases:
+    description: Gas price at the final level in the Commercial sector (can be a mix
+      of natural gas, Biogas, and synth. gas). Prices should include the effect of
+      carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Biomass:
+    description: Sales margin component of the biogas price at the final level in
+      the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Biomass|Sales Margin:
+    description: Sales margin component of the biogas price at the final level in
+      the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biogas price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biogas price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Natural Gas:
+    description: natural gas price at the final level in the Commercial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Natural Gas|Sales Margin:
+    description: Sales margin component of the natural gas price at the final level
+      in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Natural Gas|Transport and Distribution:
+    description: Transport and Distribution component of the natural gas price at
+      the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Natural Gas|Carbon Price Component:
+    description: Carbon price component of the natural gas price at the final level
+      in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Natural Gas|Other Taxes:
+    description: Other taxes and subsidies included in the natural gas price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids:
+    description: Liquids price at the final level in the Commercial sector (can be
+      a mix of heating oil, Biofuels and E-fuels). Prices should include the effect
+      of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Oil:
+    description: light fuel oil price at the final level in the Commercial sector.
+      Prices should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Oil|Sales Margin:
+    description: Sales margin component of the price for light fuel oil at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Oil|Transport and Distribution:
+    description: Transport and Distribution component of the price for light fuel
+      oil at the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Oil|Carbon Price Component:
+    description: Carbon price component of the price for light fuel oil at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Oil|Other Taxes:
+    description: Other taxes and subsidies included in the price for light fuel oil
+      at the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Biomass:
+    description: biofuel price at the final level in the Commercial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Biomass|Sales Margin:
+    description: Sales margin component of the biofuel price at the final level in
+      the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biofuel price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biofuel price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Solids:
+    description: biomass price at the final level in the Commercial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Solids|Biomass:
+    description: biomass price at the final level in the Commercial sector. Prices
+      should include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Solids|Biomass|Sales Margin:
+    description: Sales margin component of the biomass price at the final level in
+      the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Solids|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biomass price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Solids|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biomass price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Solids|Coal:
+    description: coal price at the final level in the Commercial sector. Prices should
+      include the effect of carbon prices.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Heat:
+    description: heat price at the final level in the Commercial sector. Prices should
+      include the effect of all other taxes, transport and distribution cost and sales
+      margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Heat|Sales Margin:
+    description: Sales margin component of the heat price at the final level in the
+      Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Heat|Transport and Distribution:
+    description: Transport and Distribution component of the heat price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Heat|Other Taxes:
+    description: Other taxes and subsidies included in the heat price at the final
+      level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Efuel:
+    description: liquid Efuel price at the final level in the Commercial sector. Prices
+      should include the effect of all other taxes, transport and distribution cost
+      and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Efuel|Sales Margin:
+    description: Sales margin component of the liquid Efuel price at the final level
+      in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Efuel|Transport and Distribution:
+    description: Transport and Distribution component of the liquid Efuel price at
+      the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Liquids|Efuel|Other Taxes:
+    description: Other taxes and subsidies included in the liquid Efuel price at the
+      final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Efuel:
+    description: Gaseous Efuel price at the final level in the Commercial sector.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Efuel|Sales Margin:
+    description: Sales margin component of the gaseous Efuel price at the final level
+      in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Efuel|Transport and Distribution:
+    description: Transport and Distribution component of the gaseous Efuel price at
+      the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Commercial|Gases|Efuel|Other Taxes:
+    description: Other taxes and subsidies included in the gaseous Efuel price at
+      the final level in the Commercial sector.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity:
+    description: Electricity price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases:
+    description: Price for gases at the final level in the energy-intensive industry.
+      Prices should include the effect of carbon prices and all other taxes, transport
+      and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Heat:
+    description: Heat price at the final level in the energy-intensive industry. Prices
+      should include the effect of all other taxes, transport and distribution cost
+      and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids:
+    description: Liquids price at the final level in the energy-intensive industry.
+      Prices should include the effect of carbon prices and all other taxes, transport
+      and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Hydrogen:
+    description: Hydrogen price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids:
+    description: Solids price at the final level in the energy-intensive industry.
+      Prices should include the effect of carbon prices and all other taxes, transport
+      and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Oil:
+    description: Price for light fuel oil at the final level in the energy-intensive
+      industry. Prices should include the effect of carbon prices and all other taxes,
+      transport and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Oil|Sales Margin:
+    description: Sales margin component of the price for light fuel oil at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Oil|Transport and Distribution:
+    description: Transport and Distribution component of the price for light fuel
+      oil at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Oil|Carbon Price Component:
+    description: Carbon price component of the price for light fuel oil at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Oil|Other Taxes:
+    description: Other taxes and subsidies included in the price for light fuel oil
+      at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Coal:
+    description: Price for hard coal at the final level in the energy-intensive industry.
+      Prices should include the effect of carbon prices and all other taxes, transport
+      and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Coal|Sales Margin:
+    description: Sales margin component of the price for hard coal at the final level
+      in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Coal|Transport and Distribution:
+    description: Transport and Distribution component of the price for hard coal at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Coal|Carbon Price Component:
+    description: Carbon price component of the price for hard coal at the final level
+      in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Coal|Other Taxes:
+    description: Other taxes and subsidies included in the price for hard coal at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Natural Gas:
+    description: Price for natural gas at the final level in the energy-intensive
+      industry. Prices should include the effect of carbon prices and all other taxes,
+      transport and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Natural Gas|Sales Margin:
+    description: Sales margin component of the price for natural gas at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Natural Gas|Transport and Distribution:
+    description: Transport and Distribution component of the price for natural gas
+      at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Natural Gas|Carbon Price Component:
+    description: Carbon price component of the price for natural gas at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Natural Gas|Other Taxes:
+    description: Other taxes and subsidies included in the price for natural gas at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|SNG:
+    description: Price for synthetic natural gas at the final level in the energy-intensive
+      industry. Prices should include the effect of carbon prices and all other taxes,
+      transport and distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|SNG|Sales Margin:
+    description: Sales margin component of the price for synthetic natural gas at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|SNG|Transport and Distribution:
+    description: Transport and Distribution component of the price for synthetic natural
+      gas at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|SNG|Carbon Price Component:
+    description: Carbon price component of the price for synthetic natural gas at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|SNG|Other Taxes:
+    description: Other taxes and subsidies included in the price for synthetic natural
+      gas at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Heat|Sales Margin:
+    description: Sales margin component of the price for heat at the final level in
+      the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Heat|Transport and Distribution:
+    description: Transport and Distribution component of the price for heat at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Heat|Other Taxes:
+    description: Other taxes and subsidies included in the price for heat at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Biomass:
+    description: biofuel price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Biomass|Sales Margin:
+    description: Sales margin component of the biofuel price at the final level in
+      the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biofuel price at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biofuel price at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Biomass:
+    description: biomass price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Biomass|Sales Margin:
+    description: Sales margin component of the biomass price at the final level in
+      the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biomass price at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Solids|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biomass price at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Biomass:
+    description: biogas price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Biomass|Sales Margin:
+    description: Sales margin component of the biogas price at the final level in
+      the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Biomass|Transport and Distribution:
+    description: Transport and Distribution component of the biogas price at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Biomass|Other Taxes:
+    description: Other taxes and subsidies included in the biogas price at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Efuel:
+    description: liquid Efuel price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Efuel|Sales Margin:
+    description: Sales margin component of the liquid Efuel price at the final level
+      in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Efuel|Transport and Distribution:
+    description: Transport and Distribution component of the liquid Efuel price at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Liquids|Efuel|Other Taxes:
+    description: Other taxes and subsidies included in the liquid Efuel price at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Efuel:
+    description: Gaseous Efuel price at the final level in the energy-intensive industry.
+      Prices should include the effect of all other taxes, transport and distribution
+      cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Efuel|Sales Margin:
+    description: Sales margin component of the gaseous Efuel price at the final level
+      in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Efuel|Transport and Distribution:
+    description: Transport and Distribution component of the gaseous Efuel price at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Gases|Efuel|Other Taxes:
+    description: Other taxes and subsidies included in the gaseous Efuel price at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Hydrogen|Sales Margin:
+    description: Sales margin component of the Hydrogen price at the final level in
+      the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Hydrogen|Transport and Distribution:
+    description: Transport and Distribution component of the Hydrogen price at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Hydrogen|Other Taxes:
+    description: Other taxes and subsidies included in the Hydrogen price at the final
+      level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity|Sales Margin:
+    description: Sales margin component of the Electricity price at the final level
+      in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity|Transport and Distribution:
+    description: Transport and Distribution component of the Electricity price at
+      the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity|Other Taxes:
+    description: Other taxes and subsidies included in the Electricity price at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity Heating:
+    description: electricity price for heating at the final level in the energy-intensive
+      industry. Prices should include the effect of all other taxes, transport and
+      distribution cost and sales margin.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity Heating|Sales Margin:
+    description: Sales margin component of the Electricity price for heating at the
+      final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity Heating|Transport and Distribution:
+    description: Transport and Distribution component of the Electricity price for
+      heating at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- Price|Final Energy|Industry EI|Electricity Heating|Other Taxes:
+    description: Other taxes and subsidies included in the Electricity price for heating
+      at the final level in the energy-intensive industry.
+    unit: EUR2020/GJ
+- OM Cost|Energy Demand|Transportation|Non-Energy:
+    description: Non-Energy related O&M spending in the transport sector (fixed and
+      variable)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Energy:
+    description: Total Energy related operational spending in the transport sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Energy|Electricity:
+    description: Energy related operational spending for electricity in the transport
+      sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Energy|Petrol:
+    description: Energy related operational spending for petrol (mix) in the transport
+      sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Energy|Diesel:
+    description: Energy related operational spending for diesel (mix) in the transport
+      sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Energy|Methane:
+    description: Energy related operational spending for methane (mix) in the transport
+      sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Transportation|Energy|Other Non-Fossil:
+    description: Energy related operational spending for other non-fossil energy in
+      the transport sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Non-Energy:
+    description: Non-Energy related O&M spending in the residential and commercial
+      sector (fixed and variable)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy:
+    description: Total Energy related operational spending in the residential and
+      commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Electricity|Heating:
+    description: Energy related operational spending for electricity for heating in
+      the residential and commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Electricity|Non-Heating:
+    description: Energy related operational spending for electricity for non-heating
+      purposes in the residential and commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Fossil:
+    description: Energy related operational spending for fossil energy in the residential
+      and commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Heat:
+    description: Energy related operational spending for heat in the residential and
+      commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Hydrogen:
+    description: Energy related operational spending for Hydrogen and Derivatives
+      in the residential and commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Biomass:
+    description: Energy related operational spending for Biomass in the residential
+      and commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Residential and Commercial|Energy|Other Non-Fossil:
+    description: Energy related operational spending for other non-fossil energy in
+      the residential and commercial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Non-Energy:
+    description: Total Non-Energy related O&M spending in the Industrial sector (fixed
+      and variable)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Non-Energy|non-CO2:
+    description: Non-Energy related O&M spending in the Industrial sector - excluding
+      CO2 cost for emissions from Feedstocks (fixed and variable)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Non-Energy|CO2:
+    description: Non-Energy related spending for CO2 emissions from Feedstocks in
+      the Industrial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy:
+    description: Total Energy related (fuel and feedstocks) operational spending in
+      the Industrial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy|Electricity:
+    description: Operational spending for electricity in the Industrial sector
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy|Fossil:
+    description: Operational spending for fossil energy in the Industrial sector (fuel
+      and feedstocks)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy|Heat:
+    description: Operational spending for heat in the Industrial sector (fuel and
+      feedstocks)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy|Hydrogen:
+    description: Operational spending for Hydrogen and Derivatives in the industrial
+      sector (fuel and feedstocks)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy|Biomass:
+    description: Operational spending for Biomass in the industrial sector (fuel and
+      feedstocks)
+    unit: billion EUR2020/yr
+- OM Cost|Energy Demand|Industry|Energy|Other Non-Fossil:
+    description: Operational spending for other non-fossil energy (e.g. Methane, ...)
+      in the industrial sector (fuel and feedstocks)
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Transportation|LDV:
+    description: Annualized capital cost for light-duty-vehicles
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Transportation|Truck:
+    description: Annualized capital cost for trucks
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Transportation|Rail and Bus:
+    description: Annualized capital cost for rail and bus
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Transportation|Charge and Fuel|LDV and Truck:
+    description: Annualized capital cost for charging and fueling infrastructure light-duty
+      vehicles and trucks
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Transportation|Charge and Fuel|Rail and Bus:
+    description: Annualized capital cost for charging and fueling infrastructure for
+      rail and buses
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Transportation|Railtracks and Road:
+    description: Annualized capital cost for railtracks and roads
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Residential and Commercial|Building Retrofits:
+    description: Annualized capital cost for building retrofits
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Residential and Commercial|Renewable Heating:
+    description: Annualized capital cost for renewable Heating systems
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Supply|Heat|Transmission and Distribution:
+    description: 'Annualized capital cost for transport and distribution of district
+      heat (including house connections) '
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Supply|Heat:
+    description: Annualized capital cost for district heat generation
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Supply|Heat|Renewable:
+    description: Annualized capital cost for district heat generation from renewable
+      energy
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Supply|Heat|Heat Pump:
+    description: Annualized capital cost for heat pumps for district heat generation
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Supply|Heat|Geothermal:
+    description: Annualized capital cost for geothermal for district heat generation
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Supply|Heat|Solarthermal:
+    description: Annualized capital cost for solarthermal for district heat generation
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Industry|Fuel Switch|Steam Generation:
+    description: Annualized capital cost for fuel switch in steam generators
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Industry|Fuel Switch|Space Heating:
+    description: Annualized capital cost for fuel switch in space heating
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Industry|Fuel Switch|Industrial Furnace:
+    description: Annualized capital cost for fuel switch in industrial furnaces
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Efficiency|Industry|Process Technology:
+    description: Annualized capital cost to increase efficiency of process technologies
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Efficiency|Industry|Cross-Sectional Technology:
+    description: Annualized capital cost for more efficient cross-sectional technologies
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Efficiency|Industry|Buildiung Shell:
+    description: Annualized capital cost to increase efficiency of building shells
+      (additional cost for new buildings to reach a better efficiency than the standard
+      and any retrofitting of existing buildings to increase efficiency; not including
+      the costs of the general building structure, technical equipment, etc.)
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Efficiency|Industry|Steam Distribution:
+    description: Annualized capital cost to increase efficiency of steam distribution
+      systems
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy Demand|Industry|Innovative Processes:
+    description: Annualized capital cost for innovative processes in industry (related
+      to more climate friendly production/ emission reductions)
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Industry|CCS Capex:
+    description: Annualized capital cost for CCS infrastructure in industry (only
+      the capturing equipment, not transport or storage infrastructure)
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Industry|CO2 Storage:
+    description: Annualized capital cost for CO2 storage infrastructure in industry
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Industry|CO2 Transport:
+    description: Annualized capital cost for CO2 transport infrastructure in industry
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Heat|Transmission and Distribution|Base:
+    description: Fiscal spending for heating network base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Heat|Transmission and Distribution|High:
+    description: Fiscal spending for heating network base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Heat|Transmission and Distribution|Low:
+    description: Fiscal spending for heating network base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Transmission and Distribution|Base:
+    description: Fiscal spending for electricity network base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Transmission and Distribution|High:
+    description: Fiscal spending for electricity network base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Transmission and Distribution|Low:
+    description: Fiscal spending for electricity network base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Electricity tax|Base:
+    description: Fiscal spending for reduced electricity tax base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Electricity tax|High:
+    description: Fiscal spending for reduced electricity tax base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Electricity tax|Low:
+    description: Fiscal spending for reduced electricity tax base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Renewable Generation|Base:
+    description: Fiscal spending for renewable generation base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Renewable Generation|High:
+    description: Fiscal spending for renewable generation base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Renewable Generation|Low:
+    description: Fiscal spending for renewable generation base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Backup|Base:
+    description: Fiscal spending for backup capacities base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Backup|High:
+    description: Fiscal spending for backup capacities base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|Electricity|Backup|Low:
+    description: Fiscal spending for backup capacities base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|H2 and CO2|Infrastructure|Base:
+    description: Fiscal spending for H2, CO2, P2X infrastructure base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|H2 and CO2|Infrastructure|High:
+    description: Fiscal spending for H2, CO2, P2X infrastructure base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Energy Supply|H2 and CO2|Infrastructure|Low:
+    description: Fiscal spending for H2, CO2, P2X infrastructure base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Total|Base:
+    description: Fiscal spending for industry sector base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Total|High:
+    description: Fiscal spending for industry sector base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Total|Low:
+    description: Fiscal spending for industry sector base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Efficiency Energy and Resources|Base:
+    description: "Bundesf\xF6rderung Energie- und Ressourceneffizienz base/low/high\
+      \ case"
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Efficiency Energy and Resources|High:
+    description: "Bundesf\xF6rderung Energie- und Ressourceneffizienz base/low/high\
+      \ case"
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Efficiency Energy and Resources|Low:
+    description: "Bundesf\xF6rderung Energie- und Ressourceneffizienz base/low/high\
+      \ case"
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Climate protection|Base:
+    description: "Bundesf\xF6rderung Energie und Klimaschutz base/low/high case"
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Climate protection|High:
+    description: "Bundesf\xF6rderung Energie und Klimaschutz base/low/high case"
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Climate protection|Low:
+    description: "Bundesf\xF6rderung Energie und Klimaschutz base/low/high case"
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|CCfD|Base:
+    description: Carbon Contracts for Difference base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|CCfD|High:
+    description: Carbon Contracts for Difference base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|CCfD|Low:
+    description: Carbon Contracts for Difference base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|IPCEI Hydrogen|Base:
+    description: Fiscal spending for IPCEI Hydrogen projects base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|IPCEI Hydrogen|High:
+    description: Fiscal spending for IPCEI Hydrogen projects base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|IPCEI Hydrogen|Low:
+    description: Fiscal spending for IPCEI Hydrogen projects base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Innovation fund|Base:
+    description: Fiscal spending for Innovation fund base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Innovation fund|High:
+    description: Fiscal spending for Innovation fund base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Industry|Innovation fund|Low:
+    description: Fiscal spending for Innovation fund base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|E Mobility|Base:
+    description: Fiscal spending for e-mobility base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|E Mobility|High:
+    description: Fiscal spending for e-mobility base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|E Mobility|Low:
+    description: Fiscal spending for e-mobility base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|Railtracks|Base:
+    description: Fiscal spending for railtracks base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|Railtracks|High:
+    description: Fiscal spending for railtracks base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|Railtracks|Low:
+    description: Fiscal spending for railtracks base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|Charging|Base:
+    description: Fiscal spending for public charging base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|Charging|High:
+    description: Fiscal spending for public charging base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Transportation|Charging|Low:
+    description: Fiscal spending for public charging base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Renewable Heating|Base:
+    description: Fiscal spending for renewable heating systems base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Renewable Heating|High:
+    description: Fiscal spending for renewable heating systems base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Renewable Heating|Low:
+    description: Fiscal spending for renewable heating systems base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Building Retrofits|Base:
+    description: Fiscal spending for building retrofits base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Building Retrofits|High:
+    description: Fiscal spending for building retrofits base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Building Retrofits|Low:
+    description: Fiscal spending for building retrofits base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|New-Built|Base:
+    description: Fiscal spending for efficient new-built base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|New-Built|High:
+    description: Fiscal spending for efficient new-built base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|New-Built|Low:
+    description: Fiscal spending for efficient new-built base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Reduced taxes|Base:
+    description: Fiscal spending for tax reductions base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Reduced taxes|High:
+    description: Fiscal spending for tax reductions base/low/high case
+    unit: billion EUR2020/yr
+- Fiscal Spending|Residential and Commercial|Reduced taxes|Low:
+    description: Fiscal spending for tax reductions base/low/high case
+    unit: billion EUR2020/yr
