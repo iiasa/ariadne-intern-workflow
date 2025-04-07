@@ -1,6 +1,6 @@
 # ADIADNE project - scenario processing workflow
 
-Copyright (c) 2021-2024 IIASA and the ARIADNE consortium
+Copyright (c) 2021-2025 IIASA and the ARIADNE consortium
 
 [![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
 
