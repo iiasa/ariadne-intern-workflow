@@ -75,6 +75,11 @@ def kopernikus(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     return df
 
 
+def public(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    """Simple pass-through function for submission to public Ariadne2 database"""
+    return df
+
+
 def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Validation function for variables, regions, and subannual time resolution"""
 
