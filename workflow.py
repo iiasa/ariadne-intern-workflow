@@ -77,6 +77,21 @@ def kopernikus(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 
 def public(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Simple pass-through function for submission to public Ariadne2 database"""
+
+    definition = DataStructureDefinition(here / "definitions", dimensions=["region"])
+
+    # apply a renaming from region-synonyms to region-names
+    rename_dict = {}
+
+    for region in definition.region.values():
+        for synonym in ("abbr", "iso3"):
+            if synonym in region.extra_attributes:
+                rename_dict[region.extra_attributes[synonym]] = region.name
+
+    df.rename(region=rename_dict, inplace=True)
+
+    definition.validate(df, dimensions=["region"])
+
     return df
 
 
