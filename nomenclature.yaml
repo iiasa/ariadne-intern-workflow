@@ -3,4 +3,8 @@ dimensions:
   - variable
   - scenario
   - subannual
+time:
+   year: true
+   datetime: true
+   timezone: UTC+01:00
 illegal-characters: []
