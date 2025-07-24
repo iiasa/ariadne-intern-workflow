@@ -3,4 +3,4 @@ dimensions:
   - variable
   - scenario
   - subannual
-illegal_characters: []
+illegal-characters: []
