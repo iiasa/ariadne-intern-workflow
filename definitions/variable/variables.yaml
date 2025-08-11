@@ -5825,6 +5825,14 @@
 - Energy Service|Residential and Commercial|Floor Space:
     description: energy service demand for conditioned floor space in buildings
     unit: bn m2/yr
+- Capacity|Heat|Residential and Commercial|Storage Reservoir:
+    description: Total installed net capacity of decentral thermal storages for space
+      and water heating
+    unit: GWh
+- Capacity Additions|Heat|Residential and Commercial|Storage Reservoir:
+    description: Additions of new capacities (gross, w/o accounting for retirements)
+      of decentral thermal storages for space and water heating
+    unit: GWh/yr
 - Energy Service|Residential|Floor Space:
     description: energy service demand for conditioned floor space in residential
       buildings
@@ -11891,6 +11899,15 @@
     unit: billion EUR2020/yr
 - Capital Cost|Annualized|Infrastructure|Industry|CO2 Transport:
     description: Annualized capital cost for CO2 transport infrastructure in industry
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Infrastructure|Industry:
+    description: Annualized capital cost for infrastructure in industry
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Energy|Industry:
+    description: Annualized capital cost in industry (energy demand and efficiency)
+    unit: billion EUR2020/yr
+- Capital Cost|Annualized|Industry:
+    description: Annualized capital cost in industry
     unit: billion EUR2020/yr
 - Fiscal Spending|Energy Supply|Heat|Transmission and Distribution|Base:
     description: Fiscal spending for heating network base/low/high case
