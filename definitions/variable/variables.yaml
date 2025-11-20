@@ -10856,6 +10856,18 @@
 - Minerals|Cadmium|Other Sectors:
     description: Demand of Cadmium for Other Sectors
     unit: kt/yr
+- Minerals|Cerium|Electrolysers:
+    description: Demand of Cerium for Electrolysers
+    unit: kt/yr
+- Minerals|Chromium|Electrolysers:
+    description: Demand of Chromium for Electrolysers
+    unit: kt/yr
+- Minerals|Chromium|Other Conversion Technologies:
+    description: Demand of Chromium for Other Conversion Technologies
+    unit: kt/yr
+- Minerals|Chromium|Stationary Batteries:
+    description: Demand of Chromium for Stationary Batteries
+    unit: kt/yr
 - Minerals|Chromium|Wind:
     description: Demand of Chromium for Wind Power Plants
     unit: kt/yr
@@ -10879,6 +10891,15 @@
     unit: kt/yr
 - Minerals|Chromium|Other Sectors:
     description: Demand of Chromium for Other Sectors
+    unit: kt/yr
+- Minerals|Cobalt|PV:
+    description: Demand of Cobalt for PV Power Plants
+    unit: kt/yr
+- Minerals|Cobalt|Power Plants (fossil + nuclear):
+    description: Demand of Cobalt for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Cobalt|Wind:
+    description: Demand of Cobalt for Wind Power Plants
     unit: kt/yr
 - Minerals|Cobalt|Stationary Fuel Cells:
     description: Demand of Cobalt for Stationary Fuel Cells
@@ -10931,6 +10952,9 @@
 - Minerals|Copper|Other Sectors:
     description: Demand of Copper for Other Sectors
     unit: kt/yr
+- Minerals|Dysprosium|Cars:
+    description: Demand of Dysprosium for Cars
+    unit: kt/yr
 - Minerals|Dysprosium|Wind:
     description: Demand of Dysprosium for Wind Power Plants
     unit: kt/yr
@@ -10949,6 +10973,15 @@
 - Minerals|Germanium|Other Sectors:
     description: Demand of Germanium for Other Sectors
     unit: kt/yr
+- Minerals|Graphite|Cars:
+    description: Demand of Graphite for Cars
+    unit: kt/yr
+- Minerals|Graphite|Electrolysers:
+    description: Demand of Graphite for Electrolysers
+    unit: kt/yr
+- Minerals|Graphite|Stationary Batteries:
+    description: Demand of Graphite for Stationary Batteries
+    unit: kt/yr
 - Minerals|Indium|PV:
     description: Demand of Indium for PV Power Plants
     unit: kt/yr
@@ -10964,11 +10997,41 @@
 - Minerals|Iridium|Other Sectors:
     description: Demand of Iridium for Other Sectors
     unit: kt/yr
+- Minerals|Iron|Cars:
+    description: Demand of Iron for Cars
+    unit: kt/yr
+- Minerals|Iron|Electrolysers:
+    description: Demand of Iron for Electrolysers
+    unit: kt/yr
+- Minerals|Iron|Other Conversion Technologies:
+    description: Demand of Iron for Other Conversion Technologies
+    unit: kt/yr
+- Minerals|Iron|PV:
+    description: Demand of Iron for PV Power Plants
+    unit: kt/yr
+- Minerals|Iron|Power Plants (fossil + nuclear):
+    description: Demand of Iron for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Iron|Power Plants (renewable):
+    description: Demand of Iron for Power Plants (renewable)
+    unit: kt/yr
+- Minerals|Iron|Stationary Batteries:
+    description: Demand of Iron for Stationary Batteries
+    unit: kt/yr
+- Minerals|Iron|Wind:
+    description: Demand of Iron for Wind Power Plants
+    unit: kt/yr
 - Minerals|Lanthanum|Electrolysers:
     description: Demand of Lanthanum for Electrolysers
     unit: kt/yr
 - Minerals|Lanthanum|Other Sectors:
     description: Demand of Lanthanum for Other Sectors
+    unit: kt/yr
+- Minerals|Lead|Power Plants (fossil + nuclear):
+    description: Demand of Lead for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Lead|Wind:
+    description: Demand of Lead for Wind Power Plants
     unit: kt/yr
 - Minerals|Lead|PV:
     description: Demand of Lead for PV Power Plants
@@ -10990,6 +11053,9 @@
     unit: kt/yr
 - Minerals|Lithium|Other Sectors:
     description: Demand of Lithium for Other Sectors
+    unit: kt/yr
+- Minerals|Magnesium|Power Plants (fossil + nuclear):
+    description: Demand of Magnesium for Power Plants (fossil + nuclear)
     unit: kt/yr
 - Minerals|Magnesium|PV:
     description: Demand of Magnesium for PV Power Plants
@@ -11033,6 +11099,9 @@
 - Minerals|Manganese|Other Sectors:
     description: Demand of Manganese for Other Sectors
     unit: kt/yr
+- Minerals|Neodymium|Cars:
+    description: Demand of Neodymium for Cars
+    unit: kt/yr
 - Minerals|Neodymium|Wind:
     description: Demand of Neodymium for Wind Power Plants
     unit: kt/yr
@@ -11072,6 +11141,21 @@
 - Minerals|Nickel|Other Sectors:
     description: Demand of Nickel for Other Sectors
     unit: kt/yr
+- Minerals|Phosphorus|Cars:
+    description: Demand of Phosphorus for Cars
+    unit: kt/yr
+- Minerals|Phosphorus|Power Plants (fossil + nuclear):
+    description: Demand of Phosphorus for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Phosphorus|Stationary Batteries:
+    description: Demand of Phosphorus for Stationary Batteries
+    unit: kt/yr
+- Minerals|Platinum|PV:
+    description: Demand of Platinum for PV Power Plants
+    unit: kt/yr
+- Minerals|Platinum|Wind:
+    description: Demand of Platinum for Wind Power Plants
+    unit: kt/yr
 - Minerals|Platinum|Electrolysers:
     description: Demand of Platinum for Electrolysers
     unit: kt/yr
@@ -11093,17 +11177,41 @@
 - Minerals|Potassium|Other Sectors:
     description: Demand of Potassium for Other Sectors
     unit: kt/yr
+- Minerals|Praseodymium|Cars:
+    description: Demand of Praseodymium for Cars
+    unit: kt/yr
+- Minerals|Praseodymium|Electrolysers:
+    description: Demand of Praseodymium for Electrolysers
+    unit: kt/yr
+- Minerals|Praseodymium|Wind:
+    description: Demand of Praseodymium for Wind Power Plants
+    unit: kt/yr
 - Minerals|Selenium|PV:
     description: Demand of Selenium for PV Power Plants
     unit: kt/yr
 - Minerals|Selenium|Other Sectors:
     description: Demand of Selenium for Other Sectors
     unit: kt/yr
+- Minerals|Silicon|Cars:
+    description: Demand of Silicon for Cars
+    unit: kt/yr
+- Minerals|Silicon|Power Plants (fossil + nuclear):
+    description: Demand of Silicon for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Silicon|Stationary Batteries:
+    description: Demand of Silicon for Stationary Batteries
+    unit: kt/yr
+- Minerals|Silicon|Wind:
+    description: Demand of Silicon for Wind Power Plants
+    unit: kt/yr
 - Minerals|Silicon|PV:
     description: Demand of Silicon for PV Power Plants
     unit: kt/yr
 - Minerals|Silicon|Other Sectors:
     description: Demand of Silicon for Other Sectors
+    unit: kt/yr
+- Minerals|Silver|Wind:
+    description: Demand of Silver for Wind Power Plants
     unit: kt/yr
 - Minerals|Silver|PV:
     description: Demand of Silver for PV Power Plants
@@ -11150,17 +11258,47 @@
 - Minerals|Steel|Other Sectors:
     description: Demand of Steel for Other Sectors
     unit: kt/yr
+- Minerals|Sulfur|Power Plants (fossil + nuclear):
+    description: Demand of Sulfur for Power Plants (fossil + nuclear)
+    unit: kt/yr
 - Minerals|Sulfur|Stationary Batteries:
     description: Demand of Sulfur for Stationary Batteries
     unit: kt/yr
 - Minerals|Sulfur|Other Sectors:
     description: Demand of Sulfur for Other Sectors
     unit: kt/yr
+- Minerals|Tantalum|PV:
+    description: Demand of Tantalum for PV Power Plants
+    unit: kt/yr
 - Minerals|Tellurium|PV:
     description: Demand of Tellurium for PV Power Plants
     unit: kt/yr
 - Minerals|Tellurium|Other Sectors:
     description: Demand of Tellurium for Other Sectors
+    unit: kt/yr
+- Minerals|Terbium|Cars:
+    description: Demand of Terbium for Cars
+    unit: kt/yr
+- Minerals|Terbium|Wind:
+    description: Demand of Terbium for Wind Power Plants
+    unit: kt/yr
+- Minerals|Titanium|Cars:
+    description: Demand of Titanium for Cars
+    unit: kt/yr
+- Minerals|Titanium|Electrolysers:
+    description: Demand of Titanium for Electrolysers
+    unit: kt/yr
+- Minerals|Titanium|PV:
+    description: Demand of Titanium for PV Power Plants
+    unit: kt/yr
+- Minerals|Titanium|Power Plants (fossil + nuclear):
+    description: Demand of Titanium for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Titanium|Wind:
+    description: Demand of Titanium for Wind Power Plants
+    unit: kt/yr
+- Minerals|Vanadium|Cars:
+    description: Demand of Vanadium for Cars
     unit: kt/yr
 - Minerals|Vanadium|Wind:
     description: Demand of Vanadium for Wind Power Plants
@@ -11197,6 +11335,15 @@
     unit: kt/yr
 - Minerals|Yttrium|Other Sectors:
     description: Demand of Yttrium for Other Sectors
+    unit: kt/yr
+- Minerals|Zinc|Other Conversion Technologies:
+    description: Demand of Zinc for Other Conversion Technologies
+    unit: kt/yr
+- Minerals|Zinc|Power Plants (fossil + nuclear):
+    description: Demand of Zinc for Power Plants (fossil + nuclear)
+    unit: kt/yr
+- Minerals|Zinc|Wind:
+    description: Demand of Zinc for Wind Power Plants
     unit: kt/yr
 - Minerals|Zinc|PV:
     description: Demand of Zinc for PV Power Plants
