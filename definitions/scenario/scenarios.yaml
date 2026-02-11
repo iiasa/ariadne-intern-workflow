@@ -47,12 +47,18 @@
 - NPI_Balance
 
 - KN2045_Bal_v4
+- KN2045_Bal_v5
 - KN2045_Elec_v4
+- KN2045_Elec_v5
+- KN2045_Elec_plus_v5
 - KN2045_H2_v4
+- KN2045_H2_v5
 - KN2045plus_LowDemand
+- KN2045plus_LowDemand_v2
 - KN2045plus_EasyRide
 - KN2045minus_WorstCase
 - KN2045minus_SupplyFocus
+- KN2045minus_SupplyFocus_v2
 - CurrentPolicies_{Roadmap}
 - KN2045_Bal_v4_{Roadmap}
 - KN2045_Elec_v4_{Roadmap}
