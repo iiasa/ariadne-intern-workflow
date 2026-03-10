@@ -95,6 +95,21 @@ def public(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     return df
 
 
+def dev(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
+    """Simple pass-through function for submission to dev Ariadne2 platform"""
+
+    definition = DataStructureDefinition(
+        here / "definitions", dimensions=["region", "variable"]
+    )
+    if "subannual" in df.dimensions:
+        raise ValueError(
+            "Categorical 'subannual' time domain not activated for 'dev' instance "
+        )
+
+    definition.validate(df)
+    return df
+
+
 def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
     """Validation function for variables, regions, and subannual time resolution"""
 
