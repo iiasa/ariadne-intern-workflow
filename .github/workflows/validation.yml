@@ -15,17 +15,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v7
 
-    - name: Set up Python 3.11
+    - name: Set up Python 3.13
       uses: actions/setup-python@v1
       with:
-        python-version: 3.11
+        python-version: 3.13
 
     - name: Install dependencies
       run: pip install -r requirements.txt
 
-    # TODO: add validation of "scenario" and "subannual" dimensions
-    # depends on https://github.com/IAMconsortium/nomenclature/issues/71
     - name: Run the nomenclature project validation
       run: nomenclature validate-project .
