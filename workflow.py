@@ -1,9 +1,9 @@
-from pathlib import Path
 import logging
 from datetime import datetime, timedelta
+from pathlib import Path
+
 import pyam
 from nomenclature import DataStructureDefinition
-
 
 # define logger for this script at logging level INFO
 logger = logging.getLogger(__name__)
@@ -148,7 +148,7 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
                 _dt = datetime.strptime(f"2020-{d}", "%Y-%m-%d %H:%M%z")
             except ValueError:
                 try:
-                    datetime.strptime(f"2020-{d}", "%Y-%m-%d %H:%M")
+                    datetime.strptime(f"2020-{d}", "%Y-%m-%d %H:%M")  # noqa
                 except ValueError:
                     raise ValueError(f"Invalid subannual timeslice: {d}")
 
@@ -162,10 +162,11 @@ def _validate(df: pyam.IamDataFrame) -> pyam.IamDataFrame:
 
 
 def _validate_meta(
-    df: pyam.IamDataFrame, allowed_meta: dict, optional_meta: list = []
+    df: pyam.IamDataFrame, allowed_meta: dict, optional_meta: list
 ) -> pyam.IamDataFrame:
     """Validation function for meta indicators"""
 
+    optional_meta = optional_meta or []
     # remove unexpected meta columns
     expected_meta = list(allowed_meta) + optional_meta + ["exclude"]
     unexpected_meta = [c for c in df.meta.columns if c not in expected_meta]
