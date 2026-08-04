@@ -3,7 +3,7 @@ dimensions:
   - variable
   - scenario
   - subannual
-time:
+time-domain:
    year: true
    datetime: true
    timezone: UTC+01:00
