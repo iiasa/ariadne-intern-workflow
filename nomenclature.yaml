@@ -6,7 +6,6 @@ dimensions:
 time-domain:
    year: true
    datetime: true
-   timezone: UTC+01:00
 illegal-characters: []
 definitions:
   region:
