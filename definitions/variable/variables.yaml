@@ -5014,6 +5014,11 @@
       and forestry residue bioenergy, municipal solid waste bioenergy, traditional
       biomass, including renewable waste
     unit: PJ/yr
+- Primary Energy|Biomass|Biochar:
+    description: primary energy input to biochar of purpose-grown bioenergy crops,
+      crop and forestry residue bioenergy, municipal solid waste bioenergy, traditional
+      biomass
+    unit: PJ/yr
 - Primary Energy|Biomass|Modern:
     description: modern biomass primary energy consumption, including purpose-grown
       bioenergy crops, crop and forestry residue bioenergy and municipal solid waste
@@ -5269,6 +5274,10 @@
 - Secondary Energy|Electricity|Gas:
     description: net electricity production from gas (net generation = gross generation
       minus the own electricity consumption of power stations, minus curtailment)
+    unit: PJ/yr
+- Secondary Energy|Electricity|Gas|Biomethane:
+    description: net electricity production from biomethane (net generation = gross
+      generation minus the own electricity consumption of power stations, minus curtailment)
     unit: PJ/yr
 - Secondary Energy|Electricity|Gas|Efuel:
     description: net electricity production from synthetic gas (net generation = gross
@@ -5884,6 +5893,9 @@
     unit: Mt/yr
 - Production|Chemicals|Ethylene|Low-Carbon:
     description: Production of ethylene with new low carbon /carbon-free methods
+    unit: Mt/yr
+- Production|Chemicals|Ethylene|Recycling:
+    description: Production of ethylene with recycling
     unit: Mt/yr
 - Production|Pulp and Paper:
     description: production of pulp and paper
